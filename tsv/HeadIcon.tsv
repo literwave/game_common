@@ -1,0 +1,5 @@
+Id	HeroId	Resources	Sort
+integer	integer	string	integer
+both	both	both	both
+id	值	值	值
+1001	1001	assets/res/ui/hero/normal/1001.png	1

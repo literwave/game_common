@@ -1,0 +1,5 @@
+Id	LoginDomain	StateDomain	HttpPort	HttpsPort
+integer	string	string	integer	integer
+both	both	both	both	both
+后台id	登录后台	统计后台	http后台端口	https后台端口
+100	chaoxi-dev2.rastargame.com	chaoxi-dev2.rastargame.com	8527	8528

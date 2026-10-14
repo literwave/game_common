@@ -1,0 +1,7 @@
+Id	Icon	BuyDiamond	useParams	Kind	Overlap
+integer	integer	integer	lua_array	integer	integer
+both	both	both	both	both	both
+id	图标	购买晶钻	是否可使用	道具种类	叠加上限
+1	1	10	{  }	1	1
+2	2	10	{  }	2	1
+1001	1001	10	{  }	3	1

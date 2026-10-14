@@ -1,0 +1,5 @@
+Id	Type	Hide	Name	Desc	Icon	EffectSize	BuildEffectSize	ClickEffect	MaxLevel	LevelUp	SetOffX	SetOffY	LimitNum	InitLev	InitFacilityLv	CreateLimit	ModelObjName	ModelObjName2	rubbishCnt
+integer	integer	integer	integer	integer	integer	integer	lua_array	integer	integer	integer	integer	integer	integer	lua_object	lua_array	lua_array	lua_object	lua_array	integer
+both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both
+建筑类型	类型	屏蔽	名称	描述	建筑图标	建造中特效缩放	可建造特效缩放	选中建筑音效	最大等级	是否可升级	建筑铭牌偏移X	建筑铭牌偏移Y	可建造数量	初始化等级	初始建筑设施	建造要求	建筑造型（bid为单数）	建筑造型（bid为双数，没有不配）	垃圾容量
+1	1		600001	600101	1	100	{ 1, 1, 0, 0 }	1	1	1			1	{ [1001] = 1 }			"{ [50] = ""bangongshi/bangongshi"" }"		1

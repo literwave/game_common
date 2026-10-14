@@ -1,0 +1,4 @@
+[submodule "vis_conf"]
+	path = vis_conf
+	url = git@github.com:literwave/vis_conf.git
+	branch = main
