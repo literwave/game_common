@@ -25,7 +25,7 @@ git submodule update --init --recursive
 
 ## 改表并导出
 
-在 `vis_conf/` 里启动星图，把配置文件目录设为仓库的 `tsv/`。前端导出到 `client/res/`（JSON），后端导出到 `server/res/`（Lua）。工具的安装、编辑和导表规则见 [vis_conf/README.md](vis_conf/README.md)。
+在 `vis_conf/` 里启动星图，把配置文件目录设为仓库的 `tsv/`。前端导出到 `client/res/`（JSON），后端导出到 `server/res/`（Lua）。工具的安装、编辑和导表规则见 [vis_conf/README.md](vis_conf/README.md)。用 Cursor 改表前，先按 [配置 Cursor](vis_conf/README.md#配置-cursor) 安装 CLI 并在星图里选 Agent 模式。
 
 改完后一起提交这三处：`tsv/`、`client/res/`、`server/res/`。不要只提交导出结果。
 
