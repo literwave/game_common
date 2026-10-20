@@ -10,7 +10,7 @@ echo Start generating protocol files...
 rem Set proto directory
 set "PROTO_DIR=.\proto\proto_desc"
 
-rem 1. Generate server/proto/net_pb.lua and client/proto/net_pb.json (Protocol IDs)
+rem 1. Generate server/net_pb.lua and client/net_pb.json (Protocol IDs)
 echo Running extractlua.py...
 python script/extractlua.py "%PROTO_DIR%"
 if errorlevel 1 (

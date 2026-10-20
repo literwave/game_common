@@ -28,7 +28,7 @@ def main(dir):
 	if not dir.endswith('/') and not dir.endswith('\\'):
 		dir += '/'
 	
-	out_lua_dir = os.path.join(dir, '../../../server/proto/pb/')
+	out_lua_dir = os.path.join(dir, '../../../pb/')
 	out_cs_dir = os.path.join(dir, '../outcs/')
 
 	if not os.path.exists(out_lua_dir):

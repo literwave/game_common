@@ -4,7 +4,6 @@
 import json
 import os
 import re
-import shutil
 import sys
 
 COMMON_PTO_NAME = "common.proto"
@@ -56,8 +55,8 @@ def repo_root() -> str:
 def net_pb_paths(root: str | None = None) -> tuple[str, str]:
     base = root or repo_root()
     return (
-        os.path.join(base, "client", "proto", "net_pb.json"),
-        os.path.join(base, "server", "proto", "net_pb.lua"),
+        os.path.join(base, "client", "net_pb.json"),
+        os.path.join(base, "server", "net_pb.lua"),
     )
 
 
@@ -192,23 +191,9 @@ def write_net_pb(proto_dir: str, json_path: str, lua_path: str) -> list[Protocol
     return entries
 
 
-def copy_client_proto(proto_dir: str, dest_dir: str) -> None:
-    os.makedirs(dest_dir, exist_ok=True)
-    print(os.listdir(proto_dir))
-    for filename in os.listdir(proto_dir):
-        if not filename.endswith(".proto"):
-            continue
-        src = os.path.join(proto_dir, filename)
-        if not os.path.isfile(src):
-            continue
-        shutil.copy(src, os.path.join(dest_dir, filename))
-        print(f"Copied {filename} to {dest_dir}")
-
-
 def main(proto_dir: str) -> None:
     root = repo_root()
     json_path, lua_path = net_pb_paths(root)
-    copy_client_proto(proto_dir, os.path.join(root, "client", "proto", "pto"))
     try:
         entries = write_net_pb(proto_dir, json_path, lua_path)
     except (OSError, ProtocolIdError) as exc:
