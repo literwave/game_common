@@ -1,5 +1,5 @@
 
-Í
+ç
 login.protoLogin"ƒ
 c2s_user_login 
 accountType (RaccountType
@@ -23,11 +23,7 @@
 passwd (	Rpasswd
 token (	Rtoken"(
 s2c_verify_login
-token (	Rtoken"[
-s2c_user_create
-userId (	RuserId
-name (	Rname
-	birthTime (R	birthTime"G
+token (	Rtoken"G
 s2c_user_login_ok
 userId (	RuserId
 serverId (	RserverIdbproto3
