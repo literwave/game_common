@@ -1,52 +1,223 @@
 #!/usr/bin/env python
 # -*- encoding:utf8 -*-
 
-import sys, os, re
+import json
+import os
+import re
 import shutil
-from tracemalloc import start
+import sys
 
 COMMON_PTO_NAME = "common.proto"
+MESSAGE_RE = re.compile(r"^\s*message\s+([A-Za-z_]\w*)\b")
+PACKAGE_RE = re.compile(r"^\s*package\s+([A-Za-z_][\w.]*)\s*;")
 
-class parseFile():
 
-	def __init__(self, dir):
-		self._dir = dir
-		self._commonPtoName = COMMON_PTO_NAME
-		self._reMessage = re.compile(r"message\s\w+")
-		self._namePreFix = {"c2s", "s2c"}
-		self.startParse()
-		
-	def isPtoFile(self, fileName):
-		if fileName == self._commonPtoName:
-			return False
-		filetype = fileName[-6:]
-		return (filetype == ".proto")
-	
-	def startParse(self):
-		client_pto_dir = "../client/proto/pto/"
-		if not os.path.exists(client_pto_dir):
-			os.makedirs(client_pto_dir)
+class ProtocolIdError(Exception):
+    pass
 
-		print(os.listdir(self._dir))
-		for fileName in os.listdir(self._dir):
-			if fileName.endswith(".proto"):
-				src_file = os.path.join(self._dir, fileName)
-				dst_file = os.path.join(client_pto_dir, fileName)
-				shutil.copy(src_file, dst_file)
-				print(f"Copied {fileName} to {client_pto_dir}")
 
-			if self.isPtoFile(fileName):
-				with open(self._dir + fileName, encoding = "utf8") as f:
-					ptoBuf = f.read()
-					ptoNameList = self._reMessage.findall(ptoBuf)
-					print(ptoNameList)
-					for ptotoName in ptoNameList:
-						ptoName = ptotoName.replace("message", "").strip()
-						if not ptoName[0:3] in self._namePreFix:
-							continue
+class ProtocolEntry:
+    def __init__(self, module: str, name: str, proto_id: int, key: str):
+        self.module = module
+        self.name = name
+        self.proto_id = proto_id
+        self.key = key
+
+
+INIT_PTO = """\
+ID_TO_PACK_NAME = {}
+PTONAME_TO_ID = {}
+PACK_NAME_TO_ID = {}
+ID_TO_PTONAME = {} -- 这里需要优化，其实就只有客户端发给后端才需要这个数据
+for_maker = {}
+for_caller = {}
+
+local function initPto()
+	for mod, packTbl in pairs(define) do
+		for ptoName, id in pairs(packTbl) do
+			local packName = mod .. "." .. ptoName
+			ID_TO_PACK_NAME[id] = packName
+			PTONAME_TO_ID[ptoName] = id
+			PACK_NAME_TO_ID[packName] = id
+			ID_TO_PTONAME[id] = ptoName
+		end
+	end
+end
+
+initPto()
+"""
+
+
+def repo_root() -> str:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.abspath(os.path.join(script_dir, "..", ".."))
+
+
+def net_pb_paths(root: str | None = None) -> tuple[str, str]:
+    base = root or repo_root()
+    return (
+        os.path.join(base, "client", "proto", "net_pb.json"),
+        os.path.join(base, "server", "proto", "net_pb.lua"),
+    )
+
+
+def is_protocol_name(name: str) -> bool:
+    lowered = name.casefold()
+    return lowered.startswith(("c2s", "s2c", "notify"))
+
+
+def protocol_names_in_text(text: str) -> list[str]:
+    names: list[str] = []
+    for line in text.splitlines():
+        if line.strip().startswith("//"):
+            continue
+        match = MESSAGE_RE.match(line)
+        if match is None:
+            continue
+        name = match.group(1)
+        if is_protocol_name(name):
+            names.append(name)
+    return names
+
+
+def proto_package(text: str) -> str:
+    for line in text.splitlines():
+        if line.strip().startswith("//"):
+            continue
+        match = PACKAGE_RE.match(line)
+        if match is not None:
+            return match.group(1)
+    return ""
+
+
+def protocol_module(filename: str, package: str) -> str:
+    return package or os.path.splitext(filename)[0]
+
+
+def protocol_key(module: str, name: str, duplicated: bool) -> str:
+    if not duplicated:
+        return name
+    return f"{module}.{name}"
+
+
+def collect_protocols(proto_dir: str) -> list[ProtocolEntry]:
+    found: list[tuple[str, str, str]] = []
+    for filename in sorted(os.listdir(proto_dir)):
+        if filename == COMMON_PTO_NAME or not filename.endswith(".proto"):
+            continue
+        path = os.path.join(proto_dir, filename)
+        if not os.path.isfile(path):
+            continue
+        with open(path, encoding="utf-8") as handle:
+            text = handle.read()
+        package = proto_package(text)
+        module = protocol_module(filename, package)
+        for name in protocol_names_in_text(text):
+            found.append((filename, module, name))
+
+    counts: dict[str, int] = {}
+    for _filename, _module, name in found:
+        counts[name] = counts.get(name, 0) + 1
+
+    entries: list[ProtocolEntry] = []
+    seen: dict[tuple[str, str], str] = {}
+    for filename, module, name in found:
+        identity = (module, name)
+        previous = seen.get(identity)
+        if previous is not None:
+            raise ProtocolIdError(f"协议名重复 {module}.{name}：{previous} 与 {filename}")
+        seen[identity] = filename
+        entries.append(
+            ProtocolEntry(
+                module,
+                name,
+                len(entries) + 1,
+                protocol_key(module, name, counts[name] > 1),
+            )
+        )
+    return entries
+
+
+def collect_protocol_ids(proto_dir: str) -> list[tuple[str, int]]:
+    return [(entry.key, entry.proto_id) for entry in collect_protocols(proto_dir)]
+
+
+def _lua_string(value: str) -> str:
+    return value.replace("\\", "\\\\").replace("'", "\\'")
+
+
+def _lua_table(entries: list[ProtocolEntry]) -> str:
+    grouped: dict[str, list[ProtocolEntry]] = {}
+    order: list[str] = []
+    for entry in entries:
+        if entry.module not in grouped:
+            order.append(entry.module)
+            grouped[entry.module] = []
+        grouped[entry.module].append(entry)
+    lines = ["local define = {"]
+    for module in order:
+        lines.append(f"\t['{_lua_string(module)}'] = {{")
+        for entry in grouped[module]:
+            lines.append(f"\t\t['{_lua_string(entry.name)}'] = {entry.proto_id},")
+        lines.append("\t},")
+    lines.append("}")
+    return "\n".join(lines) + "\n\n" + INIT_PTO.rstrip() + "\n"
+
+
+def render_net_pb_lua(entries: list[ProtocolEntry]) -> str:
+    return (
+        "-- author: liter_wave\n"
+        "-- Generated by: 星图 · 游戏配置导表工具\n"
+        "\n"
+        f"{_lua_table(entries)}\n"
+    )
+
+
+def render_net_pb_json(entries: list[ProtocolEntry]) -> str:
+    define: dict[str, dict[str, int]] = {}
+    for entry in entries:
+        define.setdefault(entry.module, {})[entry.name] = entry.proto_id
+    return json.dumps({"define": define}, ensure_ascii=False, indent=4) + "\n"
+
+
+def write_net_pb(proto_dir: str, json_path: str, lua_path: str) -> list[ProtocolEntry]:
+    entries = collect_protocols(proto_dir)
+    for path, text in (
+        (json_path, render_net_pb_json(entries)),
+        (lua_path, render_net_pb_lua(entries)),
+    ):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(text)
+    return entries
+
+
+def copy_client_proto(proto_dir: str, dest_dir: str) -> None:
+    os.makedirs(dest_dir, exist_ok=True)
+    print(os.listdir(proto_dir))
+    for filename in os.listdir(proto_dir):
+        if not filename.endswith(".proto"):
+            continue
+        src = os.path.join(proto_dir, filename)
+        if not os.path.isfile(src):
+            continue
+        shutil.copy(src, os.path.join(dest_dir, filename))
+        print(f"Copied {filename} to {dest_dir}")
+
+
+def main(proto_dir: str) -> None:
+    root = repo_root()
+    json_path, lua_path = net_pb_paths(root)
+    copy_client_proto(proto_dir, os.path.join(root, "client", "proto", "pto"))
+    try:
+        entries = write_net_pb(proto_dir, json_path, lua_path)
+    except (OSError, ProtocolIdError) as exc:
+        print(f"Failed to generate net_pb: {exc}")
+        sys.exit(1)
+    print(f"Generated {json_path} ({len(entries)} protocols)")
+    print(f"Generated {lua_path} ({len(entries)} protocols)")
+
 
 if __name__ == "__main__":
-	dir = "./" if len(sys.argv)<=1  else sys.argv[1]
-	if not dir.endswith('/') and not dir.endswith('\\'):
-		dir += '/'
-	parseFile = parseFile(dir)
+    directory = "./" if len(sys.argv) <= 1 else sys.argv[1]
+    main(directory)
