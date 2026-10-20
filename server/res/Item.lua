@@ -9,12 +9,12 @@ return {
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 1,
-        ["Overlap"] = 1
+        ["Overlap"] = 100
     },
     {
         ["Id"] = 2,
         ["Icon"] = 2,
-        ["BuyDiamond"] = 10,
+        ["BuyDiamond"] = 1,
         ["useParams"] = {},
         ["Kind"] = 2,
         ["Overlap"] = 1
