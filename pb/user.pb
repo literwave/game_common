@@ -1,13 +1,15 @@
 
-ü
+¥
 
 user.protoUsercommon.proto"
-c2s_user_base_info"t
+c2s_user_base_info"œ
 s2c_user_base_info
 name (	Rname
 headIcon (RheadIcon
 sex (Rsex
-	birthTime (R	birthTime"7
+	birthTime (R	birthTime
+level (Rlevel
+exp (Rexp"7
 c2s_user_create
 name (	Rname
 sex (Rsex"7

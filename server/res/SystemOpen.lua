@@ -5,6 +5,11 @@
 return {
     {
         ["Id"] = 1,
-        ["Enum"] = "ENTER_BIG_WORLD"
+        ["Enum"] = "ENTER_BIG_WORLD",
+        ["conf"] = {
+            {
+                ["level"] = 1
+            }
+        }
     }
 }

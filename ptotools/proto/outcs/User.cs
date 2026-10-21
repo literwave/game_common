@@ -25,23 +25,23 @@ namespace User {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cgp1c2VyLnByb3RvEgRVc2VyGgxjb21tb24ucHJvdG8iFAoSYzJzX3VzZXJf",
-            "YmFzZV9pbmZvIlQKEnMyY191c2VyX2Jhc2VfaW5mbxIMCgRuYW1lGAEgASgJ",
+            "YmFzZV9pbmZvInAKEnMyY191c2VyX2Jhc2VfaW5mbxIMCgRuYW1lGAEgASgJ",
             "EhAKCGhlYWRJY29uGAIgASgFEgsKA3NleBgDIAEoBRIRCgliaXJ0aFRpbWUY",
-            "BCABKAUiLAoPYzJzX3VzZXJfY3JlYXRlEgwKBG5hbWUYASABKAkSCwoDc2V4",
-            "GAIgASgFIiwKD3MyY191c2VyX2NyZWF0ZRIMCgRuYW1lGAEgASgJEgsKA3Nl",
-            "eBgCIAEoBSISChBjMnNfcmVxX3VzZXJfcmVzIjoKEHMyY19yZXFfdXNlcl9y",
-            "ZXMSJgoHcmVzTGlzdBgBIAMoCzIVLkNvbW1vbi5wX2NvbW1vbl9pbmZvIkAK",
-            "FnMyY19zeW5jX3VzZXJfcmVzX2xpc3QSJgoHcmVzTGlzdBgBIAMoCzIVLkNv",
-            "bW1vbi5wX2NvbW1vbl9pbmZvIiYKF3MyY19zeXNfbm90aWZ5X2J5X2xhbmlk",
-            "EgsKA3RibBgBIAMoCSIaCgtzMmNfdGVsbF9tZRILCgNtc2cYASABKAkiHQoO",
-            "YzJzX2dtX2NvbW1hbmQSCwoDY21kGAEgASgJIjkKE3MyY19nbV9jb21tYW5k",
-            "X2hlbHASIgoDcmV0GAEgAygLMhUuQ29tbW9uLnBfY29tbW9uX2luZm9iBnBy",
-            "b3RvMw=="));
+            "BCABKAUSDQoFbGV2ZWwYBSABKAUSCwoDZXhwGAYgASgFIiwKD2Myc191c2Vy",
+            "X2NyZWF0ZRIMCgRuYW1lGAEgASgJEgsKA3NleBgCIAEoBSIsCg9zMmNfdXNl",
+            "cl9jcmVhdGUSDAoEbmFtZRgBIAEoCRILCgNzZXgYAiABKAUiEgoQYzJzX3Jl",
+            "cV91c2VyX3JlcyI6ChBzMmNfcmVxX3VzZXJfcmVzEiYKB3Jlc0xpc3QYASAD",
+            "KAsyFS5Db21tb24ucF9jb21tb25faW5mbyJAChZzMmNfc3luY191c2VyX3Jl",
+            "c19saXN0EiYKB3Jlc0xpc3QYASADKAsyFS5Db21tb24ucF9jb21tb25faW5m",
+            "byImChdzMmNfc3lzX25vdGlmeV9ieV9sYW5pZBILCgN0YmwYASADKAkiGgoL",
+            "czJjX3RlbGxfbWUSCwoDbXNnGAEgASgJIh0KDmMyc19nbV9jb21tYW5kEgsK",
+            "A2NtZBgBIAEoCSI5ChNzMmNfZ21fY29tbWFuZF9oZWxwEiIKA3JldBgBIAMo",
+            "CzIVLkNvbW1vbi5wX2NvbW1vbl9pbmZvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_user_base_info), global::User.c2s_user_base_info.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_user_base_info), global::User.s2c_user_base_info.Parser, new[]{ "Name", "HeadIcon", "Sex", "BirthTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_user_base_info), global::User.s2c_user_base_info.Parser, new[]{ "Name", "HeadIcon", "Sex", "BirthTime", "Level", "Exp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_user_create), global::User.c2s_user_create.Parser, new[]{ "Name", "Sex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_user_create), global::User.s2c_user_create.Parser, new[]{ "Name", "Sex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_req_user_res), global::User.c2s_req_user_res.Parser, null, null, null, null, null),
@@ -257,6 +257,8 @@ namespace User {
       headIcon_ = other.headIcon_;
       sex_ = other.sex_;
       birthTime_ = other.birthTime_;
+      level_ = other.level_;
+      exp_ = other.exp_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -314,6 +316,30 @@ namespace User {
       }
     }
 
+    /// <summary>Field number for the "level" field.</summary>
+    public const int LevelFieldNumber = 5;
+    private int level_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Level {
+      get { return level_; }
+      set {
+        level_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "exp" field.</summary>
+    public const int ExpFieldNumber = 6;
+    private int exp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Exp {
+      get { return exp_; }
+      set {
+        exp_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -333,6 +359,8 @@ namespace User {
       if (HeadIcon != other.HeadIcon) return false;
       if (Sex != other.Sex) return false;
       if (BirthTime != other.BirthTime) return false;
+      if (Level != other.Level) return false;
+      if (Exp != other.Exp) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -344,6 +372,8 @@ namespace User {
       if (HeadIcon != 0) hash ^= HeadIcon.GetHashCode();
       if (Sex != 0) hash ^= Sex.GetHashCode();
       if (BirthTime != 0) hash ^= BirthTime.GetHashCode();
+      if (Level != 0) hash ^= Level.GetHashCode();
+      if (Exp != 0) hash ^= Exp.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -378,6 +408,14 @@ namespace User {
         output.WriteRawTag(32);
         output.WriteInt32(BirthTime);
       }
+      if (Level != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Level);
+      }
+      if (Exp != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Exp);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -404,6 +442,14 @@ namespace User {
         output.WriteRawTag(32);
         output.WriteInt32(BirthTime);
       }
+      if (Level != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Level);
+      }
+      if (Exp != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Exp);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -425,6 +471,12 @@ namespace User {
       }
       if (BirthTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BirthTime);
+      }
+      if (Level != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
+      }
+      if (Exp != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Exp);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -449,6 +501,12 @@ namespace User {
       }
       if (other.BirthTime != 0) {
         BirthTime = other.BirthTime;
+      }
+      if (other.Level != 0) {
+        Level = other.Level;
+      }
+      if (other.Exp != 0) {
+        Exp = other.Exp;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -485,6 +543,14 @@ namespace User {
             BirthTime = input.ReadInt32();
             break;
           }
+          case 40: {
+            Level = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            Exp = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -518,6 +584,14 @@ namespace User {
           }
           case 32: {
             BirthTime = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Level = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            Exp = input.ReadInt32();
             break;
           }
         }
