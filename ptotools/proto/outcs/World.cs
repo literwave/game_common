@@ -24,26 +24,23 @@ namespace World {
     static WorldReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgt3b3JsZC5wcm90bxIFV29ybGQijAEKDHBfdHJvb3BfaW5mbxIQCgh0cm9v",
-            "cElkeBgBIAEoDRI3CgpoZXJvSWR4TWFwGAIgAygLMiMuV29ybGQucF90cm9v",
-            "cF9pbmZvLkhlcm9JZHhNYXBFbnRyeRoxCg9IZXJvSWR4TWFwRW50cnkSCwoD",
-            "a2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4ASIPCg1jMnNfcmVxX3Ryb29w",
-            "IjcKDXMyY19yZXFfdHJvb3ASJgoJdHJvb3BMaXN0GAEgAygLMhMuV29ybGQu",
-            "cF90cm9vcF9pbmZvIpABCg5jMnNfZWRpdF90cm9vcBIQCgh0cm9vcElkeBgB",
-            "IAEoDRI5CgpoZXJvSWR4TWFwGAIgAygLMiUuV29ybGQuYzJzX2VkaXRfdHJv",
-            "b3AuSGVyb0lkeE1hcEVudHJ5GjEKD0hlcm9JZHhNYXBFbnRyeRILCgNrZXkY",
-            "ASABKA0SDQoFdmFsdWUYAiABKA06AjgBIpABCg5zMmNfZWRpdF90cm9vcBIQ",
-            "Cgh0cm9vcElkeBgBIAEoDRI5CgpoZXJvSWR4TWFwGAIgAygLMiUuV29ybGQu",
-            "czJjX2VkaXRfdHJvb3AuSGVyb0lkeE1hcEVudHJ5GjEKD0hlcm9JZHhNYXBF",
-            "bnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBYgZwcm90bzM="));
+            "Cgt3b3JsZC5wcm90bxIFV29ybGQijwEKDHBfdHJvb3BfaW5mbxIQCgh0cm9v",
+            "cElkeBgBIAEoDRI5Cgtwb3MySGVyb01hcBgCIAMoCzIkLldvcmxkLnBfdHJv",
+            "b3BfaW5mby5Qb3MySGVyb01hcEVudHJ5GjIKEFBvczJIZXJvTWFwRW50cnkS",
+            "CwoDa2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4ASIPCg1jMnNfcmVxX3Ry",
+            "b29wIjcKDXMyY19yZXFfdHJvb3ASJgoJdHJvb3BMaXN0GAEgAygLMhMuV29y",
+            "bGQucF90cm9vcF9pbmZvIjgKDmMyc19lZGl0X3Ryb29wEiYKCXRyb29wSW5m",
+            "bxgBIAEoCzITLldvcmxkLnBfdHJvb3BfaW5mbyI4Cg5zMmNfZWRpdF90cm9v",
+            "cBImCgl0cm9vcEluZm8YASABKAsyEy5Xb3JsZC5wX3Ryb29wX2luZm9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_troop_info), global::World.p_troop_info.Parser, new[]{ "TroopIdx", "HeroIdxMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_troop_info), global::World.p_troop_info.Parser, new[]{ "TroopIdx", "Pos2HeroMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_req_troop), global::World.c2s_req_troop.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_req_troop), global::World.s2c_req_troop.Parser, new[]{ "TroopList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_edit_troop), global::World.c2s_edit_troop.Parser, new[]{ "TroopIdx", "HeroIdxMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_edit_troop), global::World.s2c_edit_troop.Parser, new[]{ "TroopIdx", "HeroIdxMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_edit_troop), global::World.c2s_edit_troop.Parser, new[]{ "TroopInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_edit_troop), global::World.s2c_edit_troop.Parser, new[]{ "TroopInfo" }, null, null, null, null)
           }));
     }
     #endregion
@@ -89,7 +86,7 @@ namespace World {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public p_troop_info(p_troop_info other) : this() {
       troopIdx_ = other.troopIdx_;
-      heroIdxMap_ = other.heroIdxMap_.Clone();
+      pos2HeroMap_ = other.pos2HeroMap_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -111,18 +108,18 @@ namespace World {
       }
     }
 
-    /// <summary>Field number for the "heroIdxMap" field.</summary>
-    public const int HeroIdxMapFieldNumber = 2;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_heroIdxMap_codec
+    /// <summary>Field number for the "pos2HeroMap" field.</summary>
+    public const int Pos2HeroMapFieldNumber = 2;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_pos2HeroMap_codec
         = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 18);
-    private readonly pbc::MapField<uint, uint> heroIdxMap_ = new pbc::MapField<uint, uint>();
+    private readonly pbc::MapField<uint, uint> pos2HeroMap_ = new pbc::MapField<uint, uint>();
     /// <summary>
-    /// 英雄idx -> 位置
+    /// 位置 -> 英雄idx
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> HeroIdxMap {
-      get { return heroIdxMap_; }
+    public pbc::MapField<uint, uint> Pos2HeroMap {
+      get { return pos2HeroMap_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -141,7 +138,7 @@ namespace World {
         return true;
       }
       if (TroopIdx != other.TroopIdx) return false;
-      if (!HeroIdxMap.Equals(other.HeroIdxMap)) return false;
+      if (!Pos2HeroMap.Equals(other.Pos2HeroMap)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -150,7 +147,7 @@ namespace World {
     public override int GetHashCode() {
       int hash = 1;
       if (TroopIdx != 0) hash ^= TroopIdx.GetHashCode();
-      hash ^= HeroIdxMap.GetHashCode();
+      hash ^= Pos2HeroMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -173,7 +170,7 @@ namespace World {
         output.WriteRawTag(8);
         output.WriteUInt32(TroopIdx);
       }
-      heroIdxMap_.WriteTo(output, _map_heroIdxMap_codec);
+      pos2HeroMap_.WriteTo(output, _map_pos2HeroMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -188,7 +185,7 @@ namespace World {
         output.WriteRawTag(8);
         output.WriteUInt32(TroopIdx);
       }
-      heroIdxMap_.WriteTo(ref output, _map_heroIdxMap_codec);
+      pos2HeroMap_.WriteTo(ref output, _map_pos2HeroMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -202,7 +199,7 @@ namespace World {
       if (TroopIdx != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TroopIdx);
       }
-      size += heroIdxMap_.CalculateSize(_map_heroIdxMap_codec);
+      size += pos2HeroMap_.CalculateSize(_map_pos2HeroMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -218,7 +215,7 @@ namespace World {
       if (other.TroopIdx != 0) {
         TroopIdx = other.TroopIdx;
       }
-      heroIdxMap_.MergeFrom(other.heroIdxMap_);
+      pos2HeroMap_.MergeFrom(other.pos2HeroMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -243,7 +240,7 @@ namespace World {
             break;
           }
           case 18: {
-            heroIdxMap_.AddEntriesFrom(input, _map_heroIdxMap_codec);
+            pos2HeroMap_.AddEntriesFrom(input, _map_pos2HeroMap_codec);
             break;
           }
         }
@@ -270,7 +267,7 @@ namespace World {
             break;
           }
           case 18: {
-            heroIdxMap_.AddEntriesFrom(ref input, _map_heroIdxMap_codec);
+            pos2HeroMap_.AddEntriesFrom(ref input, _map_pos2HeroMap_codec);
             break;
           }
         }
@@ -672,8 +669,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public c2s_edit_troop(c2s_edit_troop other) : this() {
-      troopIdx_ = other.troopIdx_;
-      heroIdxMap_ = other.heroIdxMap_.Clone();
+      troopInfo_ = other.troopInfo_ != null ? other.troopInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -683,30 +679,16 @@ namespace World {
       return new c2s_edit_troop(this);
     }
 
-    /// <summary>Field number for the "troopIdx" field.</summary>
-    public const int TroopIdxFieldNumber = 1;
-    private uint troopIdx_;
+    /// <summary>Field number for the "troopInfo" field.</summary>
+    public const int TroopInfoFieldNumber = 1;
+    private global::World.p_troop_info troopInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TroopIdx {
-      get { return troopIdx_; }
+    public global::World.p_troop_info TroopInfo {
+      get { return troopInfo_; }
       set {
-        troopIdx_ = value;
+        troopInfo_ = value;
       }
-    }
-
-    /// <summary>Field number for the "heroIdxMap" field.</summary>
-    public const int HeroIdxMapFieldNumber = 2;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_heroIdxMap_codec
-        = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 18);
-    private readonly pbc::MapField<uint, uint> heroIdxMap_ = new pbc::MapField<uint, uint>();
-    /// <summary>
-    /// 英雄idx -> 位置
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> HeroIdxMap {
-      get { return heroIdxMap_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -724,8 +706,7 @@ namespace World {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TroopIdx != other.TroopIdx) return false;
-      if (!HeroIdxMap.Equals(other.HeroIdxMap)) return false;
+      if (!object.Equals(TroopInfo, other.TroopInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -733,8 +714,7 @@ namespace World {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (TroopIdx != 0) hash ^= TroopIdx.GetHashCode();
-      hash ^= HeroIdxMap.GetHashCode();
+      if (troopInfo_ != null) hash ^= TroopInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -753,11 +733,10 @@ namespace World {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TroopIdx != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(TroopIdx);
+      if (troopInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TroopInfo);
       }
-      heroIdxMap_.WriteTo(output, _map_heroIdxMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -768,11 +747,10 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TroopIdx != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(TroopIdx);
+      if (troopInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TroopInfo);
       }
-      heroIdxMap_.WriteTo(ref output, _map_heroIdxMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -783,10 +761,9 @@ namespace World {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (TroopIdx != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TroopIdx);
+      if (troopInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TroopInfo);
       }
-      size += heroIdxMap_.CalculateSize(_map_heroIdxMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -799,10 +776,12 @@ namespace World {
       if (other == null) {
         return;
       }
-      if (other.TroopIdx != 0) {
-        TroopIdx = other.TroopIdx;
+      if (other.troopInfo_ != null) {
+        if (troopInfo_ == null) {
+          TroopInfo = new global::World.p_troop_info();
+        }
+        TroopInfo.MergeFrom(other.TroopInfo);
       }
-      heroIdxMap_.MergeFrom(other.heroIdxMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -822,12 +801,11 @@ namespace World {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            TroopIdx = input.ReadUInt32();
-            break;
-          }
-          case 18: {
-            heroIdxMap_.AddEntriesFrom(input, _map_heroIdxMap_codec);
+          case 10: {
+            if (troopInfo_ == null) {
+              TroopInfo = new global::World.p_troop_info();
+            }
+            input.ReadMessage(TroopInfo);
             break;
           }
         }
@@ -849,12 +827,11 @@ namespace World {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            TroopIdx = input.ReadUInt32();
-            break;
-          }
-          case 18: {
-            heroIdxMap_.AddEntriesFrom(ref input, _map_heroIdxMap_codec);
+          case 10: {
+            if (troopInfo_ == null) {
+              TroopInfo = new global::World.p_troop_info();
+            }
+            input.ReadMessage(TroopInfo);
             break;
           }
         }
@@ -902,8 +879,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public s2c_edit_troop(s2c_edit_troop other) : this() {
-      troopIdx_ = other.troopIdx_;
-      heroIdxMap_ = other.heroIdxMap_.Clone();
+      troopInfo_ = other.troopInfo_ != null ? other.troopInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -913,30 +889,16 @@ namespace World {
       return new s2c_edit_troop(this);
     }
 
-    /// <summary>Field number for the "troopIdx" field.</summary>
-    public const int TroopIdxFieldNumber = 1;
-    private uint troopIdx_;
+    /// <summary>Field number for the "troopInfo" field.</summary>
+    public const int TroopInfoFieldNumber = 1;
+    private global::World.p_troop_info troopInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TroopIdx {
-      get { return troopIdx_; }
+    public global::World.p_troop_info TroopInfo {
+      get { return troopInfo_; }
       set {
-        troopIdx_ = value;
+        troopInfo_ = value;
       }
-    }
-
-    /// <summary>Field number for the "heroIdxMap" field.</summary>
-    public const int HeroIdxMapFieldNumber = 2;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_heroIdxMap_codec
-        = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 18);
-    private readonly pbc::MapField<uint, uint> heroIdxMap_ = new pbc::MapField<uint, uint>();
-    /// <summary>
-    /// 英雄idx -> 位置
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> HeroIdxMap {
-      get { return heroIdxMap_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -954,8 +916,7 @@ namespace World {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TroopIdx != other.TroopIdx) return false;
-      if (!HeroIdxMap.Equals(other.HeroIdxMap)) return false;
+      if (!object.Equals(TroopInfo, other.TroopInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -963,8 +924,7 @@ namespace World {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (TroopIdx != 0) hash ^= TroopIdx.GetHashCode();
-      hash ^= HeroIdxMap.GetHashCode();
+      if (troopInfo_ != null) hash ^= TroopInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -983,11 +943,10 @@ namespace World {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TroopIdx != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(TroopIdx);
+      if (troopInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TroopInfo);
       }
-      heroIdxMap_.WriteTo(output, _map_heroIdxMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -998,11 +957,10 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TroopIdx != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(TroopIdx);
+      if (troopInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TroopInfo);
       }
-      heroIdxMap_.WriteTo(ref output, _map_heroIdxMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1013,10 +971,9 @@ namespace World {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (TroopIdx != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TroopIdx);
+      if (troopInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TroopInfo);
       }
-      size += heroIdxMap_.CalculateSize(_map_heroIdxMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1029,10 +986,12 @@ namespace World {
       if (other == null) {
         return;
       }
-      if (other.TroopIdx != 0) {
-        TroopIdx = other.TroopIdx;
+      if (other.troopInfo_ != null) {
+        if (troopInfo_ == null) {
+          TroopInfo = new global::World.p_troop_info();
+        }
+        TroopInfo.MergeFrom(other.TroopInfo);
       }
-      heroIdxMap_.MergeFrom(other.heroIdxMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1052,12 +1011,11 @@ namespace World {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            TroopIdx = input.ReadUInt32();
-            break;
-          }
-          case 18: {
-            heroIdxMap_.AddEntriesFrom(input, _map_heroIdxMap_codec);
+          case 10: {
+            if (troopInfo_ == null) {
+              TroopInfo = new global::World.p_troop_info();
+            }
+            input.ReadMessage(TroopInfo);
             break;
           }
         }
@@ -1079,12 +1037,11 @@ namespace World {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            TroopIdx = input.ReadUInt32();
-            break;
-          }
-          case 18: {
-            heroIdxMap_.AddEntriesFrom(ref input, _map_heroIdxMap_codec);
+          case 10: {
+            if (troopInfo_ == null) {
+              TroopInfo = new global::World.p_troop_info();
+            }
+            input.ReadMessage(TroopInfo);
             break;
           }
         }
