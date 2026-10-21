@@ -1,11 +1,11 @@
 
-ù
-common.protoCommon"i
+ô
+common.protoCommon"e
 p_reward_info
 
 rewardType (R
-rewardType
-itemType (RitemType
+rewardType
+itemId (RitemId
 	itemCount (R	itemCount"+
 p_common_info
 k (Rk

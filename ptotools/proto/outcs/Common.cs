@@ -24,22 +24,21 @@ namespace Common {
     static CommonReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgxjb21tb24ucHJvdG8SBkNvbW1vbiJICg1wX3Jld2FyZF9pbmZvEhIKCnJl",
-            "d2FyZFR5cGUYASABKAUSEAoIaXRlbVR5cGUYAiABKAUSEQoJaXRlbUNvdW50",
-            "GAMgASgFIiUKDXBfY29tbW9uX2luZm8SCQoBaxgBIAEoBRIJCgF2GAIgASgF",
-            "Ii0KFXBfY29tbW9uX2luZm9faW50X3N0chIJCgFrGAEgASgFEgkKAXYYAiAB",
-            "KAkihQEKEHBfaGVyb19iYXNlX2luZm8SEAoIaGVyb1R5cGUYASABKAUSCwoD",
-            "ZXhwGAIgASgFEgoKAmx2GAMgASgFEgwKBHN0YXIYBCABKAUSDgoGbmV3VGFn",
-            "GAUgASgIEigKCXNraWxsTGlzdBgGIAMoCzIVLkNvbW1vbi5wX2NvbW1vbl9p",
-            "bmZvIqgBCgtwX21haWxfaW5mbxIQCghtYWlsVHlwZRgBIAEoBRIOCgZtYWls",
-            "SWQYAiABKAMSDQoFdGl0bGUYAyABKAkSDwoHY29udGVudBgEIAEoCRIOCgZp",
-            "c1JlYWQYBSABKAgSDgoGaXNMb2NrGAYgASgIEhMKC2lzR290UmV3YXJkGAcg",
-            "ASgIEhEKCXN0YXJ0VGltZRgIIAEoBRIPCgdlbmRUaW1lGAkgASgFYgZwcm90",
-            "bzM="));
+            "Cgxjb21tb24ucHJvdG8SBkNvbW1vbiJGCg1wX3Jld2FyZF9pbmZvEhIKCnJl",
+            "d2FyZFR5cGUYASABKAUSDgoGaXRlbUlkGAIgASgFEhEKCWl0ZW1Db3VudBgD",
+            "IAEoBSIlCg1wX2NvbW1vbl9pbmZvEgkKAWsYASABKAUSCQoBdhgCIAEoBSIt",
+            "ChVwX2NvbW1vbl9pbmZvX2ludF9zdHISCQoBaxgBIAEoBRIJCgF2GAIgASgJ",
+            "IoUBChBwX2hlcm9fYmFzZV9pbmZvEhAKCGhlcm9UeXBlGAEgASgFEgsKA2V4",
+            "cBgCIAEoBRIKCgJsdhgDIAEoBRIMCgRzdGFyGAQgASgFEg4KBm5ld1RhZxgF",
+            "IAEoCBIoCglza2lsbExpc3QYBiADKAsyFS5Db21tb24ucF9jb21tb25faW5m",
+            "byKoAQoLcF9tYWlsX2luZm8SEAoIbWFpbFR5cGUYASABKAUSDgoGbWFpbElk",
+            "GAIgASgDEg0KBXRpdGxlGAMgASgJEg8KB2NvbnRlbnQYBCABKAkSDgoGaXNS",
+            "ZWFkGAUgASgIEg4KBmlzTG9jaxgGIAEoCBITCgtpc0dvdFJld2FyZBgHIAEo",
+            "CBIRCglzdGFydFRpbWUYCCABKAUSDwoHZW5kVGltZRgJIAEoBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_reward_info), global::Common.p_reward_info.Parser, new[]{ "RewardType", "ItemType", "ItemCount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_reward_info), global::Common.p_reward_info.Parser, new[]{ "RewardType", "ItemId", "ItemCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_common_info), global::Common.p_common_info.Parser, new[]{ "K", "V" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_common_info_int_str), global::Common.p_common_info_int_str.Parser, new[]{ "K", "V" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_hero_base_info), global::Common.p_hero_base_info.Parser, new[]{ "HeroType", "Exp", "Lv", "Star", "NewTag", "SkillList" }, null, null, null, null),
@@ -86,7 +85,7 @@ namespace Common {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public p_reward_info(p_reward_info other) : this() {
       rewardType_ = other.rewardType_;
-      itemType_ = other.itemType_;
+      itemId_ = other.itemId_;
       itemCount_ = other.itemCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -109,15 +108,15 @@ namespace Common {
       }
     }
 
-    /// <summary>Field number for the "itemType" field.</summary>
-    public const int ItemTypeFieldNumber = 2;
-    private int itemType_;
+    /// <summary>Field number for the "itemId" field.</summary>
+    public const int ItemIdFieldNumber = 2;
+    private int itemId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ItemType {
-      get { return itemType_; }
+    public int ItemId {
+      get { return itemId_; }
       set {
-        itemType_ = value;
+        itemId_ = value;
       }
     }
 
@@ -149,7 +148,7 @@ namespace Common {
         return true;
       }
       if (RewardType != other.RewardType) return false;
-      if (ItemType != other.ItemType) return false;
+      if (ItemId != other.ItemId) return false;
       if (ItemCount != other.ItemCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -159,7 +158,7 @@ namespace Common {
     public override int GetHashCode() {
       int hash = 1;
       if (RewardType != 0) hash ^= RewardType.GetHashCode();
-      if (ItemType != 0) hash ^= ItemType.GetHashCode();
+      if (ItemId != 0) hash ^= ItemId.GetHashCode();
       if (ItemCount != 0) hash ^= ItemCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -183,9 +182,9 @@ namespace Common {
         output.WriteRawTag(8);
         output.WriteInt32(RewardType);
       }
-      if (ItemType != 0) {
+      if (ItemId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(ItemType);
+        output.WriteInt32(ItemId);
       }
       if (ItemCount != 0) {
         output.WriteRawTag(24);
@@ -205,9 +204,9 @@ namespace Common {
         output.WriteRawTag(8);
         output.WriteInt32(RewardType);
       }
-      if (ItemType != 0) {
+      if (ItemId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(ItemType);
+        output.WriteInt32(ItemId);
       }
       if (ItemCount != 0) {
         output.WriteRawTag(24);
@@ -226,8 +225,8 @@ namespace Common {
       if (RewardType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(RewardType);
       }
-      if (ItemType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemType);
+      if (ItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemId);
       }
       if (ItemCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemCount);
@@ -247,8 +246,8 @@ namespace Common {
       if (other.RewardType != 0) {
         RewardType = other.RewardType;
       }
-      if (other.ItemType != 0) {
-        ItemType = other.ItemType;
+      if (other.ItemId != 0) {
+        ItemId = other.ItemId;
       }
       if (other.ItemCount != 0) {
         ItemCount = other.ItemCount;
@@ -277,7 +276,7 @@ namespace Common {
             break;
           }
           case 16: {
-            ItemType = input.ReadInt32();
+            ItemId = input.ReadInt32();
             break;
           }
           case 24: {
@@ -308,7 +307,7 @@ namespace Common {
             break;
           }
           case 16: {
-            ItemType = input.ReadInt32();
+            ItemId = input.ReadInt32();
             break;
           }
           case 24: {
