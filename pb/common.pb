@@ -22,7 +22,7 @@ rewardType
 	skillList (2.Common.p_common_infoR	skillList"û
 p_mail_info
 mailType (RmailType
-mailId (	RmailId
+mailId (RmailId
 title (	Rtitle
 content (	Rcontent
 isRead (RisRead

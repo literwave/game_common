@@ -27,14 +27,14 @@ namespace Login {
             "Cgtsb2dpbi5wcm90bxIFTG9naW4ihgEKDmMyc191c2VyX2xvZ2luEhMKC2Fj",
             "Y291bnRUeXBlGAEgASgFEg0KBWFwcElkGAIgASgJEg0KBWNjaGlkGAMgASgJ",
             "Eg8KB2FjY291bnQYBCABKAkSDgoGcGFzc3dkGAUgASgJEhAKCHNlcnZlcklk",
-            "GAYgASgJEg4KBnVzZXJJZBgHIAEoCSKVAQoOczJjX3VzZXJfbG9naW4SEwoL",
+            "GAYgASgFEg4KBnVzZXJJZBgHIAEoAyKVAQoOczJjX3VzZXJfbG9naW4SEwoL",
             "YWNjb3VudFR5cGUYASABKAUSDQoFYXBwSWQYAiABKAkSDQoFY2NoaWQYAyAB",
             "KAkSDwoHYWNjb3VudBgEIAEoCRIOCgZwYXNzd2QYBSABKAkSEAoIZ2F0ZUFk",
-            "ZHIYBiABKAkSDQoFdG9rZW4YByABKAkSDgoGdXNlcklkGAggASgJIkEKEGMy",
-            "c192ZXJpZnlfbG9naW4SDgoGdXNlcklkGAEgASgJEg4KBnBhc3N3ZBgCIAEo",
+            "ZHIYBiABKAkSDQoFdG9rZW4YByABKAkSDgoGdXNlcklkGAggASgDIkEKEGMy",
+            "c192ZXJpZnlfbG9naW4SDgoGdXNlcklkGAEgASgDEg4KBnBhc3N3ZBgCIAEo",
             "CRINCgV0b2tlbhgDIAEoCSIhChBzMmNfdmVyaWZ5X2xvZ2luEg0KBXRva2Vu",
-            "GAEgASgJIjUKEXMyY191c2VyX2xvZ2luX29rEg4KBnVzZXJJZBgBIAEoCRIQ",
-            "CghzZXJ2ZXJJZBgCIAEoCWIGcHJvdG8z"));
+            "GAEgASgJIjUKEXMyY191c2VyX2xvZ2luX29rEg4KBnVzZXJJZBgBIAEoAxIQ",
+            "CghzZXJ2ZXJJZBgCIAEoBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -180,31 +180,31 @@ namespace Login {
 
     /// <summary>Field number for the "serverId" field.</summary>
     public const int ServerIdFieldNumber = 6;
-    private string serverId_ = "";
+    private int serverId_;
     /// <summary>
     ///服务器id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ServerId {
+    public int ServerId {
       get { return serverId_; }
       set {
-        serverId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        serverId_ = value;
       }
     }
 
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 7;
-    private string userId_ = "";
+    private long userId_;
     /// <summary>
     ///玩家id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
+    public long UserId {
       get { return userId_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userId_ = value;
       }
     }
 
@@ -242,8 +242,8 @@ namespace Login {
       if (Cchid.Length != 0) hash ^= Cchid.GetHashCode();
       if (Account.Length != 0) hash ^= Account.GetHashCode();
       if (Passwd.Length != 0) hash ^= Passwd.GetHashCode();
-      if (ServerId.Length != 0) hash ^= ServerId.GetHashCode();
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (ServerId != 0) hash ^= ServerId.GetHashCode();
+      if (UserId != 0L) hash ^= UserId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -282,13 +282,13 @@ namespace Login {
         output.WriteRawTag(42);
         output.WriteString(Passwd);
       }
-      if (ServerId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ServerId);
+      if (ServerId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ServerId);
       }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(UserId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -320,13 +320,13 @@ namespace Login {
         output.WriteRawTag(42);
         output.WriteString(Passwd);
       }
-      if (ServerId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ServerId);
+      if (ServerId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ServerId);
       }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(UserId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -353,11 +353,11 @@ namespace Login {
       if (Passwd.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Passwd);
       }
-      if (ServerId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerId);
+      if (ServerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
       }
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (UserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -386,10 +386,10 @@ namespace Login {
       if (other.Passwd.Length != 0) {
         Passwd = other.Passwd;
       }
-      if (other.ServerId.Length != 0) {
+      if (other.ServerId != 0) {
         ServerId = other.ServerId;
       }
-      if (other.UserId.Length != 0) {
+      if (other.UserId != 0L) {
         UserId = other.UserId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -431,12 +431,12 @@ namespace Login {
             Passwd = input.ReadString();
             break;
           }
-          case 50: {
-            ServerId = input.ReadString();
+          case 48: {
+            ServerId = input.ReadInt32();
             break;
           }
-          case 58: {
-            UserId = input.ReadString();
+          case 56: {
+            UserId = input.ReadInt64();
             break;
           }
         }
@@ -478,12 +478,12 @@ namespace Login {
             Passwd = input.ReadString();
             break;
           }
-          case 50: {
-            ServerId = input.ReadString();
+          case 48: {
+            ServerId = input.ReadInt32();
             break;
           }
-          case 58: {
-            UserId = input.ReadString();
+          case 56: {
+            UserId = input.ReadInt64();
             break;
           }
         }
@@ -655,16 +655,16 @@ namespace Login {
 
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 8;
-    private string userId_ = "";
+    private long userId_;
     /// <summary>
     ///玩家id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
+    public long UserId {
       get { return userId_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userId_ = value;
       }
     }
 
@@ -705,7 +705,7 @@ namespace Login {
       if (Passwd.Length != 0) hash ^= Passwd.GetHashCode();
       if (GateAddr.Length != 0) hash ^= GateAddr.GetHashCode();
       if (Token.Length != 0) hash ^= Token.GetHashCode();
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (UserId != 0L) hash ^= UserId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -752,9 +752,9 @@ namespace Login {
         output.WriteRawTag(58);
         output.WriteString(Token);
       }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(64);
+        output.WriteInt64(UserId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -794,9 +794,9 @@ namespace Login {
         output.WriteRawTag(58);
         output.WriteString(Token);
       }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(64);
+        output.WriteInt64(UserId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -829,8 +829,8 @@ namespace Login {
       if (Token.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Token);
       }
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (UserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -865,7 +865,7 @@ namespace Login {
       if (other.Token.Length != 0) {
         Token = other.Token;
       }
-      if (other.UserId.Length != 0) {
+      if (other.UserId != 0L) {
         UserId = other.UserId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -915,8 +915,8 @@ namespace Login {
             Token = input.ReadString();
             break;
           }
-          case 66: {
-            UserId = input.ReadString();
+          case 64: {
+            UserId = input.ReadInt64();
             break;
           }
         }
@@ -966,8 +966,8 @@ namespace Login {
             Token = input.ReadString();
             break;
           }
-          case 66: {
-            UserId = input.ReadString();
+          case 64: {
+            UserId = input.ReadInt64();
             break;
           }
         }
@@ -1029,16 +1029,16 @@ namespace Login {
 
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 1;
-    private string userId_ = "";
+    private long userId_;
     /// <summary>
     ///玩家id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
+    public long UserId {
       get { return userId_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userId_ = value;
       }
     }
 
@@ -1097,7 +1097,7 @@ namespace Login {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (UserId != 0L) hash ^= UserId.GetHashCode();
       if (Passwd.Length != 0) hash ^= Passwd.GetHashCode();
       if (Token.Length != 0) hash ^= Token.GetHashCode();
       if (_unknownFields != null) {
@@ -1118,9 +1118,9 @@ namespace Login {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(UserId);
       }
       if (Passwd.Length != 0) {
         output.WriteRawTag(18);
@@ -1140,9 +1140,9 @@ namespace Login {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(UserId);
       }
       if (Passwd.Length != 0) {
         output.WriteRawTag(18);
@@ -1162,8 +1162,8 @@ namespace Login {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (UserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserId);
       }
       if (Passwd.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Passwd);
@@ -1183,7 +1183,7 @@ namespace Login {
       if (other == null) {
         return;
       }
-      if (other.UserId.Length != 0) {
+      if (other.UserId != 0L) {
         UserId = other.UserId;
       }
       if (other.Passwd.Length != 0) {
@@ -1211,8 +1211,8 @@ namespace Login {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            UserId = input.ReadInt64();
             break;
           }
           case 18: {
@@ -1242,8 +1242,8 @@ namespace Login {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            UserId = input.ReadInt64();
             break;
           }
           case 18: {
@@ -1513,31 +1513,31 @@ namespace Login {
 
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 1;
-    private string userId_ = "";
+    private long userId_;
     /// <summary>
     ///玩家id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
+    public long UserId {
       get { return userId_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userId_ = value;
       }
     }
 
     /// <summary>Field number for the "serverId" field.</summary>
     public const int ServerIdFieldNumber = 2;
-    private string serverId_ = "";
+    private int serverId_;
     /// <summary>
     ///服务器id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ServerId {
+    public int ServerId {
       get { return serverId_; }
       set {
-        serverId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        serverId_ = value;
       }
     }
 
@@ -1565,8 +1565,8 @@ namespace Login {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
-      if (ServerId.Length != 0) hash ^= ServerId.GetHashCode();
+      if (UserId != 0L) hash ^= UserId.GetHashCode();
+      if (ServerId != 0) hash ^= ServerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1585,13 +1585,13 @@ namespace Login {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(UserId);
       }
-      if (ServerId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ServerId);
+      if (ServerId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ServerId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1603,13 +1603,13 @@ namespace Login {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(UserId);
       }
-      if (ServerId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ServerId);
+      if (ServerId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ServerId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1621,11 +1621,11 @@ namespace Login {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (UserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserId);
       }
-      if (ServerId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerId);
+      if (ServerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1639,10 +1639,10 @@ namespace Login {
       if (other == null) {
         return;
       }
-      if (other.UserId.Length != 0) {
+      if (other.UserId != 0L) {
         UserId = other.UserId;
       }
-      if (other.ServerId.Length != 0) {
+      if (other.ServerId != 0) {
         ServerId = other.ServerId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1664,12 +1664,12 @@ namespace Login {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            UserId = input.ReadInt64();
             break;
           }
-          case 18: {
-            ServerId = input.ReadString();
+          case 16: {
+            ServerId = input.ReadInt32();
             break;
           }
         }
@@ -1691,12 +1691,12 @@ namespace Login {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            UserId = input.ReadInt64();
             break;
           }
-          case 18: {
-            ServerId = input.ReadString();
+          case 16: {
+            ServerId = input.ReadInt32();
             break;
           }
         }

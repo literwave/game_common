@@ -24,13 +24,13 @@ namespace Item {
     static ItemReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgppdGVtLnByb3RvEgRJdGVtIkcKEnMyY19zeW5jX2l0ZW1fZGF0YRIOCgZp",
-            "dGVtSWQYASABKAkSEAoIaXRlbVR5cGUYAiABKAUSDwoHaXRlbUNudBgDIAEo",
-            "BWIGcHJvdG8z"));
+            "CgppdGVtLnByb3RvEgRJdGVtIkYKEnMyY19zeW5jX2l0ZW1fZGF0YRIPCgdp",
+            "dGVtVWlkGAEgASgDEg4KBml0ZW1JZBgCIAEoBRIPCgdpdGVtQ250GAMgASgF",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Item.s2c_sync_item_data), global::Item.s2c_sync_item_data.Parser, new[]{ "ItemId", "ItemType", "ItemCnt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Item.s2c_sync_item_data), global::Item.s2c_sync_item_data.Parser, new[]{ "ItemUid", "ItemId", "ItemCnt" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,8 +72,8 @@ namespace Item {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public s2c_sync_item_data(s2c_sync_item_data other) : this() {
+      itemUid_ = other.itemUid_;
       itemId_ = other.itemId_;
-      itemType_ = other.itemType_;
       itemCnt_ = other.itemCnt_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -84,27 +84,27 @@ namespace Item {
       return new s2c_sync_item_data(this);
     }
 
-    /// <summary>Field number for the "itemId" field.</summary>
-    public const int ItemIdFieldNumber = 1;
-    private string itemId_ = "";
+    /// <summary>Field number for the "itemUid" field.</summary>
+    public const int ItemUidFieldNumber = 1;
+    private long itemUid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ItemId {
-      get { return itemId_; }
+    public long ItemUid {
+      get { return itemUid_; }
       set {
-        itemId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        itemUid_ = value;
       }
     }
 
-    /// <summary>Field number for the "itemType" field.</summary>
-    public const int ItemTypeFieldNumber = 2;
-    private int itemType_;
+    /// <summary>Field number for the "itemId" field.</summary>
+    public const int ItemIdFieldNumber = 2;
+    private int itemId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ItemType {
-      get { return itemType_; }
+    public int ItemId {
+      get { return itemId_; }
       set {
-        itemType_ = value;
+        itemId_ = value;
       }
     }
 
@@ -135,8 +135,8 @@ namespace Item {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (ItemUid != other.ItemUid) return false;
       if (ItemId != other.ItemId) return false;
-      if (ItemType != other.ItemType) return false;
       if (ItemCnt != other.ItemCnt) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -145,8 +145,8 @@ namespace Item {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (ItemId.Length != 0) hash ^= ItemId.GetHashCode();
-      if (ItemType != 0) hash ^= ItemType.GetHashCode();
+      if (ItemUid != 0L) hash ^= ItemUid.GetHashCode();
+      if (ItemId != 0) hash ^= ItemId.GetHashCode();
       if (ItemCnt != 0) hash ^= ItemCnt.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -166,13 +166,13 @@ namespace Item {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ItemId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ItemId);
+      if (ItemUid != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(ItemUid);
       }
-      if (ItemType != 0) {
+      if (ItemId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(ItemType);
+        output.WriteInt32(ItemId);
       }
       if (ItemCnt != 0) {
         output.WriteRawTag(24);
@@ -188,13 +188,13 @@ namespace Item {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ItemId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ItemId);
+      if (ItemUid != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(ItemUid);
       }
-      if (ItemType != 0) {
+      if (ItemId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(ItemType);
+        output.WriteInt32(ItemId);
       }
       if (ItemCnt != 0) {
         output.WriteRawTag(24);
@@ -210,11 +210,11 @@ namespace Item {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (ItemId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ItemId);
+      if (ItemUid != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemUid);
       }
-      if (ItemType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemType);
+      if (ItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemId);
       }
       if (ItemCnt != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemCnt);
@@ -231,11 +231,11 @@ namespace Item {
       if (other == null) {
         return;
       }
-      if (other.ItemId.Length != 0) {
-        ItemId = other.ItemId;
+      if (other.ItemUid != 0L) {
+        ItemUid = other.ItemUid;
       }
-      if (other.ItemType != 0) {
-        ItemType = other.ItemType;
+      if (other.ItemId != 0) {
+        ItemId = other.ItemId;
       }
       if (other.ItemCnt != 0) {
         ItemCnt = other.ItemCnt;
@@ -259,12 +259,12 @@ namespace Item {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            ItemId = input.ReadString();
+          case 8: {
+            ItemUid = input.ReadInt64();
             break;
           }
           case 16: {
-            ItemType = input.ReadInt32();
+            ItemId = input.ReadInt32();
             break;
           }
           case 24: {
@@ -290,12 +290,12 @@ namespace Item {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            ItemId = input.ReadString();
+          case 8: {
+            ItemUid = input.ReadInt64();
             break;
           }
           case 16: {
-            ItemType = input.ReadInt32();
+            ItemId = input.ReadInt32();
             break;
           }
           case 24: {

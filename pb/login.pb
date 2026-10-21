@@ -7,8 +7,8 @@
 cchid (	Rcchid
 account (	Raccount
 passwd (	Rpasswd
-serverId (	RserverId
-userId (	RuserId"Ú
+serverId (RserverId
+userId (RuserId"Ú
 s2c_user_login 
 accountType (RaccountType
 appId (	RappId
@@ -17,13 +17,13 @@
 passwd (	Rpasswd
 gateAddr (	RgateAddr
 token (	Rtoken
-userId (	RuserId"X
+userId (RuserId"X
 c2s_verify_login
-userId (	RuserId
+userId (RuserId
 passwd (	Rpasswd
 token (	Rtoken"(
 s2c_verify_login
 token (	Rtoken"G
 s2c_user_login_ok
-userId (	RuserId
-serverId (	RserverIdbproto3
+userId (RuserId
+serverId (RserverIdbproto3

@@ -32,7 +32,7 @@ namespace Common {
             "ZXhwGAIgASgFEgoKAmx2GAMgASgFEgwKBHN0YXIYBCABKAUSDgoGbmV3VGFn",
             "GAUgASgIEigKCXNraWxsTGlzdBgGIAMoCzIVLkNvbW1vbi5wX2NvbW1vbl9p",
             "bmZvIqgBCgtwX21haWxfaW5mbxIQCghtYWlsVHlwZRgBIAEoBRIOCgZtYWls",
-            "SWQYAiABKAkSDQoFdGl0bGUYAyABKAkSDwoHY29udGVudBgEIAEoCRIOCgZp",
+            "SWQYAiABKAMSDQoFdGl0bGUYAyABKAkSDwoHY29udGVudBgEIAEoCRIOCgZp",
             "c1JlYWQYBSABKAgSDgoGaXNMb2NrGAYgASgIEhMKC2lzR290UmV3YXJkGAcg",
             "ASgIEhEKCXN0YXJ0VGltZRgIIAEoBRIPCgdlbmRUaW1lGAkgASgFYgZwcm90",
             "bzM="));
@@ -1231,13 +1231,13 @@ namespace Common {
 
     /// <summary>Field number for the "mailId" field.</summary>
     public const int MailIdFieldNumber = 2;
-    private string mailId_ = "";
+    private long mailId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MailId {
+    public long MailId {
       get { return mailId_; }
       set {
-        mailId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        mailId_ = value;
       }
     }
 
@@ -1357,7 +1357,7 @@ namespace Common {
     public override int GetHashCode() {
       int hash = 1;
       if (MailType != 0) hash ^= MailType.GetHashCode();
-      if (MailId.Length != 0) hash ^= MailId.GetHashCode();
+      if (MailId != 0L) hash ^= MailId.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (Content.Length != 0) hash ^= Content.GetHashCode();
       if (IsRead != false) hash ^= IsRead.GetHashCode();
@@ -1387,9 +1387,9 @@ namespace Common {
         output.WriteRawTag(8);
         output.WriteInt32(MailType);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (Title.Length != 0) {
         output.WriteRawTag(26);
@@ -1433,9 +1433,9 @@ namespace Common {
         output.WriteRawTag(8);
         output.WriteInt32(MailType);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (Title.Length != 0) {
         output.WriteRawTag(26);
@@ -1478,8 +1478,8 @@ namespace Common {
       if (MailType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailType);
       }
-      if (MailId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MailId);
+      if (MailId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
       }
       if (Title.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
@@ -1517,7 +1517,7 @@ namespace Common {
       if (other.MailType != 0) {
         MailType = other.MailType;
       }
-      if (other.MailId.Length != 0) {
+      if (other.MailId != 0L) {
         MailId = other.MailId;
       }
       if (other.Title.Length != 0) {
@@ -1564,8 +1564,8 @@ namespace Common {
             MailType = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
           case 26: {
@@ -1619,8 +1619,8 @@ namespace Common {
             MailType = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
           case 26: {

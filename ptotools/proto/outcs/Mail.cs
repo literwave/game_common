@@ -28,15 +28,15 @@ namespace Mail {
             "YWlsX2xpc3QSEAoIbWFpbEtpbmQYASABKAUiTAoRczJjX3JlcV9tYWlsX2xp",
             "c3QSEAoIbWFpbEtpbmQYASABKAUSJQoIbWFpbEluZm8YAiABKAsyEy5Db21t",
             "b24ucF9tYWlsX2luZm8iNwoTYzJzX3JlcV9tYWlsX2RldGFpbBIQCghtYWls",
-            "S2luZBgBIAEoBRIOCgZtYWlsSWQYAiABKAkiZAoTczJjX3JlcV9tYWlsX2Rl",
-            "dGFpbBIOCgZtYWlsSWQYASABKAkSEgoKZGV0YWlsTGlzdBgCIAMoCRIpCgpy",
+            "S2luZBgBIAEoBRIOCgZtYWlsSWQYAiABKAMiZAoTczJjX3JlcV9tYWlsX2Rl",
+            "dGFpbBIOCgZtYWlsSWQYASABKAMSEgoKZGV0YWlsTGlzdBgCIAMoCRIpCgpy",
             "ZXdhcmRMaXN0GAMgAygLMhUuQ29tbW9uLnBfcmV3YXJkX2luZm8iOQoRYzJz",
             "X2RlbF9tYWlsX2xpc3QSEAoIbWFpbEtpbmQYASABKAUSEgoKbWFpbElkTGlz",
-            "dBgCIAMoCSI5ChFzMmNfZGVsX21haWxfbGlzdBIQCghtYWlsS2luZBgBIAEo",
-            "BRISCgptYWlsSWRMaXN0GAIgAygJIkUKEWMyc19zZXRfbWFpbF9sb2NrEhAK",
-            "CG1haWxLaW5kGAEgASgFEg4KBm1haWxJZBgCIAEoCRIOCgZpc0xvY2sYAyAB",
+            "dBgCIAMoAyI5ChFzMmNfZGVsX21haWxfbGlzdBIQCghtYWlsS2luZBgBIAEo",
+            "BRISCgptYWlsSWRMaXN0GAIgAygDIkUKEWMyc19zZXRfbWFpbF9sb2NrEhAK",
+            "CG1haWxLaW5kGAEgASgFEg4KBm1haWxJZBgCIAEoAxIOCgZpc0xvY2sYAyAB",
             "KAgiRQoRczJjX3NldF9tYWlsX2xvY2sSEAoIbWFpbEtpbmQYASABKAUSDgoG",
-            "bWFpbElkGAIgASgJEg4KBmlzTG9jaxgDIAEoCCJMChNjMnNfZ2V0X21haWxf",
+            "bWFpbElkGAIgASgDEg4KBmlzTG9jaxgDIAEoCCJMChNjMnNfZ2V0X21haWxf",
             "cmV3YXJkEjUKDm1haWxLaW5kSWRMaXN0GAEgAygLMh0uQ29tbW9uLnBfY29t",
             "bW9uX2luZm9faW50X3N0ciJMChNzMmNfZ2V0X21haWxfcmV3YXJkEjUKDm1h",
             "aWxLaW5kSWRMaXN0GAEgAygLMh0uQ29tbW9uLnBfY29tbW9uX2luZm9faW50",
@@ -562,13 +562,13 @@ namespace Mail {
 
     /// <summary>Field number for the "mailId" field.</summary>
     public const int MailIdFieldNumber = 2;
-    private string mailId_ = "";
+    private long mailId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MailId {
+    public long MailId {
       get { return mailId_; }
       set {
-        mailId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        mailId_ = value;
       }
     }
 
@@ -597,7 +597,7 @@ namespace Mail {
     public override int GetHashCode() {
       int hash = 1;
       if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      if (MailId.Length != 0) hash ^= MailId.GetHashCode();
+      if (MailId != 0L) hash ^= MailId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -620,9 +620,9 @@ namespace Mail {
         output.WriteRawTag(8);
         output.WriteInt32(MailKind);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -638,9 +638,9 @@ namespace Mail {
         output.WriteRawTag(8);
         output.WriteInt32(MailKind);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -655,8 +655,8 @@ namespace Mail {
       if (MailKind != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
       }
-      if (MailId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MailId);
+      if (MailId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -673,7 +673,7 @@ namespace Mail {
       if (other.MailKind != 0) {
         MailKind = other.MailKind;
       }
-      if (other.MailId.Length != 0) {
+      if (other.MailId != 0L) {
         MailId = other.MailId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -699,8 +699,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
         }
@@ -726,8 +726,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
         }
@@ -786,13 +786,13 @@ namespace Mail {
 
     /// <summary>Field number for the "mailId" field.</summary>
     public const int MailIdFieldNumber = 1;
-    private string mailId_ = "";
+    private long mailId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MailId {
+    public long MailId {
       get { return mailId_; }
       set {
-        mailId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        mailId_ = value;
       }
     }
 
@@ -843,7 +843,7 @@ namespace Mail {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (MailId.Length != 0) hash ^= MailId.GetHashCode();
+      if (MailId != 0L) hash ^= MailId.GetHashCode();
       hash ^= detailList_.GetHashCode();
       hash ^= rewardList_.GetHashCode();
       if (_unknownFields != null) {
@@ -864,9 +864,9 @@ namespace Mail {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (MailId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MailId);
       }
       detailList_.WriteTo(output, _repeated_detailList_codec);
       rewardList_.WriteTo(output, _repeated_rewardList_codec);
@@ -880,9 +880,9 @@ namespace Mail {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MailId);
       }
       detailList_.WriteTo(ref output, _repeated_detailList_codec);
       rewardList_.WriteTo(ref output, _repeated_rewardList_codec);
@@ -896,8 +896,8 @@ namespace Mail {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (MailId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MailId);
+      if (MailId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
       }
       size += detailList_.CalculateSize(_repeated_detailList_codec);
       size += rewardList_.CalculateSize(_repeated_rewardList_codec);
@@ -913,7 +913,7 @@ namespace Mail {
       if (other == null) {
         return;
       }
-      if (other.MailId.Length != 0) {
+      if (other.MailId != 0L) {
         MailId = other.MailId;
       }
       detailList_.Add(other.detailList_);
@@ -937,8 +937,8 @@ namespace Mail {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            MailId = input.ReadString();
+          case 8: {
+            MailId = input.ReadInt64();
             break;
           }
           case 18: {
@@ -968,8 +968,8 @@ namespace Mail {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            MailId = input.ReadString();
+          case 8: {
+            MailId = input.ReadInt64();
             break;
           }
           case 18: {
@@ -1047,12 +1047,12 @@ namespace Mail {
 
     /// <summary>Field number for the "mailIdList" field.</summary>
     public const int MailIdListFieldNumber = 2;
-    private static readonly pb::FieldCodec<string> _repeated_mailIdList_codec
-        = pb::FieldCodec.ForString(18);
-    private readonly pbc::RepeatedField<string> mailIdList_ = new pbc::RepeatedField<string>();
+    private static readonly pb::FieldCodec<long> _repeated_mailIdList_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> mailIdList_ = new pbc::RepeatedField<long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> MailIdList {
+    public pbc::RepeatedField<long> MailIdList {
       get { return mailIdList_; }
     }
 
@@ -1173,7 +1173,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
+          case 18:
+          case 16: {
             mailIdList_.AddEntriesFrom(input, _repeated_mailIdList_codec);
             break;
           }
@@ -1200,7 +1201,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
+          case 18:
+          case 16: {
             mailIdList_.AddEntriesFrom(ref input, _repeated_mailIdList_codec);
             break;
           }
@@ -1271,12 +1273,12 @@ namespace Mail {
 
     /// <summary>Field number for the "mailIdList" field.</summary>
     public const int MailIdListFieldNumber = 2;
-    private static readonly pb::FieldCodec<string> _repeated_mailIdList_codec
-        = pb::FieldCodec.ForString(18);
-    private readonly pbc::RepeatedField<string> mailIdList_ = new pbc::RepeatedField<string>();
+    private static readonly pb::FieldCodec<long> _repeated_mailIdList_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> mailIdList_ = new pbc::RepeatedField<long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> MailIdList {
+    public pbc::RepeatedField<long> MailIdList {
       get { return mailIdList_; }
     }
 
@@ -1397,7 +1399,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
+          case 18:
+          case 16: {
             mailIdList_.AddEntriesFrom(input, _repeated_mailIdList_codec);
             break;
           }
@@ -1424,7 +1427,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
+          case 18:
+          case 16: {
             mailIdList_.AddEntriesFrom(ref input, _repeated_mailIdList_codec);
             break;
           }
@@ -1496,13 +1500,13 @@ namespace Mail {
 
     /// <summary>Field number for the "mailId" field.</summary>
     public const int MailIdFieldNumber = 2;
-    private string mailId_ = "";
+    private long mailId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MailId {
+    public long MailId {
       get { return mailId_; }
       set {
-        mailId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        mailId_ = value;
       }
     }
 
@@ -1544,7 +1548,7 @@ namespace Mail {
     public override int GetHashCode() {
       int hash = 1;
       if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      if (MailId.Length != 0) hash ^= MailId.GetHashCode();
+      if (MailId != 0L) hash ^= MailId.GetHashCode();
       if (IsLock != false) hash ^= IsLock.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1568,9 +1572,9 @@ namespace Mail {
         output.WriteRawTag(8);
         output.WriteInt32(MailKind);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (IsLock != false) {
         output.WriteRawTag(24);
@@ -1590,9 +1594,9 @@ namespace Mail {
         output.WriteRawTag(8);
         output.WriteInt32(MailKind);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (IsLock != false) {
         output.WriteRawTag(24);
@@ -1611,8 +1615,8 @@ namespace Mail {
       if (MailKind != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
       }
-      if (MailId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MailId);
+      if (MailId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
       }
       if (IsLock != false) {
         size += 1 + 1;
@@ -1632,7 +1636,7 @@ namespace Mail {
       if (other.MailKind != 0) {
         MailKind = other.MailKind;
       }
-      if (other.MailId.Length != 0) {
+      if (other.MailId != 0L) {
         MailId = other.MailId;
       }
       if (other.IsLock != false) {
@@ -1661,8 +1665,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
           case 24: {
@@ -1692,8 +1696,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
           case 24: {
@@ -1768,13 +1772,13 @@ namespace Mail {
 
     /// <summary>Field number for the "mailId" field.</summary>
     public const int MailIdFieldNumber = 2;
-    private string mailId_ = "";
+    private long mailId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MailId {
+    public long MailId {
       get { return mailId_; }
       set {
-        mailId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        mailId_ = value;
       }
     }
 
@@ -1816,7 +1820,7 @@ namespace Mail {
     public override int GetHashCode() {
       int hash = 1;
       if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      if (MailId.Length != 0) hash ^= MailId.GetHashCode();
+      if (MailId != 0L) hash ^= MailId.GetHashCode();
       if (IsLock != false) hash ^= IsLock.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1840,9 +1844,9 @@ namespace Mail {
         output.WriteRawTag(8);
         output.WriteInt32(MailKind);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (IsLock != false) {
         output.WriteRawTag(24);
@@ -1862,9 +1866,9 @@ namespace Mail {
         output.WriteRawTag(8);
         output.WriteInt32(MailKind);
       }
-      if (MailId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(MailId);
+      if (MailId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailId);
       }
       if (IsLock != false) {
         output.WriteRawTag(24);
@@ -1883,8 +1887,8 @@ namespace Mail {
       if (MailKind != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
       }
-      if (MailId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MailId);
+      if (MailId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
       }
       if (IsLock != false) {
         size += 1 + 1;
@@ -1904,7 +1908,7 @@ namespace Mail {
       if (other.MailKind != 0) {
         MailKind = other.MailKind;
       }
-      if (other.MailId.Length != 0) {
+      if (other.MailId != 0L) {
         MailId = other.MailId;
       }
       if (other.IsLock != false) {
@@ -1933,8 +1937,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
           case 24: {
@@ -1964,8 +1968,8 @@ namespace Mail {
             MailKind = input.ReadInt32();
             break;
           }
-          case 18: {
-            MailId = input.ReadString();
+          case 16: {
+            MailId = input.ReadInt64();
             break;
           }
           case 24: {
