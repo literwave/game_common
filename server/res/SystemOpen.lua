@@ -5,8 +5,8 @@
 return {
     {
         ["Id"] = 1,
-        ["Enum"] = "ENTER_BIG_WORLD",
-        ["conf"] = {
+        ["Enum"] = "HEAD_ICON",
+        ["Cond"] = {
             {
                 ["level"] = 1
             }

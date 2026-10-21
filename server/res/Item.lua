@@ -41,7 +41,7 @@ return {
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 4,
-        ["Overlap"] = 1000
+        ["Overlap"] = 1
     },
     {
         ["Id"] = 5,
