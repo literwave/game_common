@@ -5,11 +5,11 @@
 return {
     {
         ["Id"] = 1,
-        ["Name"] = "进入大世界",
-        ["Key"] = "enter_big_world",
-        ["Desc"] = "开启后可进入大世界",
-        ["OpenType"] = 1,
-        ["Sort"] = 1,
-        ["ConfigEnum"] = ""
+        ["Enum"] = "HEAD_ICON",
+        ["Cond"] = {
+            {
+                ["level"] = 1
+            }
+        }
     }
 }

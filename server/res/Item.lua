@@ -8,35 +8,35 @@ return {
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 1,
-        ["Overlap"] = 1
+        ["Overlap"] = 10000
     },
     {
         ["Id"] = 2,
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 2,
-        ["Overlap"] = 1
+        ["Overlap"] = 10000
     },
     {
         ["Id"] = 1001,
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 3,
-        ["Overlap"] = 1
+        ["Overlap"] = 10000
     },
     {
         ["Id"] = 3,
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 1,
-        ["Overlap"] = 1000
+        ["Overlap"] = 10000
     },
     {
         ["Id"] = 4,
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 4,
-        ["Overlap"] = 1
+        ["Overlap"] = 100000
     },
     {
         ["Id"] = 5,

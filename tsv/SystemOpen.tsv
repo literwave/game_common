@@ -1,5 +1,5 @@
-Id	Name	Key	Desc	OpenType	OpenValue	Sort	ConfigEnum
-integer	string	string	string	integer	integer	integer	string
-both	both	both	both	both	both	both	both
-id	系统名称	标识	说明	开启条件（1默认开启）	条件参数	排序	配置枚举
-1	进入大世界	enter_big_world	开启后可进入大世界	1		1	
+Id	Name	Enum	Desc	Cond
+integer	string	string	string	lua_array
+both	frontend	both	frontend	both
+id	系统名称	枚举	说明	开启条件
+1	更换头像	HEAD_ICON	开启后可更换头像	"{ { [""level""] = 1 } }"
