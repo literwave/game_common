@@ -25,7 +25,19 @@ git submodule update --init --recursive
 
 ## 改表并导出
 
-在 `vis_conf/` 里启动星图，把配置文件目录设为仓库的 `tsv/`。前端导出到 `client/res/`（JSON），后端导出到 `server/res/`（Lua）。工具的安装、编辑和导表规则见 [vis_conf/README.md](vis_conf/README.md)。用 Cursor 改表前，先按 [配置 Cursor](vis_conf/README.md#配置-cursor) 安装 CLI 并在星图里选 Agent 模式。
+在 `vis_conf/` 里启动星图，把配置文件目录设为仓库的 `tsv/`。前端导出到 `client/res/`（JSON），后端导出到 `server/res/`（Lua）。工具的安装、编辑和导表规则见 [vis_conf/README.md](vis_conf/README.md)。用 Cursor 改表前，先按 [配置 Cursor](vis_conf/README.md#配置-cursor) 安装 CLI 并在星图里选 Agent 模式。星图仍提示找不到 CLI，或要重装命令行时，按 [重装 CLI](vis_conf/README.md#重装-cli) 只删除 `%LOCALAPPDATA%\cursor-agent` 再装。不要删除 Cursor 编辑器或 `%USERPROFILE%\.cursor`。
+
+图标在表格里显示为缩略图。打开「导出设置」，把「UI 配置目录」设为客户端的 UI 资源目录，例如 `D:\code\game_demo_client\assets\resources\ui`。单元格写成下面这种路径时，会到该目录下找图片：
+
+```json
+{
+  "Id": 3,
+  "Name": "加速令",
+  "Icon": "ui/item_icons/speed_up"
+}
+```
+
+`Icon` 对应 `D:\code\game_demo_client\assets\resources\ui\item_icons\speed_up.png`。扩展名可以不写，末尾的 `/spriteFrame` 也会去掉。
 
 改完后一起提交这三处：`tsv/`、`client/res/`、`server/res/`。不要只提交导出结果。
 

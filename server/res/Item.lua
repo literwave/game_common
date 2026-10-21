@@ -5,7 +5,7 @@
 return {
     {
         ["Id"] = 1,
-        ["Icon"] = 1,
+        ["Icon"] = "ui/resource_icons/icon_grain",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 1,
@@ -13,7 +13,7 @@ return {
     },
     {
         ["Id"] = 2,
-        ["Icon"] = 2,
+        ["Icon"] = "ui/resource_icons/icon_wood",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 2,
@@ -21,7 +21,7 @@ return {
     },
     {
         ["Id"] = 1001,
-        ["Icon"] = 1001,
+        ["Icon"] = "",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 3,
@@ -29,7 +29,7 @@ return {
     },
     {
         ["Id"] = 3,
-        ["Icon"] = 3,
+        ["Icon"] = "ui/resource_icons/icon_iron",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 1,
@@ -37,7 +37,7 @@ return {
     },
     {
         ["Id"] = 4,
-        ["Icon"] = 4,
+        ["Icon"] = "ui/resource_icons/icon_token",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 4,
@@ -45,7 +45,7 @@ return {
     },
     {
         ["Id"] = 5,
-        ["Icon"] = 5,
+        ["Icon"] = "",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 5,
@@ -53,7 +53,7 @@ return {
     },
     {
         ["Id"] = 6,
-        ["Icon"] = 6,
+        ["Icon"] = "",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 6,
@@ -61,7 +61,7 @@ return {
     },
     {
         ["Id"] = 7,
-        ["Icon"] = 7,
+        ["Icon"] = "",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 7,
