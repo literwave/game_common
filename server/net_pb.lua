@@ -70,6 +70,14 @@ local define = {
 		['s2c_tell_me'] = 45,
 		['c2s_gm_command'] = 46,
 		['s2c_gm_command_help'] = 47,
+		['c2s_change_head_icon'] = 48,
+		['s2c_change_head_icon'] = 49,
+	},
+	['World'] = {
+		['c2s_req_troop'] = 50,
+		['s2c_req_troop'] = 51,
+		['c2s_edit_troop'] = 52,
+		['s2c_edit_troop'] = 53,
 	},
 }
 

@@ -1,5 +1,5 @@
 
-¥
+
 
 user.protoUsercommon.proto"
 c2s_user_base_info"œ
@@ -28,4 +28,8 @@ user.protoUsercommon.proto"
 c2s_gm_command
 cmd (	Rcmd">
 s2c_gm_command_help'
-ret (2.Common.p_common_infoRretbproto3
+ret (2.Common.p_common_infoRret"2
+c2s_change_head_icon
+headIcon (RheadIcon"2
+s2c_change_head_icon
+headIcon (RheadIconbproto3
