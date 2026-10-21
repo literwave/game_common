@@ -44,3 +44,4 @@ git submodule update --init --recursive
 | `Lottery` | 抽卡消耗与卡池 |
 | `ReportInfo` | 后台域名和端口 |
 | `ServerGroup` | 服务器群组与后台 ID |
+| `SystemOpen` | 系统开启；当前为进入大世界 |

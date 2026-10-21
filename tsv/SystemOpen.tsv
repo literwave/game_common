@@ -1,0 +1,5 @@
+Id	Name	Key	Desc	OpenType	OpenValue	Sort
+integer	string	string	string	integer	integer	integer
+both	both	both	both	both	both	both
+id	系统名称	标识	说明	开启条件（1默认开启）	条件参数	排序
+1	进入大世界	enter_big_world	开启后可进入大世界	1		1
