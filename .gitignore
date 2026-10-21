@@ -1,0 +1,3 @@
+# Python writes these when a script runs. They are local caches, not source.
+__pycache__/
+*.py[cod]
