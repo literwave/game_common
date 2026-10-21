@@ -4,6 +4,7 @@
 
 return {
     {
-        ["Id"] = 1
+        ["Id"] = 1,
+        ["Enum"] = "enter_big_world"
     }
 }
