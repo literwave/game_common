@@ -38,9 +38,14 @@
   },
   {
     "Id": 5,
-    "value3": {
-      "none": 0,
-      "windows": 1
-    }
+    "value1": 50
+  },
+  {
+    "Id": 6,
+    "value1": 3
+  },
+  {
+    "Id": 7,
+    "value1": 3
   }
 ]
