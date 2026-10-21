@@ -5,6 +5,6 @@
 return {
     {
         ["Id"] = 1,
-        ["Enum"] = "enter_big_world"
+        ["Enum"] = "ENTER_BIG_WORLD"
     }
 }
