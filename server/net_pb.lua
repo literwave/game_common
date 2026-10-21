@@ -71,10 +71,6 @@ local define = {
 		['c2s_gm_command'] = 46,
 		['s2c_gm_command_help'] = 47,
 	},
-	['World'] = {
-		['c2s_enter_big_world'] = 48,
-		['s2c_enter_big_world'] = 49,
-	},
 }
 
 ID_TO_PACK_NAME = {}
