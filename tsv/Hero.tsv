@@ -1,30 +1,30 @@
-Id	HeroId	Resources	Sort	name	Desc	Quality	Camp	Attack	Hp	Defense	Speed	Crit	Class	Star	Skill
-integer	integer	string	integer	string	string	integer	string	integer	integer	integer	integer	integer	string	integer	string
-both	both	frontend	both	frontend	both	both	both	both	both	both	both	both	both	both	both
-id	值	值	值	值	描述	品质	阵营	攻击	生命	防御	速度	暴击千分比	职业	星级	技能
-1001	1001	card_1001.png	1	吕布		0		0	0	90	98	280	战士	5	无双乱舞
-1002	1002	card_1002.png	2	刘协		0		0	0	42	52	40	辅助	3	汉室余晖
-1003	1003	card_1003.png	3	张让		0		0	0	28	46	30	辅助	2	宦官乱政
-1004	1004	card_1004.png	4	貂蝉		0		0	0	48	105	320	刺客	5	闭月
-1005	1005	card_1005.png	5	何太后		0		0	0	36	50	35	辅助	3	垂帘
-1006	1006	card_1006.png	6	黄盖		0		0	0	125	58	90	坦克	4	苦肉计
-1007	1007	card_1007.png	7	董卓		0		0	0	140	42	70	坦克	4	西凉铁骑
-1008	1008	card_1008.png	8	张角		0		0	0	55	72	160	法师	5	太平道法
-1009	1009	card_1009.png	9	董卓sp		0		0	0	155	48	110	坦克	5	魔王再临
-1010	1010	card_1010.png	10	吕布sp		0		0	0	100	108	350	战士	5	戟震山河
-1011	1011	card_1011.png	11	贾诩		0		0	0	50	60	100	战士	3	
-1012	1012	card_1012.png	12	步练师		0		0	0	50	60	100	战士	3	
-1013	1013	card_1013.png	13	赵云		0		0	0	50	60	100	战士	3	
-1014	1014	card_1014.png	14	吕蒙		0		0	0	50	60	100	战士	3	
-1015	1015	card_1015.png	15	甄姬		0		0	0	50	60	100	战士	3	
-1016	1016	card_1016.png	16	刘备sp		0		0	0	50	60	100	战士	3	
-1017	1017	card_1017.png	17	诸葛亮		0		0	0	50	60	100	战士	3	
-1018	1018	card_1018.png	18	陆逊		0		0	0	50	60	100	战士	3	
-1019	1019	card_1019.png	19	马云禄		0		0	0	50	60	100	战士	3	
-1020	1020	card_1020.png	20	黄月英		0		0	0	50	60	100	战士	3	
-1021	1021	card_1021.png	21	马超		0		0	0	50	60	100	战士	3	
-1022	1022	card_1022.png	22	曹操		0		0	0	95	92	240	战士	5	乱世奸雄
-1023	1023	card_1023.png	23	关羽		0		0	0	88	100	300	战士	5	武圣
-1024	1024	card_1024.png	24	张飞		0		0	0	150	38	75	坦克	4	当阳桥
-1025	1025	card_1025.png	25	周瑜		0		0	0	48	80	190	法师	5	火烧赤壁
-1026	1026	card_1026.png	26	孙尚香		0		0	0	42	110	310	刺客	4	枭姬
+Id	HeroId	Resources	Icon	Sort	name	Desc	Quality	Camp	Attack	Hp	Defense	Speed	Crit	Class	Star	Skill
+integer	integer	string	string	integer	string	string	integer	string	integer	integer	integer	integer	integer	string	integer	string
+both	both	frontend	frontend	both	frontend	both	both	both	both	both	both	both	both	both	both	both
+id	值	值	图标	值	值	描述	品质	阵营	攻击	生命	防御	速度	暴击千分比	职业	星级	技能
+1001	1001	card_1001_v2.png	ui/hero/card_1001_v2	1	吕布		0		0	0	90	98	280	战士	5	无双乱舞
+1002	1002	card_1002.png	ui/hero/card_1002	2	刘协		0		0	0	42	52	40	辅助	3	汉室余晖
+1003	1003	card_1003.png	ui/hero/card_1003	3	张让		0		0	0	28	46	30	辅助	2	宦官乱政
+1004	1004	card_1004.png	ui/hero/card_1004	4	貂蝉		0		0	0	48	105	320	刺客	5	闭月
+1005	1005	card_1005.png	ui/hero/card_1005	5	何太后		0		0	0	36	50	35	辅助	3	垂帘
+1006	1006	card_1006.png	ui/hero/card_1006	6	黄盖		0		0	0	125	58	90	坦克	4	苦肉计
+1007	1007	card_1007.png	ui/hero/card_1007	7	董卓		0		0	0	140	42	70	坦克	4	西凉铁骑
+1008	1008	card_1008.png	ui/hero/card_1008	8	张角		0		0	0	55	72	160	法师	5	太平道法
+1009	1009	card_1009.png	ui/hero/card_1009	9	董卓sp		0		0	0	155	48	110	坦克	5	魔王再临
+1010	1010	card_1010.png	ui/hero/card_1010	10	吕布sp		0		0	0	100	108	350	战士	5	戟震山河
+1011	1011	card_1011.png	ui/hero/card_1011	11	贾诩		0		0	0	50	60	100	战士	3	
+1012	1012	card_1012.png	ui/hero/card_1012	12	步练师		0		0	0	50	60	100	战士	3	
+1013	1013	card_1013.png	ui/hero/card_1013	13	赵云		0		0	0	50	60	100	战士	3	
+1014	1014	card_1014.png	ui/hero/card_1014	14	吕蒙		0		0	0	50	60	100	战士	3	
+1015	1015	card_1015.png	ui/hero/card_1015	15	甄姬		0		0	0	50	60	100	战士	3	
+1016	1016	card_1016.png	ui/hero/card_1016	16	刘备sp		0		0	0	50	60	100	战士	3	
+1017	1017	card_1017.png	ui/hero/card_1017	17	诸葛亮		0		0	0	50	60	100	战士	3	
+1018	1018	card_1018.png	ui/hero/card_1018	18	陆逊		0		0	0	50	60	100	战士	3	
+1019	1019	card_1019.png	ui/hero/card_1019	19	马云禄		0		0	0	50	60	100	战士	3	
+1020	1020	card_1020.png	ui/hero/card_1020	20	黄月英		0		0	0	50	60	100	战士	3	
+1021	1021	card_1021.png	ui/hero/card_1021	21	马超		0		0	0	50	60	100	战士	3	
+1022	1022	card_1022.png	ui/hero/card_1022	22	曹操		0		0	0	95	92	240	战士	5	乱世奸雄
+1023	1023	card_1023.png	ui/hero/card_1023	23	关羽		0		0	0	88	100	300	战士	5	武圣
+1024	1024	card_1024.png	ui/hero/card_1024	24	张飞		0		0	0	150	38	75	坦克	4	当阳桥
+1025	1025	card_1025.png	ui/hero/card_1025	25	周瑜		0		0	0	48	80	190	法师	5	火烧赤壁
+1026	1026	card_1026.png	ui/hero/card_1026	26	孙尚香		0		0	0	42	110	310	刺客	4	枭姬
