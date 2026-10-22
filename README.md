@@ -51,7 +51,8 @@ git submodule update --init --recursive
 | `BuildingLv` | 建筑等级、升级消耗、设施和战力 |
 | `Global` | 全局常量 |
 | `HeadIcon` | 头像资源 |
-| `Hero` | 武将；`Resources` 和 `name` 只导出到前端 |
+| `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；`SkillId` 指向 `Skill.Id` |
+| `Skill` | 技能；`Icon` 只导出到前端；武将通过 `SkillId` 关联 |
 | `Item` | 道具、购买晶钻和叠加上限 |
 | `Lottery` | 抽卡消耗与卡池 |
 | `ReportInfo` | 后台域名和端口 |

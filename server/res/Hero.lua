@@ -17,7 +17,7 @@ return {
         ["Crit"] = 280,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["Skill"] = "无双乱舞"
+        ["SkillId"] = 1001
     },
     {
         ["Id"] = 1002,
@@ -33,7 +33,7 @@ return {
         ["Crit"] = 40,
         ["Class"] = "辅助",
         ["Star"] = 3,
-        ["Skill"] = "汉室余晖"
+        ["SkillId"] = 1002
     },
     {
         ["Id"] = 1003,
@@ -49,7 +49,7 @@ return {
         ["Crit"] = 30,
         ["Class"] = "辅助",
         ["Star"] = 2,
-        ["Skill"] = "宦官乱政"
+        ["SkillId"] = 1003
     },
     {
         ["Id"] = 1004,
@@ -65,7 +65,7 @@ return {
         ["Crit"] = 320,
         ["Class"] = "刺客",
         ["Star"] = 5,
-        ["Skill"] = "闭月"
+        ["SkillId"] = 1004
     },
     {
         ["Id"] = 1005,
@@ -81,7 +81,7 @@ return {
         ["Crit"] = 35,
         ["Class"] = "辅助",
         ["Star"] = 3,
-        ["Skill"] = "垂帘"
+        ["SkillId"] = 1005
     },
     {
         ["Id"] = 1006,
@@ -97,7 +97,7 @@ return {
         ["Crit"] = 90,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["Skill"] = "苦肉计"
+        ["SkillId"] = 1006
     },
     {
         ["Id"] = 1007,
@@ -113,7 +113,7 @@ return {
         ["Crit"] = 70,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["Skill"] = "西凉铁骑"
+        ["SkillId"] = 1007
     },
     {
         ["Id"] = 1008,
@@ -129,7 +129,7 @@ return {
         ["Crit"] = 160,
         ["Class"] = "法师",
         ["Star"] = 5,
-        ["Skill"] = "太平道法"
+        ["SkillId"] = 1008
     },
     {
         ["Id"] = 1009,
@@ -145,7 +145,7 @@ return {
         ["Crit"] = 110,
         ["Class"] = "坦克",
         ["Star"] = 5,
-        ["Skill"] = "魔王再临"
+        ["SkillId"] = 1009
     },
     {
         ["Id"] = 1010,
@@ -161,7 +161,7 @@ return {
         ["Crit"] = 350,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["Skill"] = "戟震山河"
+        ["SkillId"] = 1010
     },
     {
         ["Id"] = 1011,
@@ -176,8 +176,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1012,
@@ -192,8 +191,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1013,
@@ -208,8 +206,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1014,
@@ -224,8 +221,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1015,
@@ -240,8 +236,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1016,
@@ -256,8 +251,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1017,
@@ -272,8 +266,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1018,
@@ -288,8 +281,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1019,
@@ -304,8 +296,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1020,
@@ -320,8 +311,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1021,
@@ -336,8 +326,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3,
-        ["Skill"] = ""
+        ["Star"] = 3
     },
     {
         ["Id"] = 1022,
@@ -353,7 +342,7 @@ return {
         ["Crit"] = 240,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["Skill"] = "乱世奸雄"
+        ["SkillId"] = 1022
     },
     {
         ["Id"] = 1023,
@@ -369,7 +358,7 @@ return {
         ["Crit"] = 300,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["Skill"] = "武圣"
+        ["SkillId"] = 1023
     },
     {
         ["Id"] = 1024,
@@ -385,7 +374,7 @@ return {
         ["Crit"] = 75,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["Skill"] = "当阳桥"
+        ["SkillId"] = 1024
     },
     {
         ["Id"] = 1025,
@@ -401,7 +390,7 @@ return {
         ["Crit"] = 190,
         ["Class"] = "法师",
         ["Star"] = 5,
-        ["Skill"] = "火烧赤壁"
+        ["SkillId"] = 1025
     },
     {
         ["Id"] = 1026,
@@ -417,6 +406,6 @@ return {
         ["Crit"] = 310,
         ["Class"] = "刺客",
         ["Star"] = 4,
-        ["Skill"] = "枭姬"
+        ["SkillId"] = 1026
     }
 }
