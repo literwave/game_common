@@ -38,9 +38,8 @@ namespace User {
             "A2NtZBgBIAEoCSI5ChNzMmNfZ21fY29tbWFuZF9oZWxwEiIKA3JldBgBIAMo",
             "CzIVLkNvbW1vbi5wX2NvbW1vbl9pbmZvIigKFGMyc19jaGFuZ2VfaGVhZF9p",
             "Y29uEhAKCGhlYWRJY29uGAEgASgFIigKFHMyY19jaGFuZ2VfaGVhZF9pY29u",
-            "EhAKCGhlYWRJY29uGAEgASgFIiYKEmMyc19jbGllbnRfbG9hZF9vaxIQCgho",
-            "ZWFkSWNvbhgBIAEoBSImChJzMmNfY2xpZW50X2xvYWRfb2sSEAoIaGVhZElj",
-            "b24YASABKAViBnByb3RvMw=="));
+            "EhAKCGhlYWRJY29uGAEgASgFIhQKEmMyc19jbGllbnRfbG9hZF9vayIUChJz",
+            "MmNfY2xpZW50X2xvYWRfb2tiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,8 +56,8 @@ namespace User {
             new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_gm_command_help), global::User.s2c_gm_command_help.Parser, new[]{ "Ret" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_change_head_icon), global::User.c2s_change_head_icon.Parser, new[]{ "HeadIcon" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_change_head_icon), global::User.s2c_change_head_icon.Parser, new[]{ "HeadIcon" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_client_load_ok), global::User.c2s_client_load_ok.Parser, new[]{ "HeadIcon" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_client_load_ok), global::User.s2c_client_load_ok.Parser, new[]{ "HeadIcon" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_client_load_ok), global::User.c2s_client_load_ok.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_client_load_ok), global::User.s2c_client_load_ok.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -2815,7 +2814,6 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public c2s_client_load_ok(c2s_client_load_ok other) : this() {
-      headIcon_ = other.headIcon_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2823,18 +2821,6 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public c2s_client_load_ok Clone() {
       return new c2s_client_load_ok(this);
-    }
-
-    /// <summary>Field number for the "headIcon" field.</summary>
-    public const int HeadIconFieldNumber = 1;
-    private int headIcon_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeadIcon {
-      get { return headIcon_; }
-      set {
-        headIcon_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2852,7 +2838,6 @@ namespace User {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (HeadIcon != other.HeadIcon) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2860,7 +2845,6 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HeadIcon != 0) hash ^= HeadIcon.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2879,10 +2863,6 @@ namespace User {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (HeadIcon != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(HeadIcon);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2893,10 +2873,6 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HeadIcon != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(HeadIcon);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2907,9 +2883,6 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HeadIcon != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeadIcon);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2921,9 +2894,6 @@ namespace User {
     public void MergeFrom(c2s_client_load_ok other) {
       if (other == null) {
         return;
-      }
-      if (other.HeadIcon != 0) {
-        HeadIcon = other.HeadIcon;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2944,10 +2914,6 @@ namespace User {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            HeadIcon = input.ReadInt32();
-            break;
-          }
         }
       }
     #endif
@@ -2967,10 +2933,6 @@ namespace User {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            HeadIcon = input.ReadInt32();
-            break;
-          }
         }
       }
     }
@@ -3013,7 +2975,6 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public s2c_client_load_ok(s2c_client_load_ok other) : this() {
-      headIcon_ = other.headIcon_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3021,18 +2982,6 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public s2c_client_load_ok Clone() {
       return new s2c_client_load_ok(this);
-    }
-
-    /// <summary>Field number for the "headIcon" field.</summary>
-    public const int HeadIconFieldNumber = 1;
-    private int headIcon_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeadIcon {
-      get { return headIcon_; }
-      set {
-        headIcon_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3050,7 +2999,6 @@ namespace User {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (HeadIcon != other.HeadIcon) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3058,7 +3006,6 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HeadIcon != 0) hash ^= HeadIcon.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3077,10 +3024,6 @@ namespace User {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (HeadIcon != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(HeadIcon);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3091,10 +3034,6 @@ namespace User {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HeadIcon != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(HeadIcon);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3105,9 +3044,6 @@ namespace User {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HeadIcon != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeadIcon);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3119,9 +3055,6 @@ namespace User {
     public void MergeFrom(s2c_client_load_ok other) {
       if (other == null) {
         return;
-      }
-      if (other.HeadIcon != 0) {
-        HeadIcon = other.HeadIcon;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3142,10 +3075,6 @@ namespace User {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            HeadIcon = input.ReadInt32();
-            break;
-          }
         }
       }
     #endif
@@ -3165,10 +3094,6 @@ namespace User {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            HeadIcon = input.ReadInt32();
-            break;
-          }
         }
       }
     }
