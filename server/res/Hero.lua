@@ -175,8 +175,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "法师",
+        ["Star"] = 5
     },
     {
         ["Id"] = 1012,
@@ -190,8 +190,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "辅助",
+        ["Star"] = 4
     },
     {
         ["Id"] = 1013,
@@ -206,7 +206,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3
+        ["Star"] = 5
     },
     {
         ["Id"] = 1014,
@@ -221,7 +221,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3
+        ["Star"] = 5
     },
     {
         ["Id"] = 1015,
@@ -235,8 +235,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "法师",
+        ["Star"] = 4
     },
     {
         ["Id"] = 1016,
@@ -250,8 +250,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "辅助",
+        ["Star"] = 5
     },
     {
         ["Id"] = 1017,
@@ -265,8 +265,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "法师",
+        ["Star"] = 5
     },
     {
         ["Id"] = 1018,
@@ -280,8 +280,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "法师",
+        ["Star"] = 5
     },
     {
         ["Id"] = 1019,
@@ -295,8 +295,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "刺客",
+        ["Star"] = 4
     },
     {
         ["Id"] = 1020,
@@ -310,8 +310,8 @@ return {
         ["Defense"] = 50,
         ["Speed"] = 60,
         ["Crit"] = 100,
-        ["Class"] = "战士",
-        ["Star"] = 3
+        ["Class"] = "辅助",
+        ["Star"] = 4
     },
     {
         ["Id"] = 1021,
@@ -326,7 +326,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 3
+        ["Star"] = 5
     },
     {
         ["Id"] = 1022,
@@ -373,7 +373,7 @@ return {
         ["Speed"] = 38,
         ["Crit"] = 75,
         ["Class"] = "坦克",
-        ["Star"] = 4,
+        ["Star"] = 5,
         ["SkillId"] = 1024
     },
     {
@@ -405,7 +405,7 @@ return {
         ["Speed"] = 110,
         ["Crit"] = 310,
         ["Class"] = "刺客",
-        ["Star"] = 4,
+        ["Star"] = 5,
         ["SkillId"] = 1026
     }
 }
