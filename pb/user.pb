@@ -1,5 +1,5 @@
 
-ç
+Ò
 
 user.protoUsercommon.proto"
 c2s_user_base_info"ú
@@ -32,4 +32,8 @@ user.protoUsercommon.proto"
 c2s_change_head_icon
 headIcon (RheadIcon"2
 s2c_change_head_icon
+headIcon (RheadIcon"0
+c2s_client_load_ok
+headIcon (RheadIcon"0
+s2c_client_load_ok
 headIcon (RheadIconbproto3
