@@ -1,0 +1,12 @@
+Id	Enum	Msg
+integer	string	string
+both	both	frontend
+id	枚举	提示文案
+1	INVALID_PARAM	参数错误
+2	SYSTEM_ERROR	系统错误，请稍后重试
+3	CONFIG_ERROR	配置错误
+4	OPERATE_FAIL	操作失败
+5	ITEM_NOT_ENOUGH	道具不足
+6	RES_NOT_ENOUGH	资源不足
+7	LEVEL_NOT_ENOUGH	等级不足
+8	FUNC_NOT_OPEN	功能未开启

@@ -24,33 +24,25 @@ namespace Activity {
     static ActivityReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5hY3Rpdml0eS5wcm90bxIIQWN0aXZpdHki5wEKD3BfYWN0aXZpdHlfaW5m",
-            "bxISCgphY3Rpdml0eUlkGAEgASgFEg0KBXN0YXRlGAIgASgFEhAKCHByb2dy",
-            "ZXNzGAMgASgFEhEKCXN0YXJ0VGltZRgEIAEoBRIPCgdlbmRUaW1lGAUgASgF",
-            "Eg8KB2dvdExpc3QYBiADKAUSOQoIZXh0cmFNYXAYByADKAsyJy5BY3Rpdml0",
-            "eS5wX2FjdGl2aXR5X2luZm8uRXh0cmFNYXBFbnRyeRovCg1FeHRyYU1hcEVu",
-            "dHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoBToCOAEiFwoVYzJzX3Jl",
-            "cV9hY3Rpdml0eV9saXN0IkgKFXMyY19yZXFfYWN0aXZpdHlfbGlzdBIvCgxh",
-            "Y3Rpdml0eUxpc3QYASADKAsyGS5BY3Rpdml0eS5wX2FjdGl2aXR5X2luZm8i",
-            "RAoRczJjX3N5bmNfYWN0aXZpdHkSLwoMYWN0aXZpdHlJbmZvGAEgASgLMhku",
-            "QWN0aXZpdHkucF9hY3Rpdml0eV9pbmZvIjwKF2Myc19nZXRfYWN0aXZpdHlf",
-            "cmV3YXJkEhIKCmFjdGl2aXR5SWQYASABKAUSDQoFaW5kZXgYAiABKAUiPAoX",
-            "czJjX2dldF9hY3Rpdml0eV9yZXdhcmQSEgoKYWN0aXZpdHlJZBgBIAEoBRIN",
-            "CgVpbmRleBgCIAEoBSJJChVjMnNfYWN0aXZpdHlfZXhjaGFuZ2USEgoKYWN0",
-            "aXZpdHlJZBgBIAEoBRINCgVpbmRleBgCIAEoBRINCgVjb3VudBgDIAEoBSJJ",
-            "ChVzMmNfYWN0aXZpdHlfZXhjaGFuZ2USEgoKYWN0aXZpdHlJZBgBIAEoBRIN",
-            "CgVpbmRleBgCIAEoBRINCgVjb3VudBgDIAEoBWIGcHJvdG8z"));
+            "Cg5hY3Rpdml0eS5wcm90bxIIQWN0aXZpdHkiWAoPcF9hY3Rpdml0eV9pbmZv",
+            "EhIKCmFjdGl2aXR5SWQYASABKAUSDQoFc3RhdGUYAiABKAUSEQoJc3RhcnRU",
+            "aW1lGAMgASgFEg8KB2VuZFRpbWUYBCABKAUiFwoVYzJzX3JlcV9hY3Rpdml0",
+            "eV9saXN0IkgKFXMyY19yZXFfYWN0aXZpdHlfbGlzdBIvCgxhY3Rpdml0eUxp",
+            "c3QYASADKAsyGS5BY3Rpdml0eS5wX2FjdGl2aXR5X2luZm8iRAoRczJjX3N5",
+            "bmNfYWN0aXZpdHkSLwoMYWN0aXZpdHlJbmZvGAEgASgLMhkuQWN0aXZpdHku",
+            "cF9hY3Rpdml0eV9pbmZvIksKF2Myc19nZXRfYWN0aXZpdHlfcmV3YXJkEhIK",
+            "CmFjdGl2aXR5SWQYASABKAUSDQoFaW5kZXgYAiABKAUSDQoFY291bnQYAyAB",
+            "KAUiSwoXczJjX2dldF9hY3Rpdml0eV9yZXdhcmQSEgoKYWN0aXZpdHlJZBgB",
+            "IAEoBRINCgVpbmRleBgCIAEoBRINCgVjb3VudBgDIAEoBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.p_activity_info), global::Activity.p_activity_info.Parser, new[]{ "ActivityId", "State", "Progress", "StartTime", "EndTime", "GotList", "ExtraMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.p_activity_info), global::Activity.p_activity_info.Parser, new[]{ "ActivityId", "State", "StartTime", "EndTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Activity.c2s_req_activity_list), global::Activity.c2s_req_activity_list.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Activity.s2c_req_activity_list), global::Activity.s2c_req_activity_list.Parser, new[]{ "ActivityList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Activity.s2c_sync_activity), global::Activity.s2c_sync_activity.Parser, new[]{ "ActivityInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.c2s_get_activity_reward), global::Activity.c2s_get_activity_reward.Parser, new[]{ "ActivityId", "Index" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.s2c_get_activity_reward), global::Activity.s2c_get_activity_reward.Parser, new[]{ "ActivityId", "Index" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.c2s_activity_exchange), global::Activity.c2s_activity_exchange.Parser, new[]{ "ActivityId", "Index", "Count" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.s2c_activity_exchange), global::Activity.s2c_activity_exchange.Parser, new[]{ "ActivityId", "Index", "Count" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.c2s_get_activity_reward), global::Activity.c2s_get_activity_reward.Parser, new[]{ "ActivityId", "Index", "Count" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Activity.s2c_get_activity_reward), global::Activity.s2c_get_activity_reward.Parser, new[]{ "ActivityId", "Index", "Count" }, null, null, null, null)
           }));
     }
     #endregion
@@ -59,6 +51,7 @@ namespace Activity {
   #region Messages
   /// <summary>
   /// 活动状态：0未开启 1进行中 2已结束
+  /// 进度/已领阶段等由配置与业务侧自行推导，协议不带
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_activity_info : pb::IMessage<p_activity_info>
@@ -97,11 +90,8 @@ namespace Activity {
     public p_activity_info(p_activity_info other) : this() {
       activityId_ = other.activityId_;
       state_ = other.state_;
-      progress_ = other.progress_;
       startTime_ = other.startTime_;
       endTime_ = other.endTime_;
-      gotList_ = other.gotList_.Clone();
-      extraMap_ = other.extraMap_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -135,23 +125,8 @@ namespace Activity {
       }
     }
 
-    /// <summary>Field number for the "progress" field.</summary>
-    public const int ProgressFieldNumber = 3;
-    private int progress_;
-    /// <summary>
-    /// 通用进度（登录天数/在线分钟/冲榜值等）
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Progress {
-      get { return progress_; }
-      set {
-        progress_ = value;
-      }
-    }
-
     /// <summary>Field number for the "startTime" field.</summary>
-    public const int StartTimeFieldNumber = 4;
+    public const int StartTimeFieldNumber = 3;
     private int startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -163,7 +138,7 @@ namespace Activity {
     }
 
     /// <summary>Field number for the "endTime" field.</summary>
-    public const int EndTimeFieldNumber = 5;
+    public const int EndTimeFieldNumber = 4;
     private int endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -172,34 +147,6 @@ namespace Activity {
       set {
         endTime_ = value;
       }
-    }
-
-    /// <summary>Field number for the "gotList" field.</summary>
-    public const int GotListFieldNumber = 6;
-    private static readonly pb::FieldCodec<int> _repeated_gotList_codec
-        = pb::FieldCodec.ForInt32(50);
-    private readonly pbc::RepeatedField<int> gotList_ = new pbc::RepeatedField<int>();
-    /// <summary>
-    /// 已领取的阶段/天数/名次段下标
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> GotList {
-      get { return gotList_; }
-    }
-
-    /// <summary>Field number for the "extraMap" field.</summary>
-    public const int ExtraMapFieldNumber = 7;
-    private static readonly pbc::MapField<int, int>.Codec _map_extraMap_codec
-        = new pbc::MapField<int, int>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForInt32(16, 0), 58);
-    private readonly pbc::MapField<int, int> extraMap_ = new pbc::MapField<int, int>();
-    /// <summary>
-    /// 扩展（如兑换已用次数：k=下标 v=次数）
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<int, int> ExtraMap {
-      get { return extraMap_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -219,11 +166,8 @@ namespace Activity {
       }
       if (ActivityId != other.ActivityId) return false;
       if (State != other.State) return false;
-      if (Progress != other.Progress) return false;
       if (StartTime != other.StartTime) return false;
       if (EndTime != other.EndTime) return false;
-      if(!gotList_.Equals(other.gotList_)) return false;
-      if (!ExtraMap.Equals(other.ExtraMap)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -233,11 +177,8 @@ namespace Activity {
       int hash = 1;
       if (ActivityId != 0) hash ^= ActivityId.GetHashCode();
       if (State != 0) hash ^= State.GetHashCode();
-      if (Progress != 0) hash ^= Progress.GetHashCode();
       if (StartTime != 0) hash ^= StartTime.GetHashCode();
       if (EndTime != 0) hash ^= EndTime.GetHashCode();
-      hash ^= gotList_.GetHashCode();
-      hash ^= ExtraMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -264,20 +205,14 @@ namespace Activity {
         output.WriteRawTag(16);
         output.WriteInt32(State);
       }
-      if (Progress != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Progress);
-      }
       if (StartTime != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteInt32(StartTime);
       }
       if (EndTime != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteInt32(EndTime);
       }
-      gotList_.WriteTo(output, _repeated_gotList_codec);
-      extraMap_.WriteTo(output, _map_extraMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -296,20 +231,14 @@ namespace Activity {
         output.WriteRawTag(16);
         output.WriteInt32(State);
       }
-      if (Progress != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Progress);
-      }
       if (StartTime != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteInt32(StartTime);
       }
       if (EndTime != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteInt32(EndTime);
       }
-      gotList_.WriteTo(ref output, _repeated_gotList_codec);
-      extraMap_.WriteTo(ref output, _map_extraMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -326,17 +255,12 @@ namespace Activity {
       if (State != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
       }
-      if (Progress != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Progress);
-      }
       if (StartTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartTime);
       }
       if (EndTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndTime);
       }
-      size += gotList_.CalculateSize(_repeated_gotList_codec);
-      size += extraMap_.CalculateSize(_map_extraMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -355,17 +279,12 @@ namespace Activity {
       if (other.State != 0) {
         State = other.State;
       }
-      if (other.Progress != 0) {
-        Progress = other.Progress;
-      }
       if (other.StartTime != 0) {
         StartTime = other.StartTime;
       }
       if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
-      gotList_.Add(other.gotList_);
-      extraMap_.MergeFrom(other.extraMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -394,24 +313,11 @@ namespace Activity {
             break;
           }
           case 24: {
-            Progress = input.ReadInt32();
-            break;
-          }
-          case 32: {
             StartTime = input.ReadInt32();
             break;
           }
-          case 40: {
+          case 32: {
             EndTime = input.ReadInt32();
-            break;
-          }
-          case 50:
-          case 48: {
-            gotList_.AddEntriesFrom(input, _repeated_gotList_codec);
-            break;
-          }
-          case 58: {
-            extraMap_.AddEntriesFrom(input, _map_extraMap_codec);
             break;
           }
         }
@@ -442,24 +348,11 @@ namespace Activity {
             break;
           }
           case 24: {
-            Progress = input.ReadInt32();
-            break;
-          }
-          case 32: {
             StartTime = input.ReadInt32();
             break;
           }
-          case 40: {
+          case 32: {
             EndTime = input.ReadInt32();
-            break;
-          }
-          case 50:
-          case 48: {
-            gotList_.AddEntriesFrom(ref input, _repeated_gotList_codec);
-            break;
-          }
-          case 58: {
-            extraMap_.AddEntriesFrom(ref input, _map_extraMap_codec);
             break;
           }
         }
@@ -1031,7 +924,7 @@ namespace Activity {
   }
 
   /// <summary>
-  /// 领取活动奖励（登录/在线/冲榜/礼包等）
+  /// 领取活动奖励（登录/在线/冲榜/礼包等）；兑换也走此协议，index=兑换项，无分段传 0
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class c2s_get_activity_reward : pb::IMessage<c2s_get_activity_reward>
@@ -1070,6 +963,7 @@ namespace Activity {
     public c2s_get_activity_reward(c2s_get_activity_reward other) : this() {
       activityId_ = other.activityId_;
       index_ = other.index_;
+      count_ = other.count_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1095,484 +989,7 @@ namespace Activity {
     public const int IndexFieldNumber = 2;
     private int index_;
     /// <summary>
-    /// 天/阶段/名次段等，无分段时传 0
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Index {
-      get { return index_; }
-      set {
-        index_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as c2s_get_activity_reward);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(c2s_get_activity_reward other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (ActivityId != other.ActivityId) return false;
-      if (Index != other.Index) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (ActivityId != 0) hash ^= ActivityId.GetHashCode();
-      if (Index != 0) hash ^= Index.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (ActivityId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ActivityId);
-      }
-      if (Index != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Index);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ActivityId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ActivityId);
-      }
-      if (Index != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Index);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (ActivityId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ActivityId);
-      }
-      if (Index != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Index);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(c2s_get_activity_reward other) {
-      if (other == null) {
-        return;
-      }
-      if (other.ActivityId != 0) {
-        ActivityId = other.ActivityId;
-      }
-      if (other.Index != 0) {
-        Index = other.Index;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            ActivityId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Index = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ActivityId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Index = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_get_activity_reward : pb::IMessage<s2c_get_activity_reward>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<s2c_get_activity_reward> _parser = new pb::MessageParser<s2c_get_activity_reward>(() => new s2c_get_activity_reward());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_get_activity_reward> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Activity.ActivityReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_get_activity_reward() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_get_activity_reward(s2c_get_activity_reward other) : this() {
-      activityId_ = other.activityId_;
-      index_ = other.index_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_get_activity_reward Clone() {
-      return new s2c_get_activity_reward(this);
-    }
-
-    /// <summary>Field number for the "activityId" field.</summary>
-    public const int ActivityIdFieldNumber = 1;
-    private int activityId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ActivityId {
-      get { return activityId_; }
-      set {
-        activityId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "index" field.</summary>
-    public const int IndexFieldNumber = 2;
-    private int index_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Index {
-      get { return index_; }
-      set {
-        index_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as s2c_get_activity_reward);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_get_activity_reward other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (ActivityId != other.ActivityId) return false;
-      if (Index != other.Index) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (ActivityId != 0) hash ^= ActivityId.GetHashCode();
-      if (Index != 0) hash ^= Index.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (ActivityId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ActivityId);
-      }
-      if (Index != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Index);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ActivityId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ActivityId);
-      }
-      if (Index != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Index);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (ActivityId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ActivityId);
-      }
-      if (Index != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Index);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_get_activity_reward other) {
-      if (other == null) {
-        return;
-      }
-      if (other.ActivityId != 0) {
-        ActivityId = other.ActivityId;
-      }
-      if (other.Index != 0) {
-        Index = other.Index;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            ActivityId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Index = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ActivityId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Index = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// 活动兑换
-  /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class c2s_activity_exchange : pb::IMessage<c2s_activity_exchange>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<c2s_activity_exchange> _parser = new pb::MessageParser<c2s_activity_exchange>(() => new c2s_activity_exchange());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<c2s_activity_exchange> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Activity.ActivityReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_activity_exchange() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_activity_exchange(c2s_activity_exchange other) : this() {
-      activityId_ = other.activityId_;
-      index_ = other.index_;
-      count_ = other.count_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_activity_exchange Clone() {
-      return new c2s_activity_exchange(this);
-    }
-
-    /// <summary>Field number for the "activityId" field.</summary>
-    public const int ActivityIdFieldNumber = 1;
-    private int activityId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ActivityId {
-      get { return activityId_; }
-      set {
-        activityId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "index" field.</summary>
-    public const int IndexFieldNumber = 2;
-    private int index_;
-    /// <summary>
-    /// 兑换项下标
+    /// 天/阶段/名次段/兑换项等，无分段时传 0
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1586,6 +1003,9 @@ namespace Activity {
     /// <summary>Field number for the "count" field.</summary>
     public const int CountFieldNumber = 3;
     private int count_;
+    /// <summary>
+    /// 兑换数量，领奖类传 0 或 1
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Count {
@@ -1598,12 +1018,12 @@ namespace Activity {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as c2s_activity_exchange);
+      return Equals(other as c2s_get_activity_reward);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(c2s_activity_exchange other) {
+    public bool Equals(c2s_get_activity_reward other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1702,7 +1122,7 @@ namespace Activity {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(c2s_activity_exchange other) {
+    public void MergeFrom(c2s_get_activity_reward other) {
       if (other == null) {
         return;
       }
@@ -1785,21 +1205,21 @@ namespace Activity {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_activity_exchange : pb::IMessage<s2c_activity_exchange>
+  public sealed partial class s2c_get_activity_reward : pb::IMessage<s2c_get_activity_reward>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<s2c_activity_exchange> _parser = new pb::MessageParser<s2c_activity_exchange>(() => new s2c_activity_exchange());
+    private static readonly pb::MessageParser<s2c_get_activity_reward> _parser = new pb::MessageParser<s2c_get_activity_reward>(() => new s2c_get_activity_reward());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_activity_exchange> Parser { get { return _parser; } }
+    public static pb::MessageParser<s2c_get_activity_reward> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Activity.ActivityReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Activity.ActivityReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1810,7 +1230,7 @@ namespace Activity {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_activity_exchange() {
+    public s2c_get_activity_reward() {
       OnConstruction();
     }
 
@@ -1818,7 +1238,7 @@ namespace Activity {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_activity_exchange(s2c_activity_exchange other) : this() {
+    public s2c_get_activity_reward(s2c_get_activity_reward other) : this() {
       activityId_ = other.activityId_;
       index_ = other.index_;
       count_ = other.count_;
@@ -1827,8 +1247,8 @@ namespace Activity {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_activity_exchange Clone() {
-      return new s2c_activity_exchange(this);
+    public s2c_get_activity_reward Clone() {
+      return new s2c_get_activity_reward(this);
     }
 
     /// <summary>Field number for the "activityId" field.</summary>
@@ -1870,12 +1290,12 @@ namespace Activity {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as s2c_activity_exchange);
+      return Equals(other as s2c_get_activity_reward);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_activity_exchange other) {
+    public bool Equals(s2c_get_activity_reward other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1974,7 +1394,7 @@ namespace Activity {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_activity_exchange other) {
+    public void MergeFrom(s2c_get_activity_reward other) {
       if (other == null) {
         return;
       }

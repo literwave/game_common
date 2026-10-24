@@ -17,11 +17,7 @@ return {
         ["Crit"] = 280,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1001,
-        ["Strength"] = 98,
-        ["Intelligence"] = 32,
-        ["Command"] = 74,
-        ["Charm"] = 70
+        ["SkillId"] = 1001
     },
     {
         ["Id"] = 1002,
@@ -37,11 +33,7 @@ return {
         ["Crit"] = 40,
         ["Class"] = "辅助",
         ["Star"] = 3,
-        ["SkillId"] = 1002,
-        ["Strength"] = 30,
-        ["Intelligence"] = 46,
-        ["Command"] = 40,
-        ["Charm"] = 68
+        ["SkillId"] = 1002
     },
     {
         ["Id"] = 1003,
@@ -57,11 +49,7 @@ return {
         ["Crit"] = 30,
         ["Class"] = "辅助",
         ["Star"] = 2,
-        ["SkillId"] = 1003,
-        ["Strength"] = 24,
-        ["Intelligence"] = 36,
-        ["Command"] = 28,
-        ["Charm"] = 42
+        ["SkillId"] = 1003
     },
     {
         ["Id"] = 1004,
@@ -77,11 +65,7 @@ return {
         ["Crit"] = 320,
         ["Class"] = "刺客",
         ["Star"] = 5,
-        ["SkillId"] = 1004,
-        ["Strength"] = 80,
-        ["Intelligence"] = 60,
-        ["Command"] = 42,
-        ["Charm"] = 100
+        ["SkillId"] = 1004
     },
     {
         ["Id"] = 1005,
@@ -97,11 +81,7 @@ return {
         ["Crit"] = 35,
         ["Class"] = "辅助",
         ["Star"] = 3,
-        ["SkillId"] = 1005,
-        ["Strength"] = 28,
-        ["Intelligence"] = 64,
-        ["Command"] = 36,
-        ["Charm"] = 66
+        ["SkillId"] = 1005
     },
     {
         ["Id"] = 1006,
@@ -117,11 +97,7 @@ return {
         ["Crit"] = 90,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["SkillId"] = 1006,
-        ["Strength"] = 72,
-        ["Intelligence"] = 46,
-        ["Command"] = 90,
-        ["Charm"] = 54
+        ["SkillId"] = 1006
     },
     {
         ["Id"] = 1007,
@@ -137,11 +113,7 @@ return {
         ["Crit"] = 70,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["SkillId"] = 1007,
-        ["Strength"] = 76,
-        ["Intelligence"] = 38,
-        ["Command"] = 92,
-        ["Charm"] = 26
+        ["SkillId"] = 1007
     },
     {
         ["Id"] = 1008,
@@ -157,11 +129,7 @@ return {
         ["Crit"] = 160,
         ["Class"] = "法师",
         ["Star"] = 5,
-        ["SkillId"] = 1008,
-        ["Strength"] = 38,
-        ["Intelligence"] = 92,
-        ["Command"] = 56,
-        ["Charm"] = 80
+        ["SkillId"] = 1008
     },
     {
         ["Id"] = 1009,
@@ -177,11 +145,7 @@ return {
         ["Crit"] = 110,
         ["Class"] = "坦克",
         ["Star"] = 5,
-        ["SkillId"] = 1009,
-        ["Strength"] = 82,
-        ["Intelligence"] = 42,
-        ["Command"] = 100,
-        ["Charm"] = 30
+        ["SkillId"] = 1009
     },
     {
         ["Id"] = 1010,
@@ -197,11 +161,7 @@ return {
         ["Crit"] = 350,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1010,
-        ["Strength"] = 100,
-        ["Intelligence"] = 36,
-        ["Command"] = 80,
-        ["Charm"] = 74
+        ["SkillId"] = 1010
     },
     {
         ["Id"] = 1011,
@@ -216,11 +176,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 5,
-        ["Strength"] = 34,
-        ["Intelligence"] = 95,
-        ["Command"] = 66,
-        ["Charm"] = 32
+        ["Star"] = 5
     },
     {
         ["Id"] = 1012,
@@ -235,11 +191,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "辅助",
-        ["Star"] = 4,
-        ["Strength"] = 34,
-        ["Intelligence"] = 70,
-        ["Command"] = 58,
-        ["Charm"] = 84
+        ["Star"] = 4
     },
     {
         ["Id"] = 1013,
@@ -254,11 +206,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 5,
-        ["Strength"] = 92,
-        ["Intelligence"] = 60,
-        ["Command"] = 78,
-        ["Charm"] = 86
+        ["Star"] = 5
     },
     {
         ["Id"] = 1014,
@@ -273,11 +221,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 5,
-        ["Strength"] = 86,
-        ["Intelligence"] = 84,
-        ["Command"] = 74,
-        ["Charm"] = 62
+        ["Star"] = 5
     },
     {
         ["Id"] = 1015,
@@ -292,11 +236,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 4,
-        ["Strength"] = 30,
-        ["Intelligence"] = 78,
-        ["Command"] = 48,
-        ["Charm"] = 90
+        ["Star"] = 4
     },
     {
         ["Id"] = 1016,
@@ -311,11 +251,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "辅助",
-        ["Star"] = 5,
-        ["Strength"] = 56,
-        ["Intelligence"] = 72,
-        ["Command"] = 82,
-        ["Charm"] = 98
+        ["Star"] = 5
     },
     {
         ["Id"] = 1017,
@@ -330,11 +266,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 5,
-        ["Strength"] = 30,
-        ["Intelligence"] = 100,
-        ["Command"] = 84,
-        ["Charm"] = 74
+        ["Star"] = 5
     },
     {
         ["Id"] = 1018,
@@ -349,11 +281,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 5,
-        ["Strength"] = 38,
-        ["Intelligence"] = 93,
-        ["Command"] = 80,
-        ["Charm"] = 70
+        ["Star"] = 5
     },
     {
         ["Id"] = 1019,
@@ -368,11 +296,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "刺客",
-        ["Star"] = 4,
-        ["Strength"] = 78,
-        ["Intelligence"] = 50,
-        ["Command"] = 52,
-        ["Charm"] = 76
+        ["Star"] = 4
     },
     {
         ["Id"] = 1020,
@@ -387,11 +311,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "辅助",
-        ["Star"] = 4,
-        ["Strength"] = 32,
-        ["Intelligence"] = 86,
-        ["Command"] = 54,
-        ["Charm"] = 66
+        ["Star"] = 4
     },
     {
         ["Id"] = 1021,
@@ -406,11 +326,7 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 5,
-        ["Strength"] = 95,
-        ["Intelligence"] = 40,
-        ["Command"] = 68,
-        ["Charm"] = 88
+        ["Star"] = 5
     },
     {
         ["Id"] = 1022,
@@ -426,11 +342,7 @@ return {
         ["Crit"] = 240,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1022,
-        ["Strength"] = 90,
-        ["Intelligence"] = 88,
-        ["Command"] = 86,
-        ["Charm"] = 84
+        ["SkillId"] = 1022
     },
     {
         ["Id"] = 1023,
@@ -446,11 +358,7 @@ return {
         ["Crit"] = 300,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1023,
-        ["Strength"] = 96,
-        ["Intelligence"] = 62,
-        ["Command"] = 76,
-        ["Charm"] = 90
+        ["SkillId"] = 1023
     },
     {
         ["Id"] = 1024,
@@ -466,11 +374,7 @@ return {
         ["Crit"] = 75,
         ["Class"] = "坦克",
         ["Star"] = 5,
-        ["SkillId"] = 1024,
-        ["Strength"] = 93,
-        ["Intelligence"] = 28,
-        ["Command"] = 96,
-        ["Charm"] = 52
+        ["SkillId"] = 1024
     },
     {
         ["Id"] = 1025,
@@ -486,11 +390,7 @@ return {
         ["Crit"] = 190,
         ["Class"] = "法师",
         ["Star"] = 5,
-        ["SkillId"] = 1025,
-        ["Strength"] = 46,
-        ["Intelligence"] = 97,
-        ["Command"] = 64,
-        ["Charm"] = 92
+        ["SkillId"] = 1025
     },
     {
         ["Id"] = 1026,
@@ -506,10 +406,6 @@ return {
         ["Crit"] = 310,
         ["Class"] = "刺客",
         ["Star"] = 5,
-        ["SkillId"] = 1026,
-        ["Strength"] = 86,
-        ["Intelligence"] = 54,
-        ["Command"] = 40,
-        ["Charm"] = 88
+        ["SkillId"] = 1026
     }
 }
