@@ -1,0 +1,6 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	回城	RETURN_CITY	行军返回主城
+2	打怪	ATTACK_MONSTER	行军攻击怪物组

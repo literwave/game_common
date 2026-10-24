@@ -1,0 +1,9 @@
+Id	Name	Desc	Icon	Order	Cond	Target	Reward	Jump
+integer	string	string	string	integer	lua_object	integer	lua_array	integer
+both	both	frontend	frontend	both	both	both	both	frontend
+任务id	名称	描述	图标	排序	条件(type+参数)	目标进度	奖励	跳转
+2001	每日签到	累计登录%s天		1	"{ [""type""] = 1 }"	1	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 300 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 300 } }"	
+2002	招贤纳士	招募武将%s次		2	"{ [""type""] = 4 }"	1	"{ { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 20 } }"	
+2003	厉兵秣马	出征%s次		3	"{ [""type""] = 7 }"	2	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 400 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 400 } }"	
+2004	积蓄粮草	拥有粮草达到%s		4	"{ [""type""] = 6, [""item_id""] = 1 }"	200	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 200 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 100 } }"	
+2005	伐木备战	拥有木材达到%s		5	"{ [""type""] = 6, [""item_id""] = 2 }"	200	"{ { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 200 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 100 } }"	

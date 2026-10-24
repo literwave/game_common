@@ -23,7 +23,6 @@ return {
             },
             {
                 ["reward_type"] = 4,
-                ["item_id"] = 1,
                 ["item_count"] = 1000
             }
         }
@@ -51,5 +50,9 @@ return {
     {
         ["Id"] = 7,
         ["value1"] = 3
+    },
+    {
+        ["Id"] = 8,
+        ["value1"] = 1000
     }
 }

@@ -1,15 +1,21 @@
 
-¹
+¨
 
 user.protoUsercommon.proto"
-c2s_user_base_info"œ
+c2s_user_base_info"ÿ
 s2c_user_base_info
 name (	Rname
 headIcon (RheadIcon
 sex (Rsex
 	birthTime (R	birthTime
 level (Rlevel
-exp (Rexp"7
+exp (Rexp8
+soldierInfo (2.Common.p_soldier_infoRsoldierInfo'
+cityPos (2.Common.p_posRcityPos"L
+s2c_sync_soldier8
+soldierInfo (2.Common.p_soldier_infoRsoldierInfo"<
+s2c_sync_city_pos'
+cityPos (2.Common.p_posRcityPos"7
 c2s_user_create
 name (	Rname
 sex (Rsex"7

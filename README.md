@@ -47,14 +47,23 @@ git submodule update --init --recursive
 
 | 表 | 说明 |
 |---|---|
-| `BuildingDetail` | 建筑类型、造型、建造条件和数量上限 |
-| `BuildingLv` | 建筑等级、升级消耗、设施和战力 |
-| `Global` | 全局常量 |
+| `BuildingDetail` | 建筑类型；`Type` 1主城/2军事/3资源/4功能/5防御；`Icon` 只导出到前端；`Id` 1 为主城（任务 `bid` 对齐） |
+| `BuildingLv` | 建筑等级；粮/木/铁消耗、升级时间、前置与效果值；`BuildingType` 指向 `BuildingDetail.Id` |
+| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 最大兵力（`value1`） |
 | `HeadIcon` | 头像资源 |
-| `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；`SkillId` 指向 `Skill.Id` |
+| `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；`SkillId` 指向 `Skill.Id`；升级经验见 `HeroLv` |
+| `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0 |
 | `Skill` | 技能；`Icon` 只导出到前端；武将通过 `SkillId` 关联 |
-| `Item` | 道具、购买晶钻和叠加上限 |
+| `Item` | 道具；`Kind` 1粮草/2木材/3铁矿/4令牌/5加速/6特殊；`Icon`/`Desc` 只导出到前端；加速类 `useParams.time` 为秒数 |
 | `Lottery` | 抽卡消耗与卡池 |
 | `ReportInfo` | 后台域名和端口 |
 | `ServerGroup` | 服务器群组与后台 ID |
 | `SystemOpen` | 系统开启；当前为更换头像 |
+| `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组 |
+| `TargetType` | 行军目标类型枚举；对齐 `world.proto` 的 `targetType`：1回城/2打怪 |
+| `MainTask` | 主线任务；`NextId` 衔接下一任务；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
+| `DailyTask` | 日常任务；每日重置；字段同主线但无 `NextId`；协议 `taskType=2` |
+| `WeekTask` | 周常任务；每周重置；字段同日常；协议 `taskType=3` |
+| `Activity` | 活动；`Type` 1登录/2冲榜/3限时招募/4资源增产/5礼包/6在线/7兑换；`Time` 为 `{ type, ...参数 }`；`OpenCond`/`Params`/`Rewards` 按类型解释；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/activity.proto` |
+| `Monster` | 怪物单位；战斗属性对齐武将；`Soldier` 兵力、`Power` 战力；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
+| `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }` |

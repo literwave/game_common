@@ -1,0 +1,9 @@
+Id	Name	Desc	Icon	Order	Cond	Target	Reward	Jump
+integer	string	string	string	integer	lua_object	integer	lua_array	integer
+both	both	frontend	frontend	both	both	both	both	frontend
+任务id	名称	描述	图标	排序	条件(type+参数)	目标进度	奖励	跳转
+3001	本周签到	累计登录%s天		1	"{ [""type""] = 1 }"	3	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 1500 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 1500 } }"	
+3002	本周求贤	招募武将%s次		2	"{ [""type""] = 4 }"	5	"{ { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 100 } }"	
+3003	本周征伐	出征%s次		3	"{ [""type""] = 7 }"	10	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 2000 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 2000 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 800 } }"	
+3004	本周积粮	拥有粮草达到%s		4	"{ [""type""] = 6, [""item_id""] = 1 }"	2000	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 1000 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 500 } }"	
+3005	本周伐木	拥有木材达到%s		5	"{ [""type""] = 6, [""item_id""] = 2 }"	2000	"{ { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 1000 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 500 } }"	

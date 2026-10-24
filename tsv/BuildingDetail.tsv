@@ -1,5 +1,19 @@
-Id	Type	Hide	Name	Desc	Icon	EffectSize	BuildEffectSize	ClickEffect	MaxLevel	LevelUp	SetOffX	SetOffY	LimitNum	InitLev	InitFacilityLv	CreateLimit	ModelObjName	ModelObjName2	rubbishCnt
-integer	integer	integer	integer	integer	integer	integer	lua_array	integer	integer	integer	integer	integer	integer	lua_object	lua_array	lua_array	lua_object	lua_array	integer
-both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both	both
-建筑类型	类型	屏蔽	名称	描述	建筑图标	建造中特效缩放	可建造特效缩放	选中建筑音效	最大等级	是否可升级	建筑铭牌偏移X	建筑铭牌偏移Y	可建造数量	初始化等级	初始建筑设施	建造要求	建筑造型（bid为单数）	建筑造型（bid为双数，没有不配）	垃圾容量
-1	1		600001	600101	1	100	{ 1, 1, 0, 0 }	1	1	1			1	{ [1001] = 1 }			"{ [50] = ""bangongshi/bangongshi"" }"		1
+Id	Name	Desc	Icon	Type	MaxLevel	LimitNum	InitLev	CreateLimit	OutputItem	EffectType
+integer	string	string	string	integer	integer	integer	integer	lua_array	integer	integer
+both	both	both	frontend	both	both	both	both	both	both	both
+建筑类型id	名称	描述	图标	类型(1主城/2军事/3资源/4功能/5防御)	最大等级	可建造数量	初始等级(0需建造)	建造前置	产出道具id(0无)	效果类型(1主城/2带兵/3武将/4造兵/5治疗/6科技/7产量/8仓库/9城防/10招募)
+1	主城	势力核心，提升主城等级可解锁更多建筑与功能		1	30	1	1	{  }	0	1
+2	校场	训练场地，提升出征带兵上限		2	30	1	0	"{ { [""bid""] = 1, [""lev""] = 1 } }"	0	2
+3	聚贤府	广纳贤才，提升可上阵武将数量		4	30	1	0	"{ { [""bid""] = 1, [""lev""] = 2 } }"	0	3
+4	步兵营	训练步兵，提升步兵训练上限与效率		2	30	1	0	"{ { [""bid""] = 1, [""lev""] = 3 } }"	0	4
+5	骑兵营	训练骑兵，提升骑兵训练上限与效率		2	30	1	0	"{ { [""bid""] = 1, [""lev""] = 5 } }"	0	4
+6	弓兵营	训练弓兵，提升弓兵训练上限与效率		2	30	1	0	"{ { [""bid""] = 1, [""lev""] = 5 } }"	0	4
+7	医馆	救治伤兵，提升伤兵收容与治疗效率		4	30	1	0	"{ { [""bid""] = 1, [""lev""] = 4 } }"	0	5
+8	太学	研究科技，解锁并加速内政与军事科技		4	30	1	0	"{ { [""bid""] = 1, [""lev""] = 6 } }"	0	6
+9	城墙	加固城防，提升主城耐久与防御		5	10	1	0	"{ { [""bid""] = 1, [""lev""] = 3 } }"	0	9
+10	农场	开垦农田，持续产出粮草		3	30	1	1	"{ { [""bid""] = 1, [""lev""] = 1 } }"	1	7
+11	伐木场	采伐木材，持续产出木材		3	30	1	1	"{ { [""bid""] = 1, [""lev""] = 1 } }"	2	7
+12	铁矿	开采矿脉，持续产出铁矿		3	30	1	0	"{ { [""bid""] = 1, [""lev""] = 2 } }"	3	7
+13	仓库	囤积物资，提升资源保护与存储上限		4	30	1	0	"{ { [""bid""] = 1, [""lev""] = 2 } }"	0	8
+14	点将台	招贤纳士，用于武将招募		4	30	1	0	"{ { [""bid""] = 1, [""lev""] = 3 } }"	0	10
+15	商行	互通有无，开放资源兑换与贸易		4	1	1	0	"{ { [""bid""] = 1, [""lev""] = 8 } }"	0	1

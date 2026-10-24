@@ -1,12 +1,18 @@
 
-™
+„
 common.protoCommon"e
 p_reward_info
 
 rewardType (R
 rewardType
 itemId (RitemId
-	itemCount (R	itemCount"+
+	itemCount (R	itemCount"#
+p_pos
+x (Rx
+y (Ry"D
+p_soldier_info
+count (Rcount
+	hurtCount (R	hurtCount"+
 p_common_info
 k (Rk
 v (Rv"3

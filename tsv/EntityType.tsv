@@ -1,0 +1,7 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	主城	CITY	玩家主城
+2	行军部队	TROOP	行军中的部队
+3	怪物组	MONSTER_GROUP	地图怪物组（贼寇/山寨/首领）

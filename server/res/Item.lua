@@ -5,34 +5,31 @@
 return {
     {
         ["Id"] = 1,
+        ["Name"] = "粮草",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 1,
-        ["Overlap"] = 10000
+        ["Overlap"] = 100000
     },
     {
         ["Id"] = 2,
+        ["Name"] = "木材",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 2,
-        ["Overlap"] = 10000
-    },
-    {
-        ["Id"] = 1001,
-        ["BuyDiamond"] = 10,
-        ["useParams"] = {},
-        ["Kind"] = 3,
-        ["Overlap"] = 10000
+        ["Overlap"] = 100000
     },
     {
         ["Id"] = 3,
+        ["Name"] = "铁矿",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
-        ["Kind"] = 1,
-        ["Overlap"] = 10000
+        ["Kind"] = 3,
+        ["Overlap"] = 100000
     },
     {
         ["Id"] = 4,
+        ["Name"] = "令牌",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
         ["Kind"] = 4,
@@ -40,23 +37,46 @@ return {
     },
     {
         ["Id"] = 5,
-        ["BuyDiamond"] = 10,
-        ["useParams"] = {},
+        ["Name"] = "建造加速",
+        ["BuyDiamond"] = 50,
+        ["useParams"] = {
+            {
+                ["time"] = 300
+            }
+        },
         ["Kind"] = 5,
-        ["Overlap"] = 1
+        ["Overlap"] = 999
     },
     {
         ["Id"] = 6,
-        ["BuyDiamond"] = 10,
-        ["useParams"] = {},
-        ["Kind"] = 6,
-        ["Overlap"] = 1
+        ["Name"] = "训练加速",
+        ["BuyDiamond"] = 50,
+        ["useParams"] = {
+            {
+                ["time"] = 3600
+            }
+        },
+        ["Kind"] = 5,
+        ["Overlap"] = 999
     },
     {
         ["Id"] = 7,
-        ["BuyDiamond"] = 10,
+        ["Name"] = "治疗加速",
+        ["BuyDiamond"] = 50,
+        ["useParams"] = {
+            {
+                ["time"] = 3600
+            }
+        },
+        ["Kind"] = 5,
+        ["Overlap"] = 999
+    },
+    {
+        ["Id"] = 1001,
+        ["Name"] = "迁城令",
+        ["BuyDiamond"] = 100,
         ["useParams"] = {},
-        ["Kind"] = 7,
-        ["Overlap"] = 1
+        ["Kind"] = 6,
+        ["Overlap"] = 99
     }
 }

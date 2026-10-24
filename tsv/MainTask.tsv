@@ -1,0 +1,16 @@
+Id	Name	Desc	Icon	Order	NextId	Cond	Target	Reward	Jump
+integer	string	string	string	integer	integer	lua_object	integer	lua_array	integer
+both	both	frontend	frontend	both	both	both	both	both	frontend
+任务id	名称	描述	图标	排序	下一任务id	条件(type+参数)	目标进度	奖励	跳转
+1001	初入乱世	累计登录%s天		1	1002	"{ [""type""] = 1 }"	1	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 500 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 500 } }"	
+1002	营建根基	主城等级达到%s级		2	1003	"{ [""type""] = 2, [""bid""] = 1 }"	2	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 800 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 800 } }"	
+1003	广纳贤才	拥有%s名武将		3	1004	"{ [""type""] = 3 }"	2	"{ { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 50 } }"	
+1004	求贤若渴	招募武将%s次		4	1005	"{ [""type""] = 4 }"	1	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 1000 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 1000 } }"	
+1005	积谷防饥	拥有粮草达到%s		5	1006	"{ [""type""] = 6, [""item_id""] = 1 }"	500	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 500 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 300 } }"	
+1006	伐木成林	拥有木材达到%s		6	1007	"{ [""type""] = 6, [""item_id""] = 2 }"	500	"{ { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 500 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 300 } }"	
+1007	城池扩建	主城等级达到%s级		7	1008	"{ [""type""] = 2, [""bid""] = 1 }"	3	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 1500 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 1500 }, { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 100 } }"	
+1008	崭露头角	更换头像%s次		8	1009	"{ [""type""] = 5 }"	1	"{ { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 80 } }"	
+1009	整军出征	出征%s次		9	1010	"{ [""type""] = 7 }"	1	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 1200 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 1200 } }"	
+1010	开疆拓土	主城等级达到%s级		10	1011	"{ [""type""] = 2, [""bid""] = 1 }"	5	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 2000 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 2000 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 800 } }"	
+1011	兵强马壮	拥有%s名武将		11	1012	"{ [""type""] = 3 }"	5	"{ { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 150 } }"	
+1012	势力初成	势力战力达到%s		12		"{ [""type""] = 8 }"	1000	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 3000 }, { [""reward_type""] = 1, [""item_id""] = 2, [""item_count""] = 3000 }, { [""reward_type""] = 1, [""item_id""] = 3, [""item_count""] = 1500 }, { [""reward_type""] = 1, [""item_id""] = 4, [""item_count""] = 200 } }"	
