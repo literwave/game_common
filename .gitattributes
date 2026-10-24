@@ -1,0 +1,5 @@
+﻿# 文本统一用 LF，避免 Windows 的 autocrlf 反复把生成文件改成 CRLF。
+* text=auto eol=lf
+
+*.pb binary -eol
+*.bat text eol=crlf
