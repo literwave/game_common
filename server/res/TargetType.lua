@@ -14,5 +14,9 @@ return {
     {
         ["Id"] = 3,
         ["Enum"] = "OCCUPY_RES_LAND"
+    },
+    {
+        ["Id"] = 4,
+        ["Enum"] = "MOVE"
     }
 }
