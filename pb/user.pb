@@ -1,5 +1,5 @@
 
-È
+´	
 
 user.protoUsercommon.proto"
 c2s_user_base_info"Ÿ
@@ -16,7 +16,11 @@ user.protoUsercommon.proto"
 allianceId	 (R
 allianceId"L
 s2c_sync_soldier8
-soldierInfo (2.Common.p_soldier_infoRsoldierInfo"<
+soldierInfo (2.Common.p_soldier_infoRsoldierInfo"0
+c2s_move_city
+pos (2.Common.p_posRpos"8
+s2c_move_city'
+cityPos (2.Common.p_posRcityPos"<
 s2c_sync_city_pos'
 cityPos (2.Common.p_posRcityPos"7
 c2s_user_create
