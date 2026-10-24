@@ -24,185 +24,25 @@ namespace Build {
     static BuildReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtidWlsZC5wcm90bxIFQnVpbGQiFwoVczJjX3JlcV9hbGxfYnVpbGRfZW5k",
-            "IiwKDnMyY19zeW5jX2J1aWxkEgsKA2JpZBgBIAEoBRINCgVsZXZlbBgCIAEo",
-            "BSIyChBjMnNfY3JlYXRlX2J1aWxkEgsKA2JpZBgBIAEoBRIRCglpc0luc3Rh",
-            "bnQYAiABKAgiLgoMYzJzX3VwX2J1aWxkEgsKA2JpZBgBIAEoBRIRCglpc0lu",
-            "c3RhbnQYAiABKAhiBnByb3RvMw=="));
+            "CgtidWlsZC5wcm90bxIFQnVpbGQiLAoOczJjX3N5bmNfYnVpbGQSCwoDYmlk",
+            "GAEgASgFEg0KBWxldmVsGAIgASgFIh8KEGMyc19jcmVhdGVfYnVpbGQSCwoD",
+            "YmlkGAEgASgFIhsKDGMyc191cF9idWlsZBILCgNiaWQYASABKAViBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Build.s2c_req_all_build_end), global::Build.s2c_req_all_build_end.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Build.s2c_sync_build), global::Build.s2c_sync_build.Parser, new[]{ "Bid", "Level" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Build.c2s_create_build), global::Build.c2s_create_build.Parser, new[]{ "Bid", "IsInstant" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Build.c2s_up_build), global::Build.c2s_up_build.Parser, new[]{ "Bid", "IsInstant" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Build.c2s_create_build), global::Build.c2s_create_build.Parser, new[]{ "Bid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Build.c2s_up_build), global::Build.c2s_up_build.Parser, new[]{ "Bid" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_req_all_build_end : pb::IMessage<s2c_req_all_build_end>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<s2c_req_all_build_end> _parser = new pb::MessageParser<s2c_req_all_build_end>(() => new s2c_req_all_build_end());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_req_all_build_end> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Build.BuildReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_req_all_build_end() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_req_all_build_end(s2c_req_all_build_end other) : this() {
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_req_all_build_end Clone() {
-      return new s2c_req_all_build_end(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as s2c_req_all_build_end);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_req_all_build_end other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_req_all_build_end other) {
-      if (other == null) {
-        return;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-        }
-      }
-    }
-    #endif
-
-  }
-
+  /// <summary>
+  /// 建造/升级即时完成，无队列、无时间；结果用 s2c_sync_build 同步
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class s2c_sync_build : pb::IMessage<s2c_sync_build>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -218,7 +58,7 @@ namespace Build {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Build.BuildReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Build.BuildReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -453,7 +293,7 @@ namespace Build {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Build.BuildReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Build.BuildReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -474,7 +314,6 @@ namespace Build {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public c2s_create_build(c2s_create_build other) : this() {
       bid_ = other.bid_;
-      isInstant_ = other.isInstant_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -496,18 +335,6 @@ namespace Build {
       }
     }
 
-    /// <summary>Field number for the "isInstant" field.</summary>
-    public const int IsInstantFieldNumber = 2;
-    private bool isInstant_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsInstant {
-      get { return isInstant_; }
-      set {
-        isInstant_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -524,7 +351,6 @@ namespace Build {
         return true;
       }
       if (Bid != other.Bid) return false;
-      if (IsInstant != other.IsInstant) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -533,7 +359,6 @@ namespace Build {
     public override int GetHashCode() {
       int hash = 1;
       if (Bid != 0) hash ^= Bid.GetHashCode();
-      if (IsInstant != false) hash ^= IsInstant.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -556,10 +381,6 @@ namespace Build {
         output.WriteRawTag(8);
         output.WriteInt32(Bid);
       }
-      if (IsInstant != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(IsInstant);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -574,10 +395,6 @@ namespace Build {
         output.WriteRawTag(8);
         output.WriteInt32(Bid);
       }
-      if (IsInstant != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(IsInstant);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -590,9 +407,6 @@ namespace Build {
       int size = 0;
       if (Bid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Bid);
-      }
-      if (IsInstant != false) {
-        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -608,9 +422,6 @@ namespace Build {
       }
       if (other.Bid != 0) {
         Bid = other.Bid;
-      }
-      if (other.IsInstant != false) {
-        IsInstant = other.IsInstant;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -635,10 +446,6 @@ namespace Build {
             Bid = input.ReadInt32();
             break;
           }
-          case 16: {
-            IsInstant = input.ReadBool();
-            break;
-          }
         }
       }
     #endif
@@ -660,10 +467,6 @@ namespace Build {
             break;
           case 8: {
             Bid = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IsInstant = input.ReadBool();
             break;
           }
         }
@@ -688,7 +491,7 @@ namespace Build {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Build.BuildReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Build.BuildReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -709,7 +512,6 @@ namespace Build {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public c2s_up_build(c2s_up_build other) : this() {
       bid_ = other.bid_;
-      isInstant_ = other.isInstant_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -731,18 +533,6 @@ namespace Build {
       }
     }
 
-    /// <summary>Field number for the "isInstant" field.</summary>
-    public const int IsInstantFieldNumber = 2;
-    private bool isInstant_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsInstant {
-      get { return isInstant_; }
-      set {
-        isInstant_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -759,7 +549,6 @@ namespace Build {
         return true;
       }
       if (Bid != other.Bid) return false;
-      if (IsInstant != other.IsInstant) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -768,7 +557,6 @@ namespace Build {
     public override int GetHashCode() {
       int hash = 1;
       if (Bid != 0) hash ^= Bid.GetHashCode();
-      if (IsInstant != false) hash ^= IsInstant.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -791,10 +579,6 @@ namespace Build {
         output.WriteRawTag(8);
         output.WriteInt32(Bid);
       }
-      if (IsInstant != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(IsInstant);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -809,10 +593,6 @@ namespace Build {
         output.WriteRawTag(8);
         output.WriteInt32(Bid);
       }
-      if (IsInstant != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(IsInstant);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -825,9 +605,6 @@ namespace Build {
       int size = 0;
       if (Bid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Bid);
-      }
-      if (IsInstant != false) {
-        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -843,9 +620,6 @@ namespace Build {
       }
       if (other.Bid != 0) {
         Bid = other.Bid;
-      }
-      if (other.IsInstant != false) {
-        IsInstant = other.IsInstant;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -870,10 +644,6 @@ namespace Build {
             Bid = input.ReadInt32();
             break;
           }
-          case 16: {
-            IsInstant = input.ReadBool();
-            break;
-          }
         }
       }
     #endif
@@ -895,10 +665,6 @@ namespace Build {
             break;
           case 8: {
             Bid = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IsInstant = input.ReadBool();
             break;
           }
         }

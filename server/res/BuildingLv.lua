@@ -10,7 +10,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 130,
         ["Effect"] = 1
@@ -22,7 +21,6 @@ return {
         ["CostGrain"] = 600,
         ["CostWood"] = 600,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 10,
@@ -43,7 +41,6 @@ return {
         ["CostGrain"] = 1440,
         ["CostWood"] = 1440,
         ["CostIron"] = 240,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 13,
@@ -64,7 +61,6 @@ return {
         ["CostGrain"] = 3000,
         ["CostWood"] = 3000,
         ["CostIron"] = 720,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 2,
@@ -85,7 +81,6 @@ return {
         ["CostGrain"] = 6000,
         ["CostWood"] = 6000,
         ["CostIron"] = 1440,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 12,
@@ -106,7 +101,6 @@ return {
         ["CostGrain"] = 10800,
         ["CostWood"] = 10800,
         ["CostIron"] = 3000,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 5,
@@ -127,7 +121,6 @@ return {
         ["CostGrain"] = 19200,
         ["CostWood"] = 19200,
         ["CostIron"] = 6000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 7,
@@ -148,7 +141,6 @@ return {
         ["CostGrain"] = 33600,
         ["CostWood"] = 33600,
         ["CostIron"] = 10800,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 9,
@@ -169,7 +161,6 @@ return {
         ["CostGrain"] = 54000,
         ["CostWood"] = 54000,
         ["CostIron"] = 19200,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 4,
@@ -190,7 +181,6 @@ return {
         ["CostGrain"] = 84000,
         ["CostWood"] = 84000,
         ["CostIron"] = 33600,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 5,
@@ -211,7 +201,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 1000
@@ -223,7 +212,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -240,7 +228,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -257,7 +244,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -274,7 +260,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -291,7 +276,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -308,7 +292,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -325,7 +308,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -342,7 +324,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -359,7 +340,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -376,7 +356,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 2
@@ -388,7 +367,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -405,7 +383,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -422,7 +399,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -439,7 +415,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -456,7 +431,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -473,7 +447,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -490,7 +463,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -507,7 +479,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -524,7 +495,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -541,7 +511,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 500
@@ -553,7 +522,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -570,7 +538,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -587,7 +554,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -604,7 +570,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -621,7 +586,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -638,7 +602,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -655,7 +618,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -672,7 +634,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -689,7 +650,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -706,7 +666,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 500
@@ -718,7 +677,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -735,7 +693,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -752,7 +709,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -769,7 +725,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -786,7 +741,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -803,7 +757,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -820,7 +773,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -837,7 +789,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -854,7 +805,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -871,7 +821,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 500
@@ -883,7 +832,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -900,7 +848,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -917,7 +864,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -934,7 +880,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -951,7 +896,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -968,7 +912,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -985,7 +928,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1002,7 +944,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1019,7 +960,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1036,7 +976,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 300
@@ -1048,7 +987,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1065,7 +1003,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1082,7 +1019,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1099,7 +1035,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1116,7 +1051,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1133,7 +1067,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1150,7 +1083,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1167,7 +1099,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1184,7 +1115,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1201,7 +1131,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 5
@@ -1213,7 +1142,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1230,7 +1158,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1247,7 +1174,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1264,7 +1190,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1281,7 +1206,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1298,7 +1222,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1315,7 +1238,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1332,7 +1254,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1349,7 +1270,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1366,7 +1286,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 2000
@@ -1378,7 +1297,6 @@ return {
         ["CostGrain"] = 450,
         ["CostWood"] = 450,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1395,7 +1313,6 @@ return {
         ["CostGrain"] = 1080,
         ["CostWood"] = 1080,
         ["CostIron"] = 180,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1412,7 +1329,6 @@ return {
         ["CostGrain"] = 2250,
         ["CostWood"] = 2250,
         ["CostIron"] = 540,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1429,7 +1345,6 @@ return {
         ["CostGrain"] = 4500,
         ["CostWood"] = 4500,
         ["CostIron"] = 1080,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1446,7 +1361,6 @@ return {
         ["CostGrain"] = 8100,
         ["CostWood"] = 8100,
         ["CostIron"] = 2250,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1463,7 +1377,6 @@ return {
         ["CostGrain"] = 14400,
         ["CostWood"] = 14400,
         ["CostIron"] = 4500,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1480,7 +1393,6 @@ return {
         ["CostGrain"] = 25200,
         ["CostWood"] = 25200,
         ["CostIron"] = 8100,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1497,7 +1409,6 @@ return {
         ["CostGrain"] = 40500,
         ["CostWood"] = 40500,
         ["CostIron"] = 14400,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1514,7 +1425,6 @@ return {
         ["CostGrain"] = 63000,
         ["CostWood"] = 63000,
         ["CostIron"] = 25200,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1531,7 +1441,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 100
@@ -1543,7 +1452,6 @@ return {
         ["CostGrain"] = 350,
         ["CostWood"] = 350,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1560,7 +1468,6 @@ return {
         ["CostGrain"] = 840,
         ["CostWood"] = 840,
         ["CostIron"] = 140,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1577,7 +1484,6 @@ return {
         ["CostGrain"] = 1750,
         ["CostWood"] = 1750,
         ["CostIron"] = 420,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1594,7 +1500,6 @@ return {
         ["CostGrain"] = 3500,
         ["CostWood"] = 3500,
         ["CostIron"] = 840,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1611,7 +1516,6 @@ return {
         ["CostGrain"] = 6300,
         ["CostWood"] = 6300,
         ["CostIron"] = 1750,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1628,7 +1532,6 @@ return {
         ["CostGrain"] = 11200,
         ["CostWood"] = 11200,
         ["CostIron"] = 3500,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1645,7 +1548,6 @@ return {
         ["CostGrain"] = 19600,
         ["CostWood"] = 19600,
         ["CostIron"] = 6300,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1662,7 +1564,6 @@ return {
         ["CostGrain"] = 31499,
         ["CostWood"] = 31499,
         ["CostIron"] = 11200,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1679,7 +1580,6 @@ return {
         ["CostGrain"] = 49000,
         ["CostWood"] = 49000,
         ["CostIron"] = 19600,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1696,7 +1596,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 100
@@ -1708,7 +1607,6 @@ return {
         ["CostGrain"] = 350,
         ["CostWood"] = 350,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1725,7 +1623,6 @@ return {
         ["CostGrain"] = 840,
         ["CostWood"] = 840,
         ["CostIron"] = 140,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1742,7 +1639,6 @@ return {
         ["CostGrain"] = 1750,
         ["CostWood"] = 1750,
         ["CostIron"] = 420,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1759,7 +1655,6 @@ return {
         ["CostGrain"] = 3500,
         ["CostWood"] = 3500,
         ["CostIron"] = 840,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1776,7 +1671,6 @@ return {
         ["CostGrain"] = 6300,
         ["CostWood"] = 6300,
         ["CostIron"] = 1750,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1793,7 +1687,6 @@ return {
         ["CostGrain"] = 11200,
         ["CostWood"] = 11200,
         ["CostIron"] = 3500,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1810,7 +1703,6 @@ return {
         ["CostGrain"] = 19600,
         ["CostWood"] = 19600,
         ["CostIron"] = 6300,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1827,7 +1719,6 @@ return {
         ["CostGrain"] = 31499,
         ["CostWood"] = 31499,
         ["CostIron"] = 11200,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1844,7 +1735,6 @@ return {
         ["CostGrain"] = 49000,
         ["CostWood"] = 49000,
         ["CostIron"] = 19600,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1861,7 +1751,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 100
@@ -1873,7 +1762,6 @@ return {
         ["CostGrain"] = 350,
         ["CostWood"] = 350,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1890,7 +1778,6 @@ return {
         ["CostGrain"] = 840,
         ["CostWood"] = 840,
         ["CostIron"] = 140,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1907,7 +1794,6 @@ return {
         ["CostGrain"] = 1750,
         ["CostWood"] = 1750,
         ["CostIron"] = 420,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1924,7 +1810,6 @@ return {
         ["CostGrain"] = 3500,
         ["CostWood"] = 3500,
         ["CostIron"] = 840,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1941,7 +1826,6 @@ return {
         ["CostGrain"] = 6300,
         ["CostWood"] = 6300,
         ["CostIron"] = 1750,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1958,7 +1842,6 @@ return {
         ["CostGrain"] = 11200,
         ["CostWood"] = 11200,
         ["CostIron"] = 3500,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1975,7 +1858,6 @@ return {
         ["CostGrain"] = 19600,
         ["CostWood"] = 19600,
         ["CostIron"] = 6300,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1992,7 +1874,6 @@ return {
         ["CostGrain"] = 31499,
         ["CostWood"] = 31499,
         ["CostIron"] = 11200,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2009,7 +1890,6 @@ return {
         ["CostGrain"] = 49000,
         ["CostWood"] = 49000,
         ["CostIron"] = 19600,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2026,7 +1906,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 5000
@@ -2038,7 +1917,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2055,7 +1933,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2072,7 +1949,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2089,7 +1965,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2106,7 +1981,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2123,7 +1997,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2140,7 +2013,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2157,7 +2029,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2174,7 +2045,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2191,7 +2061,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 1
@@ -2203,7 +2072,6 @@ return {
         ["CostGrain"] = 500,
         ["CostWood"] = 500,
         ["CostIron"] = 0,
-        ["Time"] = 10,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2220,7 +2088,6 @@ return {
         ["CostGrain"] = 1200,
         ["CostWood"] = 1200,
         ["CostIron"] = 200,
-        ["Time"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2237,7 +2104,6 @@ return {
         ["CostGrain"] = 2500,
         ["CostWood"] = 2500,
         ["CostIron"] = 600,
-        ["Time"] = 180,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2254,7 +2120,6 @@ return {
         ["CostGrain"] = 5000,
         ["CostWood"] = 5000,
         ["CostIron"] = 1200,
-        ["Time"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2271,7 +2136,6 @@ return {
         ["CostGrain"] = 9000,
         ["CostWood"] = 9000,
         ["CostIron"] = 2500,
-        ["Time"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2288,7 +2152,6 @@ return {
         ["CostGrain"] = 16000,
         ["CostWood"] = 16000,
         ["CostIron"] = 5000,
-        ["Time"] = 3600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2305,7 +2168,6 @@ return {
         ["CostGrain"] = 28000,
         ["CostWood"] = 28000,
         ["CostIron"] = 9000,
-        ["Time"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2322,7 +2184,6 @@ return {
         ["CostGrain"] = 45000,
         ["CostWood"] = 45000,
         ["CostIron"] = 16000,
-        ["Time"] = 14400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2339,7 +2200,6 @@ return {
         ["CostGrain"] = 70000,
         ["CostWood"] = 70000,
         ["CostIron"] = 28000,
-        ["Time"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2356,7 +2216,6 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
-        ["Time"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 1

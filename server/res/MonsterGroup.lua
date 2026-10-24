@@ -467,7 +467,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 6,
                 ["item_count"] = 1
             }
         },
@@ -519,7 +519,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 6,
                 ["item_count"] = 2
             }
         },
@@ -627,7 +627,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 6,
                 ["item_count"] = 3
             }
         },

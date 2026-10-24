@@ -1,13 +1,10 @@
 
-ó
-build.protoBuild"
-s2c_req_all_build_end"8
+ž
+build.protoBuild"8
 s2c_sync_build
 bid (Rbid
-level (Rlevel"B
+level (Rlevel"$
 c2s_create_build
-bid (Rbid
-	isInstant (R	isInstant">
+bid (Rbid" 
 c2s_up_build
-bid (Rbid
-	isInstant (R	isInstantbproto3
+bid (Rbidbproto3

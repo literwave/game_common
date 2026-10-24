@@ -1,0 +1,7 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	世界	WORLD	本服世界频道
+2	联盟	ALLIANCE	联盟频道（需已加入联盟）
+3	私聊	PRIVATE	玩家私聊

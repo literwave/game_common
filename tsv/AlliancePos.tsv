@@ -1,0 +1,7 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	盟主	LEADER	联盟创建者/盟主
+2	官员	OFFICER	可审批申请、踢成员、改设置
+3	成员	MEMBER	普通成员

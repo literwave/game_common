@@ -11,5 +11,14 @@ return {
                 ["level"] = 1
             }
         }
+    },
+    {
+        ["Id"] = 2,
+        ["Enum"] = "CREATE_ALLIANCE",
+        ["Cond"] = {
+            {
+                ["level"] = 5
+            }
+        }
     }
 }

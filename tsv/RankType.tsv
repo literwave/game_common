@@ -1,0 +1,6 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	战力	POWER	势力战力榜（对齐 Activity.Params.rank_type）
+2	主城等级	CITY_LEVEL	主城等级榜

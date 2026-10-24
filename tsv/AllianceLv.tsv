@@ -1,0 +1,14 @@
+Id	Lv	MemberMax	OfficerMax	Exp
+integer	integer	integer	integer	integer
+both	both	both	both	both
+等级id	等级	人数上限	官员上限(不含盟主)	升到下一级所需贡献(满级为0)
+1	1	30	2	1000
+2	2	35	2	2000
+3	3	40	3	3500
+4	4	45	3	5000
+5	5	50	3	7000
+6	6	55	4	10000
+7	7	60	4	14000
+8	8	65	4	20000
+9	9	70	5	28000
+10	10	80	5	0

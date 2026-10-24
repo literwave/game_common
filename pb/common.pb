@@ -1,5 +1,5 @@
 
-„
+«
 common.protoCommon"e
 p_reward_info
 
@@ -9,7 +9,10 @@ rewardType
 	itemCount (R	itemCount"#
 p_pos
 x (Rx
-y (Ry"D
+y (Ry"%
+p_pos_f
+x (Rx
+y (Ry"D
 p_soldier_info
 count (Rcount
 	hurtCount (R	hurtCount"+

@@ -3,3 +3,4 @@ integer	string	string	string	lua_array
 both	frontend	both	frontend	both
 id	系统名称	枚举	说明	开启条件
 1	更换头像	HEAD_ICON	开启后可更换头像	"{ { [""level""] = 1 } }"
+2	创建联盟	CREATE_ALLIANCE	开启后可创建联盟	"{ { [""level""] = 5 } }"

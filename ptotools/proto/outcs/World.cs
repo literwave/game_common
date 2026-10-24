@@ -33,28 +33,31 @@ namespace World {
             "dHJvb3AiNwoNczJjX3JlcV90cm9vcBImCgl0cm9vcExpc3QYASADKAsyEy5X",
             "b3JsZC5wX3Ryb29wX2luZm8iOAoOYzJzX2VkaXRfdHJvb3ASJgoJdHJvb3BJ",
             "bmZvGAEgASgLMhMuV29ybGQucF90cm9vcF9pbmZvIjgKDnMyY19lZGl0X3Ry",
-            "b29wEiYKCXRyb29wSW5mbxgBIAEoCzITLldvcmxkLnBfdHJvb3BfaW5mbyK5",
-            "AQoMcF9tYXJjaF9pbmZvEhAKCHRyb29wSWR4GAEgASgNEhIKCnRhcmdldFR5",
-            "cGUYAiABKA0SEAoIdGFyZ2V0SWQYAyABKAMSHwoIc3RhcnRQb3MYBCABKAsy",
-            "DS5Db21tb24ucF9wb3MSHQoGZW5kUG9zGAUgASgLMg0uQ29tbW9uLnBfcG9z",
-            "EhEKCXN0YXJ0VGltZRgGIAEoBRIPCgdlbmRUaW1lGAcgASgFEg0KBXN0YXRl",
-            "GAggASgNImUKCWMyc19tYXJjaBIQCgh0cm9vcElkeBgBIAEoDRISCgp0YXJn",
-            "ZXRUeXBlGAIgASgNEhAKCHRhcmdldElkGAMgASgDEiAKCXRhcmdldFBvcxgE",
-            "IAEoCzINLkNvbW1vbi5wX3BvcyIzCglzMmNfbWFyY2gSJgoJbWFyY2hJbmZv",
-            "GAEgASgLMhMuV29ybGQucF9tYXJjaF9pbmZvIiQKEGMyc19jYW5jZWxfbWFy",
-            "Y2gSEAoIdHJvb3BJZHgYASABKA0iTAoQczJjX2NhbmNlbF9tYXJjaBIQCgh0",
-            "cm9vcElkeBgBIAEoDRImCgltYXJjaEluZm8YAiABKAsyEy5Xb3JsZC5wX21h",
-            "cmNoX2luZm8iOAoOczJjX3N5bmNfbWFyY2gSJgoJbWFyY2hJbmZvGAEgASgL",
-            "MhMuV29ybGQucF9tYXJjaF9pbmZvIhQKEmMyc19yZXFfbWFyY2hfbGlzdCI8",
-            "ChJzMmNfcmVxX21hcmNoX2xpc3QSJgoJbWFyY2hMaXN0GAEgAygLMhMuV29y",
-            "bGQucF9tYXJjaF9pbmZvInAKDHBfYW9pX2VudGl0eRIQCghlbnRpdHlJZBgB",
-            "IAEoAxISCgplbnRpdHlUeXBlGAIgASgNEhoKA3BvcxgDIAEoCzINLkNvbW1v",
-            "bi5wX3BvcxIPCgdvd25lcklkGAQgASgDEg0KBWNmZ0lkGAUgASgNIisKDWMy",
-            "c19hb2lfZm9jdXMSGgoDcG9zGAEgASgLMg0uQ29tbW9uLnBfcG9zIjYKDXMy",
-            "Y19hb2lfZW50ZXISJQoIZW50aXRpZXMYASADKAsyEy5Xb3JsZC5wX2FvaV9l",
-            "bnRpdHkiIgoNczJjX2FvaV9sZWF2ZRIRCgllbnRpdHlJZHMYASADKAMiNwoO",
-            "czJjX2FvaV91cGRhdGUSJQoIZW50aXRpZXMYASADKAsyEy5Xb3JsZC5wX2Fv",
-            "aV9lbnRpdHliBnByb3RvMw=="));
+            "b29wEiYKCXRyb29wSW5mbxgBIAEoCzITLldvcmxkLnBfdHJvb3BfaW5mbyI4",
+            "Cg5zMmNfc3luY190cm9vcBImCgl0cm9vcEluZm8YASABKAsyEy5Xb3JsZC5w",
+            "X3Ryb29wX2luZm8i1gEKDHBfbWFyY2hfaW5mbxIQCgh0cm9vcElkeBgBIAEo",
+            "DRISCgp0YXJnZXRUeXBlGAIgASgNEhAKCHRhcmdldElkGAMgASgDEh8KCHN0",
+            "YXJ0UG9zGAQgASgLMg0uQ29tbW9uLnBfcG9zEh0KBmVuZFBvcxgFIAEoCzIN",
+            "LkNvbW1vbi5wX3BvcxIRCglzdGFydFRpbWUYBiABKAUSDwoHZW5kVGltZRgH",
+            "IAEoBRINCgVzdGF0ZRgIIAEoDRIbCgRwYXRoGAkgAygLMg0uQ29tbW9uLnBf",
+            "cG9zImUKCWMyc19tYXJjaBIQCgh0cm9vcElkeBgBIAEoDRISCgp0YXJnZXRU",
+            "eXBlGAIgASgNEhAKCHRhcmdldElkGAMgASgDEiAKCXRhcmdldFBvcxgEIAEo",
+            "CzINLkNvbW1vbi5wX3BvcyIzCglzMmNfbWFyY2gSJgoJbWFyY2hJbmZvGAEg",
+            "ASgLMhMuV29ybGQucF9tYXJjaF9pbmZvIiQKEGMyc19jYW5jZWxfbWFyY2gS",
+            "EAoIdHJvb3BJZHgYASABKA0iTAoQczJjX2NhbmNlbF9tYXJjaBIQCgh0cm9v",
+            "cElkeBgBIAEoDRImCgltYXJjaEluZm8YAiABKAsyEy5Xb3JsZC5wX21hcmNo",
+            "X2luZm8iOAoOczJjX3N5bmNfbWFyY2gSJgoJbWFyY2hJbmZvGAEgASgLMhMu",
+            "V29ybGQucF9tYXJjaF9pbmZvIhQKEmMyc19yZXFfbWFyY2hfbGlzdCI8ChJz",
+            "MmNfcmVxX21hcmNoX2xpc3QSJgoJbWFyY2hMaXN0GAEgAygLMhMuV29ybGQu",
+            "cF9tYXJjaF9pbmZvIrMBCgxwX2FvaV9lbnRpdHkSEAoIZW50aXR5SWQYASAB",
+            "KAMSEgoKZW50aXR5VHlwZRgCIAEoDRIaCgNwb3MYAyABKAsyDS5Db21tb24u",
+            "cF9wb3MSDwoHb3duZXJJZBgEIAEoAxINCgVjZmdJZBgFIAEoDRIdCgRwYXRo",
+            "GAYgAygLMg8uQ29tbW9uLnBfcG9zX2YSEQoJc3RhcnRUaW1lGAcgASgFEg8K",
+            "B2VuZFRpbWUYCCABKAUiKwoNYzJzX2FvaV9mb2N1cxIaCgNwb3MYASABKAsy",
+            "DS5Db21tb24ucF9wb3MiNgoNczJjX2FvaV9lbnRlchIlCghlbnRpdGllcxgB",
+            "IAMoCzITLldvcmxkLnBfYW9pX2VudGl0eSIiCg1zMmNfYW9pX2xlYXZlEhEK",
+            "CWVudGl0eUlkcxgBIAMoAyI3Cg5zMmNfYW9pX3VwZGF0ZRIlCghlbnRpdGll",
+            "cxgBIAMoCzITLldvcmxkLnBfYW9pX2VudGl0eWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -64,7 +67,8 @@ namespace World {
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_req_troop), global::World.s2c_req_troop.Parser, new[]{ "TroopList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_edit_troop), global::World.c2s_edit_troop.Parser, new[]{ "TroopInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_edit_troop), global::World.s2c_edit_troop.Parser, new[]{ "TroopInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_march_info), global::World.p_march_info.Parser, new[]{ "TroopIdx", "TargetType", "TargetId", "StartPos", "EndPos", "StartTime", "EndTime", "State" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_sync_troop), global::World.s2c_sync_troop.Parser, new[]{ "TroopInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_march_info), global::World.p_march_info.Parser, new[]{ "TroopIdx", "TargetType", "TargetId", "StartPos", "EndPos", "StartTime", "EndTime", "State", "Path" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_march), global::World.c2s_march.Parser, new[]{ "TroopIdx", "TargetType", "TargetId", "TargetPos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_march), global::World.s2c_march.Parser, new[]{ "MarchInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_cancel_march), global::World.c2s_cancel_march.Parser, new[]{ "TroopIdx" }, null, null, null, null),
@@ -72,7 +76,7 @@ namespace World {
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_sync_march), global::World.s2c_sync_march.Parser, new[]{ "MarchInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_req_march_list), global::World.c2s_req_march_list.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_req_march_list), global::World.s2c_req_march_list.Parser, new[]{ "MarchList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_aoi_entity), global::World.p_aoi_entity.Parser, new[]{ "EntityId", "EntityType", "Pos", "OwnerId", "CfgId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_aoi_entity), global::World.p_aoi_entity.Parser, new[]{ "EntityId", "EntityType", "Pos", "OwnerId", "CfgId", "Path", "StartTime", "EndTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_aoi_focus), global::World.c2s_aoi_focus.Parser, new[]{ "Pos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_aoi_enter), global::World.s2c_aoi_enter.Parser, new[]{ "Entities" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_aoi_leave), global::World.s2c_aoi_leave.Parser, new[]{ "EntityIds" }, null, null, null, null),
@@ -1335,8 +1339,218 @@ namespace World {
   }
 
   /// <summary>
+  /// 同步部队（战后兵力变化等）
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class s2c_sync_troop : pb::IMessage<s2c_sync_troop>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<s2c_sync_troop> _parser = new pb::MessageParser<s2c_sync_troop>(() => new s2c_sync_troop());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<s2c_sync_troop> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_sync_troop() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_sync_troop(s2c_sync_troop other) : this() {
+      troopInfo_ = other.troopInfo_ != null ? other.troopInfo_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_sync_troop Clone() {
+      return new s2c_sync_troop(this);
+    }
+
+    /// <summary>Field number for the "troopInfo" field.</summary>
+    public const int TroopInfoFieldNumber = 1;
+    private global::World.p_troop_info troopInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::World.p_troop_info TroopInfo {
+      get { return troopInfo_; }
+      set {
+        troopInfo_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as s2c_sync_troop);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(s2c_sync_troop other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(TroopInfo, other.TroopInfo)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (troopInfo_ != null) hash ^= TroopInfo.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (troopInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TroopInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (troopInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TroopInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (troopInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TroopInfo);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(s2c_sync_troop other) {
+      if (other == null) {
+        return;
+      }
+      if (other.troopInfo_ != null) {
+        if (troopInfo_ == null) {
+          TroopInfo = new global::World.p_troop_info();
+        }
+        TroopInfo.MergeFrom(other.TroopInfo);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (troopInfo_ == null) {
+              TroopInfo = new global::World.p_troop_info();
+            }
+            input.ReadMessage(TroopInfo);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (troopInfo_ == null) {
+              TroopInfo = new global::World.p_troop_info();
+            }
+            input.ReadMessage(TroopInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// ---------- 行军 ----------
-  /// targetType: 1回城 2打怪(怪物组) 预留扩展
+  /// targetType → TargetType.Id（1回城 2打怪，预留扩展）
   /// state: 1行军中 2已到达
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
@@ -1354,7 +1568,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[6]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1382,6 +1596,7 @@ namespace World {
       startTime_ = other.startTime_;
       endTime_ = other.endTime_;
       state_ = other.state_;
+      path_ = other.path_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1490,6 +1705,20 @@ namespace World {
       }
     }
 
+    /// <summary>Field number for the "path" field.</summary>
+    public const int PathFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Common.p_pos> _repeated_path_codec
+        = pb::FieldCodec.ForMessage(74, global::Common.p_pos.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_pos> path_ = new pbc::RepeatedField<global::Common.p_pos>();
+    /// <summary>
+    /// 拐点，含起点和终点
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_pos> Path {
+      get { return path_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1513,6 +1742,7 @@ namespace World {
       if (StartTime != other.StartTime) return false;
       if (EndTime != other.EndTime) return false;
       if (State != other.State) return false;
+      if(!path_.Equals(other.path_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1528,6 +1758,7 @@ namespace World {
       if (StartTime != 0) hash ^= StartTime.GetHashCode();
       if (EndTime != 0) hash ^= EndTime.GetHashCode();
       if (State != 0) hash ^= State.GetHashCode();
+      hash ^= path_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1578,6 +1809,7 @@ namespace World {
         output.WriteRawTag(64);
         output.WriteUInt32(State);
       }
+      path_.WriteTo(output, _repeated_path_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1620,6 +1852,7 @@ namespace World {
         output.WriteRawTag(64);
         output.WriteUInt32(State);
       }
+      path_.WriteTo(ref output, _repeated_path_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1654,6 +1887,7 @@ namespace World {
       if (State != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(State);
       }
+      size += path_.CalculateSize(_repeated_path_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1696,6 +1930,7 @@ namespace World {
       if (other.State != 0) {
         State = other.State;
       }
+      path_.Add(other.path_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1751,6 +1986,10 @@ namespace World {
           }
           case 64: {
             State = input.ReadUInt32();
+            break;
+          }
+          case 74: {
+            path_.AddEntriesFrom(input, _repeated_path_codec);
             break;
           }
         }
@@ -1810,6 +2049,10 @@ namespace World {
             State = input.ReadUInt32();
             break;
           }
+          case 74: {
+            path_.AddEntriesFrom(ref input, _repeated_path_codec);
+            break;
+          }
         }
       }
     }
@@ -1835,7 +2078,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[7]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2153,7 +2396,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[8]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2363,7 +2606,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[9]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2561,7 +2804,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[10]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2811,7 +3054,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[11]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3021,7 +3264,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[12]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3182,7 +3425,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[13]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3356,7 +3599,7 @@ namespace World {
 
   /// <summary>
   /// ---------- AOI ----------
-  /// 视野内实体；entityType: 1主城 2行军部队 3怪物组
+  /// 视野内实体；entityType → EntityType.Id（1主城 2行军部队 3怪物组）
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_aoi_entity : pb::IMessage<p_aoi_entity>
@@ -3373,7 +3616,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[14]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3398,6 +3641,9 @@ namespace World {
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       ownerId_ = other.ownerId_;
       cfgId_ = other.cfgId_;
+      path_ = other.path_.Clone();
+      startTime_ = other.startTime_;
+      endTime_ = other.endTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3473,6 +3719,44 @@ namespace World {
       }
     }
 
+    /// <summary>Field number for the "path" field.</summary>
+    public const int PathFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Common.p_pos_f> _repeated_path_codec
+        = pb::FieldCodec.ForMessage(50, global::Common.p_pos_f.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_pos_f> path_ = new pbc::RepeatedField<global::Common.p_pos_f>();
+    /// <summary>
+    /// 仅行军中的部队填，含起点终点
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_pos_f> Path {
+      get { return path_; }
+    }
+
+    /// <summary>Field number for the "startTime" field.</summary>
+    public const int StartTimeFieldNumber = 7;
+    private int startTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int StartTime {
+      get { return startTime_; }
+      set {
+        startTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "endTime" field.</summary>
+    public const int EndTimeFieldNumber = 8;
+    private int endTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int EndTime {
+      get { return endTime_; }
+      set {
+        endTime_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3493,6 +3777,9 @@ namespace World {
       if (!object.Equals(Pos, other.Pos)) return false;
       if (OwnerId != other.OwnerId) return false;
       if (CfgId != other.CfgId) return false;
+      if(!path_.Equals(other.path_)) return false;
+      if (StartTime != other.StartTime) return false;
+      if (EndTime != other.EndTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3505,6 +3792,9 @@ namespace World {
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (OwnerId != 0L) hash ^= OwnerId.GetHashCode();
       if (CfgId != 0) hash ^= CfgId.GetHashCode();
+      hash ^= path_.GetHashCode();
+      if (StartTime != 0) hash ^= StartTime.GetHashCode();
+      if (EndTime != 0) hash ^= EndTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3543,6 +3833,15 @@ namespace World {
         output.WriteRawTag(40);
         output.WriteUInt32(CfgId);
       }
+      path_.WriteTo(output, _repeated_path_codec);
+      if (StartTime != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(StartTime);
+      }
+      if (EndTime != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(EndTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3573,6 +3872,15 @@ namespace World {
         output.WriteRawTag(40);
         output.WriteUInt32(CfgId);
       }
+      path_.WriteTo(ref output, _repeated_path_codec);
+      if (StartTime != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(StartTime);
+      }
+      if (EndTime != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(EndTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3597,6 +3905,13 @@ namespace World {
       }
       if (CfgId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CfgId);
+      }
+      size += path_.CalculateSize(_repeated_path_codec);
+      if (StartTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartTime);
+      }
+      if (EndTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3627,6 +3942,13 @@ namespace World {
       }
       if (other.CfgId != 0) {
         CfgId = other.CfgId;
+      }
+      path_.Add(other.path_);
+      if (other.StartTime != 0) {
+        StartTime = other.StartTime;
+      }
+      if (other.EndTime != 0) {
+        EndTime = other.EndTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3668,6 +3990,18 @@ namespace World {
           }
           case 40: {
             CfgId = input.ReadUInt32();
+            break;
+          }
+          case 50: {
+            path_.AddEntriesFrom(input, _repeated_path_codec);
+            break;
+          }
+          case 56: {
+            StartTime = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            EndTime = input.ReadInt32();
             break;
           }
         }
@@ -3712,6 +4046,18 @@ namespace World {
             CfgId = input.ReadUInt32();
             break;
           }
+          case 50: {
+            path_.AddEntriesFrom(ref input, _repeated_path_codec);
+            break;
+          }
+          case 56: {
+            StartTime = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            EndTime = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -3737,7 +4083,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[15]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3947,7 +4293,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[16]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4137,7 +4483,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[17]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4329,7 +4675,7 @@ namespace World {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::World.WorldReflection.Descriptor.MessageTypes[18]; }
+      get { return global::World.WorldReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

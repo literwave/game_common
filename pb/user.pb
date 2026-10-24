@@ -1,8 +1,8 @@
 
-¨
+È
 
 user.protoUsercommon.proto"
-c2s_user_base_info"ÿ
+c2s_user_base_info"Ÿ
 s2c_user_base_info
 name (	Rname
 headIcon (RheadIcon
@@ -11,7 +11,10 @@ user.protoUsercommon.proto"
 level (Rlevel
 exp (Rexp8
 soldierInfo (2.Common.p_soldier_infoRsoldierInfo'
-cityPos (2.Common.p_posRcityPos"L
+cityPos (2.Common.p_posRcityPos
+
+allianceId	 (R
+allianceId"L
 s2c_sync_soldier8
 soldierInfo (2.Common.p_soldier_infoRsoldierInfo"<
 s2c_sync_city_pos'

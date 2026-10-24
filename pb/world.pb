@@ -1,5 +1,5 @@
 
-∞
+ı
 world.protoWorldcommon.proto"Y
 p_troop_pos
 heroIdx (RheroIdx0
@@ -16,7 +16,9 @@
 c2s_edit_troop1
 	troopInfo (2.World.p_troop_infoR	troopInfo"C
 s2c_edit_troop1
-	troopInfo (2.World.p_troop_infoR	troopInfo"Ü
+	troopInfo (2.World.p_troop_infoR	troopInfo"C
+s2c_sync_troop1
+	troopInfo (2.World.p_troop_infoR	troopInfo"©
 p_march_info
 troopIdx (RtroopIdx
 
@@ -27,7 +29,8 @@ targetType
 endPos (2.Common.p_posRendPos
 	startTime (R	startTime
 endTime (RendTime
-state (Rstate"ê
+state (Rstate!
+path	 (2.Common.p_posRpath"ê
 	c2s_march
 troopIdx (RtroopIdx
 
@@ -46,7 +49,7 @@ targetType
 	marchInfo (2.World.p_march_infoR	marchInfo"
 c2s_req_march_list"G
 s2c_req_march_list1
-	marchList (2.World.p_march_infoR	marchList"õ
+	marchList (2.World.p_march_infoR	marchList"¯
 p_aoi_entity
 entityId (RentityId
 
@@ -54,7 +57,10 @@ entityType (R
 entityType
 pos (2.Common.p_posRpos
 ownerId (RownerId
-cfgId (RcfgId"0
+cfgId (RcfgId#
+path (2.Common.p_pos_fRpath
+	startTime (R	startTime
+endTime (RendTime"0
 c2s_aoi_focus
 pos (2.Common.p_posRpos"@
 s2c_aoi_enter/

@@ -36,18 +36,6 @@ return {
         ["Overlap"] = 100000
     },
     {
-        ["Id"] = 5,
-        ["Name"] = "建造加速",
-        ["BuyDiamond"] = 50,
-        ["useParams"] = {
-            {
-                ["time"] = 300
-            }
-        },
-        ["Kind"] = 5,
-        ["Overlap"] = 999
-    },
-    {
         ["Id"] = 6,
         ["Name"] = "训练加速",
         ["BuyDiamond"] = 50,

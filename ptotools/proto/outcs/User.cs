@@ -25,30 +25,31 @@ namespace User {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cgp1c2VyLnByb3RvEgRVc2VyGgxjb21tb24ucHJvdG8iFAoSYzJzX3VzZXJf",
-            "YmFzZV9pbmZvIr0BChJzMmNfdXNlcl9iYXNlX2luZm8SDAoEbmFtZRgBIAEo",
+            "YmFzZV9pbmZvItEBChJzMmNfdXNlcl9iYXNlX2luZm8SDAoEbmFtZRgBIAEo",
             "CRIQCghoZWFkSWNvbhgCIAEoBRILCgNzZXgYAyABKAUSEQoJYmlydGhUaW1l",
             "GAQgASgFEg0KBWxldmVsGAUgASgFEgsKA2V4cBgGIAEoBRIrCgtzb2xkaWVy",
             "SW5mbxgHIAEoCzIWLkNvbW1vbi5wX3NvbGRpZXJfaW5mbxIeCgdjaXR5UG9z",
-            "GAggASgLMg0uQ29tbW9uLnBfcG9zIj8KEHMyY19zeW5jX3NvbGRpZXISKwoL",
-            "c29sZGllckluZm8YASABKAsyFi5Db21tb24ucF9zb2xkaWVyX2luZm8iMwoR",
-            "czJjX3N5bmNfY2l0eV9wb3MSHgoHY2l0eVBvcxgBIAEoCzINLkNvbW1vbi5w",
-            "X3BvcyIsCg9jMnNfdXNlcl9jcmVhdGUSDAoEbmFtZRgBIAEoCRILCgNzZXgY",
-            "AiABKAUiLAoPczJjX3VzZXJfY3JlYXRlEgwKBG5hbWUYASABKAkSCwoDc2V4",
-            "GAIgASgFIhIKEGMyc19yZXFfdXNlcl9yZXMiOgoQczJjX3JlcV91c2VyX3Jl",
-            "cxImCgdyZXNMaXN0GAEgAygLMhUuQ29tbW9uLnBfY29tbW9uX2luZm8iQAoW",
-            "czJjX3N5bmNfdXNlcl9yZXNfbGlzdBImCgdyZXNMaXN0GAEgAygLMhUuQ29t",
-            "bW9uLnBfY29tbW9uX2luZm8iJgoXczJjX3N5c19ub3RpZnlfYnlfbGFuaWQS",
-            "CwoDdGJsGAEgAygJIhoKC3MyY190ZWxsX21lEgsKA21zZxgBIAEoCSIdCg5j",
-            "MnNfZ21fY29tbWFuZBILCgNjbWQYASABKAkiOQoTczJjX2dtX2NvbW1hbmRf",
-            "aGVscBIiCgNyZXQYASADKAsyFS5Db21tb24ucF9jb21tb25faW5mbyIoChRj",
-            "MnNfY2hhbmdlX2hlYWRfaWNvbhIQCghoZWFkSWNvbhgBIAEoBSIoChRzMmNf",
-            "Y2hhbmdlX2hlYWRfaWNvbhIQCghoZWFkSWNvbhgBIAEoBSIUChJjMnNfY2xp",
-            "ZW50X2xvYWRfb2siFAoSczJjX2NsaWVudF9sb2FkX29rYgZwcm90bzM="));
+            "GAggASgLMg0uQ29tbW9uLnBfcG9zEhIKCmFsbGlhbmNlSWQYCSABKAMiPwoQ",
+            "czJjX3N5bmNfc29sZGllchIrCgtzb2xkaWVySW5mbxgBIAEoCzIWLkNvbW1v",
+            "bi5wX3NvbGRpZXJfaW5mbyIzChFzMmNfc3luY19jaXR5X3BvcxIeCgdjaXR5",
+            "UG9zGAEgASgLMg0uQ29tbW9uLnBfcG9zIiwKD2Myc191c2VyX2NyZWF0ZRIM",
+            "CgRuYW1lGAEgASgJEgsKA3NleBgCIAEoBSIsCg9zMmNfdXNlcl9jcmVhdGUS",
+            "DAoEbmFtZRgBIAEoCRILCgNzZXgYAiABKAUiEgoQYzJzX3JlcV91c2VyX3Jl",
+            "cyI6ChBzMmNfcmVxX3VzZXJfcmVzEiYKB3Jlc0xpc3QYASADKAsyFS5Db21t",
+            "b24ucF9jb21tb25faW5mbyJAChZzMmNfc3luY191c2VyX3Jlc19saXN0EiYK",
+            "B3Jlc0xpc3QYASADKAsyFS5Db21tb24ucF9jb21tb25faW5mbyImChdzMmNf",
+            "c3lzX25vdGlmeV9ieV9sYW5pZBILCgN0YmwYASADKAkiGgoLczJjX3RlbGxf",
+            "bWUSCwoDbXNnGAEgASgJIh0KDmMyc19nbV9jb21tYW5kEgsKA2NtZBgBIAEo",
+            "CSI5ChNzMmNfZ21fY29tbWFuZF9oZWxwEiIKA3JldBgBIAMoCzIVLkNvbW1v",
+            "bi5wX2NvbW1vbl9pbmZvIigKFGMyc19jaGFuZ2VfaGVhZF9pY29uEhAKCGhl",
+            "YWRJY29uGAEgASgFIigKFHMyY19jaGFuZ2VfaGVhZF9pY29uEhAKCGhlYWRJ",
+            "Y29uGAEgASgFIhQKEmMyc19jbGllbnRfbG9hZF9vayIUChJzMmNfY2xpZW50",
+            "X2xvYWRfb2tiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_user_base_info), global::User.c2s_user_base_info.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_user_base_info), global::User.s2c_user_base_info.Parser, new[]{ "Name", "HeadIcon", "Sex", "BirthTime", "Level", "Exp", "SoldierInfo", "CityPos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_user_base_info), global::User.s2c_user_base_info.Parser, new[]{ "Name", "HeadIcon", "Sex", "BirthTime", "Level", "Exp", "SoldierInfo", "CityPos", "AllianceId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_sync_soldier), global::User.s2c_sync_soldier.Parser, new[]{ "SoldierInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.s2c_sync_city_pos), global::User.s2c_sync_city_pos.Parser, new[]{ "CityPos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::User.c2s_user_create), global::User.c2s_user_create.Parser, new[]{ "Name", "Sex" }, null, null, null, null),
@@ -274,6 +275,7 @@ namespace User {
       exp_ = other.exp_;
       soldierInfo_ = other.soldierInfo_ != null ? other.soldierInfo_.Clone() : null;
       cityPos_ = other.cityPos_ != null ? other.cityPos_.Clone() : null;
+      allianceId_ = other.allianceId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -385,6 +387,21 @@ namespace User {
       }
     }
 
+    /// <summary>Field number for the "allianceId" field.</summary>
+    public const int AllianceIdFieldNumber = 9;
+    private long allianceId_;
+    /// <summary>
+    /// 联盟 id，0=无联盟
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long AllianceId {
+      get { return allianceId_; }
+      set {
+        allianceId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -408,6 +425,7 @@ namespace User {
       if (Exp != other.Exp) return false;
       if (!object.Equals(SoldierInfo, other.SoldierInfo)) return false;
       if (!object.Equals(CityPos, other.CityPos)) return false;
+      if (AllianceId != other.AllianceId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -423,6 +441,7 @@ namespace User {
       if (Exp != 0) hash ^= Exp.GetHashCode();
       if (soldierInfo_ != null) hash ^= SoldierInfo.GetHashCode();
       if (cityPos_ != null) hash ^= CityPos.GetHashCode();
+      if (AllianceId != 0L) hash ^= AllianceId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -473,6 +492,10 @@ namespace User {
         output.WriteRawTag(66);
         output.WriteMessage(CityPos);
       }
+      if (AllianceId != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(AllianceId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -515,6 +538,10 @@ namespace User {
         output.WriteRawTag(66);
         output.WriteMessage(CityPos);
       }
+      if (AllianceId != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(AllianceId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -548,6 +575,9 @@ namespace User {
       }
       if (cityPos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CityPos);
+      }
+      if (AllianceId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(AllianceId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -590,6 +620,9 @@ namespace User {
           CityPos = new global::Common.p_pos();
         }
         CityPos.MergeFrom(other.CityPos);
+      }
+      if (other.AllianceId != 0L) {
+        AllianceId = other.AllianceId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -648,6 +681,10 @@ namespace User {
             input.ReadMessage(CityPos);
             break;
           }
+          case 72: {
+            AllianceId = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -703,6 +740,10 @@ namespace User {
               CityPos = new global::Common.p_pos();
             }
             input.ReadMessage(CityPos);
+            break;
+          }
+          case 72: {
+            AllianceId = input.ReadInt64();
             break;
           }
         }

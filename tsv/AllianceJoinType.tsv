@@ -1,0 +1,7 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	自由加入	FREE	直接加入
+2	需审批	APPLY	提交申请，官员/盟主审批
+3	禁止加入	CLOSED	不接受新成员
