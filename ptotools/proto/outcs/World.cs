@@ -1550,7 +1550,7 @@ namespace World {
 
   /// <summary>
   /// ---------- 行军 ----------
-  /// targetType → TargetType.Id（1回城 2打怪，预留扩展）
+  /// targetType → TargetType.Id（1回城 2打怪 3占领资源地）
   /// state: 1行军中 2已到达
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
@@ -3599,7 +3599,7 @@ namespace World {
 
   /// <summary>
   /// ---------- AOI ----------
-  /// 视野内实体；entityType → EntityType.Id（1主城 2行军部队 3怪物组）
+  /// 视野内实体；entityType → EntityType.Id（1主城 2行军部队 3怪物组 4资源地）
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_aoi_entity : pb::IMessage<p_aoi_entity>

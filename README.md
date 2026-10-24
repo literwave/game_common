@@ -49,8 +49,10 @@ git submodule update --init --recursive
 |---|---|
 | `BuildingDetail` | 建筑类型；`Type` 1主城/2军事/3资源/4功能/5防御；`Icon` 只导出到前端；`Id` 1 为主城（任务 `bid` 对齐） |
 | `BuildingLv` | 建筑等级；粮/木/铁消耗、前置与效果值（建造/升级即时完成，无时间）；`BuildingType` 指向 `BuildingDetail.Id`；协议见 `proto/build.proto` |
-| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 最大兵力（`value1`），`Id=9` 单频道最大聊天记录条数（`value1`）；联盟相关：`Id=10` 创建消耗令牌数（道具 Id=4），`Id=11` 名称最大长度，`Id=12` 公告最大长度，`Id=13` 宣言最大长度，`Id=14` 申请列表上限；创建开启条件见 `SystemOpen.CREATE_ALLIANCE`；人数上限见 `AllianceLv` |
+| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 最大兵力（`value1`），`Id=9` 单频道最大聊天记录条数（`value1`）；联盟相关：`Id=10` 创建消耗令牌数（道具 Id=4），`Id=11` 名称最大长度，`Id=12` 公告最大长度，`Id=13` 宣言最大长度，`Id=14` 申请列表上限；邮件：`Id=15` 单类型最大邮件条数，`Id=16` 默认邮件保留天数（`Mail.ExpireDay=0` 时用）；创建开启条件见 `SystemOpen.CREATE_ALLIANCE`；人数上限见 `AllianceLv` |
 | `ChatChannel` | 聊天频道枚举；对齐 `chat.proto` 的 `channel`：1世界/2联盟/3私聊；协议见 `proto/chat.proto` |
+| `MailKind` | 邮件类型枚举；对齐 `mail.proto` 的 `mailKind`：1系统/2联盟/3公告 |
+| `Mail` | 邮件模板；`Kind`→`MailKind`；协议 `mailId`→`Mail.Id`，实例唯一 id 为 `mailUid`；`Title`/`Content` 中 `%s` 由详情 `detailList` 替换；不配奖励，有奖时发信填协议 `rewardList`；`Icon`/`Sender` 只导出到前端；协议见 `proto/mail.proto` |
 | `AlliancePos` | 联盟职位枚举；对齐 `alliance.proto` 的 `pos`：1盟主/2官员/3成员；协议见 `proto/alliance.proto` |
 | `AllianceJoinType` | 联盟加入方式枚举；对齐 `alliance.proto` 的 `joinType`：1自由加入/2需审批/3禁止加入 |
 | `AllianceLv` | 联盟等级；`MemberMax` 人数上限、`OfficerMax` 官员上限（不含盟主）、`Exp` 升到下一级所需贡献（满级为 0）；`memberMax` 协议字段取当前等级的 `MemberMax` |
@@ -63,9 +65,9 @@ git submodule update --init --recursive
 | `ReportInfo` | 后台域名和端口 |
 | `ServerGroup` | 服务器群组与后台 ID |
 | `SystemOpen` | 系统开启；`HEAD_ICON` 更换头像、`CREATE_ALLIANCE` 创建联盟（`Cond.level` 控制开启主城等级） |
-| `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组 |
-| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪 |
-| `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守 |
+| `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组/4资源地 |
+| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地 |
+| `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地 |
 | `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
 | `MainTask` | 主线任务；`NextId` 衔接下一任务；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
 | `DailyTask` | 日常任务；每日重置；字段同主线但无 `NextId`；协议 `taskType=2` |
@@ -73,3 +75,5 @@ git submodule update --init --recursive
 | `Activity` | 活动；`Type` 1登录/2冲榜/3限时招募/4资源增产/5礼包/6在线/7兑换；冲榜类 `Params.rank_type` → `RankType.Id`；`Time` 为 `{ type, ...参数 }`；`OpenCond`/`Params`/`Rewards` 按类型解释；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/activity.proto` |
 | `Monster` | 怪物单位；战斗属性对齐武将；`Soldier` 兵力、`Power` 战力；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
 | `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }`；打怪战报/回放见 `proto/report.proto`，战斗流程见 `proto/battle.proto` |
+| `ResLandType` | 资源地类型枚举；对齐 `ResLand.Type`：1粮田/2林场/3铁矿（产出对应 Item 1/2/3） |
+| `ResLand` | 资源地；`Id=Type*100+Level`；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫；`Reward` 击败守卫后立即发放（无占领倒计时）；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Icon`/`Desc` 只导出到前端 |

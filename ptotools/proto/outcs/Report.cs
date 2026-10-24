@@ -91,7 +91,7 @@ namespace Report {
   /// <summary>
   /// 战报简要（列表 / 推送）
   /// reportType → ReportType.Id（1打怪 2攻打玩家 3防守）
-  /// targetType → TargetType.Id（行军目标，当前主要是打怪）
+  /// targetType → TargetType.Id（行军目标：打怪/占领资源地等）
   /// result: 1胜 2负
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]

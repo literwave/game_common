@@ -33,11 +33,11 @@ namespace Common {
             "X3N0chIJCgFrGAEgASgFEgkKAXYYAiABKAkihQEKEHBfaGVyb19iYXNlX2lu",
             "Zm8SEAoIaGVyb1R5cGUYASABKAUSCwoDZXhwGAIgASgFEgoKAmx2GAMgASgF",
             "EgwKBHN0YXIYBCABKAUSDgoGbmV3VGFnGAUgASgIEigKCXNraWxsTGlzdBgG",
-            "IAMoCzIVLkNvbW1vbi5wX2NvbW1vbl9pbmZvIqgBCgtwX21haWxfaW5mbxIQ",
-            "CghtYWlsVHlwZRgBIAEoBRIOCgZtYWlsSWQYAiABKAMSDQoFdGl0bGUYAyAB",
-            "KAkSDwoHY29udGVudBgEIAEoCRIOCgZpc1JlYWQYBSABKAgSDgoGaXNMb2Nr",
-            "GAYgASgIEhMKC2lzR290UmV3YXJkGAcgASgIEhEKCXN0YXJ0VGltZRgIIAEo",
-            "BRIPCgdlbmRUaW1lGAkgASgFYgZwcm90bzM="));
+            "IAMoCzIVLkNvbW1vbi5wX2NvbW1vbl9pbmZvIqcBCgtwX21haWxfaW5mbxIO",
+            "CgZtYWlsSWQYASABKAUSDwoHbWFpbFVpZBgCIAEoAxINCgV0aXRsZRgDIAEo",
+            "CRIPCgdjb250ZW50GAQgASgJEg4KBmlzUmVhZBgFIAEoCBIOCgZpc0xvY2sY",
+            "BiABKAgSEwoLaXNHb3RSZXdhcmQYByABKAgSEQoJc3RhcnRUaW1lGAggASgF",
+            "Eg8KB2VuZFRpbWUYCSABKAViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -48,7 +48,7 @@ namespace Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_common_info), global::Common.p_common_info.Parser, new[]{ "K", "V" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_common_info_int_str), global::Common.p_common_info_int_str.Parser, new[]{ "K", "V" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_hero_base_info), global::Common.p_hero_base_info.Parser, new[]{ "HeroType", "Exp", "Lv", "Star", "NewTag", "SkillList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_mail_info), global::Common.p_mail_info.Parser, new[]{ "MailType", "MailId", "Title", "Content", "IsRead", "IsLock", "IsGotReward", "StartTime", "EndTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_mail_info), global::Common.p_mail_info.Parser, new[]{ "MailId", "MailUid", "Title", "Content", "IsRead", "IsLock", "IsGotReward", "StartTime", "EndTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1889,6 +1889,9 @@ namespace Common {
 
   }
 
+  /// <summary>
+  /// mailId → Mail.Id（邮件模板）；mailUid 为邮件唯一实例 id
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_mail_info : pb::IMessage<p_mail_info>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1924,8 +1927,8 @@ namespace Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public p_mail_info(p_mail_info other) : this() {
-      mailType_ = other.mailType_;
       mailId_ = other.mailId_;
+      mailUid_ = other.mailUid_;
       title_ = other.title_;
       content_ = other.content_;
       isRead_ = other.isRead_;
@@ -1942,27 +1945,27 @@ namespace Common {
       return new p_mail_info(this);
     }
 
-    /// <summary>Field number for the "mailType" field.</summary>
-    public const int MailTypeFieldNumber = 1;
-    private int mailType_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MailType {
-      get { return mailType_; }
-      set {
-        mailType_ = value;
-      }
-    }
-
     /// <summary>Field number for the "mailId" field.</summary>
-    public const int MailIdFieldNumber = 2;
-    private long mailId_;
+    public const int MailIdFieldNumber = 1;
+    private int mailId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long MailId {
+    public int MailId {
       get { return mailId_; }
       set {
         mailId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailUid" field.</summary>
+    public const int MailUidFieldNumber = 2;
+    private long mailUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MailUid {
+      get { return mailUid_; }
+      set {
+        mailUid_ = value;
       }
     }
 
@@ -2065,8 +2068,8 @@ namespace Common {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (MailType != other.MailType) return false;
       if (MailId != other.MailId) return false;
+      if (MailUid != other.MailUid) return false;
       if (Title != other.Title) return false;
       if (Content != other.Content) return false;
       if (IsRead != other.IsRead) return false;
@@ -2081,8 +2084,8 @@ namespace Common {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (MailType != 0) hash ^= MailType.GetHashCode();
-      if (MailId != 0L) hash ^= MailId.GetHashCode();
+      if (MailId != 0) hash ^= MailId.GetHashCode();
+      if (MailUid != 0L) hash ^= MailUid.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (Content.Length != 0) hash ^= Content.GetHashCode();
       if (IsRead != false) hash ^= IsRead.GetHashCode();
@@ -2108,13 +2111,13 @@ namespace Common {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (MailType != 0) {
+      if (MailId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(MailType);
+        output.WriteInt32(MailId);
       }
-      if (MailId != 0L) {
+      if (MailUid != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt64(MailId);
+        output.WriteInt64(MailUid);
       }
       if (Title.Length != 0) {
         output.WriteRawTag(26);
@@ -2154,13 +2157,13 @@ namespace Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailType != 0) {
+      if (MailId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(MailType);
+        output.WriteInt32(MailId);
       }
-      if (MailId != 0L) {
+      if (MailUid != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt64(MailId);
+        output.WriteInt64(MailUid);
       }
       if (Title.Length != 0) {
         output.WriteRawTag(26);
@@ -2200,11 +2203,11 @@ namespace Common {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (MailType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailType);
+      if (MailId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailId);
       }
-      if (MailId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
+      if (MailUid != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailUid);
       }
       if (Title.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
@@ -2239,11 +2242,11 @@ namespace Common {
       if (other == null) {
         return;
       }
-      if (other.MailType != 0) {
-        MailType = other.MailType;
-      }
-      if (other.MailId != 0L) {
+      if (other.MailId != 0) {
         MailId = other.MailId;
+      }
+      if (other.MailUid != 0L) {
+        MailUid = other.MailUid;
       }
       if (other.Title.Length != 0) {
         Title = other.Title;
@@ -2286,11 +2289,11 @@ namespace Common {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            MailType = input.ReadInt32();
+            MailId = input.ReadInt32();
             break;
           }
           case 16: {
-            MailId = input.ReadInt64();
+            MailUid = input.ReadInt64();
             break;
           }
           case 26: {
@@ -2341,11 +2344,11 @@ namespace Common {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            MailType = input.ReadInt32();
+            MailId = input.ReadInt32();
             break;
           }
           case 16: {
-            MailId = input.ReadInt64();
+            MailUid = input.ReadInt64();
             break;
           }
           case 26: {

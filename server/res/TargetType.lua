@@ -10,5 +10,9 @@ return {
     {
         ["Id"] = 2,
         ["Enum"] = "ATTACK_MONSTER"
+    },
+    {
+        ["Id"] = 3,
+        ["Enum"] = "OCCUPY_RES_LAND"
     }
 }

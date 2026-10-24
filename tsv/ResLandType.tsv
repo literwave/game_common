@@ -1,0 +1,7 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	粮田	GRAIN	产出粮草（对齐 Item.Id=1）
+2	林场	WOOD	产出木材（对齐 Item.Id=2）
+3	铁矿	IRON	产出铁矿（对齐 Item.Id=3）

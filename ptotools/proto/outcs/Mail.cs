@@ -25,35 +25,38 @@ namespace Mail {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgptYWlsLnByb3RvEgRNYWlsGgxjb21tb24ucHJvdG8iJQoRYzJzX3JlcV9t",
-            "YWlsX2xpc3QSEAoIbWFpbEtpbmQYASABKAUiTAoRczJjX3JlcV9tYWlsX2xp",
-            "c3QSEAoIbWFpbEtpbmQYASABKAUSJQoIbWFpbEluZm8YAiABKAsyEy5Db21t",
-            "b24ucF9tYWlsX2luZm8iNwoTYzJzX3JlcV9tYWlsX2RldGFpbBIQCghtYWls",
-            "S2luZBgBIAEoBRIOCgZtYWlsSWQYAiABKAMiZAoTczJjX3JlcV9tYWlsX2Rl",
-            "dGFpbBIOCgZtYWlsSWQYASABKAMSEgoKZGV0YWlsTGlzdBgCIAMoCRIpCgpy",
-            "ZXdhcmRMaXN0GAMgAygLMhUuQ29tbW9uLnBfcmV3YXJkX2luZm8iOQoRYzJz",
-            "X2RlbF9tYWlsX2xpc3QSEAoIbWFpbEtpbmQYASABKAUSEgoKbWFpbElkTGlz",
-            "dBgCIAMoAyI5ChFzMmNfZGVsX21haWxfbGlzdBIQCghtYWlsS2luZBgBIAEo",
-            "BRISCgptYWlsSWRMaXN0GAIgAygDIkUKEWMyc19zZXRfbWFpbF9sb2NrEhAK",
-            "CG1haWxLaW5kGAEgASgFEg4KBm1haWxJZBgCIAEoAxIOCgZpc0xvY2sYAyAB",
-            "KAgiRQoRczJjX3NldF9tYWlsX2xvY2sSEAoIbWFpbEtpbmQYASABKAUSDgoG",
-            "bWFpbElkGAIgASgDEg4KBmlzTG9jaxgDIAEoCCJMChNjMnNfZ2V0X21haWxf",
-            "cmV3YXJkEjUKDm1haWxLaW5kSWRMaXN0GAEgAygLMh0uQ29tbW9uLnBfY29t",
-            "bW9uX2luZm9faW50X3N0ciJMChNzMmNfZ2V0X21haWxfcmV3YXJkEjUKDm1h",
-            "aWxLaW5kSWRMaXN0GAEgAygLMh0uQ29tbW9uLnBfY29tbW9uX2luZm9faW50",
-            "X3N0cmIGcHJvdG8z"));
+            "YWlsX2xpc3QSEAoIbWFpbEtpbmQYASABKAUiUAoRczJjX3JlcV9tYWlsX2xp",
+            "c3QSEAoIbWFpbEtpbmQYASABKAUSKQoMbWFpbEluZm9MaXN0GAIgAygLMhMu",
+            "Q29tbW9uLnBfbWFpbF9pbmZvIjgKE2Myc19yZXFfbWFpbF9kZXRhaWwSEAoI",
+            "bWFpbEtpbmQYASABKAUSDwoHbWFpbFVpZBgCIAEoAyJlChNzMmNfcmVxX21h",
+            "aWxfZGV0YWlsEg8KB21haWxVaWQYASABKAMSEgoKZGV0YWlsTGlzdBgCIAMo",
+            "CRIpCgpyZXdhcmRMaXN0GAMgAygLMhUuQ29tbW9uLnBfcmV3YXJkX2luZm8i",
+            "OgoRYzJzX2RlbF9tYWlsX2xpc3QSEAoIbWFpbEtpbmQYASABKAUSEwoLbWFp",
+            "bFVpZExpc3QYAiADKAMiOgoRczJjX2RlbF9tYWlsX2xpc3QSEAoIbWFpbEtp",
+            "bmQYASABKAUSEwoLbWFpbFVpZExpc3QYAiADKAMiRgoRYzJzX3NldF9tYWls",
+            "X2xvY2sSEAoIbWFpbEtpbmQYASABKAUSDwoHbWFpbFVpZBgCIAEoAxIOCgZp",
+            "c0xvY2sYAyABKAgiRgoRczJjX3NldF9tYWlsX2xvY2sSEAoIbWFpbEtpbmQY",
+            "ASABKAUSDwoHbWFpbFVpZBgCIAEoAxIOCgZpc0xvY2sYAyABKAgiTQoTYzJz",
+            "X2dldF9tYWlsX3Jld2FyZBI2Cg9tYWlsS2luZFVpZExpc3QYASADKAsyHS5D",
+            "b21tb24ucF9jb21tb25faW5mb19pbnRfc3RyIk0KE3MyY19nZXRfbWFpbF9y",
+            "ZXdhcmQSNgoPbWFpbEtpbmRVaWRMaXN0GAEgAygLMh0uQ29tbW9uLnBfY29t",
+            "bW9uX2luZm9faW50X3N0ciJICg1zMmNfc3luY19tYWlsEhAKCG1haWxLaW5k",
+            "GAEgASgFEiUKCG1haWxJbmZvGAIgASgLMhMuQ29tbW9uLnBfbWFpbF9pbmZv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_req_mail_list), global::Mail.c2s_req_mail_list.Parser, new[]{ "MailKind" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_req_mail_list), global::Mail.s2c_req_mail_list.Parser, new[]{ "MailKind", "MailInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_req_mail_detail), global::Mail.c2s_req_mail_detail.Parser, new[]{ "MailKind", "MailId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_req_mail_detail), global::Mail.s2c_req_mail_detail.Parser, new[]{ "MailId", "DetailList", "RewardList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_del_mail_list), global::Mail.c2s_del_mail_list.Parser, new[]{ "MailKind", "MailIdList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_del_mail_list), global::Mail.s2c_del_mail_list.Parser, new[]{ "MailKind", "MailIdList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_set_mail_lock), global::Mail.c2s_set_mail_lock.Parser, new[]{ "MailKind", "MailId", "IsLock" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_set_mail_lock), global::Mail.s2c_set_mail_lock.Parser, new[]{ "MailKind", "MailId", "IsLock" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_get_mail_reward), global::Mail.c2s_get_mail_reward.Parser, new[]{ "MailKindIdList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_get_mail_reward), global::Mail.s2c_get_mail_reward.Parser, new[]{ "MailKindIdList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_req_mail_list), global::Mail.s2c_req_mail_list.Parser, new[]{ "MailKind", "MailInfoList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_req_mail_detail), global::Mail.c2s_req_mail_detail.Parser, new[]{ "MailKind", "MailUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_req_mail_detail), global::Mail.s2c_req_mail_detail.Parser, new[]{ "MailUid", "DetailList", "RewardList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_del_mail_list), global::Mail.c2s_del_mail_list.Parser, new[]{ "MailKind", "MailUidList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_del_mail_list), global::Mail.s2c_del_mail_list.Parser, new[]{ "MailKind", "MailUidList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_set_mail_lock), global::Mail.c2s_set_mail_lock.Parser, new[]{ "MailKind", "MailUid", "IsLock" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_set_mail_lock), global::Mail.s2c_set_mail_lock.Parser, new[]{ "MailKind", "MailUid", "IsLock" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.c2s_get_mail_reward), global::Mail.c2s_get_mail_reward.Parser, new[]{ "MailKindUidList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_get_mail_reward), global::Mail.s2c_get_mail_reward.Parser, new[]{ "MailKindUidList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mail.s2c_sync_mail), global::Mail.s2c_sync_mail.Parser, new[]{ "MailKind", "MailInfo" }, null, null, null, null)
           }));
     }
     #endregion
@@ -294,7 +297,7 @@ namespace Mail {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public s2c_req_mail_list(s2c_req_mail_list other) : this() {
       mailKind_ = other.mailKind_;
-      mailInfo_ = other.mailInfo_ != null ? other.mailInfo_.Clone() : null;
+      mailInfoList_ = other.mailInfoList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -307,6 +310,2094 @@ namespace Mail {
     /// <summary>Field number for the "mailKind" field.</summary>
     public const int MailKindFieldNumber = 1;
     private int mailKind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MailKind {
+      get { return mailKind_; }
+      set {
+        mailKind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailInfoList" field.</summary>
+    public const int MailInfoListFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Common.p_mail_info> _repeated_mailInfoList_codec
+        = pb::FieldCodec.ForMessage(18, global::Common.p_mail_info.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_mail_info> mailInfoList_ = new pbc::RepeatedField<global::Common.p_mail_info>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_mail_info> MailInfoList {
+      get { return mailInfoList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as s2c_req_mail_list);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(s2c_req_mail_list other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailKind != other.MailKind) return false;
+      if(!mailInfoList_.Equals(other.mailInfoList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailKind != 0) hash ^= MailKind.GetHashCode();
+      hash ^= mailInfoList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      mailInfoList_.WriteTo(output, _repeated_mailInfoList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      mailInfoList_.WriteTo(ref output, _repeated_mailInfoList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailKind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
+      }
+      size += mailInfoList_.CalculateSize(_repeated_mailInfoList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(s2c_req_mail_list other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailKind != 0) {
+        MailKind = other.MailKind;
+      }
+      mailInfoList_.Add(other.mailInfoList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            mailInfoList_.AddEntriesFrom(input, _repeated_mailInfoList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            mailInfoList_.AddEntriesFrom(ref input, _repeated_mailInfoList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class c2s_req_mail_detail : pb::IMessage<c2s_req_mail_detail>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<c2s_req_mail_detail> _parser = new pb::MessageParser<c2s_req_mail_detail>(() => new c2s_req_mail_detail());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<c2s_req_mail_detail> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_req_mail_detail() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_req_mail_detail(c2s_req_mail_detail other) : this() {
+      mailKind_ = other.mailKind_;
+      mailUid_ = other.mailUid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_req_mail_detail Clone() {
+      return new c2s_req_mail_detail(this);
+    }
+
+    /// <summary>Field number for the "mailKind" field.</summary>
+    public const int MailKindFieldNumber = 1;
+    private int mailKind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MailKind {
+      get { return mailKind_; }
+      set {
+        mailKind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailUid" field.</summary>
+    public const int MailUidFieldNumber = 2;
+    private long mailUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MailUid {
+      get { return mailUid_; }
+      set {
+        mailUid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as c2s_req_mail_detail);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(c2s_req_mail_detail other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailKind != other.MailKind) return false;
+      if (MailUid != other.MailUid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailKind != 0) hash ^= MailKind.GetHashCode();
+      if (MailUid != 0L) hash ^= MailUid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      if (MailUid != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailUid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      if (MailUid != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailUid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailKind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
+      }
+      if (MailUid != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailUid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(c2s_req_mail_detail other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailKind != 0) {
+        MailKind = other.MailKind;
+      }
+      if (other.MailUid != 0L) {
+        MailUid = other.MailUid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class s2c_req_mail_detail : pb::IMessage<s2c_req_mail_detail>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<s2c_req_mail_detail> _parser = new pb::MessageParser<s2c_req_mail_detail>(() => new s2c_req_mail_detail());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<s2c_req_mail_detail> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_req_mail_detail() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_req_mail_detail(s2c_req_mail_detail other) : this() {
+      mailUid_ = other.mailUid_;
+      detailList_ = other.detailList_.Clone();
+      rewardList_ = other.rewardList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_req_mail_detail Clone() {
+      return new s2c_req_mail_detail(this);
+    }
+
+    /// <summary>Field number for the "mailUid" field.</summary>
+    public const int MailUidFieldNumber = 1;
+    private long mailUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MailUid {
+      get { return mailUid_; }
+      set {
+        mailUid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "detailList" field.</summary>
+    public const int DetailListFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_detailList_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> detailList_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> DetailList {
+      get { return detailList_; }
+    }
+
+    /// <summary>Field number for the "rewardList" field.</summary>
+    public const int RewardListFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Common.p_reward_info> _repeated_rewardList_codec
+        = pb::FieldCodec.ForMessage(26, global::Common.p_reward_info.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_reward_info> rewardList_ = new pbc::RepeatedField<global::Common.p_reward_info>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_reward_info> RewardList {
+      get { return rewardList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as s2c_req_mail_detail);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(s2c_req_mail_detail other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailUid != other.MailUid) return false;
+      if(!detailList_.Equals(other.detailList_)) return false;
+      if(!rewardList_.Equals(other.rewardList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailUid != 0L) hash ^= MailUid.GetHashCode();
+      hash ^= detailList_.GetHashCode();
+      hash ^= rewardList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailUid != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MailUid);
+      }
+      detailList_.WriteTo(output, _repeated_detailList_codec);
+      rewardList_.WriteTo(output, _repeated_rewardList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailUid != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MailUid);
+      }
+      detailList_.WriteTo(ref output, _repeated_detailList_codec);
+      rewardList_.WriteTo(ref output, _repeated_rewardList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailUid != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailUid);
+      }
+      size += detailList_.CalculateSize(_repeated_detailList_codec);
+      size += rewardList_.CalculateSize(_repeated_rewardList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(s2c_req_mail_detail other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailUid != 0L) {
+        MailUid = other.MailUid;
+      }
+      detailList_.Add(other.detailList_);
+      rewardList_.Add(other.rewardList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            detailList_.AddEntriesFrom(input, _repeated_detailList_codec);
+            break;
+          }
+          case 26: {
+            rewardList_.AddEntriesFrom(input, _repeated_rewardList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            detailList_.AddEntriesFrom(ref input, _repeated_detailList_codec);
+            break;
+          }
+          case 26: {
+            rewardList_.AddEntriesFrom(ref input, _repeated_rewardList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class c2s_del_mail_list : pb::IMessage<c2s_del_mail_list>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<c2s_del_mail_list> _parser = new pb::MessageParser<c2s_del_mail_list>(() => new c2s_del_mail_list());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<c2s_del_mail_list> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_del_mail_list() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_del_mail_list(c2s_del_mail_list other) : this() {
+      mailKind_ = other.mailKind_;
+      mailUidList_ = other.mailUidList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_del_mail_list Clone() {
+      return new c2s_del_mail_list(this);
+    }
+
+    /// <summary>Field number for the "mailKind" field.</summary>
+    public const int MailKindFieldNumber = 1;
+    private int mailKind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MailKind {
+      get { return mailKind_; }
+      set {
+        mailKind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailUidList" field.</summary>
+    public const int MailUidListFieldNumber = 2;
+    private static readonly pb::FieldCodec<long> _repeated_mailUidList_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> mailUidList_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<long> MailUidList {
+      get { return mailUidList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as c2s_del_mail_list);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(c2s_del_mail_list other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailKind != other.MailKind) return false;
+      if(!mailUidList_.Equals(other.mailUidList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailKind != 0) hash ^= MailKind.GetHashCode();
+      hash ^= mailUidList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      mailUidList_.WriteTo(output, _repeated_mailUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      mailUidList_.WriteTo(ref output, _repeated_mailUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailKind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
+      }
+      size += mailUidList_.CalculateSize(_repeated_mailUidList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(c2s_del_mail_list other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailKind != 0) {
+        MailKind = other.MailKind;
+      }
+      mailUidList_.Add(other.mailUidList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            mailUidList_.AddEntriesFrom(input, _repeated_mailUidList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            mailUidList_.AddEntriesFrom(ref input, _repeated_mailUidList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class s2c_del_mail_list : pb::IMessage<s2c_del_mail_list>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<s2c_del_mail_list> _parser = new pb::MessageParser<s2c_del_mail_list>(() => new s2c_del_mail_list());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<s2c_del_mail_list> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_del_mail_list() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_del_mail_list(s2c_del_mail_list other) : this() {
+      mailKind_ = other.mailKind_;
+      mailUidList_ = other.mailUidList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_del_mail_list Clone() {
+      return new s2c_del_mail_list(this);
+    }
+
+    /// <summary>Field number for the "mailKind" field.</summary>
+    public const int MailKindFieldNumber = 1;
+    private int mailKind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MailKind {
+      get { return mailKind_; }
+      set {
+        mailKind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailUidList" field.</summary>
+    public const int MailUidListFieldNumber = 2;
+    private static readonly pb::FieldCodec<long> _repeated_mailUidList_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> mailUidList_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<long> MailUidList {
+      get { return mailUidList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as s2c_del_mail_list);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(s2c_del_mail_list other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailKind != other.MailKind) return false;
+      if(!mailUidList_.Equals(other.mailUidList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailKind != 0) hash ^= MailKind.GetHashCode();
+      hash ^= mailUidList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      mailUidList_.WriteTo(output, _repeated_mailUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      mailUidList_.WriteTo(ref output, _repeated_mailUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailKind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
+      }
+      size += mailUidList_.CalculateSize(_repeated_mailUidList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(s2c_del_mail_list other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailKind != 0) {
+        MailKind = other.MailKind;
+      }
+      mailUidList_.Add(other.mailUidList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            mailUidList_.AddEntriesFrom(input, _repeated_mailUidList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            mailUidList_.AddEntriesFrom(ref input, _repeated_mailUidList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class c2s_set_mail_lock : pb::IMessage<c2s_set_mail_lock>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<c2s_set_mail_lock> _parser = new pb::MessageParser<c2s_set_mail_lock>(() => new c2s_set_mail_lock());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<c2s_set_mail_lock> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_set_mail_lock() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_set_mail_lock(c2s_set_mail_lock other) : this() {
+      mailKind_ = other.mailKind_;
+      mailUid_ = other.mailUid_;
+      isLock_ = other.isLock_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_set_mail_lock Clone() {
+      return new c2s_set_mail_lock(this);
+    }
+
+    /// <summary>Field number for the "mailKind" field.</summary>
+    public const int MailKindFieldNumber = 1;
+    private int mailKind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MailKind {
+      get { return mailKind_; }
+      set {
+        mailKind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailUid" field.</summary>
+    public const int MailUidFieldNumber = 2;
+    private long mailUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MailUid {
+      get { return mailUid_; }
+      set {
+        mailUid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isLock" field.</summary>
+    public const int IsLockFieldNumber = 3;
+    private bool isLock_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsLock {
+      get { return isLock_; }
+      set {
+        isLock_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as c2s_set_mail_lock);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(c2s_set_mail_lock other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailKind != other.MailKind) return false;
+      if (MailUid != other.MailUid) return false;
+      if (IsLock != other.IsLock) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailKind != 0) hash ^= MailKind.GetHashCode();
+      if (MailUid != 0L) hash ^= MailUid.GetHashCode();
+      if (IsLock != false) hash ^= IsLock.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      if (MailUid != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailUid);
+      }
+      if (IsLock != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsLock);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      if (MailUid != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailUid);
+      }
+      if (IsLock != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsLock);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailKind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
+      }
+      if (MailUid != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailUid);
+      }
+      if (IsLock != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(c2s_set_mail_lock other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailKind != 0) {
+        MailKind = other.MailKind;
+      }
+      if (other.MailUid != 0L) {
+        MailUid = other.MailUid;
+      }
+      if (other.IsLock != false) {
+        IsLock = other.IsLock;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            IsLock = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            IsLock = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class s2c_set_mail_lock : pb::IMessage<s2c_set_mail_lock>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<s2c_set_mail_lock> _parser = new pb::MessageParser<s2c_set_mail_lock>(() => new s2c_set_mail_lock());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<s2c_set_mail_lock> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_set_mail_lock() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_set_mail_lock(s2c_set_mail_lock other) : this() {
+      mailKind_ = other.mailKind_;
+      mailUid_ = other.mailUid_;
+      isLock_ = other.isLock_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_set_mail_lock Clone() {
+      return new s2c_set_mail_lock(this);
+    }
+
+    /// <summary>Field number for the "mailKind" field.</summary>
+    public const int MailKindFieldNumber = 1;
+    private int mailKind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MailKind {
+      get { return mailKind_; }
+      set {
+        mailKind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mailUid" field.</summary>
+    public const int MailUidFieldNumber = 2;
+    private long mailUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MailUid {
+      get { return mailUid_; }
+      set {
+        mailUid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isLock" field.</summary>
+    public const int IsLockFieldNumber = 3;
+    private bool isLock_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsLock {
+      get { return isLock_; }
+      set {
+        isLock_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as s2c_set_mail_lock);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(s2c_set_mail_lock other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MailKind != other.MailKind) return false;
+      if (MailUid != other.MailUid) return false;
+      if (IsLock != other.IsLock) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MailKind != 0) hash ^= MailKind.GetHashCode();
+      if (MailUid != 0L) hash ^= MailUid.GetHashCode();
+      if (IsLock != false) hash ^= IsLock.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      if (MailUid != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailUid);
+      }
+      if (IsLock != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsLock);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MailKind != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MailKind);
+      }
+      if (MailUid != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MailUid);
+      }
+      if (IsLock != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsLock);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MailKind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
+      }
+      if (MailUid != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailUid);
+      }
+      if (IsLock != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(s2c_set_mail_lock other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MailKind != 0) {
+        MailKind = other.MailKind;
+      }
+      if (other.MailUid != 0L) {
+        MailUid = other.MailUid;
+      }
+      if (other.IsLock != false) {
+        IsLock = other.IsLock;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            IsLock = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MailKind = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            MailUid = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            IsLock = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// k=mailKind，v=mailUid（字符串）
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class c2s_get_mail_reward : pb::IMessage<c2s_get_mail_reward>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<c2s_get_mail_reward> _parser = new pb::MessageParser<c2s_get_mail_reward>(() => new c2s_get_mail_reward());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<c2s_get_mail_reward> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_get_mail_reward() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_get_mail_reward(c2s_get_mail_reward other) : this() {
+      mailKindUidList_ = other.mailKindUidList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public c2s_get_mail_reward Clone() {
+      return new c2s_get_mail_reward(this);
+    }
+
+    /// <summary>Field number for the "mailKindUidList" field.</summary>
+    public const int MailKindUidListFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Common.p_common_info_int_str> _repeated_mailKindUidList_codec
+        = pb::FieldCodec.ForMessage(10, global::Common.p_common_info_int_str.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_common_info_int_str> mailKindUidList_ = new pbc::RepeatedField<global::Common.p_common_info_int_str>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_common_info_int_str> MailKindUidList {
+      get { return mailKindUidList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as c2s_get_mail_reward);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(c2s_get_mail_reward other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!mailKindUidList_.Equals(other.mailKindUidList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= mailKindUidList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      mailKindUidList_.WriteTo(output, _repeated_mailKindUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      mailKindUidList_.WriteTo(ref output, _repeated_mailKindUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += mailKindUidList_.CalculateSize(_repeated_mailKindUidList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(c2s_get_mail_reward other) {
+      if (other == null) {
+        return;
+      }
+      mailKindUidList_.Add(other.mailKindUidList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            mailKindUidList_.AddEntriesFrom(input, _repeated_mailKindUidList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            mailKindUidList_.AddEntriesFrom(ref input, _repeated_mailKindUidList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class s2c_get_mail_reward : pb::IMessage<s2c_get_mail_reward>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<s2c_get_mail_reward> _parser = new pb::MessageParser<s2c_get_mail_reward>(() => new s2c_get_mail_reward());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<s2c_get_mail_reward> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_get_mail_reward() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_get_mail_reward(s2c_get_mail_reward other) : this() {
+      mailKindUidList_ = other.mailKindUidList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_get_mail_reward Clone() {
+      return new s2c_get_mail_reward(this);
+    }
+
+    /// <summary>Field number for the "mailKindUidList" field.</summary>
+    public const int MailKindUidListFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Common.p_common_info_int_str> _repeated_mailKindUidList_codec
+        = pb::FieldCodec.ForMessage(10, global::Common.p_common_info_int_str.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_common_info_int_str> mailKindUidList_ = new pbc::RepeatedField<global::Common.p_common_info_int_str>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_common_info_int_str> MailKindUidList {
+      get { return mailKindUidList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as s2c_get_mail_reward);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(s2c_get_mail_reward other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!mailKindUidList_.Equals(other.mailKindUidList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= mailKindUidList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      mailKindUidList_.WriteTo(output, _repeated_mailKindUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      mailKindUidList_.WriteTo(ref output, _repeated_mailKindUidList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += mailKindUidList_.CalculateSize(_repeated_mailKindUidList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(s2c_get_mail_reward other) {
+      if (other == null) {
+        return;
+      }
+      mailKindUidList_.Add(other.mailKindUidList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            mailKindUidList_.AddEntriesFrom(input, _repeated_mailKindUidList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            mailKindUidList_.AddEntriesFrom(ref input, _repeated_mailKindUidList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// 新邮件推送（发信后）
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class s2c_sync_mail : pb::IMessage<s2c_sync_mail>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<s2c_sync_mail> _parser = new pb::MessageParser<s2c_sync_mail>(() => new s2c_sync_mail());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<s2c_sync_mail> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mail.MailReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_sync_mail() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_sync_mail(s2c_sync_mail other) : this() {
+      mailKind_ = other.mailKind_;
+      mailInfo_ = other.mailInfo_ != null ? other.mailInfo_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public s2c_sync_mail Clone() {
+      return new s2c_sync_mail(this);
+    }
+
+    /// <summary>Field number for the "mailKind" field.</summary>
+    public const int MailKindFieldNumber = 1;
+    private int mailKind_;
+    /// <summary>
+    /// → MailKind.Id
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int MailKind {
@@ -331,12 +2422,12 @@ namespace Mail {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as s2c_req_mail_list);
+      return Equals(other as s2c_sync_mail);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_req_mail_list other) {
+    public bool Equals(s2c_sync_mail other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -422,7 +2513,7 @@ namespace Mail {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_req_mail_list other) {
+    public void MergeFrom(s2c_sync_mail other) {
       if (other == null) {
         return;
       }
@@ -493,1861 +2584,6 @@ namespace Mail {
               MailInfo = new global::Common.p_mail_info();
             }
             input.ReadMessage(MailInfo);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class c2s_req_mail_detail : pb::IMessage<c2s_req_mail_detail>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<c2s_req_mail_detail> _parser = new pb::MessageParser<c2s_req_mail_detail>(() => new c2s_req_mail_detail());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<c2s_req_mail_detail> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_req_mail_detail() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_req_mail_detail(c2s_req_mail_detail other) : this() {
-      mailKind_ = other.mailKind_;
-      mailId_ = other.mailId_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_req_mail_detail Clone() {
-      return new c2s_req_mail_detail(this);
-    }
-
-    /// <summary>Field number for the "mailKind" field.</summary>
-    public const int MailKindFieldNumber = 1;
-    private int mailKind_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MailKind {
-      get { return mailKind_; }
-      set {
-        mailKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mailId" field.</summary>
-    public const int MailIdFieldNumber = 2;
-    private long mailId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long MailId {
-      get { return mailId_; }
-      set {
-        mailId_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as c2s_req_mail_detail);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(c2s_req_mail_detail other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MailKind != other.MailKind) return false;
-      if (MailId != other.MailId) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      if (MailId != 0L) hash ^= MailId.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      if (MailId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MailId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      if (MailId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MailId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (MailKind != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
-      }
-      if (MailId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(c2s_req_mail_detail other) {
-      if (other == null) {
-        return;
-      }
-      if (other.MailKind != 0) {
-        MailKind = other.MailKind;
-      }
-      if (other.MailId != 0L) {
-        MailId = other.MailId;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MailId = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MailId = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_req_mail_detail : pb::IMessage<s2c_req_mail_detail>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<s2c_req_mail_detail> _parser = new pb::MessageParser<s2c_req_mail_detail>(() => new s2c_req_mail_detail());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_req_mail_detail> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_req_mail_detail() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_req_mail_detail(s2c_req_mail_detail other) : this() {
-      mailId_ = other.mailId_;
-      detailList_ = other.detailList_.Clone();
-      rewardList_ = other.rewardList_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_req_mail_detail Clone() {
-      return new s2c_req_mail_detail(this);
-    }
-
-    /// <summary>Field number for the "mailId" field.</summary>
-    public const int MailIdFieldNumber = 1;
-    private long mailId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long MailId {
-      get { return mailId_; }
-      set {
-        mailId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "detailList" field.</summary>
-    public const int DetailListFieldNumber = 2;
-    private static readonly pb::FieldCodec<string> _repeated_detailList_codec
-        = pb::FieldCodec.ForString(18);
-    private readonly pbc::RepeatedField<string> detailList_ = new pbc::RepeatedField<string>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> DetailList {
-      get { return detailList_; }
-    }
-
-    /// <summary>Field number for the "rewardList" field.</summary>
-    public const int RewardListFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Common.p_reward_info> _repeated_rewardList_codec
-        = pb::FieldCodec.ForMessage(26, global::Common.p_reward_info.Parser);
-    private readonly pbc::RepeatedField<global::Common.p_reward_info> rewardList_ = new pbc::RepeatedField<global::Common.p_reward_info>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Common.p_reward_info> RewardList {
-      get { return rewardList_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as s2c_req_mail_detail);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_req_mail_detail other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MailId != other.MailId) return false;
-      if(!detailList_.Equals(other.detailList_)) return false;
-      if(!rewardList_.Equals(other.rewardList_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (MailId != 0L) hash ^= MailId.GetHashCode();
-      hash ^= detailList_.GetHashCode();
-      hash ^= rewardList_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (MailId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MailId);
-      }
-      detailList_.WriteTo(output, _repeated_detailList_codec);
-      rewardList_.WriteTo(output, _repeated_rewardList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MailId);
-      }
-      detailList_.WriteTo(ref output, _repeated_detailList_codec);
-      rewardList_.WriteTo(ref output, _repeated_rewardList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (MailId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
-      }
-      size += detailList_.CalculateSize(_repeated_detailList_codec);
-      size += rewardList_.CalculateSize(_repeated_rewardList_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_req_mail_detail other) {
-      if (other == null) {
-        return;
-      }
-      if (other.MailId != 0L) {
-        MailId = other.MailId;
-      }
-      detailList_.Add(other.detailList_);
-      rewardList_.Add(other.rewardList_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MailId = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            detailList_.AddEntriesFrom(input, _repeated_detailList_codec);
-            break;
-          }
-          case 26: {
-            rewardList_.AddEntriesFrom(input, _repeated_rewardList_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MailId = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            detailList_.AddEntriesFrom(ref input, _repeated_detailList_codec);
-            break;
-          }
-          case 26: {
-            rewardList_.AddEntriesFrom(ref input, _repeated_rewardList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class c2s_del_mail_list : pb::IMessage<c2s_del_mail_list>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<c2s_del_mail_list> _parser = new pb::MessageParser<c2s_del_mail_list>(() => new c2s_del_mail_list());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<c2s_del_mail_list> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_del_mail_list() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_del_mail_list(c2s_del_mail_list other) : this() {
-      mailKind_ = other.mailKind_;
-      mailIdList_ = other.mailIdList_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_del_mail_list Clone() {
-      return new c2s_del_mail_list(this);
-    }
-
-    /// <summary>Field number for the "mailKind" field.</summary>
-    public const int MailKindFieldNumber = 1;
-    private int mailKind_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MailKind {
-      get { return mailKind_; }
-      set {
-        mailKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mailIdList" field.</summary>
-    public const int MailIdListFieldNumber = 2;
-    private static readonly pb::FieldCodec<long> _repeated_mailIdList_codec
-        = pb::FieldCodec.ForInt64(18);
-    private readonly pbc::RepeatedField<long> mailIdList_ = new pbc::RepeatedField<long>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<long> MailIdList {
-      get { return mailIdList_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as c2s_del_mail_list);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(c2s_del_mail_list other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MailKind != other.MailKind) return false;
-      if(!mailIdList_.Equals(other.mailIdList_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      hash ^= mailIdList_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      mailIdList_.WriteTo(output, _repeated_mailIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      mailIdList_.WriteTo(ref output, _repeated_mailIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (MailKind != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
-      }
-      size += mailIdList_.CalculateSize(_repeated_mailIdList_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(c2s_del_mail_list other) {
-      if (other == null) {
-        return;
-      }
-      if (other.MailKind != 0) {
-        MailKind = other.MailKind;
-      }
-      mailIdList_.Add(other.mailIdList_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
-            mailIdList_.AddEntriesFrom(input, _repeated_mailIdList_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
-            mailIdList_.AddEntriesFrom(ref input, _repeated_mailIdList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_del_mail_list : pb::IMessage<s2c_del_mail_list>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<s2c_del_mail_list> _parser = new pb::MessageParser<s2c_del_mail_list>(() => new s2c_del_mail_list());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_del_mail_list> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_del_mail_list() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_del_mail_list(s2c_del_mail_list other) : this() {
-      mailKind_ = other.mailKind_;
-      mailIdList_ = other.mailIdList_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_del_mail_list Clone() {
-      return new s2c_del_mail_list(this);
-    }
-
-    /// <summary>Field number for the "mailKind" field.</summary>
-    public const int MailKindFieldNumber = 1;
-    private int mailKind_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MailKind {
-      get { return mailKind_; }
-      set {
-        mailKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mailIdList" field.</summary>
-    public const int MailIdListFieldNumber = 2;
-    private static readonly pb::FieldCodec<long> _repeated_mailIdList_codec
-        = pb::FieldCodec.ForInt64(18);
-    private readonly pbc::RepeatedField<long> mailIdList_ = new pbc::RepeatedField<long>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<long> MailIdList {
-      get { return mailIdList_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as s2c_del_mail_list);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_del_mail_list other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MailKind != other.MailKind) return false;
-      if(!mailIdList_.Equals(other.mailIdList_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      hash ^= mailIdList_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      mailIdList_.WriteTo(output, _repeated_mailIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      mailIdList_.WriteTo(ref output, _repeated_mailIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (MailKind != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
-      }
-      size += mailIdList_.CalculateSize(_repeated_mailIdList_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_del_mail_list other) {
-      if (other == null) {
-        return;
-      }
-      if (other.MailKind != 0) {
-        MailKind = other.MailKind;
-      }
-      mailIdList_.Add(other.mailIdList_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
-            mailIdList_.AddEntriesFrom(input, _repeated_mailIdList_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
-            mailIdList_.AddEntriesFrom(ref input, _repeated_mailIdList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class c2s_set_mail_lock : pb::IMessage<c2s_set_mail_lock>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<c2s_set_mail_lock> _parser = new pb::MessageParser<c2s_set_mail_lock>(() => new c2s_set_mail_lock());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<c2s_set_mail_lock> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_set_mail_lock() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_set_mail_lock(c2s_set_mail_lock other) : this() {
-      mailKind_ = other.mailKind_;
-      mailId_ = other.mailId_;
-      isLock_ = other.isLock_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_set_mail_lock Clone() {
-      return new c2s_set_mail_lock(this);
-    }
-
-    /// <summary>Field number for the "mailKind" field.</summary>
-    public const int MailKindFieldNumber = 1;
-    private int mailKind_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MailKind {
-      get { return mailKind_; }
-      set {
-        mailKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mailId" field.</summary>
-    public const int MailIdFieldNumber = 2;
-    private long mailId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long MailId {
-      get { return mailId_; }
-      set {
-        mailId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "isLock" field.</summary>
-    public const int IsLockFieldNumber = 3;
-    private bool isLock_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsLock {
-      get { return isLock_; }
-      set {
-        isLock_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as c2s_set_mail_lock);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(c2s_set_mail_lock other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MailKind != other.MailKind) return false;
-      if (MailId != other.MailId) return false;
-      if (IsLock != other.IsLock) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      if (MailId != 0L) hash ^= MailId.GetHashCode();
-      if (IsLock != false) hash ^= IsLock.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      if (MailId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MailId);
-      }
-      if (IsLock != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsLock);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      if (MailId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MailId);
-      }
-      if (IsLock != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsLock);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (MailKind != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
-      }
-      if (MailId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
-      }
-      if (IsLock != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(c2s_set_mail_lock other) {
-      if (other == null) {
-        return;
-      }
-      if (other.MailKind != 0) {
-        MailKind = other.MailKind;
-      }
-      if (other.MailId != 0L) {
-        MailId = other.MailId;
-      }
-      if (other.IsLock != false) {
-        IsLock = other.IsLock;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MailId = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            IsLock = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MailId = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            IsLock = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_set_mail_lock : pb::IMessage<s2c_set_mail_lock>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<s2c_set_mail_lock> _parser = new pb::MessageParser<s2c_set_mail_lock>(() => new s2c_set_mail_lock());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_set_mail_lock> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_set_mail_lock() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_set_mail_lock(s2c_set_mail_lock other) : this() {
-      mailKind_ = other.mailKind_;
-      mailId_ = other.mailId_;
-      isLock_ = other.isLock_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_set_mail_lock Clone() {
-      return new s2c_set_mail_lock(this);
-    }
-
-    /// <summary>Field number for the "mailKind" field.</summary>
-    public const int MailKindFieldNumber = 1;
-    private int mailKind_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MailKind {
-      get { return mailKind_; }
-      set {
-        mailKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mailId" field.</summary>
-    public const int MailIdFieldNumber = 2;
-    private long mailId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long MailId {
-      get { return mailId_; }
-      set {
-        mailId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "isLock" field.</summary>
-    public const int IsLockFieldNumber = 3;
-    private bool isLock_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsLock {
-      get { return isLock_; }
-      set {
-        isLock_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as s2c_set_mail_lock);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_set_mail_lock other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MailKind != other.MailKind) return false;
-      if (MailId != other.MailId) return false;
-      if (IsLock != other.IsLock) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (MailKind != 0) hash ^= MailKind.GetHashCode();
-      if (MailId != 0L) hash ^= MailId.GetHashCode();
-      if (IsLock != false) hash ^= IsLock.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      if (MailId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MailId);
-      }
-      if (IsLock != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsLock);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MailKind != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MailKind);
-      }
-      if (MailId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MailId);
-      }
-      if (IsLock != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsLock);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (MailKind != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MailKind);
-      }
-      if (MailId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MailId);
-      }
-      if (IsLock != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_set_mail_lock other) {
-      if (other == null) {
-        return;
-      }
-      if (other.MailKind != 0) {
-        MailKind = other.MailKind;
-      }
-      if (other.MailId != 0L) {
-        MailId = other.MailId;
-      }
-      if (other.IsLock != false) {
-        IsLock = other.IsLock;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MailId = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            IsLock = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MailKind = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MailId = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            IsLock = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class c2s_get_mail_reward : pb::IMessage<c2s_get_mail_reward>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<c2s_get_mail_reward> _parser = new pb::MessageParser<c2s_get_mail_reward>(() => new c2s_get_mail_reward());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<c2s_get_mail_reward> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[8]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_get_mail_reward() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_get_mail_reward(c2s_get_mail_reward other) : this() {
-      mailKindIdList_ = other.mailKindIdList_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public c2s_get_mail_reward Clone() {
-      return new c2s_get_mail_reward(this);
-    }
-
-    /// <summary>Field number for the "mailKindIdList" field.</summary>
-    public const int MailKindIdListFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Common.p_common_info_int_str> _repeated_mailKindIdList_codec
-        = pb::FieldCodec.ForMessage(10, global::Common.p_common_info_int_str.Parser);
-    private readonly pbc::RepeatedField<global::Common.p_common_info_int_str> mailKindIdList_ = new pbc::RepeatedField<global::Common.p_common_info_int_str>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Common.p_common_info_int_str> MailKindIdList {
-      get { return mailKindIdList_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as c2s_get_mail_reward);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(c2s_get_mail_reward other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!mailKindIdList_.Equals(other.mailKindIdList_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= mailKindIdList_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      mailKindIdList_.WriteTo(output, _repeated_mailKindIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      mailKindIdList_.WriteTo(ref output, _repeated_mailKindIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += mailKindIdList_.CalculateSize(_repeated_mailKindIdList_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(c2s_get_mail_reward other) {
-      if (other == null) {
-        return;
-      }
-      mailKindIdList_.Add(other.mailKindIdList_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            mailKindIdList_.AddEntriesFrom(input, _repeated_mailKindIdList_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            mailKindIdList_.AddEntriesFrom(ref input, _repeated_mailKindIdList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class s2c_get_mail_reward : pb::IMessage<s2c_get_mail_reward>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<s2c_get_mail_reward> _parser = new pb::MessageParser<s2c_get_mail_reward>(() => new s2c_get_mail_reward());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<s2c_get_mail_reward> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mail.MailReflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_get_mail_reward() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_get_mail_reward(s2c_get_mail_reward other) : this() {
-      mailKindIdList_ = other.mailKindIdList_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public s2c_get_mail_reward Clone() {
-      return new s2c_get_mail_reward(this);
-    }
-
-    /// <summary>Field number for the "mailKindIdList" field.</summary>
-    public const int MailKindIdListFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Common.p_common_info_int_str> _repeated_mailKindIdList_codec
-        = pb::FieldCodec.ForMessage(10, global::Common.p_common_info_int_str.Parser);
-    private readonly pbc::RepeatedField<global::Common.p_common_info_int_str> mailKindIdList_ = new pbc::RepeatedField<global::Common.p_common_info_int_str>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Common.p_common_info_int_str> MailKindIdList {
-      get { return mailKindIdList_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as s2c_get_mail_reward);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(s2c_get_mail_reward other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!mailKindIdList_.Equals(other.mailKindIdList_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= mailKindIdList_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      mailKindIdList_.WriteTo(output, _repeated_mailKindIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      mailKindIdList_.WriteTo(ref output, _repeated_mailKindIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += mailKindIdList_.CalculateSize(_repeated_mailKindIdList_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(s2c_get_mail_reward other) {
-      if (other == null) {
-        return;
-      }
-      mailKindIdList_.Add(other.mailKindIdList_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            mailKindIdList_.AddEntriesFrom(input, _repeated_mailKindIdList_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            mailKindIdList_.AddEntriesFrom(ref input, _repeated_mailKindIdList_codec);
             break;
           }
         }

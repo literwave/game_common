@@ -1,5 +1,5 @@
 
-«
+©
 common.protoCommon"e
 p_reward_info
 
@@ -28,10 +28,10 @@ rewardType
 lv (Rlv
 star (Rstar
 newTag (RnewTag3
-	skillList (2.Common.p_common_infoR	skillList"û
-p_mail_info
-mailType (RmailType
-mailId (RmailId
+	skillList (2.Common.p_common_infoR	skillList"ù
+p_mail_info
+mailId (RmailId
+mailUid (RmailUid
 title (	Rtitle
 content (	Rcontent
 isRead (RisRead

@@ -1,0 +1,7 @@
+Id	Name	Enum	Desc
+integer	string	string	string
+both	frontend	both	frontend
+id	名称	枚举	说明
+1	系统	SYSTEM	系统邮件（欢迎、补偿、活动奖励等）
+2	联盟	ALLIANCE	联盟相关通知
+3	公告	NOTICE	运营公告
