@@ -35,29 +35,29 @@ namespace World {
             "bmZvGAEgASgLMhMuV29ybGQucF90cm9vcF9pbmZvIjgKDnMyY19lZGl0X3Ry",
             "b29wEiYKCXRyb29wSW5mbxgBIAEoCzITLldvcmxkLnBfdHJvb3BfaW5mbyI4",
             "Cg5zMmNfc3luY190cm9vcBImCgl0cm9vcEluZm8YASABKAsyEy5Xb3JsZC5w",
-            "X3Ryb29wX2luZm8i1gEKDHBfbWFyY2hfaW5mbxIQCgh0cm9vcElkeBgBIAEo",
+            "X3Ryb29wX2luZm8i2AEKDHBfbWFyY2hfaW5mbxIQCgh0cm9vcElkeBgBIAEo",
             "DRISCgp0YXJnZXRUeXBlGAIgASgNEhAKCHRhcmdldElkGAMgASgDEh8KCHN0",
             "YXJ0UG9zGAQgASgLMg0uQ29tbW9uLnBfcG9zEh0KBmVuZFBvcxgFIAEoCzIN",
             "LkNvbW1vbi5wX3BvcxIRCglzdGFydFRpbWUYBiABKAUSDwoHZW5kVGltZRgH",
-            "IAEoBRINCgVzdGF0ZRgIIAEoDRIbCgRwYXRoGAkgAygLMg0uQ29tbW9uLnBf",
-            "cG9zImUKCWMyc19tYXJjaBIQCgh0cm9vcElkeBgBIAEoDRISCgp0YXJnZXRU",
-            "eXBlGAIgASgNEhAKCHRhcmdldElkGAMgASgDEiAKCXRhcmdldFBvcxgEIAEo",
-            "CzINLkNvbW1vbi5wX3BvcyIzCglzMmNfbWFyY2gSJgoJbWFyY2hJbmZvGAEg",
-            "ASgLMhMuV29ybGQucF9tYXJjaF9pbmZvIiQKEGMyc19jYW5jZWxfbWFyY2gS",
-            "EAoIdHJvb3BJZHgYASABKA0iTAoQczJjX2NhbmNlbF9tYXJjaBIQCgh0cm9v",
-            "cElkeBgBIAEoDRImCgltYXJjaEluZm8YAiABKAsyEy5Xb3JsZC5wX21hcmNo",
-            "X2luZm8iOAoOczJjX3N5bmNfbWFyY2gSJgoJbWFyY2hJbmZvGAEgASgLMhMu",
-            "V29ybGQucF9tYXJjaF9pbmZvIhQKEmMyc19yZXFfbWFyY2hfbGlzdCI8ChJz",
-            "MmNfcmVxX21hcmNoX2xpc3QSJgoJbWFyY2hMaXN0GAEgAygLMhMuV29ybGQu",
-            "cF9tYXJjaF9pbmZvIrMBCgxwX2FvaV9lbnRpdHkSEAoIZW50aXR5SWQYASAB",
-            "KAMSEgoKZW50aXR5VHlwZRgCIAEoDRIaCgNwb3MYAyABKAsyDS5Db21tb24u",
-            "cF9wb3MSDwoHb3duZXJJZBgEIAEoAxINCgVjZmdJZBgFIAEoDRIdCgRwYXRo",
-            "GAYgAygLMg8uQ29tbW9uLnBfcG9zX2YSEQoJc3RhcnRUaW1lGAcgASgFEg8K",
-            "B2VuZFRpbWUYCCABKAUiKwoNYzJzX2FvaV9mb2N1cxIaCgNwb3MYASABKAsy",
-            "DS5Db21tb24ucF9wb3MiNgoNczJjX2FvaV9lbnRlchIlCghlbnRpdGllcxgB",
-            "IAMoCzITLldvcmxkLnBfYW9pX2VudGl0eSIiCg1zMmNfYW9pX2xlYXZlEhEK",
-            "CWVudGl0eUlkcxgBIAMoAyI3Cg5zMmNfYW9pX3VwZGF0ZRIlCghlbnRpdGll",
-            "cxgBIAMoCzITLldvcmxkLnBfYW9pX2VudGl0eWIGcHJvdG8z"));
+            "IAEoBRINCgVzdGF0ZRgIIAEoDRIdCgRwYXRoGAkgAygLMg8uQ29tbW9uLnBf",
+            "cG9zX2YiZQoJYzJzX21hcmNoEhAKCHRyb29wSWR4GAEgASgNEhIKCnRhcmdl",
+            "dFR5cGUYAiABKA0SEAoIdGFyZ2V0SWQYAyABKAMSIAoJdGFyZ2V0UG9zGAQg",
+            "ASgLMg0uQ29tbW9uLnBfcG9zIjMKCXMyY19tYXJjaBImCgltYXJjaEluZm8Y",
+            "ASABKAsyEy5Xb3JsZC5wX21hcmNoX2luZm8iJAoQYzJzX2NhbmNlbF9tYXJj",
+            "aBIQCgh0cm9vcElkeBgBIAEoDSJMChBzMmNfY2FuY2VsX21hcmNoEhAKCHRy",
+            "b29wSWR4GAEgASgNEiYKCW1hcmNoSW5mbxgCIAEoCzITLldvcmxkLnBfbWFy",
+            "Y2hfaW5mbyI4Cg5zMmNfc3luY19tYXJjaBImCgltYXJjaEluZm8YASABKAsy",
+            "Ey5Xb3JsZC5wX21hcmNoX2luZm8iFAoSYzJzX3JlcV9tYXJjaF9saXN0IjwK",
+            "EnMyY19yZXFfbWFyY2hfbGlzdBImCgltYXJjaExpc3QYASADKAsyEy5Xb3Js",
+            "ZC5wX21hcmNoX2luZm8iswEKDHBfYW9pX2VudGl0eRIQCghlbnRpdHlJZBgB",
+            "IAEoAxISCgplbnRpdHlUeXBlGAIgASgNEhoKA3BvcxgDIAEoCzINLkNvbW1v",
+            "bi5wX3BvcxIPCgdvd25lcklkGAQgASgDEg0KBWNmZ0lkGAUgASgNEh0KBHBh",
+            "dGgYBiADKAsyDy5Db21tb24ucF9wb3NfZhIRCglzdGFydFRpbWUYByABKAUS",
+            "DwoHZW5kVGltZRgIIAEoBSIrCg1jMnNfYW9pX2ZvY3VzEhoKA3BvcxgBIAEo",
+            "CzINLkNvbW1vbi5wX3BvcyI2Cg1zMmNfYW9pX2VudGVyEiUKCGVudGl0aWVz",
+            "GAEgAygLMhMuV29ybGQucF9hb2lfZW50aXR5IiIKDXMyY19hb2lfbGVhdmUS",
+            "EQoJZW50aXR5SWRzGAEgAygDIjcKDnMyY19hb2lfdXBkYXRlEiUKCGVudGl0",
+            "aWVzGAEgAygLMhMuV29ybGQucF9hb2lfZW50aXR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1707,15 +1707,15 @@ namespace World {
 
     /// <summary>Field number for the "path" field.</summary>
     public const int PathFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Common.p_pos> _repeated_path_codec
-        = pb::FieldCodec.ForMessage(74, global::Common.p_pos.Parser);
-    private readonly pbc::RepeatedField<global::Common.p_pos> path_ = new pbc::RepeatedField<global::Common.p_pos>();
+    private static readonly pb::FieldCodec<global::Common.p_pos_f> _repeated_path_codec
+        = pb::FieldCodec.ForMessage(74, global::Common.p_pos_f.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_pos_f> path_ = new pbc::RepeatedField<global::Common.p_pos_f>();
     /// <summary>
     /// 拐点，含起点和终点
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Common.p_pos> Path {
+    public pbc::RepeatedField<global::Common.p_pos_f> Path {
       get { return path_; }
     }
 

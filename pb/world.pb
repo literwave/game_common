@@ -1,5 +1,5 @@
 
-ı
+˜
 world.protoWorldcommon.proto"Y
 p_troop_pos
 heroIdx (RheroIdx0
@@ -18,7 +18,7 @@
 s2c_edit_troop1
 	troopInfo (2.World.p_troop_infoR	troopInfo"C
 s2c_sync_troop1
-	troopInfo (2.World.p_troop_infoR	troopInfo"©
+	troopInfo (2.World.p_troop_infoR	troopInfo"´
 p_march_info
 troopIdx (RtroopIdx
 
@@ -29,8 +29,8 @@ targetType
 endPos (2.Common.p_posRendPos
 	startTime (R	startTime
 endTime (RendTime
-state (Rstate!
-path	 (2.Common.p_posRpath"ê
+state (Rstate#
+path	 (2.Common.p_pos_fRpath"ê
 	c2s_march
 troopIdx (RtroopIdx
 

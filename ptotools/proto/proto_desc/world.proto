@@ -53,7 +53,7 @@ message p_march_info {
 	int32 startTime = 6;
 	int32 endTime = 7;
 	uint32 state = 8;
-	repeated Common.p_pos path = 9;   // 拐点，含起点和终点
+	repeated Common.p_pos_f path = 9;   // 拐点，含起点和终点
 }
 
 // 发起行军
