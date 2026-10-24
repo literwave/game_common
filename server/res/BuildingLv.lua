@@ -10,6 +10,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 130,
         ["Effect"] = 1
@@ -18,9 +19,10 @@ return {
         ["Id"] = 102,
         ["BuildingType"] = 1,
         ["Lv"] = 2,
-        ["CostGrain"] = 600,
-        ["CostWood"] = 600,
+        ["CostGrain"] = 400,
+        ["CostWood"] = 400,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 10,
@@ -38,16 +40,17 @@ return {
         ["Id"] = 103,
         ["BuildingType"] = 1,
         ["Lv"] = 3,
-        ["CostGrain"] = 1440,
-        ["CostWood"] = 1440,
-        ["CostIron"] = 240,
+        ["CostGrain"] = 900,
+        ["CostWood"] = 900,
+        ["CostIron"] = 0,
+        ["CostStone"] = 150,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 13,
                 ["lev"] = 1
             },
             {
-                ["bid"] = 3,
+                ["bid"] = 16,
                 ["lev"] = 1
             }
         },
@@ -58,16 +61,17 @@ return {
         ["Id"] = 104,
         ["BuildingType"] = 1,
         ["Lv"] = 4,
-        ["CostGrain"] = 3000,
-        ["CostWood"] = 3000,
-        ["CostIron"] = 720,
+        ["CostGrain"] = 1800,
+        ["CostWood"] = 1800,
+        ["CostIron"] = 300,
+        ["CostStone"] = 300,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 2,
                 ["lev"] = 2
             },
             {
-                ["bid"] = 4,
+                ["bid"] = 12,
                 ["lev"] = 1
             }
         },
@@ -78,12 +82,13 @@ return {
         ["Id"] = 105,
         ["BuildingType"] = 1,
         ["Lv"] = 5,
-        ["CostGrain"] = 6000,
-        ["CostWood"] = 6000,
-        ["CostIron"] = 1440,
+        ["CostGrain"] = 4500,
+        ["CostWood"] = 4500,
+        ["CostIron"] = 1000,
+        ["CostStone"] = 1200,
         ["UpgradeLimit"] = {
             {
-                ["bid"] = 12,
+                ["bid"] = 16,
                 ["lev"] = 3
             },
             {
@@ -98,9 +103,10 @@ return {
         ["Id"] = 106,
         ["BuildingType"] = 1,
         ["Lv"] = 6,
-        ["CostGrain"] = 10800,
-        ["CostWood"] = 10800,
-        ["CostIron"] = 3000,
+        ["CostGrain"] = 7000,
+        ["CostWood"] = 7000,
+        ["CostIron"] = 1600,
+        ["CostStone"] = 1800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 5,
@@ -118,9 +124,10 @@ return {
         ["Id"] = 107,
         ["BuildingType"] = 1,
         ["Lv"] = 7,
-        ["CostGrain"] = 19200,
-        ["CostWood"] = 19200,
-        ["CostIron"] = 6000,
+        ["CostGrain"] = 11000,
+        ["CostWood"] = 11000,
+        ["CostIron"] = 2800,
+        ["CostStone"] = 3000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 7,
@@ -138,9 +145,10 @@ return {
         ["Id"] = 108,
         ["BuildingType"] = 1,
         ["Lv"] = 8,
-        ["CostGrain"] = 33600,
-        ["CostWood"] = 33600,
-        ["CostIron"] = 10800,
+        ["CostGrain"] = 25000,
+        ["CostWood"] = 25000,
+        ["CostIron"] = 7000,
+        ["CostStone"] = 8000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 9,
@@ -158,9 +166,10 @@ return {
         ["Id"] = 109,
         ["BuildingType"] = 1,
         ["Lv"] = 9,
-        ["CostGrain"] = 54000,
-        ["CostWood"] = 54000,
-        ["CostIron"] = 19200,
+        ["CostGrain"] = 40000,
+        ["CostWood"] = 40000,
+        ["CostIron"] = 12000,
+        ["CostStone"] = 14000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 4,
@@ -178,9 +187,10 @@ return {
         ["Id"] = 110,
         ["BuildingType"] = 1,
         ["Lv"] = 10,
-        ["CostGrain"] = 84000,
-        ["CostWood"] = 84000,
-        ["CostIron"] = 33600,
+        ["CostGrain"] = 85000,
+        ["CostWood"] = 85000,
+        ["CostIron"] = 28000,
+        ["CostStone"] = 32000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 5,
@@ -201,6 +211,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 1000
@@ -209,9 +220,10 @@ return {
         ["Id"] = 202,
         ["BuildingType"] = 2,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 340,
+        ["CostWood"] = 340,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -225,9 +237,10 @@ return {
         ["Id"] = 203,
         ["BuildingType"] = 2,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 760,
+        ["CostWood"] = 760,
+        ["CostIron"] = 0,
+        ["CostStone"] = 75,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -241,9 +254,10 @@ return {
         ["Id"] = 204,
         ["BuildingType"] = 2,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1550,
+        ["CostWood"] = 1550,
+        ["CostIron"] = 330,
+        ["CostStone"] = 150,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -257,9 +271,10 @@ return {
         ["Id"] = 205,
         ["BuildingType"] = 2,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
-        ["CostIron"] = 1200,
+        ["CostGrain"] = 3800,
+        ["CostWood"] = 3800,
+        ["CostIron"] = 1100,
+        ["CostStone"] = 600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -273,9 +288,10 @@ return {
         ["Id"] = 206,
         ["BuildingType"] = 2,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5950,
+        ["CostWood"] = 5950,
+        ["CostIron"] = 1750,
+        ["CostStone"] = 900,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -289,9 +305,10 @@ return {
         ["Id"] = 207,
         ["BuildingType"] = 2,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 9350,
+        ["CostWood"] = 9350,
+        ["CostIron"] = 3100,
+        ["CostStone"] = 1500,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -305,9 +322,10 @@ return {
         ["Id"] = 208,
         ["BuildingType"] = 2,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 21200,
+        ["CostWood"] = 21200,
+        ["CostIron"] = 7700,
+        ["CostStone"] = 4000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -321,9 +339,10 @@ return {
         ["Id"] = 209,
         ["BuildingType"] = 2,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 34000,
+        ["CostWood"] = 34000,
+        ["CostIron"] = 13200,
+        ["CostStone"] = 7000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -337,9 +356,10 @@ return {
         ["Id"] = 210,
         ["BuildingType"] = 2,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 72200,
+        ["CostWood"] = 72200,
+        ["CostIron"] = 30800,
+        ["CostStone"] = 16000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -356,6 +376,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 2
@@ -364,9 +385,10 @@ return {
         ["Id"] = 302,
         ["BuildingType"] = 3,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 340,
+        ["CostWood"] = 340,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -380,9 +402,10 @@ return {
         ["Id"] = 303,
         ["BuildingType"] = 3,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 760,
+        ["CostWood"] = 760,
+        ["CostIron"] = 0,
+        ["CostStone"] = 100,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -396,9 +419,10 @@ return {
         ["Id"] = 304,
         ["BuildingType"] = 3,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1550,
+        ["CostWood"] = 1550,
+        ["CostIron"] = 210,
+        ["CostStone"] = 210,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -412,9 +436,10 @@ return {
         ["Id"] = 305,
         ["BuildingType"] = 3,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
-        ["CostIron"] = 1200,
+        ["CostGrain"] = 3800,
+        ["CostWood"] = 3800,
+        ["CostIron"] = 700,
+        ["CostStone"] = 840,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -428,9 +453,10 @@ return {
         ["Id"] = 306,
         ["BuildingType"] = 3,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5950,
+        ["CostWood"] = 5950,
+        ["CostIron"] = 1100,
+        ["CostStone"] = 1250,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -444,9 +470,10 @@ return {
         ["Id"] = 307,
         ["BuildingType"] = 3,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 9350,
+        ["CostWood"] = 9350,
+        ["CostIron"] = 1950,
+        ["CostStone"] = 2100,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -460,9 +487,10 @@ return {
         ["Id"] = 308,
         ["BuildingType"] = 3,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 21200,
+        ["CostWood"] = 21200,
+        ["CostIron"] = 4900,
+        ["CostStone"] = 5600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -476,9 +504,10 @@ return {
         ["Id"] = 309,
         ["BuildingType"] = 3,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 34000,
+        ["CostWood"] = 34000,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 9800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -492,9 +521,10 @@ return {
         ["Id"] = 310,
         ["BuildingType"] = 3,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 72200,
+        ["CostWood"] = 72200,
+        ["CostIron"] = 19600,
+        ["CostStone"] = 22400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -511,6 +541,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 500
@@ -519,9 +550,10 @@ return {
         ["Id"] = 402,
         ["BuildingType"] = 4,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 320,
+        ["CostWood"] = 320,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -535,9 +567,10 @@ return {
         ["Id"] = 403,
         ["BuildingType"] = 4,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 720,
+        ["CostWood"] = 720,
+        ["CostIron"] = 0,
+        ["CostStone"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -551,9 +584,10 @@ return {
         ["Id"] = 404,
         ["BuildingType"] = 4,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1450,
+        ["CostWood"] = 1450,
+        ["CostIron"] = 360,
+        ["CostStone"] = 120,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -567,9 +601,10 @@ return {
         ["Id"] = 405,
         ["BuildingType"] = 4,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
+        ["CostGrain"] = 3600,
+        ["CostWood"] = 3600,
         ["CostIron"] = 1200,
+        ["CostStone"] = 480,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -583,9 +618,10 @@ return {
         ["Id"] = 406,
         ["BuildingType"] = 4,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5600,
+        ["CostWood"] = 5600,
+        ["CostIron"] = 1900,
+        ["CostStone"] = 720,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -599,9 +635,10 @@ return {
         ["Id"] = 407,
         ["BuildingType"] = 4,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 8800,
+        ["CostWood"] = 8800,
+        ["CostIron"] = 3350,
+        ["CostStone"] = 1200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -615,9 +652,10 @@ return {
         ["Id"] = 408,
         ["BuildingType"] = 4,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 20000,
+        ["CostWood"] = 20000,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 3200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -631,9 +669,10 @@ return {
         ["Id"] = 409,
         ["BuildingType"] = 4,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 32000,
+        ["CostWood"] = 32000,
+        ["CostIron"] = 14400,
+        ["CostStone"] = 5600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -647,9 +686,10 @@ return {
         ["Id"] = 410,
         ["BuildingType"] = 4,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 68000,
+        ["CostWood"] = 68000,
+        ["CostIron"] = 33600,
+        ["CostStone"] = 12800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -666,6 +706,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 500
@@ -674,9 +715,10 @@ return {
         ["Id"] = 502,
         ["BuildingType"] = 5,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 320,
+        ["CostWood"] = 320,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -690,9 +732,10 @@ return {
         ["Id"] = 503,
         ["BuildingType"] = 5,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 720,
+        ["CostWood"] = 720,
+        ["CostIron"] = 0,
+        ["CostStone"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -706,9 +749,10 @@ return {
         ["Id"] = 504,
         ["BuildingType"] = 5,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1450,
+        ["CostWood"] = 1450,
+        ["CostIron"] = 360,
+        ["CostStone"] = 120,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -722,9 +766,10 @@ return {
         ["Id"] = 505,
         ["BuildingType"] = 5,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
+        ["CostGrain"] = 3600,
+        ["CostWood"] = 3600,
         ["CostIron"] = 1200,
+        ["CostStone"] = 480,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -738,9 +783,10 @@ return {
         ["Id"] = 506,
         ["BuildingType"] = 5,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5600,
+        ["CostWood"] = 5600,
+        ["CostIron"] = 1900,
+        ["CostStone"] = 720,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -754,9 +800,10 @@ return {
         ["Id"] = 507,
         ["BuildingType"] = 5,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 8800,
+        ["CostWood"] = 8800,
+        ["CostIron"] = 3350,
+        ["CostStone"] = 1200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -770,9 +817,10 @@ return {
         ["Id"] = 508,
         ["BuildingType"] = 5,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 20000,
+        ["CostWood"] = 20000,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 3200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -786,9 +834,10 @@ return {
         ["Id"] = 509,
         ["BuildingType"] = 5,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 32000,
+        ["CostWood"] = 32000,
+        ["CostIron"] = 14400,
+        ["CostStone"] = 5600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -802,9 +851,10 @@ return {
         ["Id"] = 510,
         ["BuildingType"] = 5,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 68000,
+        ["CostWood"] = 68000,
+        ["CostIron"] = 33600,
+        ["CostStone"] = 12800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -821,6 +871,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
         ["Effect"] = 500
@@ -829,9 +880,10 @@ return {
         ["Id"] = 602,
         ["BuildingType"] = 6,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 320,
+        ["CostWood"] = 320,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -845,9 +897,10 @@ return {
         ["Id"] = 603,
         ["BuildingType"] = 6,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 720,
+        ["CostWood"] = 720,
+        ["CostIron"] = 0,
+        ["CostStone"] = 60,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -861,9 +914,10 @@ return {
         ["Id"] = 604,
         ["BuildingType"] = 6,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1450,
+        ["CostWood"] = 1450,
+        ["CostIron"] = 360,
+        ["CostStone"] = 120,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -877,9 +931,10 @@ return {
         ["Id"] = 605,
         ["BuildingType"] = 6,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
+        ["CostGrain"] = 3600,
+        ["CostWood"] = 3600,
         ["CostIron"] = 1200,
+        ["CostStone"] = 480,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -893,9 +948,10 @@ return {
         ["Id"] = 606,
         ["BuildingType"] = 6,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5600,
+        ["CostWood"] = 5600,
+        ["CostIron"] = 1900,
+        ["CostStone"] = 720,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -909,9 +965,10 @@ return {
         ["Id"] = 607,
         ["BuildingType"] = 6,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 8800,
+        ["CostWood"] = 8800,
+        ["CostIron"] = 3350,
+        ["CostStone"] = 1200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -925,9 +982,10 @@ return {
         ["Id"] = 608,
         ["BuildingType"] = 6,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 20000,
+        ["CostWood"] = 20000,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 3200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -941,9 +999,10 @@ return {
         ["Id"] = 609,
         ["BuildingType"] = 6,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 32000,
+        ["CostWood"] = 32000,
+        ["CostIron"] = 14400,
+        ["CostStone"] = 5600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -957,9 +1016,10 @@ return {
         ["Id"] = 610,
         ["BuildingType"] = 6,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 68000,
+        ["CostWood"] = 68000,
+        ["CostIron"] = 33600,
+        ["CostStone"] = 12800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -976,6 +1036,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 300
@@ -984,9 +1045,10 @@ return {
         ["Id"] = 702,
         ["BuildingType"] = 7,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 320,
+        ["CostWood"] = 320,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1000,9 +1062,10 @@ return {
         ["Id"] = 703,
         ["BuildingType"] = 7,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 720,
+        ["CostWood"] = 720,
+        ["CostIron"] = 0,
+        ["CostStone"] = 120,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1016,9 +1079,10 @@ return {
         ["Id"] = 704,
         ["BuildingType"] = 7,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1450,
+        ["CostWood"] = 1450,
+        ["CostIron"] = 180,
+        ["CostStone"] = 240,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1032,9 +1096,10 @@ return {
         ["Id"] = 705,
         ["BuildingType"] = 7,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
-        ["CostIron"] = 1200,
+        ["CostGrain"] = 3600,
+        ["CostWood"] = 3600,
+        ["CostIron"] = 600,
+        ["CostStone"] = 960,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1048,9 +1113,10 @@ return {
         ["Id"] = 706,
         ["BuildingType"] = 7,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5600,
+        ["CostWood"] = 5600,
+        ["CostIron"] = 960,
+        ["CostStone"] = 1450,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1064,9 +1130,10 @@ return {
         ["Id"] = 707,
         ["BuildingType"] = 7,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 8800,
+        ["CostWood"] = 8800,
+        ["CostIron"] = 1700,
+        ["CostStone"] = 2400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1080,9 +1147,10 @@ return {
         ["Id"] = 708,
         ["BuildingType"] = 7,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 20000,
+        ["CostWood"] = 20000,
+        ["CostIron"] = 4200,
+        ["CostStone"] = 6400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1096,9 +1164,10 @@ return {
         ["Id"] = 709,
         ["BuildingType"] = 7,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 32000,
+        ["CostWood"] = 32000,
+        ["CostIron"] = 7200,
+        ["CostStone"] = 11200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1112,9 +1181,10 @@ return {
         ["Id"] = 710,
         ["BuildingType"] = 7,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 68000,
+        ["CostWood"] = 68000,
+        ["CostIron"] = 16800,
+        ["CostStone"] = 25600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1131,6 +1201,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 5
@@ -1139,9 +1210,10 @@ return {
         ["Id"] = 802,
         ["BuildingType"] = 8,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 340,
+        ["CostWood"] = 340,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1155,9 +1227,10 @@ return {
         ["Id"] = 803,
         ["BuildingType"] = 8,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 760,
+        ["CostWood"] = 760,
+        ["CostIron"] = 0,
+        ["CostStone"] = 140,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1171,9 +1244,10 @@ return {
         ["Id"] = 804,
         ["BuildingType"] = 8,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1550,
+        ["CostWood"] = 1550,
+        ["CostIron"] = 240,
+        ["CostStone"] = 270,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1187,9 +1261,10 @@ return {
         ["Id"] = 805,
         ["BuildingType"] = 8,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
-        ["CostIron"] = 1200,
+        ["CostGrain"] = 3800,
+        ["CostWood"] = 3800,
+        ["CostIron"] = 800,
+        ["CostStone"] = 1100,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1203,9 +1278,10 @@ return {
         ["Id"] = 806,
         ["BuildingType"] = 8,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5950,
+        ["CostWood"] = 5950,
+        ["CostIron"] = 1300,
+        ["CostStone"] = 1600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1219,9 +1295,10 @@ return {
         ["Id"] = 807,
         ["BuildingType"] = 8,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 9350,
+        ["CostWood"] = 9350,
+        ["CostIron"] = 2250,
+        ["CostStone"] = 2700,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1235,9 +1312,10 @@ return {
         ["Id"] = 808,
         ["BuildingType"] = 8,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 21200,
+        ["CostWood"] = 21200,
+        ["CostIron"] = 5600,
+        ["CostStone"] = 7200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1251,9 +1329,10 @@ return {
         ["Id"] = 809,
         ["BuildingType"] = 8,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 34000,
+        ["CostWood"] = 34000,
+        ["CostIron"] = 9600,
+        ["CostStone"] = 12600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1267,9 +1346,10 @@ return {
         ["Id"] = 810,
         ["BuildingType"] = 8,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 72200,
+        ["CostWood"] = 72200,
+        ["CostIron"] = 22400,
+        ["CostStone"] = 28800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1286,6 +1366,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 2000
@@ -1294,9 +1375,10 @@ return {
         ["Id"] = 902,
         ["BuildingType"] = 9,
         ["Lv"] = 2,
-        ["CostGrain"] = 450,
-        ["CostWood"] = 450,
+        ["CostGrain"] = 280,
+        ["CostWood"] = 280,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1310,9 +1392,10 @@ return {
         ["Id"] = 903,
         ["BuildingType"] = 9,
         ["Lv"] = 3,
-        ["CostGrain"] = 1080,
-        ["CostWood"] = 1080,
-        ["CostIron"] = 180,
+        ["CostGrain"] = 630,
+        ["CostWood"] = 630,
+        ["CostIron"] = 0,
+        ["CostStone"] = 240,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1326,9 +1409,10 @@ return {
         ["Id"] = 904,
         ["BuildingType"] = 9,
         ["Lv"] = 4,
-        ["CostGrain"] = 2250,
-        ["CostWood"] = 2250,
-        ["CostIron"] = 540,
+        ["CostGrain"] = 1250,
+        ["CostWood"] = 1250,
+        ["CostIron"] = 150,
+        ["CostStone"] = 480,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1342,9 +1426,10 @@ return {
         ["Id"] = 905,
         ["BuildingType"] = 9,
         ["Lv"] = 5,
-        ["CostGrain"] = 4500,
-        ["CostWood"] = 4500,
-        ["CostIron"] = 1080,
+        ["CostGrain"] = 3150,
+        ["CostWood"] = 3150,
+        ["CostIron"] = 500,
+        ["CostStone"] = 1900,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1358,9 +1443,10 @@ return {
         ["Id"] = 906,
         ["BuildingType"] = 9,
         ["Lv"] = 6,
-        ["CostGrain"] = 8100,
-        ["CostWood"] = 8100,
-        ["CostIron"] = 2250,
+        ["CostGrain"] = 4900,
+        ["CostWood"] = 4900,
+        ["CostIron"] = 800,
+        ["CostStone"] = 2900,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1374,9 +1460,10 @@ return {
         ["Id"] = 907,
         ["BuildingType"] = 9,
         ["Lv"] = 7,
-        ["CostGrain"] = 14400,
-        ["CostWood"] = 14400,
-        ["CostIron"] = 4500,
+        ["CostGrain"] = 7700,
+        ["CostWood"] = 7700,
+        ["CostIron"] = 1400,
+        ["CostStone"] = 4800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1390,9 +1477,10 @@ return {
         ["Id"] = 908,
         ["BuildingType"] = 9,
         ["Lv"] = 8,
-        ["CostGrain"] = 25200,
-        ["CostWood"] = 25200,
-        ["CostIron"] = 8100,
+        ["CostGrain"] = 17500,
+        ["CostWood"] = 17500,
+        ["CostIron"] = 3500,
+        ["CostStone"] = 12800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1406,9 +1494,10 @@ return {
         ["Id"] = 909,
         ["BuildingType"] = 9,
         ["Lv"] = 9,
-        ["CostGrain"] = 40500,
-        ["CostWood"] = 40500,
-        ["CostIron"] = 14400,
+        ["CostGrain"] = 28000,
+        ["CostWood"] = 28000,
+        ["CostIron"] = 6000,
+        ["CostStone"] = 22400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1422,9 +1511,10 @@ return {
         ["Id"] = 910,
         ["BuildingType"] = 9,
         ["Lv"] = 10,
-        ["CostGrain"] = 63000,
-        ["CostWood"] = 63000,
-        ["CostIron"] = 25200,
+        ["CostGrain"] = 59500,
+        ["CostWood"] = 59500,
+        ["CostIron"] = 14000,
+        ["CostStone"] = 51200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1441,6 +1531,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 100
@@ -1449,9 +1540,10 @@ return {
         ["Id"] = 1002,
         ["BuildingType"] = 10,
         ["Lv"] = 2,
-        ["CostGrain"] = 350,
-        ["CostWood"] = 350,
+        ["CostGrain"] = 220,
+        ["CostWood"] = 220,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1465,9 +1557,10 @@ return {
         ["Id"] = 1003,
         ["BuildingType"] = 10,
         ["Lv"] = 3,
-        ["CostGrain"] = 840,
-        ["CostWood"] = 840,
-        ["CostIron"] = 140,
+        ["CostGrain"] = 500,
+        ["CostWood"] = 500,
+        ["CostIron"] = 0,
+        ["CostStone"] = 40,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1481,9 +1574,10 @@ return {
         ["Id"] = 1004,
         ["BuildingType"] = 10,
         ["Lv"] = 4,
-        ["CostGrain"] = 1750,
-        ["CostWood"] = 1750,
-        ["CostIron"] = 420,
+        ["CostGrain"] = 990,
+        ["CostWood"] = 990,
+        ["CostIron"] = 90,
+        ["CostStone"] = 75,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1497,9 +1591,10 @@ return {
         ["Id"] = 1005,
         ["BuildingType"] = 10,
         ["Lv"] = 5,
-        ["CostGrain"] = 3500,
-        ["CostWood"] = 3500,
-        ["CostIron"] = 840,
+        ["CostGrain"] = 2500,
+        ["CostWood"] = 2500,
+        ["CostIron"] = 300,
+        ["CostStone"] = 300,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1513,9 +1608,10 @@ return {
         ["Id"] = 1006,
         ["BuildingType"] = 10,
         ["Lv"] = 6,
-        ["CostGrain"] = 6300,
-        ["CostWood"] = 6300,
-        ["CostIron"] = 1750,
+        ["CostGrain"] = 3850,
+        ["CostWood"] = 3850,
+        ["CostIron"] = 480,
+        ["CostStone"] = 450,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1529,9 +1625,10 @@ return {
         ["Id"] = 1007,
         ["BuildingType"] = 10,
         ["Lv"] = 7,
-        ["CostGrain"] = 11200,
-        ["CostWood"] = 11200,
-        ["CostIron"] = 3500,
+        ["CostGrain"] = 6050,
+        ["CostWood"] = 6050,
+        ["CostIron"] = 840,
+        ["CostStone"] = 750,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1545,9 +1642,10 @@ return {
         ["Id"] = 1008,
         ["BuildingType"] = 10,
         ["Lv"] = 8,
-        ["CostGrain"] = 19600,
-        ["CostWood"] = 19600,
-        ["CostIron"] = 6300,
+        ["CostGrain"] = 13800,
+        ["CostWood"] = 13800,
+        ["CostIron"] = 2100,
+        ["CostStone"] = 2000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1561,9 +1659,10 @@ return {
         ["Id"] = 1009,
         ["BuildingType"] = 10,
         ["Lv"] = 9,
-        ["CostGrain"] = 31499,
-        ["CostWood"] = 31499,
-        ["CostIron"] = 11200,
+        ["CostGrain"] = 22000,
+        ["CostWood"] = 22000,
+        ["CostIron"] = 3600,
+        ["CostStone"] = 3500,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1577,9 +1676,10 @@ return {
         ["Id"] = 1010,
         ["BuildingType"] = 10,
         ["Lv"] = 10,
-        ["CostGrain"] = 49000,
-        ["CostWood"] = 49000,
-        ["CostIron"] = 19600,
+        ["CostGrain"] = 46800,
+        ["CostWood"] = 46800,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 8000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1596,6 +1696,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 100
@@ -1604,9 +1705,10 @@ return {
         ["Id"] = 1102,
         ["BuildingType"] = 11,
         ["Lv"] = 2,
-        ["CostGrain"] = 350,
-        ["CostWood"] = 350,
+        ["CostGrain"] = 220,
+        ["CostWood"] = 220,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1620,9 +1722,10 @@ return {
         ["Id"] = 1103,
         ["BuildingType"] = 11,
         ["Lv"] = 3,
-        ["CostGrain"] = 840,
-        ["CostWood"] = 840,
-        ["CostIron"] = 140,
+        ["CostGrain"] = 500,
+        ["CostWood"] = 500,
+        ["CostIron"] = 0,
+        ["CostStone"] = 40,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1636,9 +1739,10 @@ return {
         ["Id"] = 1104,
         ["BuildingType"] = 11,
         ["Lv"] = 4,
-        ["CostGrain"] = 1750,
-        ["CostWood"] = 1750,
-        ["CostIron"] = 420,
+        ["CostGrain"] = 990,
+        ["CostWood"] = 990,
+        ["CostIron"] = 90,
+        ["CostStone"] = 75,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1652,9 +1756,10 @@ return {
         ["Id"] = 1105,
         ["BuildingType"] = 11,
         ["Lv"] = 5,
-        ["CostGrain"] = 3500,
-        ["CostWood"] = 3500,
-        ["CostIron"] = 840,
+        ["CostGrain"] = 2500,
+        ["CostWood"] = 2500,
+        ["CostIron"] = 300,
+        ["CostStone"] = 300,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1668,9 +1773,10 @@ return {
         ["Id"] = 1106,
         ["BuildingType"] = 11,
         ["Lv"] = 6,
-        ["CostGrain"] = 6300,
-        ["CostWood"] = 6300,
-        ["CostIron"] = 1750,
+        ["CostGrain"] = 3850,
+        ["CostWood"] = 3850,
+        ["CostIron"] = 480,
+        ["CostStone"] = 450,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1684,9 +1790,10 @@ return {
         ["Id"] = 1107,
         ["BuildingType"] = 11,
         ["Lv"] = 7,
-        ["CostGrain"] = 11200,
-        ["CostWood"] = 11200,
-        ["CostIron"] = 3500,
+        ["CostGrain"] = 6050,
+        ["CostWood"] = 6050,
+        ["CostIron"] = 840,
+        ["CostStone"] = 750,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1700,9 +1807,10 @@ return {
         ["Id"] = 1108,
         ["BuildingType"] = 11,
         ["Lv"] = 8,
-        ["CostGrain"] = 19600,
-        ["CostWood"] = 19600,
-        ["CostIron"] = 6300,
+        ["CostGrain"] = 13800,
+        ["CostWood"] = 13800,
+        ["CostIron"] = 2100,
+        ["CostStone"] = 2000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1716,9 +1824,10 @@ return {
         ["Id"] = 1109,
         ["BuildingType"] = 11,
         ["Lv"] = 9,
-        ["CostGrain"] = 31499,
-        ["CostWood"] = 31499,
-        ["CostIron"] = 11200,
+        ["CostGrain"] = 22000,
+        ["CostWood"] = 22000,
+        ["CostIron"] = 3600,
+        ["CostStone"] = 3500,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1732,9 +1841,10 @@ return {
         ["Id"] = 1110,
         ["BuildingType"] = 11,
         ["Lv"] = 10,
-        ["CostGrain"] = 49000,
-        ["CostWood"] = 49000,
-        ["CostIron"] = 19600,
+        ["CostGrain"] = 46800,
+        ["CostWood"] = 46800,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 8000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1751,6 +1861,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 100
@@ -1759,9 +1870,10 @@ return {
         ["Id"] = 1202,
         ["BuildingType"] = 12,
         ["Lv"] = 2,
-        ["CostGrain"] = 350,
-        ["CostWood"] = 350,
+        ["CostGrain"] = 220,
+        ["CostWood"] = 220,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1775,9 +1887,10 @@ return {
         ["Id"] = 1203,
         ["BuildingType"] = 12,
         ["Lv"] = 3,
-        ["CostGrain"] = 840,
-        ["CostWood"] = 840,
-        ["CostIron"] = 140,
+        ["CostGrain"] = 500,
+        ["CostWood"] = 500,
+        ["CostIron"] = 0,
+        ["CostStone"] = 50,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1791,9 +1904,10 @@ return {
         ["Id"] = 1204,
         ["BuildingType"] = 12,
         ["Lv"] = 4,
-        ["CostGrain"] = 1750,
-        ["CostWood"] = 1750,
-        ["CostIron"] = 420,
+        ["CostGrain"] = 990,
+        ["CostWood"] = 990,
+        ["CostIron"] = 120,
+        ["CostStone"] = 100,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1807,9 +1921,10 @@ return {
         ["Id"] = 1205,
         ["BuildingType"] = 12,
         ["Lv"] = 5,
-        ["CostGrain"] = 3500,
-        ["CostWood"] = 3500,
-        ["CostIron"] = 840,
+        ["CostGrain"] = 2500,
+        ["CostWood"] = 2500,
+        ["CostIron"] = 400,
+        ["CostStone"] = 420,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1823,9 +1938,10 @@ return {
         ["Id"] = 1206,
         ["BuildingType"] = 12,
         ["Lv"] = 6,
-        ["CostGrain"] = 6300,
-        ["CostWood"] = 6300,
-        ["CostIron"] = 1750,
+        ["CostGrain"] = 3850,
+        ["CostWood"] = 3850,
+        ["CostIron"] = 640,
+        ["CostStone"] = 630,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1839,9 +1955,10 @@ return {
         ["Id"] = 1207,
         ["BuildingType"] = 12,
         ["Lv"] = 7,
-        ["CostGrain"] = 11200,
-        ["CostWood"] = 11200,
-        ["CostIron"] = 3500,
+        ["CostGrain"] = 6050,
+        ["CostWood"] = 6050,
+        ["CostIron"] = 1100,
+        ["CostStone"] = 1050,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1855,9 +1972,10 @@ return {
         ["Id"] = 1208,
         ["BuildingType"] = 12,
         ["Lv"] = 8,
-        ["CostGrain"] = 19600,
-        ["CostWood"] = 19600,
-        ["CostIron"] = 6300,
+        ["CostGrain"] = 13800,
+        ["CostWood"] = 13800,
+        ["CostIron"] = 2800,
+        ["CostStone"] = 2800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1871,9 +1989,10 @@ return {
         ["Id"] = 1209,
         ["BuildingType"] = 12,
         ["Lv"] = 9,
-        ["CostGrain"] = 31499,
-        ["CostWood"] = 31499,
-        ["CostIron"] = 11200,
+        ["CostGrain"] = 22000,
+        ["CostWood"] = 22000,
+        ["CostIron"] = 4800,
+        ["CostStone"] = 4900,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1887,9 +2006,10 @@ return {
         ["Id"] = 1210,
         ["BuildingType"] = 12,
         ["Lv"] = 10,
-        ["CostGrain"] = 49000,
-        ["CostWood"] = 49000,
-        ["CostIron"] = 19600,
+        ["CostGrain"] = 46800,
+        ["CostWood"] = 46800,
+        ["CostIron"] = 11200,
+        ["CostStone"] = 11200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1906,6 +2026,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 5000
@@ -1914,9 +2035,10 @@ return {
         ["Id"] = 1302,
         ["BuildingType"] = 13,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 320,
+        ["CostWood"] = 320,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1930,9 +2052,10 @@ return {
         ["Id"] = 1303,
         ["BuildingType"] = 13,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 720,
+        ["CostWood"] = 720,
+        ["CostIron"] = 0,
+        ["CostStone"] = 160,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1946,9 +2069,10 @@ return {
         ["Id"] = 1304,
         ["BuildingType"] = 13,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1450,
+        ["CostWood"] = 1450,
+        ["CostIron"] = 150,
+        ["CostStone"] = 330,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1962,9 +2086,10 @@ return {
         ["Id"] = 1305,
         ["BuildingType"] = 13,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
-        ["CostIron"] = 1200,
+        ["CostGrain"] = 3600,
+        ["CostWood"] = 3600,
+        ["CostIron"] = 500,
+        ["CostStone"] = 1300,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1978,9 +2103,10 @@ return {
         ["Id"] = 1306,
         ["BuildingType"] = 13,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5600,
+        ["CostWood"] = 5600,
+        ["CostIron"] = 800,
+        ["CostStone"] = 2000,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -1994,9 +2120,10 @@ return {
         ["Id"] = 1307,
         ["BuildingType"] = 13,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 8800,
+        ["CostWood"] = 8800,
+        ["CostIron"] = 1400,
+        ["CostStone"] = 3300,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2010,9 +2137,10 @@ return {
         ["Id"] = 1308,
         ["BuildingType"] = 13,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 20000,
+        ["CostWood"] = 20000,
+        ["CostIron"] = 3500,
+        ["CostStone"] = 8800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2026,9 +2154,10 @@ return {
         ["Id"] = 1309,
         ["BuildingType"] = 13,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 32000,
+        ["CostWood"] = 32000,
+        ["CostIron"] = 6000,
+        ["CostStone"] = 15400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2042,9 +2171,10 @@ return {
         ["Id"] = 1310,
         ["BuildingType"] = 13,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 68000,
+        ["CostWood"] = 68000,
+        ["CostIron"] = 14000,
+        ["CostStone"] = 35200,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2061,6 +2191,7 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 1
@@ -2069,9 +2200,10 @@ return {
         ["Id"] = 1402,
         ["BuildingType"] = 14,
         ["Lv"] = 2,
-        ["CostGrain"] = 500,
-        ["CostWood"] = 500,
+        ["CostGrain"] = 340,
+        ["CostWood"] = 340,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2085,9 +2217,10 @@ return {
         ["Id"] = 1403,
         ["BuildingType"] = 14,
         ["Lv"] = 3,
-        ["CostGrain"] = 1200,
-        ["CostWood"] = 1200,
-        ["CostIron"] = 200,
+        ["CostGrain"] = 760,
+        ["CostWood"] = 760,
+        ["CostIron"] = 0,
+        ["CostStone"] = 100,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2101,9 +2234,10 @@ return {
         ["Id"] = 1404,
         ["BuildingType"] = 14,
         ["Lv"] = 4,
-        ["CostGrain"] = 2500,
-        ["CostWood"] = 2500,
-        ["CostIron"] = 600,
+        ["CostGrain"] = 1550,
+        ["CostWood"] = 1550,
+        ["CostIron"] = 210,
+        ["CostStone"] = 210,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2117,9 +2251,10 @@ return {
         ["Id"] = 1405,
         ["BuildingType"] = 14,
         ["Lv"] = 5,
-        ["CostGrain"] = 5000,
-        ["CostWood"] = 5000,
-        ["CostIron"] = 1200,
+        ["CostGrain"] = 3800,
+        ["CostWood"] = 3800,
+        ["CostIron"] = 700,
+        ["CostStone"] = 840,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2133,9 +2268,10 @@ return {
         ["Id"] = 1406,
         ["BuildingType"] = 14,
         ["Lv"] = 6,
-        ["CostGrain"] = 9000,
-        ["CostWood"] = 9000,
-        ["CostIron"] = 2500,
+        ["CostGrain"] = 5950,
+        ["CostWood"] = 5950,
+        ["CostIron"] = 1100,
+        ["CostStone"] = 1250,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2149,9 +2285,10 @@ return {
         ["Id"] = 1407,
         ["BuildingType"] = 14,
         ["Lv"] = 7,
-        ["CostGrain"] = 16000,
-        ["CostWood"] = 16000,
-        ["CostIron"] = 5000,
+        ["CostGrain"] = 9350,
+        ["CostWood"] = 9350,
+        ["CostIron"] = 1950,
+        ["CostStone"] = 2100,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2165,9 +2302,10 @@ return {
         ["Id"] = 1408,
         ["BuildingType"] = 14,
         ["Lv"] = 8,
-        ["CostGrain"] = 28000,
-        ["CostWood"] = 28000,
-        ["CostIron"] = 9000,
+        ["CostGrain"] = 21200,
+        ["CostWood"] = 21200,
+        ["CostIron"] = 4900,
+        ["CostStone"] = 5600,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2181,9 +2319,10 @@ return {
         ["Id"] = 1409,
         ["BuildingType"] = 14,
         ["Lv"] = 9,
-        ["CostGrain"] = 45000,
-        ["CostWood"] = 45000,
-        ["CostIron"] = 16000,
+        ["CostGrain"] = 34000,
+        ["CostWood"] = 34000,
+        ["CostIron"] = 8400,
+        ["CostStone"] = 9800,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2197,9 +2336,10 @@ return {
         ["Id"] = 1410,
         ["BuildingType"] = 14,
         ["Lv"] = 10,
-        ["CostGrain"] = 70000,
-        ["CostWood"] = 70000,
-        ["CostIron"] = 28000,
+        ["CostGrain"] = 72200,
+        ["CostWood"] = 72200,
+        ["CostIron"] = 19600,
+        ["CostStone"] = 22400,
         ["UpgradeLimit"] = {
             {
                 ["bid"] = 1,
@@ -2216,8 +2356,174 @@ return {
         ["CostGrain"] = 0,
         ["CostWood"] = 0,
         ["CostIron"] = 0,
+        ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
         ["Effect"] = 1
+    },
+    {
+        ["Id"] = 1601,
+        ["BuildingType"] = 16,
+        ["Lv"] = 1,
+        ["CostGrain"] = 0,
+        ["CostWood"] = 0,
+        ["CostIron"] = 0,
+        ["CostStone"] = 0,
+        ["UpgradeLimit"] = {},
+        ["Power"] = 80,
+        ["Effect"] = 100
+    },
+    {
+        ["Id"] = 1602,
+        ["BuildingType"] = 16,
+        ["Lv"] = 2,
+        ["CostGrain"] = 220,
+        ["CostWood"] = 220,
+        ["CostIron"] = 0,
+        ["CostStone"] = 0,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 2
+            }
+        },
+        ["Power"] = 200,
+        ["Effect"] = 150
+    },
+    {
+        ["Id"] = 1603,
+        ["BuildingType"] = 16,
+        ["Lv"] = 3,
+        ["CostGrain"] = 500,
+        ["CostWood"] = 500,
+        ["CostIron"] = 0,
+        ["CostStone"] = 45,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 3
+            }
+        },
+        ["Power"] = 360,
+        ["Effect"] = 200
+    },
+    {
+        ["Id"] = 1604,
+        ["BuildingType"] = 16,
+        ["Lv"] = 4,
+        ["CostGrain"] = 990,
+        ["CostWood"] = 990,
+        ["CostIron"] = 100,
+        ["CostStone"] = 90,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 4
+            }
+        },
+        ["Power"] = 560,
+        ["Effect"] = 250
+    },
+    {
+        ["Id"] = 1605,
+        ["BuildingType"] = 16,
+        ["Lv"] = 5,
+        ["CostGrain"] = 2500,
+        ["CostWood"] = 2500,
+        ["CostIron"] = 350,
+        ["CostStone"] = 360,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 5
+            }
+        },
+        ["Power"] = 800,
+        ["Effect"] = 300
+    },
+    {
+        ["Id"] = 1606,
+        ["BuildingType"] = 16,
+        ["Lv"] = 6,
+        ["CostGrain"] = 3850,
+        ["CostWood"] = 3850,
+        ["CostIron"] = 560,
+        ["CostStone"] = 540,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 6
+            }
+        },
+        ["Power"] = 1120,
+        ["Effect"] = 350
+    },
+    {
+        ["Id"] = 1607,
+        ["BuildingType"] = 16,
+        ["Lv"] = 7,
+        ["CostGrain"] = 6050,
+        ["CostWood"] = 6050,
+        ["CostIron"] = 980,
+        ["CostStone"] = 900,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 7
+            }
+        },
+        ["Power"] = 1520,
+        ["Effect"] = 400
+    },
+    {
+        ["Id"] = 1608,
+        ["BuildingType"] = 16,
+        ["Lv"] = 8,
+        ["CostGrain"] = 13800,
+        ["CostWood"] = 13800,
+        ["CostIron"] = 2450,
+        ["CostStone"] = 2400,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 8
+            }
+        },
+        ["Power"] = 2000,
+        ["Effect"] = 450
+    },
+    {
+        ["Id"] = 1609,
+        ["BuildingType"] = 16,
+        ["Lv"] = 9,
+        ["CostGrain"] = 22000,
+        ["CostWood"] = 22000,
+        ["CostIron"] = 4200,
+        ["CostStone"] = 4200,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 9
+            }
+        },
+        ["Power"] = 2560,
+        ["Effect"] = 500
+    },
+    {
+        ["Id"] = 1610,
+        ["BuildingType"] = 16,
+        ["Lv"] = 10,
+        ["CostGrain"] = 46800,
+        ["CostWood"] = 46800,
+        ["CostIron"] = 9800,
+        ["CostStone"] = 9600,
+        ["UpgradeLimit"] = {
+            {
+                ["bid"] = 1,
+                ["lev"] = 10
+            }
+        },
+        ["Power"] = 3200,
+        ["Effect"] = 550
     }
 }

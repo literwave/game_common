@@ -16,8 +16,7 @@ return {
             ["open_day"] = 1,
             ["duration"] = 7
         },
-        ["Params"] = {
-        },
+        ["Params"] = {},
         ["Rewards"] = {
             {
                 ["day"] = 1,
@@ -216,8 +215,7 @@ return {
             ["lottery_id"] = 1,
             ["cost_rate"] = 50
         },
-        ["Rewards"] = {
-        }
+        ["Rewards"] = {}
     },
     {
         ["Id"] = 4,
@@ -234,10 +232,14 @@ return {
         },
         ["Params"] = {
             ["rate"] = 2,
-            ["item_ids"] = { 1, 2, 3 }
+            ["item_ids"] = {
+                1,
+                2,
+                3,
+                5
+            }
         },
-        ["Rewards"] = {
-        }
+        ["Rewards"] = {}
     },
     {
         ["Id"] = 5,
@@ -287,8 +289,7 @@ return {
         ["Time"] = {
             ["type"] = 4
         },
-        ["Params"] = {
-        },
+        ["Params"] = {},
         ["Rewards"] = {
             {
                 ["minute"] = 5,
@@ -378,6 +379,14 @@ return {
                 },
                 {
                     ["cost_item"] = 4,
+                    ["cost_count"] = 10,
+                    ["reward_type"] = 1,
+                    ["item_id"] = 5,
+                    ["item_count"] = 1000,
+                    ["limit"] = 10
+                },
+                {
+                    ["cost_item"] = 4,
                     ["cost_count"] = 20,
                     ["reward_type"] = 1,
                     ["item_id"] = 6,
@@ -394,8 +403,7 @@ return {
                 }
             }
         },
-        ["Rewards"] = {
-        }
+        ["Rewards"] = {}
     },
     {
         ["Id"] = 8,

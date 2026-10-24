@@ -17,6 +17,11 @@ return {
                 ["item_count"] = 1000
             },
             {
+                ["reward_type"] = 1,
+                ["item_id"] = 5,
+                ["item_count"] = 800
+            },
+            {
                 ["reward_type"] = 3,
                 ["item_id"] = 1001,
                 ["item_count"] = 1
@@ -86,5 +91,9 @@ return {
     {
         ["Id"] = 16,
         ["value1"] = 30
+    },
+    {
+        ["Id"] = 17,
+        ["value1"] = 1
     }
 }

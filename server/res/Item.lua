@@ -32,6 +32,14 @@ return {
         ["Name"] = "令牌",
         ["BuyDiamond"] = 10,
         ["useParams"] = {},
+        ["Kind"] = 7,
+        ["Overlap"] = 100000
+    },
+    {
+        ["Id"] = 5,
+        ["Name"] = "石料",
+        ["BuyDiamond"] = 10,
+        ["useParams"] = {},
         ["Kind"] = 4,
         ["Overlap"] = 100000
     },

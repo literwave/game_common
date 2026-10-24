@@ -14,5 +14,9 @@ return {
     {
         ["Id"] = 3,
         ["Enum"] = "IRON"
+    },
+    {
+        ["Id"] = 4,
+        ["Enum"] = "STONE"
     }
 }

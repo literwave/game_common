@@ -1,11 +1,12 @@
 Id	Name	Desc	Icon	BuyDiamond	useParams	Kind	Overlap
 integer	string	string	string	integer	lua_array	integer	integer
 both	both	frontend	frontend	both	both	both	both
-道具id	名称	描述	图标	购买晶钻	使用参数	道具种类(1粮草/2木材/3铁矿/4令牌/5加速训练治疗/6特殊)	叠加上限
+道具id	名称	描述	图标	购买晶钻	使用参数	道具种类(1粮草/2木材/3铁矿/4石料/5加速训练治疗/6特殊/7令牌)	叠加上限
 1	粮草	主城建设与军队消耗的基础资源	ui/resource_icons/icon_grain	10	{  }	1	100000
 2	木材	建造升级所需的基础资源	ui/resource_icons/icon_wood	10	{  }	2	100000
 3	铁矿	兵营与高级建筑消耗的战略资源	ui/resource_icons/icon_iron	10	{  }	3	100000
-4	令牌	招募武将消耗的信物	ui/resource_icons/icon_token	10	{  }	4	100000
+4	令牌	招募武将与创建联盟等消耗的信物（非资源）	ui/resource_icons/icon_token	10	{  }	7	100000
+5	石料	建造升级与城防消耗的基础资源	ui/resource_icons/icon_stone	10	{  }	4	100000
 6	训练加速	立即缩短练兵时间（秒）		50	"{ { [""time""] = 3600 } }"	5	999
 7	治疗加速	立即缩短伤兵治疗时间（秒）		50	"{ { [""time""] = 3600 } }"	5	999
 1001	迁城令	将主城迁移至指定坐标		100	{  }	6	99

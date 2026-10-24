@@ -156,6 +156,11 @@ return {
             },
             {
                 ["reward_type"] = 1,
+                ["item_id"] = 5,
+                ["item_count"] = 800
+            },
+            {
+                ["reward_type"] = 1,
                 ["item_id"] = 4,
                 ["item_count"] = 100
             }
@@ -225,6 +230,11 @@ return {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
                 ["item_count"] = 800
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 5,
+                ["item_count"] = 1200
             }
         }
     },
