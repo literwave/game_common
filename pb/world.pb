@@ -27,8 +27,8 @@ targetType
 targetId (RtargetId)
 startPos (2.Common.p_posRstartPos%
 endPos (2.Common.p_posRendPos
-	startTime (R	startTime
-endTime (RendTime
+	startTime (R	startTime
+endTime (RendTime
 state (Rstate#
 path	 (2.Common.p_pos_fRpath"ê
 	c2s_march
@@ -59,8 +59,8 @@ entityType
 ownerId (RownerId
 cfgId (RcfgId#
 path (2.Common.p_pos_fRpath
-	startTime (R	startTime
-endTime (RendTime"0
+	startTime (R	startTime
+endTime (RendTime"0
 c2s_aoi_focus
 pos (2.Common.p_posRpos"@
 s2c_aoi_enter/

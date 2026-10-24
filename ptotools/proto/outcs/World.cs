@@ -38,8 +38,8 @@ namespace World {
             "X3Ryb29wX2luZm8i2AEKDHBfbWFyY2hfaW5mbxIQCgh0cm9vcElkeBgBIAEo",
             "DRISCgp0YXJnZXRUeXBlGAIgASgNEhAKCHRhcmdldElkGAMgASgDEh8KCHN0",
             "YXJ0UG9zGAQgASgLMg0uQ29tbW9uLnBfcG9zEh0KBmVuZFBvcxgFIAEoCzIN",
-            "LkNvbW1vbi5wX3BvcxIRCglzdGFydFRpbWUYBiABKAUSDwoHZW5kVGltZRgH",
-            "IAEoBRINCgVzdGF0ZRgIIAEoDRIdCgRwYXRoGAkgAygLMg8uQ29tbW9uLnBf",
+            "LkNvbW1vbi5wX3BvcxIRCglzdGFydFRpbWUYBiABKAESDwoHZW5kVGltZRgH",
+            "IAEoARINCgVzdGF0ZRgIIAEoDRIdCgRwYXRoGAkgAygLMg8uQ29tbW9uLnBf",
             "cG9zX2YiZQoJYzJzX21hcmNoEhAKCHRyb29wSWR4GAEgASgNEhIKCnRhcmdl",
             "dFR5cGUYAiABKA0SEAoIdGFyZ2V0SWQYAyABKAMSIAoJdGFyZ2V0UG9zGAQg",
             "ASgLMg0uQ29tbW9uLnBfcG9zIjMKCXMyY19tYXJjaBImCgltYXJjaEluZm8Y",
@@ -52,8 +52,8 @@ namespace World {
             "ZC5wX21hcmNoX2luZm8iswEKDHBfYW9pX2VudGl0eRIQCghlbnRpdHlJZBgB",
             "IAEoAxISCgplbnRpdHlUeXBlGAIgASgNEhoKA3BvcxgDIAEoCzINLkNvbW1v",
             "bi5wX3BvcxIPCgdvd25lcklkGAQgASgDEg0KBWNmZ0lkGAUgASgNEh0KBHBh",
-            "dGgYBiADKAsyDy5Db21tb24ucF9wb3NfZhIRCglzdGFydFRpbWUYByABKAUS",
-            "DwoHZW5kVGltZRgIIAEoBSIrCg1jMnNfYW9pX2ZvY3VzEhoKA3BvcxgBIAEo",
+            "dGgYBiADKAsyDy5Db21tb24ucF9wb3NfZhIRCglzdGFydFRpbWUYByABKAES",
+            "DwoHZW5kVGltZRgIIAEoASIrCg1jMnNfYW9pX2ZvY3VzEhoKA3BvcxgBIAEo",
             "CzINLkNvbW1vbi5wX3BvcyI2Cg1zMmNfYW9pX2VudGVyEiUKCGVudGl0aWVz",
             "GAEgAygLMhMuV29ybGQucF9hb2lfZW50aXR5IiIKDXMyY19hb2lfbGVhdmUS",
             "EQoJZW50aXR5SWRzGAEgAygDIjcKDnMyY19hb2lfdXBkYXRlEiUKCGVudGl0",
@@ -1552,6 +1552,7 @@ namespace World {
   /// ---------- 行军 ----------
   /// targetType → TargetType.Id（1回城 2打怪 3占领资源地）
   /// state: 1行军中 2已到达
+  /// 耗时按路径格数 / Global.Id=17（每秒移动格数）计算 endTime，避免一秒跨多格
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_march_info : pb::IMessage<p_march_info>
@@ -1671,10 +1672,10 @@ namespace World {
 
     /// <summary>Field number for the "startTime" field.</summary>
     public const int StartTimeFieldNumber = 6;
-    private int startTime_;
+    private double startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int StartTime {
+    public double StartTime {
       get { return startTime_; }
       set {
         startTime_ = value;
@@ -1683,10 +1684,10 @@ namespace World {
 
     /// <summary>Field number for the "endTime" field.</summary>
     public const int EndTimeFieldNumber = 7;
-    private int endTime_;
+    private double endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int EndTime {
+    public double EndTime {
       get { return endTime_; }
       set {
         endTime_ = value;
@@ -1739,8 +1740,8 @@ namespace World {
       if (TargetId != other.TargetId) return false;
       if (!object.Equals(StartPos, other.StartPos)) return false;
       if (!object.Equals(EndPos, other.EndPos)) return false;
-      if (StartTime != other.StartTime) return false;
-      if (EndTime != other.EndTime) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(StartTime, other.StartTime)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(EndTime, other.EndTime)) return false;
       if (State != other.State) return false;
       if(!path_.Equals(other.path_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1755,8 +1756,8 @@ namespace World {
       if (TargetId != 0L) hash ^= TargetId.GetHashCode();
       if (startPos_ != null) hash ^= StartPos.GetHashCode();
       if (endPos_ != null) hash ^= EndPos.GetHashCode();
-      if (StartTime != 0) hash ^= StartTime.GetHashCode();
-      if (EndTime != 0) hash ^= EndTime.GetHashCode();
+      if (StartTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(StartTime);
+      if (EndTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(EndTime);
       if (State != 0) hash ^= State.GetHashCode();
       hash ^= path_.GetHashCode();
       if (_unknownFields != null) {
@@ -1797,13 +1798,13 @@ namespace World {
         output.WriteRawTag(42);
         output.WriteMessage(EndPos);
       }
-      if (StartTime != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(StartTime);
+      if (StartTime != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(StartTime);
       }
-      if (EndTime != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(EndTime);
+      if (EndTime != 0D) {
+        output.WriteRawTag(57);
+        output.WriteDouble(EndTime);
       }
       if (State != 0) {
         output.WriteRawTag(64);
@@ -1840,13 +1841,13 @@ namespace World {
         output.WriteRawTag(42);
         output.WriteMessage(EndPos);
       }
-      if (StartTime != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(StartTime);
+      if (StartTime != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(StartTime);
       }
-      if (EndTime != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(EndTime);
+      if (EndTime != 0D) {
+        output.WriteRawTag(57);
+        output.WriteDouble(EndTime);
       }
       if (State != 0) {
         output.WriteRawTag(64);
@@ -1878,11 +1879,11 @@ namespace World {
       if (endPos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndPos);
       }
-      if (StartTime != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartTime);
+      if (StartTime != 0D) {
+        size += 1 + 8;
       }
-      if (EndTime != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndTime);
+      if (EndTime != 0D) {
+        size += 1 + 8;
       }
       if (State != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(State);
@@ -1921,10 +1922,10 @@ namespace World {
         }
         EndPos.MergeFrom(other.EndPos);
       }
-      if (other.StartTime != 0) {
+      if (other.StartTime != 0D) {
         StartTime = other.StartTime;
       }
-      if (other.EndTime != 0) {
+      if (other.EndTime != 0D) {
         EndTime = other.EndTime;
       }
       if (other.State != 0) {
@@ -1976,12 +1977,12 @@ namespace World {
             input.ReadMessage(EndPos);
             break;
           }
-          case 48: {
-            StartTime = input.ReadInt32();
+          case 49: {
+            StartTime = input.ReadDouble();
             break;
           }
-          case 56: {
-            EndTime = input.ReadInt32();
+          case 57: {
+            EndTime = input.ReadDouble();
             break;
           }
           case 64: {
@@ -2037,12 +2038,12 @@ namespace World {
             input.ReadMessage(EndPos);
             break;
           }
-          case 48: {
-            StartTime = input.ReadInt32();
+          case 49: {
+            StartTime = input.ReadDouble();
             break;
           }
-          case 56: {
-            EndTime = input.ReadInt32();
+          case 57: {
+            EndTime = input.ReadDouble();
             break;
           }
           case 64: {
@@ -3735,10 +3736,10 @@ namespace World {
 
     /// <summary>Field number for the "startTime" field.</summary>
     public const int StartTimeFieldNumber = 7;
-    private int startTime_;
+    private double startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int StartTime {
+    public double StartTime {
       get { return startTime_; }
       set {
         startTime_ = value;
@@ -3747,10 +3748,10 @@ namespace World {
 
     /// <summary>Field number for the "endTime" field.</summary>
     public const int EndTimeFieldNumber = 8;
-    private int endTime_;
+    private double endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int EndTime {
+    public double EndTime {
       get { return endTime_; }
       set {
         endTime_ = value;
@@ -3778,8 +3779,8 @@ namespace World {
       if (OwnerId != other.OwnerId) return false;
       if (CfgId != other.CfgId) return false;
       if(!path_.Equals(other.path_)) return false;
-      if (StartTime != other.StartTime) return false;
-      if (EndTime != other.EndTime) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(StartTime, other.StartTime)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(EndTime, other.EndTime)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3793,8 +3794,8 @@ namespace World {
       if (OwnerId != 0L) hash ^= OwnerId.GetHashCode();
       if (CfgId != 0) hash ^= CfgId.GetHashCode();
       hash ^= path_.GetHashCode();
-      if (StartTime != 0) hash ^= StartTime.GetHashCode();
-      if (EndTime != 0) hash ^= EndTime.GetHashCode();
+      if (StartTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(StartTime);
+      if (EndTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(EndTime);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3834,13 +3835,13 @@ namespace World {
         output.WriteUInt32(CfgId);
       }
       path_.WriteTo(output, _repeated_path_codec);
-      if (StartTime != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(StartTime);
+      if (StartTime != 0D) {
+        output.WriteRawTag(57);
+        output.WriteDouble(StartTime);
       }
-      if (EndTime != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(EndTime);
+      if (EndTime != 0D) {
+        output.WriteRawTag(65);
+        output.WriteDouble(EndTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3873,13 +3874,13 @@ namespace World {
         output.WriteUInt32(CfgId);
       }
       path_.WriteTo(ref output, _repeated_path_codec);
-      if (StartTime != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(StartTime);
+      if (StartTime != 0D) {
+        output.WriteRawTag(57);
+        output.WriteDouble(StartTime);
       }
-      if (EndTime != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(EndTime);
+      if (EndTime != 0D) {
+        output.WriteRawTag(65);
+        output.WriteDouble(EndTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3907,11 +3908,11 @@ namespace World {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CfgId);
       }
       size += path_.CalculateSize(_repeated_path_codec);
-      if (StartTime != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartTime);
+      if (StartTime != 0D) {
+        size += 1 + 8;
       }
-      if (EndTime != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndTime);
+      if (EndTime != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3944,10 +3945,10 @@ namespace World {
         CfgId = other.CfgId;
       }
       path_.Add(other.path_);
-      if (other.StartTime != 0) {
+      if (other.StartTime != 0D) {
         StartTime = other.StartTime;
       }
-      if (other.EndTime != 0) {
+      if (other.EndTime != 0D) {
         EndTime = other.EndTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3996,12 +3997,12 @@ namespace World {
             path_.AddEntriesFrom(input, _repeated_path_codec);
             break;
           }
-          case 56: {
-            StartTime = input.ReadInt32();
+          case 57: {
+            StartTime = input.ReadDouble();
             break;
           }
-          case 64: {
-            EndTime = input.ReadInt32();
+          case 65: {
+            EndTime = input.ReadDouble();
             break;
           }
         }
@@ -4050,12 +4051,12 @@ namespace World {
             path_.AddEntriesFrom(ref input, _repeated_path_codec);
             break;
           }
-          case 56: {
-            StartTime = input.ReadInt32();
+          case 57: {
+            StartTime = input.ReadDouble();
             break;
           }
-          case 64: {
-            EndTime = input.ReadInt32();
+          case 65: {
+            EndTime = input.ReadDouble();
             break;
           }
         }
