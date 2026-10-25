@@ -7,8 +7,8 @@ return {
         ["Id"] = 1,
         ["CostList"] = {
             {
-                ["cost_type"] = 1,
-                ["count"] = 10
+                ["item_id"] = 103,
+                ["count"] = 1
             }
         },
         ["CommonPools"] = {
@@ -21,8 +21,8 @@ return {
         ["Id"] = 10,
         ["CostList"] = {
             {
-                ["cost_type"] = 1,
-                ["count"] = 1000
+                ["item_id"] = 103,
+                ["count"] = 10
             }
         }
     }

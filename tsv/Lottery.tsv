@@ -1,6 +1,6 @@
 Id	CostList	CommonPools	HeroPools
 integer	lua_array	lua_array	lua_array
 both	both	both	both
-id	消耗列表	普通池	武将池
-1	"{ { [""cost_type""] = 1, [""count""] = 10 } }"	"{ { [""reward_type""] = 1 } }"	
-10	"{ { [""cost_type""] = 1, [""count""] = 1000 } }"		
+id	消耗列表(item_id→Item.Id，点将符=103)	普通池	武将池
+1	"{ { [""item_id""] = 103, [""count""] = 1 } }"	"{ { [""reward_type""] = 1 } }"	
+10	"{ { [""item_id""] = 103, [""count""] = 10 } }"		

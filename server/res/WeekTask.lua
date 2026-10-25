@@ -35,8 +35,8 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 100
+                ["item_id"] = 103,
+                ["item_count"] = 10
             }
         }
     },

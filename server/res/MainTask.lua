@@ -60,7 +60,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 50
             }
         }
@@ -157,6 +157,11 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 4,
+                ["item_count"] = 800
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 100,
                 ["item_count"] = 100
             }
         }
@@ -173,7 +178,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 80
             }
         }
@@ -225,6 +230,11 @@ return {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
                 ["item_count"] = 800
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 1200
             }
         }
     },
@@ -240,7 +250,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 150
             }
         }
@@ -271,7 +281,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 200
             }
         }

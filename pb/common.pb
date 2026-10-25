@@ -1,5 +1,5 @@
 
-©
+¥
 common.protoCommon"e
 p_reward_info
 
@@ -21,9 +21,9 @@ rewardType
 v (Rv"3
 p_common_info_int_str
 k (Rk
-v (	Rv"±
-p_hero_base_info
-heroType (RheroType
+v (	Rv"­
+p_hero_base_info
+heroId (RheroId
 exp (Rexp
 lv (Rlv
 star (Rstar

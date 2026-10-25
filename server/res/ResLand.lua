@@ -118,7 +118,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 10
             }
         },
@@ -146,7 +146,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 20
             }
         },
@@ -175,7 +175,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 30
             }
         },
@@ -203,7 +203,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 50
             }
         },
@@ -232,7 +232,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 80
             }
         },
@@ -261,7 +261,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 100
             }
         },
@@ -384,7 +384,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 10
             }
         },
@@ -413,7 +413,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 20
             }
         },
@@ -442,7 +442,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 30
             }
         },
@@ -471,7 +471,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 50
             }
         },
@@ -500,7 +500,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 80
             }
         },
@@ -529,7 +529,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 100
             }
         },
@@ -652,7 +652,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 10
             }
         },
@@ -680,7 +680,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 20
             }
         },
@@ -709,7 +709,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 30
             }
         },
@@ -737,7 +737,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 50
             }
         },
@@ -766,7 +766,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 80
             }
         },
@@ -795,7 +795,7 @@ return {
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 100
             }
         },
@@ -808,7 +808,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 1,
         ["Name"] = "1级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 1500,
         ["GatherSpeed"] = 150,
         ["MonsterGroups"] = {
@@ -819,7 +819,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 400
             }
         },
@@ -832,7 +832,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 2,
         ["Name"] = "2级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 3000,
         ["GatherSpeed"] = 220,
         ["MonsterGroups"] = {
@@ -842,7 +842,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 600
             }
         },
@@ -855,7 +855,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 3,
         ["Name"] = "3级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 5500,
         ["GatherSpeed"] = 350,
         ["MonsterGroups"] = {
@@ -866,7 +866,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 900
             }
         },
@@ -879,7 +879,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 4,
         ["Name"] = "4级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 9000,
         ["GatherSpeed"] = 480,
         ["MonsterGroups"] = {
@@ -889,7 +889,7 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 1400
             }
         },
@@ -902,7 +902,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 5,
         ["Name"] = "5级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 13000,
         ["GatherSpeed"] = 650,
         ["MonsterGroups"] = {
@@ -913,12 +913,12 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 2000
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 10
             }
         },
@@ -931,7 +931,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 6,
         ["Name"] = "6级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 18000,
         ["GatherSpeed"] = 850,
         ["MonsterGroups"] = {
@@ -941,12 +941,12 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 2800
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 20
             }
         },
@@ -959,7 +959,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 7,
         ["Name"] = "7级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 25000,
         ["GatherSpeed"] = 1100,
         ["MonsterGroups"] = {
@@ -970,12 +970,12 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 30
             }
         },
@@ -988,7 +988,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 8,
         ["Name"] = "8级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 33000,
         ["GatherSpeed"] = 1400,
         ["MonsterGroups"] = {
@@ -998,12 +998,12 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 5500
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 50
             }
         },
@@ -1016,7 +1016,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 9,
         ["Name"] = "9级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 43000,
         ["GatherSpeed"] = 1800,
         ["MonsterGroups"] = {
@@ -1027,12 +1027,12 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 8000
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 80
             }
         },
@@ -1045,7 +1045,7 @@ return {
         ["Type"] = 4,
         ["Level"] = 10,
         ["Name"] = "10级石场",
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["Capacity"] = 56000,
         ["GatherSpeed"] = 2200,
         ["MonsterGroups"] = {
@@ -1056,12 +1056,12 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 5,
+                ["item_id"] = 4,
                 ["item_count"] = 12000
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
+                ["item_id"] = 100,
                 ["item_count"] = 100
             }
         },

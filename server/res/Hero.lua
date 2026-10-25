@@ -3,7 +3,7 @@
 -- Source TSV: Hero.tsv
 
 return {
-    {
+    [1001] = {
         ["Id"] = 1001,
         ["HeroId"] = 1001,
         ["Sort"] = 1,
@@ -17,9 +17,16 @@ return {
         ["Crit"] = 280,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1001
+        ["SkillId"] = 1001,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11001,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1002] = {
         ["Id"] = 1002,
         ["HeroId"] = 1002,
         ["Sort"] = 2,
@@ -33,9 +40,16 @@ return {
         ["Crit"] = 40,
         ["Class"] = "辅助",
         ["Star"] = 3,
-        ["SkillId"] = 1002
+        ["SkillId"] = 1002,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11002,
+                ["item_count"] = 20
+            }
+        }
     },
-    {
+    [1003] = {
         ["Id"] = 1003,
         ["HeroId"] = 1003,
         ["Sort"] = 3,
@@ -49,9 +63,16 @@ return {
         ["Crit"] = 30,
         ["Class"] = "辅助",
         ["Star"] = 2,
-        ["SkillId"] = 1003
+        ["SkillId"] = 1003,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11003,
+                ["item_count"] = 10
+            }
+        }
     },
-    {
+    [1004] = {
         ["Id"] = 1004,
         ["HeroId"] = 1004,
         ["Sort"] = 4,
@@ -65,9 +86,16 @@ return {
         ["Crit"] = 320,
         ["Class"] = "刺客",
         ["Star"] = 5,
-        ["SkillId"] = 1004
+        ["SkillId"] = 1004,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11004,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1005] = {
         ["Id"] = 1005,
         ["HeroId"] = 1005,
         ["Sort"] = 5,
@@ -81,9 +109,16 @@ return {
         ["Crit"] = 35,
         ["Class"] = "辅助",
         ["Star"] = 3,
-        ["SkillId"] = 1005
+        ["SkillId"] = 1005,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11005,
+                ["item_count"] = 20
+            }
+        }
     },
-    {
+    [1006] = {
         ["Id"] = 1006,
         ["HeroId"] = 1006,
         ["Sort"] = 6,
@@ -97,9 +132,16 @@ return {
         ["Crit"] = 90,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["SkillId"] = 1006
+        ["SkillId"] = 1006,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11006,
+                ["item_count"] = 30
+            }
+        }
     },
-    {
+    [1007] = {
         ["Id"] = 1007,
         ["HeroId"] = 1007,
         ["Sort"] = 7,
@@ -113,9 +155,16 @@ return {
         ["Crit"] = 70,
         ["Class"] = "坦克",
         ["Star"] = 4,
-        ["SkillId"] = 1007
+        ["SkillId"] = 1007,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11007,
+                ["item_count"] = 30
+            }
+        }
     },
-    {
+    [1008] = {
         ["Id"] = 1008,
         ["HeroId"] = 1008,
         ["Sort"] = 8,
@@ -129,9 +178,16 @@ return {
         ["Crit"] = 160,
         ["Class"] = "法师",
         ["Star"] = 5,
-        ["SkillId"] = 1008
+        ["SkillId"] = 1008,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11008,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1009] = {
         ["Id"] = 1009,
         ["HeroId"] = 1009,
         ["Sort"] = 9,
@@ -145,9 +201,16 @@ return {
         ["Crit"] = 110,
         ["Class"] = "坦克",
         ["Star"] = 5,
-        ["SkillId"] = 1009
+        ["SkillId"] = 1009,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11009,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1010] = {
         ["Id"] = 1010,
         ["HeroId"] = 1010,
         ["Sort"] = 10,
@@ -161,9 +224,16 @@ return {
         ["Crit"] = 350,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1010
+        ["SkillId"] = 1010,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11010,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1011] = {
         ["Id"] = 1011,
         ["HeroId"] = 1011,
         ["Sort"] = 11,
@@ -176,9 +246,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11011,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1012] = {
         ["Id"] = 1012,
         ["HeroId"] = 1012,
         ["Sort"] = 12,
@@ -191,9 +268,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "辅助",
-        ["Star"] = 4
+        ["Star"] = 4,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11012,
+                ["item_count"] = 30
+            }
+        }
     },
-    {
+    [1013] = {
         ["Id"] = 1013,
         ["HeroId"] = 1013,
         ["Sort"] = 13,
@@ -206,9 +290,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11013,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1014] = {
         ["Id"] = 1014,
         ["HeroId"] = 1014,
         ["Sort"] = 14,
@@ -221,9 +312,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11014,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1015] = {
         ["Id"] = 1015,
         ["HeroId"] = 1015,
         ["Sort"] = 15,
@@ -236,9 +334,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 4
+        ["Star"] = 4,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11015,
+                ["item_count"] = 30
+            }
+        }
     },
-    {
+    [1016] = {
         ["Id"] = 1016,
         ["HeroId"] = 1016,
         ["Sort"] = 16,
@@ -251,9 +356,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "辅助",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11016,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1017] = {
         ["Id"] = 1017,
         ["HeroId"] = 1017,
         ["Sort"] = 17,
@@ -266,9 +378,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11017,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1018] = {
         ["Id"] = 1018,
         ["HeroId"] = 1018,
         ["Sort"] = 18,
@@ -281,9 +400,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "法师",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11018,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1019] = {
         ["Id"] = 1019,
         ["HeroId"] = 1019,
         ["Sort"] = 19,
@@ -296,9 +422,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "刺客",
-        ["Star"] = 4
+        ["Star"] = 4,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11019,
+                ["item_count"] = 30
+            }
+        }
     },
-    {
+    [1020] = {
         ["Id"] = 1020,
         ["HeroId"] = 1020,
         ["Sort"] = 20,
@@ -311,9 +444,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "辅助",
-        ["Star"] = 4
+        ["Star"] = 4,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11020,
+                ["item_count"] = 30
+            }
+        }
     },
-    {
+    [1021] = {
         ["Id"] = 1021,
         ["HeroId"] = 1021,
         ["Sort"] = 21,
@@ -326,9 +466,16 @@ return {
         ["Speed"] = 60,
         ["Crit"] = 100,
         ["Class"] = "战士",
-        ["Star"] = 5
+        ["Star"] = 5,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11021,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1022] = {
         ["Id"] = 1022,
         ["HeroId"] = 1022,
         ["Sort"] = 22,
@@ -342,9 +489,16 @@ return {
         ["Crit"] = 240,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1022
+        ["SkillId"] = 1022,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11022,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1023] = {
         ["Id"] = 1023,
         ["HeroId"] = 1023,
         ["Sort"] = 23,
@@ -358,9 +512,16 @@ return {
         ["Crit"] = 300,
         ["Class"] = "战士",
         ["Star"] = 5,
-        ["SkillId"] = 1023
+        ["SkillId"] = 1023,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11023,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1024] = {
         ["Id"] = 1024,
         ["HeroId"] = 1024,
         ["Sort"] = 24,
@@ -374,9 +535,16 @@ return {
         ["Crit"] = 75,
         ["Class"] = "坦克",
         ["Star"] = 5,
-        ["SkillId"] = 1024
+        ["SkillId"] = 1024,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11024,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1025] = {
         ["Id"] = 1025,
         ["HeroId"] = 1025,
         ["Sort"] = 25,
@@ -390,9 +558,16 @@ return {
         ["Crit"] = 190,
         ["Class"] = "法师",
         ["Star"] = 5,
-        ["SkillId"] = 1025
+        ["SkillId"] = 1025,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11025,
+                ["item_count"] = 50
+            }
+        }
     },
-    {
+    [1026] = {
         ["Id"] = 1026,
         ["HeroId"] = 1026,
         ["Sort"] = 26,
@@ -406,6 +581,13 @@ return {
         ["Crit"] = 310,
         ["Class"] = "刺客",
         ["Star"] = 5,
-        ["SkillId"] = 1026
+        ["SkillId"] = 1026,
+        ["Convert"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 11026,
+                ["item_count"] = 50
+            }
+        }
     }
 }

@@ -30,14 +30,14 @@ namespace Common {
             "ZhIJCgF4GAEgASgCEgkKAXkYAiABKAIiMgoOcF9zb2xkaWVyX2luZm8SDQoF",
             "Y291bnQYASABKA0SEQoJaHVydENvdW50GAIgASgNIiUKDXBfY29tbW9uX2lu",
             "Zm8SCQoBaxgBIAEoBRIJCgF2GAIgASgFIi0KFXBfY29tbW9uX2luZm9faW50",
-            "X3N0chIJCgFrGAEgASgFEgkKAXYYAiABKAkihQEKEHBfaGVyb19iYXNlX2lu",
-            "Zm8SEAoIaGVyb1R5cGUYASABKAUSCwoDZXhwGAIgASgFEgoKAmx2GAMgASgF",
-            "EgwKBHN0YXIYBCABKAUSDgoGbmV3VGFnGAUgASgIEigKCXNraWxsTGlzdBgG",
-            "IAMoCzIVLkNvbW1vbi5wX2NvbW1vbl9pbmZvIqcBCgtwX21haWxfaW5mbxIO",
-            "CgZtYWlsSWQYASABKAUSDwoHbWFpbFVpZBgCIAEoAxINCgV0aXRsZRgDIAEo",
-            "CRIPCgdjb250ZW50GAQgASgJEg4KBmlzUmVhZBgFIAEoCBIOCgZpc0xvY2sY",
-            "BiABKAgSEwoLaXNHb3RSZXdhcmQYByABKAgSEQoJc3RhcnRUaW1lGAggASgF",
-            "Eg8KB2VuZFRpbWUYCSABKAViBnByb3RvMw=="));
+            "X3N0chIJCgFrGAEgASgFEgkKAXYYAiABKAkigwEKEHBfaGVyb19iYXNlX2lu",
+            "Zm8SDgoGaGVyb0lkGAEgASgFEgsKA2V4cBgCIAEoBRIKCgJsdhgDIAEoBRIM",
+            "CgRzdGFyGAQgASgFEg4KBm5ld1RhZxgFIAEoCBIoCglza2lsbExpc3QYBiAD",
+            "KAsyFS5Db21tb24ucF9jb21tb25faW5mbyKnAQoLcF9tYWlsX2luZm8SDgoG",
+            "bWFpbElkGAEgASgFEg8KB21haWxVaWQYAiABKAMSDQoFdGl0bGUYAyABKAkS",
+            "DwoHY29udGVudBgEIAEoCRIOCgZpc1JlYWQYBSABKAgSDgoGaXNMb2NrGAYg",
+            "ASgIEhMKC2lzR290UmV3YXJkGAcgASgIEhEKCXN0YXJ0VGltZRgIIAEoBRIP",
+            "CgdlbmRUaW1lGAkgASgFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -47,7 +47,7 @@ namespace Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_soldier_info), global::Common.p_soldier_info.Parser, new[]{ "Count", "HurtCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_common_info), global::Common.p_common_info.Parser, new[]{ "K", "V" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_common_info_int_str), global::Common.p_common_info_int_str.Parser, new[]{ "K", "V" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_hero_base_info), global::Common.p_hero_base_info.Parser, new[]{ "HeroType", "Exp", "Lv", "Star", "NewTag", "SkillList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_hero_base_info), global::Common.p_hero_base_info.Parser, new[]{ "HeroId", "Exp", "Lv", "Star", "NewTag", "SkillList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Common.p_mail_info), global::Common.p_mail_info.Parser, new[]{ "MailId", "MailUid", "Title", "Content", "IsRead", "IsLock", "IsGotReward", "StartTime", "EndTime" }, null, null, null, null)
           }));
     }
@@ -1517,6 +1517,9 @@ namespace Common {
 
   }
 
+  /// <summary>
+  /// heroId → Hero.Id（配置 id，无独立 heroUid）
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_hero_base_info : pb::IMessage<p_hero_base_info>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1552,7 +1555,7 @@ namespace Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public p_hero_base_info(p_hero_base_info other) : this() {
-      heroType_ = other.heroType_;
+      heroId_ = other.heroId_;
       exp_ = other.exp_;
       lv_ = other.lv_;
       star_ = other.star_;
@@ -1567,15 +1570,15 @@ namespace Common {
       return new p_hero_base_info(this);
     }
 
-    /// <summary>Field number for the "heroType" field.</summary>
-    public const int HeroTypeFieldNumber = 1;
-    private int heroType_;
+    /// <summary>Field number for the "heroId" field.</summary>
+    public const int HeroIdFieldNumber = 1;
+    private int heroId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeroType {
-      get { return heroType_; }
+    public int HeroId {
+      get { return heroId_; }
       set {
-        heroType_ = value;
+        heroId_ = value;
       }
     }
 
@@ -1653,7 +1656,7 @@ namespace Common {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (HeroType != other.HeroType) return false;
+      if (HeroId != other.HeroId) return false;
       if (Exp != other.Exp) return false;
       if (Lv != other.Lv) return false;
       if (Star != other.Star) return false;
@@ -1666,7 +1669,7 @@ namespace Common {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HeroType != 0) hash ^= HeroType.GetHashCode();
+      if (HeroId != 0) hash ^= HeroId.GetHashCode();
       if (Exp != 0) hash ^= Exp.GetHashCode();
       if (Lv != 0) hash ^= Lv.GetHashCode();
       if (Star != 0) hash ^= Star.GetHashCode();
@@ -1690,9 +1693,9 @@ namespace Common {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (HeroType != 0) {
+      if (HeroId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(HeroType);
+        output.WriteInt32(HeroId);
       }
       if (Exp != 0) {
         output.WriteRawTag(16);
@@ -1721,9 +1724,9 @@ namespace Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HeroType != 0) {
+      if (HeroId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(HeroType);
+        output.WriteInt32(HeroId);
       }
       if (Exp != 0) {
         output.WriteRawTag(16);
@@ -1752,8 +1755,8 @@ namespace Common {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HeroType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroType);
+      if (HeroId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
       }
       if (Exp != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Exp);
@@ -1780,8 +1783,8 @@ namespace Common {
       if (other == null) {
         return;
       }
-      if (other.HeroType != 0) {
-        HeroType = other.HeroType;
+      if (other.HeroId != 0) {
+        HeroId = other.HeroId;
       }
       if (other.Exp != 0) {
         Exp = other.Exp;
@@ -1816,7 +1819,7 @@ namespace Common {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            HeroType = input.ReadInt32();
+            HeroId = input.ReadInt32();
             break;
           }
           case 16: {
@@ -1859,7 +1862,7 @@ namespace Common {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            HeroType = input.ReadInt32();
+            HeroId = input.ReadInt32();
             break;
           }
           case 16: {

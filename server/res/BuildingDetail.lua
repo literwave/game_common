@@ -267,7 +267,7 @@ return {
                 ["lev"] = 2
             }
         },
-        ["OutputItem"] = 5,
+        ["OutputItem"] = 4,
         ["EffectType"] = 7
     }
 }
