@@ -60,7 +60,7 @@ git submodule update --init --recursive
 | `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；`SkillId` 指向 `Skill.Id`；`Convert` 为已有武将重复获得时转奖励（同任务 `Reward`：`reward_type`/`item_id`/`item_count`，碎片 `item_id=10000+Hero.Id`）；升级经验见 `HeroLv` |
 | `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0 |
 | `Skill` | 技能；`Icon` 只导出到前端；武将通过 `SkillId` 关联 |
-| `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符；`Icon`/`Desc` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速） |
+| `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符；`Icon`/`Desc` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速）；协议见 `proto/item.proto`（`req_all_item_data` 拉取快照，`sync_item_data` 单条同步） |
 | `Lottery` | 抽卡；`Id=1` 单抽 / `Id=10` 十连；`CostList` 消耗点将符（`item_id=103`）；`CommonPools`/`HeroPools` 为带 `weight` 的奖励列表（同 `reward_type`：1道具/3武将）；抽奖先按两池 `weight` 总和选池，再在池内加权；约 85% 普通（资源/令牌/加速/碎片）+ 15% 武将（2★>3★>4★>5★） |
 | `ReportInfo` | 后台域名和端口 |
 | `ServerGroup` | 服务器群组与后台 ID |
