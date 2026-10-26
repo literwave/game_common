@@ -60,7 +60,7 @@ git submodule update --init --recursive
 | `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；`SkillId` 指向 `Skill.Id`；`Convert` 为已有武将重复获得时转奖励（同任务 `Reward`：`reward_type`/`item_id`/`item_count`，碎片 `item_id=10000+Hero.Id`）；升级经验见 `HeroLv` |
 | `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0 |
 | `Skill` | 技能；`Icon` 只导出到前端；武将通过 `SkillId` 关联 |
-| `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符；`Icon`/`Desc` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速）；协议见 `proto/item.proto`（`req_all_item_data` 拉取快照，`sync_item_data` 单条同步） |
+| `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符；`Quality` 品质（只导出到前端；碎片对齐武将 `Star`）；`Icon`/`Desc`/`Quality` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速）；协议见 `proto/item.proto`（`req_all_item_data` 拉取快照，`sync_item_data` 单条同步） |
 | `Lottery` | 抽卡；`Id=1` 单抽 / `Id=10` 十连；`CostList` 消耗点将符（`item_id=103`）；`CommonPools`/`HeroPools` 为带 `weight` 的奖励列表（同 `reward_type`：1道具/3武将）；抽奖先按两池 `weight` 总和选池，再在池内加权；约 85% 普通（资源/令牌/加速/碎片）+ 15% 武将（2★>3★>4★>5★） |
 | `ReportInfo` | 后台域名和端口 |
 | `ServerGroup` | 服务器群组与后台 ID |
@@ -68,6 +68,7 @@ git submodule update --init --recursive
 | `Errcode` | 错误码枚举；后端下发 `Id`，前端用 `Msg` 提示；`Name`/`Msg` 只导出到前端 |
 | `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组/4资源地 |
 | `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动 |
+| `TroopState` | 部队状态枚举：0在城/1行军/2停留/3采集 |
 | `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地 |
 | `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
 | `MainTask` | 主线任务；`NextId` 衔接下一任务；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
