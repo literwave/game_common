@@ -24,18 +24,20 @@ namespace Lottery {
     static LotteryReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1sb3R0ZXJ5LnByb3RvEgdMb3R0ZXJ5IhsKGWMyc19yZXFfdXNlcl9sb3R0",
-            "ZXJ5X2luZm8iMQoZczJjX3JlcV91c2VyX2xvdHRlcnlfaW5mbxIUCgxsb3R0",
-            "ZXJ5VGltZXMYASABKAUiKwoQYzJzX3VzZXJfbG90dGVyeRIXCg91c2VMb3R0",
-            "ZXJ5VGltZXMYASABKAUiQQoQczJjX3VzZXJfbG90dGVyeRIXCg91c2VMb3R0",
-            "ZXJ5VGltZXMYASABKAUSFAoMbG90dGVyeVRpbWVzGAIgASgFYgZwcm90bzM="));
+            "Cg1sb3R0ZXJ5LnByb3RvEgdMb3R0ZXJ5Ggxjb21tb24ucHJvdG8iGwoZYzJz",
+            "X3JlcV91c2VyX2xvdHRlcnlfaW5mbyIxChlzMmNfcmVxX3VzZXJfbG90dGVy",
+            "eV9pbmZvEhQKDGxvdHRlcnlUaW1lcxgBIAEoBSIrChBjMnNfdXNlcl9sb3R0",
+            "ZXJ5EhcKD3VzZUxvdHRlcnlUaW1lcxgBIAEoBSJsChBzMmNfdXNlcl9sb3R0",
+            "ZXJ5EhcKD3VzZUxvdHRlcnlUaW1lcxgBIAEoBRIUCgxsb3R0ZXJ5VGltZXMY",
+            "AiABKAUSKQoKcmV3YXJkTGlzdBgDIAMoCzIVLkNvbW1vbi5wX3Jld2FyZF9p",
+            "bmZvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lottery.c2s_req_user_lottery_info), global::Lottery.c2s_req_user_lottery_info.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lottery.s2c_req_user_lottery_info), global::Lottery.s2c_req_user_lottery_info.Parser, new[]{ "LotteryTimes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lottery.c2s_user_lottery), global::Lottery.c2s_user_lottery.Parser, new[]{ "UseLotteryTimes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lottery.s2c_user_lottery), global::Lottery.s2c_user_lottery.Parser, new[]{ "UseLotteryTimes", "LotteryTimes" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lottery.s2c_user_lottery), global::Lottery.s2c_user_lottery.Parser, new[]{ "UseLotteryTimes", "LotteryTimes", "RewardList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -599,6 +601,9 @@ namespace Lottery {
 
   }
 
+  /// <summary>
+  /// rewardList：本次获得列表（rewardType/itemId/itemCount，与 Lottery 池配置一致）
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class s2c_user_lottery : pb::IMessage<s2c_user_lottery>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -636,6 +641,7 @@ namespace Lottery {
     public s2c_user_lottery(s2c_user_lottery other) : this() {
       useLotteryTimes_ = other.useLotteryTimes_;
       lotteryTimes_ = other.lotteryTimes_;
+      rewardList_ = other.rewardList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -669,6 +675,17 @@ namespace Lottery {
       }
     }
 
+    /// <summary>Field number for the "rewardList" field.</summary>
+    public const int RewardListFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Common.p_reward_info> _repeated_rewardList_codec
+        = pb::FieldCodec.ForMessage(26, global::Common.p_reward_info.Parser);
+    private readonly pbc::RepeatedField<global::Common.p_reward_info> rewardList_ = new pbc::RepeatedField<global::Common.p_reward_info>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Common.p_reward_info> RewardList {
+      get { return rewardList_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -686,6 +703,7 @@ namespace Lottery {
       }
       if (UseLotteryTimes != other.UseLotteryTimes) return false;
       if (LotteryTimes != other.LotteryTimes) return false;
+      if(!rewardList_.Equals(other.rewardList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -695,6 +713,7 @@ namespace Lottery {
       int hash = 1;
       if (UseLotteryTimes != 0) hash ^= UseLotteryTimes.GetHashCode();
       if (LotteryTimes != 0) hash ^= LotteryTimes.GetHashCode();
+      hash ^= rewardList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -721,6 +740,7 @@ namespace Lottery {
         output.WriteRawTag(16);
         output.WriteInt32(LotteryTimes);
       }
+      rewardList_.WriteTo(output, _repeated_rewardList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -739,6 +759,7 @@ namespace Lottery {
         output.WriteRawTag(16);
         output.WriteInt32(LotteryTimes);
       }
+      rewardList_.WriteTo(ref output, _repeated_rewardList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -755,6 +776,7 @@ namespace Lottery {
       if (LotteryTimes != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LotteryTimes);
       }
+      size += rewardList_.CalculateSize(_repeated_rewardList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -773,6 +795,7 @@ namespace Lottery {
       if (other.LotteryTimes != 0) {
         LotteryTimes = other.LotteryTimes;
       }
+      rewardList_.Add(other.rewardList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -800,6 +823,10 @@ namespace Lottery {
             LotteryTimes = input.ReadInt32();
             break;
           }
+          case 26: {
+            rewardList_.AddEntriesFrom(input, _repeated_rewardList_codec);
+            break;
+          }
         }
       }
     #endif
@@ -825,6 +852,10 @@ namespace Lottery {
           }
           case 16: {
             LotteryTimes = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            rewardList_.AddEntriesFrom(ref input, _repeated_rewardList_codec);
             break;
           }
         }
