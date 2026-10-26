@@ -1,5 +1,5 @@
 
-÷
+ü
 world.protoWorldcommon.proto"Y
 p_troop_pos
 heroIdx (RheroIdx0
@@ -68,4 +68,19 @@ entityType
 s2c_aoi_leave
 	entityIds (R	entityIds"A
 s2c_aoi_update/
-entities (2.World.p_aoi_entityRentitiesbproto3
+entities (2.World.p_aoi_entityRentities"B
+p_mark_info
+pos (2.Common.p_posRpos
+name (	Rname"
+c2s_req_mark_list"C
+s2c_req_mark_list.
+markList (2.World.p_mark_infoRmarkList"C
+c2s_add_mark
+pos (2.Common.p_posRpos
+name (	Rname">
+s2c_add_mark.
+markInfo (2.World.p_mark_infoRmarkInfo"/
+c2s_del_mark
+pos (2.Common.p_posRpos"/
+s2c_del_mark
+pos (2.Common.p_posRposbproto3
