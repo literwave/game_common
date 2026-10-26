@@ -1,5 +1,5 @@
 
-ü
+¦
 world.protoWorldcommon.proto"Y
 p_troop_pos
 heroIdx (RheroIdx0
@@ -49,7 +49,7 @@ targetType
 	marchInfo (2.World.p_march_infoR	marchInfo"
 c2s_req_march_list"G
 s2c_req_march_list1
-	marchList (2.World.p_march_infoR	marchList"ø
+	marchList (2.World.p_march_infoR	marchList"¢
 p_aoi_entity
 entityId (RentityId
 
@@ -60,7 +60,10 @@ entityType
 cfgId (RcfgId#
 path (2.Common.p_pos_fRpath
 	startTime (R	startTime
-endTime (RendTime"0
+endTime (RendTime
+name	 (	Rname
+level
+ (Rlevel"0
 c2s_aoi_focus
 pos (2.Common.p_posRpos"@
 s2c_aoi_enter/

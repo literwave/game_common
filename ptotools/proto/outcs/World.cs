@@ -49,23 +49,23 @@ namespace World {
             "Y2hfaW5mbyI4Cg5zMmNfc3luY19tYXJjaBImCgltYXJjaEluZm8YASABKAsy",
             "Ey5Xb3JsZC5wX21hcmNoX2luZm8iFAoSYzJzX3JlcV9tYXJjaF9saXN0IjwK",
             "EnMyY19yZXFfbWFyY2hfbGlzdBImCgltYXJjaExpc3QYASADKAsyEy5Xb3Js",
-            "ZC5wX21hcmNoX2luZm8iswEKDHBfYW9pX2VudGl0eRIQCghlbnRpdHlJZBgB",
+            "ZC5wX21hcmNoX2luZm8i0AEKDHBfYW9pX2VudGl0eRIQCghlbnRpdHlJZBgB",
             "IAEoAxISCgplbnRpdHlUeXBlGAIgASgNEhoKA3BvcxgDIAEoCzINLkNvbW1v",
             "bi5wX3BvcxIPCgdvd25lcklkGAQgASgDEg0KBWNmZ0lkGAUgASgNEh0KBHBh",
             "dGgYBiADKAsyDy5Db21tb24ucF9wb3NfZhIRCglzdGFydFRpbWUYByABKAES",
-            "DwoHZW5kVGltZRgIIAEoASIrCg1jMnNfYW9pX2ZvY3VzEhoKA3BvcxgBIAEo",
-            "CzINLkNvbW1vbi5wX3BvcyI2Cg1zMmNfYW9pX2VudGVyEiUKCGVudGl0aWVz",
-            "GAEgAygLMhMuV29ybGQucF9hb2lfZW50aXR5IiIKDXMyY19hb2lfbGVhdmUS",
-            "EQoJZW50aXR5SWRzGAEgAygDIjcKDnMyY19hb2lfdXBkYXRlEiUKCGVudGl0",
-            "aWVzGAEgAygLMhMuV29ybGQucF9hb2lfZW50aXR5IjcKC3BfbWFya19pbmZv",
-            "EhoKA3BvcxgBIAEoCzINLkNvbW1vbi5wX3BvcxIMCgRuYW1lGAIgASgJIhMK",
-            "EWMyc19yZXFfbWFya19saXN0IjkKEXMyY19yZXFfbWFya19saXN0EiQKCG1h",
-            "cmtMaXN0GAEgAygLMhIuV29ybGQucF9tYXJrX2luZm8iOAoMYzJzX2FkZF9t",
-            "YXJrEhoKA3BvcxgBIAEoCzINLkNvbW1vbi5wX3BvcxIMCgRuYW1lGAIgASgJ",
-            "IjQKDHMyY19hZGRfbWFyaxIkCghtYXJrSW5mbxgBIAEoCzISLldvcmxkLnBf",
-            "bWFya19pbmZvIioKDGMyc19kZWxfbWFyaxIaCgNwb3MYASABKAsyDS5Db21t",
-            "b24ucF9wb3MiKgoMczJjX2RlbF9tYXJrEhoKA3BvcxgBIAEoCzINLkNvbW1v",
-            "bi5wX3Bvc2IGcHJvdG8z"));
+            "DwoHZW5kVGltZRgIIAEoARIMCgRuYW1lGAkgASgJEg0KBWxldmVsGAogASgN",
+            "IisKDWMyc19hb2lfZm9jdXMSGgoDcG9zGAEgASgLMg0uQ29tbW9uLnBfcG9z",
+            "IjYKDXMyY19hb2lfZW50ZXISJQoIZW50aXRpZXMYASADKAsyEy5Xb3JsZC5w",
+            "X2FvaV9lbnRpdHkiIgoNczJjX2FvaV9sZWF2ZRIRCgllbnRpdHlJZHMYASAD",
+            "KAMiNwoOczJjX2FvaV91cGRhdGUSJQoIZW50aXRpZXMYASADKAsyEy5Xb3Js",
+            "ZC5wX2FvaV9lbnRpdHkiNwoLcF9tYXJrX2luZm8SGgoDcG9zGAEgASgLMg0u",
+            "Q29tbW9uLnBfcG9zEgwKBG5hbWUYAiABKAkiEwoRYzJzX3JlcV9tYXJrX2xp",
+            "c3QiOQoRczJjX3JlcV9tYXJrX2xpc3QSJAoIbWFya0xpc3QYASADKAsyEi5X",
+            "b3JsZC5wX21hcmtfaW5mbyI4CgxjMnNfYWRkX21hcmsSGgoDcG9zGAEgASgL",
+            "Mg0uQ29tbW9uLnBfcG9zEgwKBG5hbWUYAiABKAkiNAoMczJjX2FkZF9tYXJr",
+            "EiQKCG1hcmtJbmZvGAEgASgLMhIuV29ybGQucF9tYXJrX2luZm8iKgoMYzJz",
+            "X2RlbF9tYXJrEhoKA3BvcxgBIAEoCzINLkNvbW1vbi5wX3BvcyIqCgxzMmNf",
+            "ZGVsX21hcmsSGgoDcG9zGAEgASgLMg0uQ29tbW9uLnBfcG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,7 +84,7 @@ namespace World {
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_sync_march), global::World.s2c_sync_march.Parser, new[]{ "MarchInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_req_march_list), global::World.c2s_req_march_list.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_req_march_list), global::World.s2c_req_march_list.Parser, new[]{ "MarchList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_aoi_entity), global::World.p_aoi_entity.Parser, new[]{ "EntityId", "EntityType", "Pos", "OwnerId", "CfgId", "Path", "StartTime", "EndTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::World.p_aoi_entity), global::World.p_aoi_entity.Parser, new[]{ "EntityId", "EntityType", "Pos", "OwnerId", "CfgId", "Path", "StartTime", "EndTime", "Name", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.c2s_aoi_focus), global::World.c2s_aoi_focus.Parser, new[]{ "Pos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_aoi_enter), global::World.s2c_aoi_enter.Parser, new[]{ "Entities" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::World.s2c_aoi_leave), global::World.s2c_aoi_leave.Parser, new[]{ "EntityIds" }, null, null, null, null),
@@ -3616,6 +3616,7 @@ namespace World {
   /// <summary>
   /// ---------- AOI ----------
   /// 视野内实体；entityType → EntityType.Id（1主城 2行军部队 3怪物组 4资源地）
+  /// 主城额外填 name、level；改名/主城升级时用 s2c_aoi_update 同步
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_aoi_entity : pb::IMessage<p_aoi_entity>
@@ -3660,6 +3661,8 @@ namespace World {
       path_ = other.path_.Clone();
       startTime_ = other.startTime_;
       endTime_ = other.endTime_;
+      name_ = other.name_;
+      level_ = other.level_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3773,6 +3776,36 @@ namespace World {
       }
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 9;
+    private string name_ = "";
+    /// <summary>
+    /// 主城：玩家名/城名
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "level" field.</summary>
+    public const int LevelFieldNumber = 10;
+    private uint level_;
+    /// <summary>
+    /// 主城：主城建筑等级（BuildingDetail.Id=1），非角色等级
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Level {
+      get { return level_; }
+      set {
+        level_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3796,6 +3829,8 @@ namespace World {
       if(!path_.Equals(other.path_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(StartTime, other.StartTime)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(EndTime, other.EndTime)) return false;
+      if (Name != other.Name) return false;
+      if (Level != other.Level) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3811,6 +3846,8 @@ namespace World {
       hash ^= path_.GetHashCode();
       if (StartTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(StartTime);
       if (EndTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(EndTime);
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Level != 0) hash ^= Level.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3858,6 +3895,14 @@ namespace World {
         output.WriteRawTag(65);
         output.WriteDouble(EndTime);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Name);
+      }
+      if (Level != 0) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(Level);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3897,6 +3942,14 @@ namespace World {
         output.WriteRawTag(65);
         output.WriteDouble(EndTime);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Name);
+      }
+      if (Level != 0) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(Level);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3928,6 +3981,12 @@ namespace World {
       }
       if (EndTime != 0D) {
         size += 1 + 8;
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Level != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Level);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3965,6 +4024,12 @@ namespace World {
       }
       if (other.EndTime != 0D) {
         EndTime = other.EndTime;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Level != 0) {
+        Level = other.Level;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4020,6 +4085,14 @@ namespace World {
             EndTime = input.ReadDouble();
             break;
           }
+          case 74: {
+            Name = input.ReadString();
+            break;
+          }
+          case 80: {
+            Level = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -4072,6 +4145,14 @@ namespace World {
           }
           case 65: {
             EndTime = input.ReadDouble();
+            break;
+          }
+          case 74: {
+            Name = input.ReadString();
+            break;
+          }
+          case 80: {
+            Level = input.ReadUInt32();
             break;
           }
         }
@@ -4674,7 +4755,7 @@ namespace World {
   }
 
   /// <summary>
-  /// 实体更新（主要是 pos）
+  /// 实体更新（pos；主城改名/升级等）
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class s2c_aoi_update : pb::IMessage<s2c_aoi_update>
