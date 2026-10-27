@@ -3,7 +3,7 @@
 -- Source TSV: ResLand.tsv
 
 return {
-    {
+    [101] = {
         ["Id"] = 101,
         ["Type"] = 1,
         ["Level"] = 1,
@@ -26,7 +26,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [102] = {
         ["Id"] = 102,
         ["Type"] = 1,
         ["Level"] = 2,
@@ -50,7 +50,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [103] = {
         ["Id"] = 103,
         ["Type"] = 1,
         ["Level"] = 3,
@@ -60,8 +60,7 @@ return {
         ["GatherSpeed"] = 450,
         ["MonsterGroups"] = {
             2,
-            3,
-            4
+            3
         },
         ["Reward"] = {
             {
@@ -74,7 +73,7 @@ return {
             ["level"] = 2
         }
     },
-    {
+    [104] = {
         ["Id"] = 104,
         ["Type"] = 1,
         ["Level"] = 4,
@@ -97,7 +96,7 @@ return {
             ["level"] = 3
         }
     },
-    {
+    [105] = {
         ["Id"] = 105,
         ["Type"] = 1,
         ["Level"] = 5,
@@ -107,8 +106,7 @@ return {
         ["GatherSpeed"] = 800,
         ["MonsterGroups"] = {
             4,
-            5,
-            6
+            5
         },
         ["Reward"] = {
             {
@@ -126,7 +124,7 @@ return {
             ["level"] = 4
         }
     },
-    {
+    [106] = {
         ["Id"] = 106,
         ["Type"] = 1,
         ["Level"] = 6,
@@ -154,7 +152,7 @@ return {
             ["level"] = 5
         }
     },
-    {
+    [107] = {
         ["Id"] = 107,
         ["Type"] = 1,
         ["Level"] = 7,
@@ -183,7 +181,7 @@ return {
             ["level"] = 6
         }
     },
-    {
+    [108] = {
         ["Id"] = 108,
         ["Type"] = 1,
         ["Level"] = 8,
@@ -211,7 +209,7 @@ return {
             ["level"] = 7
         }
     },
-    {
+    [109] = {
         ["Id"] = 109,
         ["Type"] = 1,
         ["Level"] = 9,
@@ -240,7 +238,7 @@ return {
             ["level"] = 8
         }
     },
-    {
+    [110] = {
         ["Id"] = 110,
         ["Type"] = 1,
         ["Level"] = 10,
@@ -269,7 +267,7 @@ return {
             ["level"] = 9
         }
     },
-    {
+    [201] = {
         ["Id"] = 201,
         ["Type"] = 2,
         ["Level"] = 1,
@@ -292,7 +290,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [202] = {
         ["Id"] = 202,
         ["Type"] = 2,
         ["Level"] = 2,
@@ -301,6 +299,7 @@ return {
         ["Capacity"] = 4000,
         ["GatherSpeed"] = 300,
         ["MonsterGroups"] = {
+            1,
             2,
             3
         },
@@ -315,7 +314,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [203] = {
         ["Id"] = 203,
         ["Type"] = 2,
         ["Level"] = 3,
@@ -325,8 +324,7 @@ return {
         ["GatherSpeed"] = 450,
         ["MonsterGroups"] = {
             2,
-            3,
-            4
+            3
         },
         ["Reward"] = {
             {
@@ -339,7 +337,7 @@ return {
             ["level"] = 2
         }
     },
-    {
+    [204] = {
         ["Id"] = 204,
         ["Type"] = 2,
         ["Level"] = 4,
@@ -349,8 +347,7 @@ return {
         ["GatherSpeed"] = 600,
         ["MonsterGroups"] = {
             3,
-            4,
-            5
+            4
         },
         ["Reward"] = {
             {
@@ -363,7 +360,7 @@ return {
             ["level"] = 3
         }
     },
-    {
+    [205] = {
         ["Id"] = 205,
         ["Type"] = 2,
         ["Level"] = 5,
@@ -373,8 +370,7 @@ return {
         ["GatherSpeed"] = 800,
         ["MonsterGroups"] = {
             4,
-            5,
-            6
+            5
         },
         ["Reward"] = {
             {
@@ -392,7 +388,7 @@ return {
             ["level"] = 4
         }
     },
-    {
+    [206] = {
         ["Id"] = 206,
         ["Type"] = 2,
         ["Level"] = 6,
@@ -421,7 +417,7 @@ return {
             ["level"] = 5
         }
     },
-    {
+    [207] = {
         ["Id"] = 207,
         ["Type"] = 2,
         ["Level"] = 7,
@@ -450,7 +446,7 @@ return {
             ["level"] = 6
         }
     },
-    {
+    [208] = {
         ["Id"] = 208,
         ["Type"] = 2,
         ["Level"] = 8,
@@ -479,7 +475,7 @@ return {
             ["level"] = 7
         }
     },
-    {
+    [209] = {
         ["Id"] = 209,
         ["Type"] = 2,
         ["Level"] = 9,
@@ -508,7 +504,7 @@ return {
             ["level"] = 8
         }
     },
-    {
+    [210] = {
         ["Id"] = 210,
         ["Type"] = 2,
         ["Level"] = 10,
@@ -537,7 +533,7 @@ return {
             ["level"] = 9
         }
     },
-    {
+    [301] = {
         ["Id"] = 301,
         ["Type"] = 3,
         ["Level"] = 1,
@@ -547,8 +543,7 @@ return {
         ["GatherSpeed"] = 150,
         ["MonsterGroups"] = {
             1,
-            2,
-            3
+            2
         },
         ["Reward"] = {
             {
@@ -561,7 +556,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [302] = {
         ["Id"] = 302,
         ["Type"] = 3,
         ["Level"] = 2,
@@ -584,7 +579,7 @@ return {
             ["level"] = 2
         }
     },
-    {
+    [303] = {
         ["Id"] = 303,
         ["Type"] = 3,
         ["Level"] = 3,
@@ -594,8 +589,7 @@ return {
         ["GatherSpeed"] = 350,
         ["MonsterGroups"] = {
             3,
-            4,
-            5
+            4
         },
         ["Reward"] = {
             {
@@ -608,7 +602,7 @@ return {
             ["level"] = 3
         }
     },
-    {
+    [304] = {
         ["Id"] = 304,
         ["Type"] = 3,
         ["Level"] = 4,
@@ -631,7 +625,7 @@ return {
             ["level"] = 4
         }
     },
-    {
+    [305] = {
         ["Id"] = 305,
         ["Type"] = 3,
         ["Level"] = 5,
@@ -660,7 +654,7 @@ return {
             ["level"] = 5
         }
     },
-    {
+    [306] = {
         ["Id"] = 306,
         ["Type"] = 3,
         ["Level"] = 6,
@@ -688,7 +682,7 @@ return {
             ["level"] = 6
         }
     },
-    {
+    [307] = {
         ["Id"] = 307,
         ["Type"] = 3,
         ["Level"] = 7,
@@ -717,7 +711,7 @@ return {
             ["level"] = 7
         }
     },
-    {
+    [308] = {
         ["Id"] = 308,
         ["Type"] = 3,
         ["Level"] = 8,
@@ -745,7 +739,7 @@ return {
             ["level"] = 8
         }
     },
-    {
+    [309] = {
         ["Id"] = 309,
         ["Type"] = 3,
         ["Level"] = 9,
@@ -774,7 +768,7 @@ return {
             ["level"] = 9
         }
     },
-    {
+    [310] = {
         ["Id"] = 310,
         ["Type"] = 3,
         ["Level"] = 10,
@@ -803,7 +797,7 @@ return {
             ["level"] = 10
         }
     },
-    {
+    [401] = {
         ["Id"] = 401,
         ["Type"] = 4,
         ["Level"] = 1,
@@ -813,8 +807,7 @@ return {
         ["GatherSpeed"] = 150,
         ["MonsterGroups"] = {
             1,
-            2,
-            3
+            2
         },
         ["Reward"] = {
             {
@@ -827,7 +820,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [402] = {
         ["Id"] = 402,
         ["Type"] = 4,
         ["Level"] = 2,
@@ -850,7 +843,7 @@ return {
             ["level"] = 2
         }
     },
-    {
+    [403] = {
         ["Id"] = 403,
         ["Type"] = 4,
         ["Level"] = 3,
@@ -860,8 +853,7 @@ return {
         ["GatherSpeed"] = 350,
         ["MonsterGroups"] = {
             3,
-            4,
-            5
+            4
         },
         ["Reward"] = {
             {
@@ -874,7 +866,7 @@ return {
             ["level"] = 3
         }
     },
-    {
+    [404] = {
         ["Id"] = 404,
         ["Type"] = 4,
         ["Level"] = 4,
@@ -897,7 +889,7 @@ return {
             ["level"] = 4
         }
     },
-    {
+    [405] = {
         ["Id"] = 405,
         ["Type"] = 4,
         ["Level"] = 5,
@@ -926,7 +918,7 @@ return {
             ["level"] = 5
         }
     },
-    {
+    [406] = {
         ["Id"] = 406,
         ["Type"] = 4,
         ["Level"] = 6,
@@ -954,7 +946,7 @@ return {
             ["level"] = 6
         }
     },
-    {
+    [407] = {
         ["Id"] = 407,
         ["Type"] = 4,
         ["Level"] = 7,
@@ -983,7 +975,7 @@ return {
             ["level"] = 7
         }
     },
-    {
+    [408] = {
         ["Id"] = 408,
         ["Type"] = 4,
         ["Level"] = 8,
@@ -1011,7 +1003,7 @@ return {
             ["level"] = 8
         }
     },
-    {
+    [409] = {
         ["Id"] = 409,
         ["Type"] = 4,
         ["Level"] = 9,
@@ -1040,7 +1032,7 @@ return {
             ["level"] = 9
         }
     },
-    {
+    [410] = {
         ["Id"] = 410,
         ["Type"] = 4,
         ["Level"] = 10,

@@ -57,7 +57,7 @@ git submodule update --init --recursive
 | `AllianceJoinType` | 联盟加入方式枚举；对齐 `alliance.proto` 的 `joinType`：1自由加入/2需审批/3禁止加入 |
 | `AllianceLv` | 联盟等级；`MemberMax` 人数上限、`OfficerMax` 官员上限（不含盟主）、`Exp` 升到下一级所需贡献（满级为 0）；`memberMax` 协议字段取当前等级的 `MemberMax` |
 | `HeadIcon` | 头像资源 |
-| `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；`SkillId` 指向自带技 `Skill.Id`（与武将 Id 对齐）；可学战法装在协议 `skillList`（`k`=技能 Id，`v`=等级）；`Soldier` 为 1 级基础带兵（按星级：2★=600 / 3★=800 / 4★=1000 / 5★=1200）；`Convert` 为已有武将重复获得时转奖励（同任务 `Reward`：`reward_type`/`item_id`/`item_count`，碎片 `item_id=10000+Hero.Id`）；升级经验与等级带兵见 `HeroLv`；装备/卸下/升级技能见 `hero.proto` |
+| `Hero` | 武将；`Resources` / `Icon` / `name` 只导出到前端；战斗五维：`Attack` 武力、`Hp` 谋略、`Defense` 防御、`Speed` 速度、`Crit` 破坏（与客户端展示一致，非生命/暴击‰）；按职业分化（战士高武、法师高谋、坦克高防、刺客高速/破坏）；`SkillId` 指向自带技 `Skill.Id`（与武将 Id 对齐）；可学战法装在协议 `skillList`（`k`=技能 Id，`v`=等级）；`Soldier` 为 1 级基础带兵（按星级：2★=600 / 3★=800 / 4★=1000 / 5★=1200）；`Convert` 为已有武将重复获得时转奖励（同任务 `Reward`：`reward_type`/`item_id`/`item_count`，碎片 `item_id=10000+Hero.Id`）；升级经验与等级带兵见 `HeroLv`；装备/卸下/升级技能见 `hero.proto` |
 | `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0；`Soldier` 为等级带兵加成（`(Lv-1)*100`，Lv1=0）；单将带兵上限 = `Hero.Soldier + HeroLv.Soldier`（校场 `BuildingLv` Effect 仍约束整支出征上限） |
 | `Skill` | 技能/战法；`Icon` 只导出到前端；武将自带技 `Hero.SkillId`→`Skill.Id`（`1001–1026`）；可学战法 `2001–2040`（经技能书投放）；`Trigger` 1主动/2被动/3追击/4指挥；`Limit` 同时装备上限；协议见 `proto/skill.proto`（`skillId`+`skillLv`，无数量；`skillLv=0` 删除），装备/卸下/升级见 `proto/hero.proto` |
 | `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`2001–2040` 技能书（`Kind=10`，`useParams.skill_id`→`Skill.Id`，使用后习得该技能并带等级），`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符/10技能书；`Quality` 品质（只导出到前端；碎片对齐武将 `Star`）；`Icon`/`Desc`/`Quality` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速）；协议见 `proto/item.proto`（`req_all_item_data` 拉取快照，`sync_item_data` 单条同步） |
@@ -75,7 +75,7 @@ git submodule update --init --recursive
 | `DailyTask` | 日常任务；每日重置；字段同主线但无 `NextId`；协议 `taskType=2` |
 | `WeekTask` | 周常任务；每周重置；字段同日常；协议 `taskType=3` |
 | `Activity` | 活动；`Type` 1登录/2冲榜/3限时招募/4资源增产/5礼包/6在线/7兑换；冲榜类 `Params.rank_type` → `RankType.Id`；`Time` 为 `{ type, ...参数 }`；`OpenCond`/`Params`/`Rewards` 按类型解释；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/activity.proto` |
-| `Monster` | 怪物单位；战斗属性对齐武将；`Soldier` 兵力、`Power` 战力；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
+| `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏，同量级约 20–110）；`Soldier` 兵力、`Power` 战力；早期怪兵力低于满编 5★；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
 | `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }`；打怪战报/回放见 `proto/report.proto`，战斗流程见 `proto/battle.proto` |
 | `ResLandType` | 资源地类型枚举；对齐 `ResLand.Type`：1粮田/2林场/3铁矿/4石场（产出对应 Item 1/2/3/4） |
-| `ResLand` | 资源地；`Id=Type*100+Level`；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫；`Reward` 击败守卫后立即发放；占领倒计时见 `Global.Id=19`（秒）；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Icon`/`Desc` 只导出到前端 |
+| `ResLand` | 资源地；`Id=Type*100+Level`；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫（低级地不抽高一级怪组，如 3 级地仅 `2/3`）；`Reward` 击败守卫后立即发放；占领倒计时见 `Global.Id=19`（秒）；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Icon`/`Desc` 只导出到前端 |

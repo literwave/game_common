@@ -3,7 +3,7 @@
 -- Source TSV: MonsterGroup.tsv
 
 return {
-    {
+    [1] = {
         ["Id"] = 1,
         ["Name"] = "流寇小队",
         ["Level"] = 1,
@@ -18,7 +18,7 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 400,
+        ["Power"] = 250,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -36,7 +36,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [2] = {
         ["Id"] = 2,
         ["Name"] = "流寇营地",
         ["Level"] = 2,
@@ -55,7 +55,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 900,
+        ["Power"] = 530,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -78,7 +78,7 @@ return {
             ["level"] = 1
         }
     },
-    {
+    [3] = {
         ["Id"] = 3,
         ["Name"] = "山贼斥候",
         ["Level"] = 3,
@@ -93,7 +93,7 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 1000,
+        ["Power"] = 510,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -116,7 +116,7 @@ return {
             ["level"] = 2
         }
     },
-    {
+    [4] = {
         ["Id"] = 4,
         ["Name"] = "山贼据点",
         ["Level"] = 4,
@@ -131,7 +131,7 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 1800,
+        ["Power"] = 900,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -154,7 +154,7 @@ return {
             ["level"] = 3
         }
     },
-    {
+    [5] = {
         ["Id"] = 5,
         ["Name"] = "山贼要塞",
         ["Level"] = 5,
@@ -173,7 +173,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 3200,
+        ["Power"] = 1600,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -201,7 +201,7 @@ return {
             ["level"] = 4
         }
     },
-    {
+    [6] = {
         ["Id"] = 6,
         ["Name"] = "黄巾余党",
         ["Level"] = 6,
@@ -216,7 +216,7 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 3600,
+        ["Power"] = 1700,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -244,7 +244,7 @@ return {
             ["level"] = 5
         }
     },
-    {
+    [7] = {
         ["Id"] = 7,
         ["Name"] = "黄巾营地",
         ["Level"] = 7,
@@ -259,7 +259,7 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 5000,
+        ["Power"] = 2400,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -287,7 +287,7 @@ return {
             ["level"] = 6
         }
     },
-    {
+    [8] = {
         ["Id"] = 8,
         ["Name"] = "黄巾大营",
         ["Level"] = 8,
@@ -306,7 +306,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 9000,
+        ["Power"] = 4400,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -334,7 +334,7 @@ return {
             ["level"] = 7
         }
     },
-    {
+    [9] = {
         ["Id"] = 9,
         ["Name"] = "黑山匪巢",
         ["Level"] = 9,
@@ -349,7 +349,7 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 10000,
+        ["Power"] = 4800,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -377,7 +377,7 @@ return {
             ["level"] = 8
         }
     },
-    {
+    [10] = {
         ["Id"] = 10,
         ["Name"] = "白波寇营",
         ["Level"] = 10,
@@ -396,7 +396,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 18000,
+        ["Power"] = 8600,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -424,7 +424,7 @@ return {
             ["level"] = 9
         }
     },
-    {
+    [101] = {
         ["Id"] = 101,
         ["Name"] = "青州山寨",
         ["Level"] = 5,
@@ -443,7 +443,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 5500,
+        ["Power"] = 2820,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -476,7 +476,7 @@ return {
             ["level"] = 5
         }
     },
-    {
+    [102] = {
         ["Id"] = 102,
         ["Name"] = "兖州山寨",
         ["Level"] = 7,
@@ -495,7 +495,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 8000,
+        ["Power"] = 4000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -528,7 +528,7 @@ return {
             ["level"] = 7
         }
     },
-    {
+    [103] = {
         ["Id"] = 103,
         ["Name"] = "冀州山寨",
         ["Level"] = 9,
@@ -547,7 +547,7 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 16000,
+        ["Power"] = 8800,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -580,7 +580,7 @@ return {
             ["level"] = 9
         }
     },
-    {
+    [201] = {
         ["Id"] = 201,
         ["Name"] = "黄巾之乱",
         ["Level"] = 8,
@@ -603,7 +603,7 @@ return {
                 ["pos"] = 4
             }
         },
-        ["Power"] = 18000,
+        ["Power"] = 8400,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -636,7 +636,7 @@ return {
             ["level"] = 8
         }
     },
-    {
+    [202] = {
         ["Id"] = 202,
         ["Name"] = "魔王来袭",
         ["Level"] = 10,
@@ -659,7 +659,7 @@ return {
                 ["pos"] = 4
             }
         },
-        ["Power"] = 30000,
+        ["Power"] = 12600,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,

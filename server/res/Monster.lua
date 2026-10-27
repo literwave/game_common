@@ -3,172 +3,172 @@
 -- Source TSV: Monster.tsv
 
 return {
-    {
+    [1] = {
         ["Id"] = 1,
         ["Name"] = "流寇步卒",
         ["Level"] = 1,
-        ["Attack"] = 40,
-        ["Hp"] = 200,
-        ["Defense"] = 30,
-        ["Speed"] = 40,
+        ["Attack"] = 32,
+        ["Hp"] = 18,
+        ["Defense"] = 28,
+        ["Speed"] = 35,
         ["Crit"] = 20,
-        ["Soldier"] = 200,
-        ["Power"] = 200
+        ["Soldier"] = 120,
+        ["Power"] = 120
     },
-    {
+    [2] = {
         ["Id"] = 2,
         ["Name"] = "流寇弓手",
         ["Level"] = 1,
-        ["Attack"] = 55,
-        ["Hp"] = 160,
+        ["Attack"] = 38,
+        ["Hp"] = 22,
         ["Defense"] = 20,
-        ["Speed"] = 50,
-        ["Crit"] = 40,
-        ["Soldier"] = 180,
-        ["Power"] = 220
+        ["Speed"] = 45,
+        ["Crit"] = 28,
+        ["Soldier"] = 100,
+        ["Power"] = 130
     },
-    {
+    [3] = {
         ["Id"] = 3,
         ["Name"] = "流寇骑手",
         ["Level"] = 2,
-        ["Attack"] = 70,
-        ["Hp"] = 280,
-        ["Defense"] = 35,
-        ["Speed"] = 70,
-        ["Crit"] = 50,
-        ["Soldier"] = 300,
-        ["Power"] = 450
+        ["Attack"] = 45,
+        ["Hp"] = 22,
+        ["Defense"] = 32,
+        ["Speed"] = 55,
+        ["Crit"] = 32,
+        ["Soldier"] = 180,
+        ["Power"] = 280
     },
-    {
+    [4] = {
         ["Id"] = 4,
         ["Name"] = "山贼刀盾",
         ["Level"] = 3,
-        ["Attack"] = 90,
-        ["Hp"] = 420,
-        ["Defense"] = 60,
-        ["Speed"] = 45,
-        ["Crit"] = 30,
-        ["Soldier"] = 400,
-        ["Power"] = 700
+        ["Attack"] = 52,
+        ["Hp"] = 25,
+        ["Defense"] = 48,
+        ["Speed"] = 40,
+        ["Crit"] = 28,
+        ["Soldier"] = 220,
+        ["Power"] = 380
     },
-    {
+    [5] = {
         ["Id"] = 5,
         ["Name"] = "山贼长枪",
         ["Level"] = 4,
-        ["Attack"] = 110,
-        ["Hp"] = 500,
-        ["Defense"] = 55,
-        ["Speed"] = 50,
-        ["Crit"] = 35,
-        ["Soldier"] = 500,
-        ["Power"] = 1000
+        ["Attack"] = 58,
+        ["Hp"] = 28,
+        ["Defense"] = 45,
+        ["Speed"] = 45,
+        ["Crit"] = 32,
+        ["Soldier"] = 280,
+        ["Power"] = 520
     },
-    {
+    [6] = {
         ["Id"] = 6,
         ["Name"] = "山贼劲弩",
         ["Level"] = 5,
-        ["Attack"] = 130,
-        ["Hp"] = 450,
-        ["Defense"] = 40,
-        ["Speed"] = 60,
-        ["Crit"] = 60,
-        ["Soldier"] = 550,
-        ["Power"] = 1400
+        ["Attack"] = 62,
+        ["Hp"] = 35,
+        ["Defense"] = 38,
+        ["Speed"] = 55,
+        ["Crit"] = 40,
+        ["Soldier"] = 320,
+        ["Power"] = 700
     },
-    {
+    [7] = {
         ["Id"] = 7,
         ["Name"] = "黄巾力士",
         ["Level"] = 6,
-        ["Attack"] = 160,
-        ["Hp"] = 720,
-        ["Defense"] = 70,
-        ["Speed"] = 55,
-        ["Crit"] = 40,
-        ["Soldier"] = 700,
-        ["Power"] = 2000
+        ["Attack"] = 70,
+        ["Hp"] = 30,
+        ["Defense"] = 55,
+        ["Speed"] = 48,
+        ["Crit"] = 35,
+        ["Soldier"] = 400,
+        ["Power"] = 1000
     },
-    {
+    [8] = {
         ["Id"] = 8,
         ["Name"] = "黄巾骁骑",
         ["Level"] = 7,
-        ["Attack"] = 190,
-        ["Hp"] = 800,
-        ["Defense"] = 65,
-        ["Speed"] = 85,
-        ["Crit"] = 55,
-        ["Soldier"] = 800,
-        ["Power"] = 2800
+        ["Attack"] = 78,
+        ["Hp"] = 32,
+        ["Defense"] = 52,
+        ["Speed"] = 68,
+        ["Crit"] = 42,
+        ["Soldier"] = 480,
+        ["Power"] = 1400
     },
-    {
+    [9] = {
         ["Id"] = 9,
         ["Name"] = "黄巾渠帅",
         ["Level"] = 8,
-        ["Attack"] = 230,
-        ["Hp"] = 1000,
-        ["Defense"] = 90,
-        ["Speed"] = 70,
-        ["Crit"] = 50,
-        ["Soldier"] = 1000,
-        ["Power"] = 4000
+        ["Attack"] = 85,
+        ["Hp"] = 40,
+        ["Defense"] = 68,
+        ["Speed"] = 55,
+        ["Crit"] = 45,
+        ["Soldier"] = 580,
+        ["Power"] = 2000
     },
-    {
+    [10] = {
         ["Id"] = 10,
         ["Name"] = "黑山死士",
         ["Level"] = 9,
-        ["Attack"] = 270,
-        ["Hp"] = 1200,
-        ["Defense"] = 100,
-        ["Speed"] = 75,
-        ["Crit"] = 70,
-        ["Soldier"] = 1200,
-        ["Power"] = 5500
+        ["Attack"] = 92,
+        ["Hp"] = 42,
+        ["Defense"] = 72,
+        ["Speed"] = 60,
+        ["Crit"] = 50,
+        ["Soldier"] = 700,
+        ["Power"] = 2800
     },
-    {
+    [11] = {
         ["Id"] = 11,
         ["Name"] = "白波精锐",
         ["Level"] = 10,
-        ["Attack"] = 320,
-        ["Hp"] = 1500,
-        ["Defense"] = 120,
-        ["Speed"] = 80,
-        ["Crit"] = 80,
-        ["Soldier"] = 1500,
-        ["Power"] = 7500
+        ["Attack"] = 100,
+        ["Hp"] = 48,
+        ["Defense"] = 80,
+        ["Speed"] = 65,
+        ["Crit"] = 55,
+        ["Soldier"] = 850,
+        ["Power"] = 3800
     },
-    {
+    [12] = {
         ["Id"] = 12,
         ["Name"] = "山寨头目",
         ["Level"] = 5,
-        ["Attack"] = 200,
-        ["Hp"] = 900,
-        ["Defense"] = 110,
-        ["Speed"] = 60,
-        ["Crit"] = 45,
-        ["Soldier"] = 800,
-        ["Power"] = 3000
+        ["Attack"] = 75,
+        ["Hp"] = 40,
+        ["Defense"] = 85,
+        ["Speed"] = 50,
+        ["Crit"] = 40,
+        ["Soldier"] = 450,
+        ["Power"] = 1600
     },
-    {
+    [13] = {
         ["Id"] = 13,
         ["Name"] = "黄巾大帅",
         ["Level"] = 8,
-        ["Attack"] = 350,
-        ["Hp"] = 1800,
-        ["Defense"] = 140,
-        ["Speed"] = 75,
-        ["Crit"] = 60,
-        ["Soldier"] = 1500,
-        ["Power"] = 8000
+        ["Attack"] = 95,
+        ["Hp"] = 50,
+        ["Defense"] = 90,
+        ["Speed"] = 58,
+        ["Crit"] = 48,
+        ["Soldier"] = 750,
+        ["Power"] = 4000
     },
-    {
+    [14] = {
         ["Id"] = 14,
         ["Name"] = "乱世魔王",
         ["Level"] = 10,
-        ["Attack"] = 450,
-        ["Hp"] = 2500,
-        ["Defense"] = 180,
-        ["Speed"] = 90,
-        ["Crit"] = 100,
-        ["Soldier"] = 2000,
-        ["Power"] = 12000
+        ["Attack"] = 110,
+        ["Hp"] = 55,
+        ["Defense"] = 100,
+        ["Speed"] = 70,
+        ["Crit"] = 60,
+        ["Soldier"] = 1000,
+        ["Power"] = 6000
     }
 }
