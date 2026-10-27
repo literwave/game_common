@@ -3617,6 +3617,7 @@ namespace World {
   /// ---------- AOI ----------
   /// 视野内实体；entityType → EntityType.Id（1主城 2行军部队 3怪物组 4资源地）
   /// 主城额外填 name、level；改名/主城升级时用 s2c_aoi_update 同步
+  /// 资源地占领中：startTime/endTime 为占领倒计时（时长 Global.Id=19 秒），到期完成占领
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_aoi_entity : pb::IMessage<p_aoi_entity>

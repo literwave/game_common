@@ -1,7 +1,7 @@
 Id	Type	Level	Name	Desc	Icon	OutputItem	Capacity	GatherSpeed	MonsterGroups	Reward	OpenCond
 integer	integer	integer	string	string	string	integer	integer	integer	lua_array	lua_array	lua_object
 both	both	both	both	frontend	frontend	both	both	both	both	both	both
-资源地配置id(Type*100+Level)	类型(→ResLandType)	等级	名称	描述	图标	产出道具id(→Item)	储量上限	采集速度(每小时)	随机怪物组列表(→MonsterGroup.Id)	占领奖励(击败守卫立即发放，无倒计时)	开启条件
+资源地配置id(Type*100+Level)	类型(→ResLandType)	等级	名称	描述	图标	产出道具id(→Item)	储量上限	采集速度(每小时)	随机怪物组列表(→MonsterGroup.Id)	占领奖励(击败守卫立即发放；占领倒计时见 Global.Id=19)	开启条件
 101	1	1	1级粮田	贫瘠的农田，驻有少量流寇		1	2000	200	"{ 1, 2 }"	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 500 } }"	"{ [""level""] = 1 }"
 102	1	2	2级粮田	初具规模的粮田		1	4000	300	"{ 1, 2, 3 }"	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 800 } }"	"{ [""level""] = 1 }"
 103	1	3	3级粮田	连片耕作的粮田		1	7000	450	"{ 2, 3, 4 }"	"{ { [""reward_type""] = 1, [""item_id""] = 1, [""item_count""] = 1200 } }"	"{ [""level""] = 2 }"
