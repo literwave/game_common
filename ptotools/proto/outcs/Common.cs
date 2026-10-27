@@ -1635,6 +1635,9 @@ namespace Common {
     private static readonly pb::FieldCodec<global::Common.p_common_info> _repeated_skillList_codec
         = pb::FieldCodec.ForMessage(50, global::Common.p_common_info.Parser);
     private readonly pbc::RepeatedField<global::Common.p_common_info> skillList_ = new pbc::RepeatedField<global::Common.p_common_info>();
+    /// <summary>
+    /// k→Skill.Id，v→技能等级；不含自带技（自带技见 Hero.SkillId）
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Common.p_common_info> SkillList {

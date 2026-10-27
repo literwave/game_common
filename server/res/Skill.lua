@@ -4,796 +4,3488 @@
 
 return {
     {
-        ["Id"] = 1001,
-        ["Name"] = "无双乱舞",
-        ["Desc"] = "对敌军1-2个目标发动猛攻，造成物理伤害（伤害率%n%）",
-        ["Trigger"] = 1,
-        ["Target"] = 6,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    120
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    140
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 50,
-                ["effect_value"] = {
-                    160
-                },
-                ["effect_round"] = {
-                    0
-                }
-            }
-        }
+    ["Id"] = 1001,
+    ["Name"] = "无双乱舞",
+    ["Desc"] = "对敌军1-2个目标发动猛攻，造成物理伤害（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
     },
-    {
-        ["Id"] = 1002,
-        ["Name"] = "汉室余晖",
-        ["Desc"] = "战斗中使我军全体防御提升%n%",
-        ["Trigger"] = 2,
-        ["Target"] = 4,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            3
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    15
-                },
-                ["effect_round"] = {
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    20
-                },
-                ["effect_round"] = {
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    25
-                },
-                ["effect_round"] = {
-                    3
-                }
-            }
-        }
+    ["IncludeEffect"] = {
+        1
     },
-    {
-        ["Id"] = 1003,
-        ["Name"] = "宦官乱政",
-        ["Desc"] = "使敌军单体攻击降低%n%",
-        ["Trigger"] = 2,
-        ["Target"] = 5,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            2
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    12
-                },
-                ["effect_round"] = {
-                    2
-                }
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                120
             },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    16
-                },
-                ["effect_round"] = {
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    20
-                },
-                ["effect_round"] = {
-                    3
-                }
+            ["effect_round"] = {
+                0
             }
-        }
-    },
-    {
-        ["Id"] = 1004,
-        ["Name"] = "闭月",
-        ["Desc"] = "对敌军单体发动一次攻击（伤害率%n%），并提升自身速度%n%",
-        ["Trigger"] = 1,
-        ["Target"] = 5,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
         },
-        ["IncludeEffect"] = {
-            1,
-            5
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    90,
-                    20
-                },
-                ["effect_round"] = {
-                    0,
-                    1
-                }
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                140
             },
-            {
-                ["probability"] = 50,
-                ["effect_value"] = {
-                    105,
-                    25
-                },
-                ["effect_round"] = {
-                    0,
-                    1
-                }
-            },
-            {
-                ["probability"] = 55,
-                ["effect_value"] = {
-                    120,
-                    30
-                },
-                ["effect_round"] = {
-                    0,
-                    2
-                }
+            ["effect_round"] = {
+                0
             }
-        }
-    },
-    {
-        ["Id"] = 1005,
-        ["Name"] = "垂帘",
-        ["Desc"] = "指挥使我军全体谋略提升%n%",
-        ["Trigger"] = 4,
-        ["Target"] = 4,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
         },
-        ["IncludeEffect"] = {
-            4
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    15
-                },
-                ["effect_round"] = {
-                    3
-                }
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                160
             },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    20
-                },
-                ["effect_round"] = {
-                    3
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    25
-                },
-                ["effect_round"] = {
-                    3
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1006,
-        ["Name"] = "苦肉计",
-        ["Desc"] = "自身防御提升%n%，并嘲讽敌军单体",
-        ["Trigger"] = 2,
-        ["Target"] = 1,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            3
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    25
-                },
-                ["effect_round"] = {
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    35
-                },
-                ["effect_round"] = {
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    45
-                },
-                ["effect_round"] = {
-                    3
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1007,
-        ["Name"] = "西凉铁骑",
-        ["Desc"] = "指挥使我军全体普通攻击伤害提升%n%",
-        ["Trigger"] = 4,
-        ["Target"] = 4,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    12
-                },
-                ["effect_round"] = {
-                    3
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    16
-                },
-                ["effect_round"] = {
-                    3
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    20
-                },
-                ["effect_round"] = {
-                    3
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1008,
-        ["Name"] = "太平道法",
-        ["Desc"] = "对敌军2-3个目标发动谋略攻击（伤害率%n%）",
-        ["Trigger"] = 1,
-        ["Target"] = 7,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    100
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    120
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 50,
-                ["effect_value"] = {
-                    140
-                },
-                ["effect_round"] = {
-                    0
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1009,
-        ["Name"] = "魔王再临",
-        ["Desc"] = "对敌军1-2个目标发动猛攻（伤害率%n%），并提升自身攻击%n%",
-        ["Trigger"] = 1,
-        ["Target"] = 6,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1,
-            2
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    110,
-                    15
-                },
-                ["effect_round"] = {
-                    0,
-                    2
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    130,
-                    20
-                },
-                ["effect_round"] = {
-                    0,
-                    2
-                }
-            },
-            {
-                ["probability"] = 50,
-                ["effect_value"] = {
-                    150,
-                    25
-                },
-                ["effect_round"] = {
-                    0,
-                    2
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1010,
-        ["Name"] = "戟震山河",
-        ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
-        ["Trigger"] = 3,
-        ["Target"] = 5,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 35,
-                ["effect_value"] = {
-                    80
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    100
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    120
-                },
-                ["effect_round"] = {
-                    0
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1022,
-        ["Name"] = "乱世奸雄",
-        ["Desc"] = "战斗中使自身攻击与谋略提升%n%",
-        ["Trigger"] = 2,
-        ["Target"] = 1,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            2,
-            4
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    15,
-                    15
-                },
-                ["effect_round"] = {
-                    2,
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    20,
-                    20
-                },
-                ["effect_round"] = {
-                    2,
-                    2
-                }
-            },
-            {
-                ["probability"] = 100,
-                ["effect_value"] = {
-                    25,
-                    25
-                },
-                ["effect_round"] = {
-                    3,
-                    3
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1023,
-        ["Name"] = "武圣",
-        ["Desc"] = "对敌军单体发动一次强力攻击（伤害率%n%）",
-        ["Trigger"] = 1,
-        ["Target"] = 5,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    130
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 50,
-                ["effect_value"] = {
-                    150
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 55,
-                ["effect_value"] = {
-                    170
-                },
-                ["effect_round"] = {
-                    0
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1024,
-        ["Name"] = "当阳桥",
-        ["Desc"] = "对敌军2-3个目标发动攻击（伤害率%n%），并降低其速度%n%",
-        ["Trigger"] = 1,
-        ["Target"] = 7,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1,
-            5
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 35,
-                ["effect_value"] = {
-                    90,
-                    15
-                },
-                ["effect_round"] = {
-                    0,
-                    1
-                }
-            },
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    105,
-                    20
-                },
-                ["effect_round"] = {
-                    0,
-                    1
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    120,
-                    25
-                },
-                ["effect_round"] = {
-                    0,
-                    2
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1025,
-        ["Name"] = "火烧赤壁",
-        ["Desc"] = "对敌军全体发动谋略攻击（伤害率%n%）",
-        ["Trigger"] = 1,
-        ["Target"] = 8,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 35,
-                ["effect_value"] = {
-                    80
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    95
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    110
-                },
-                ["effect_round"] = {
-                    0
-                }
-            }
-        }
-    },
-    {
-        ["Id"] = 1026,
-        ["Name"] = "枭姬",
-        ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
-        ["Trigger"] = 3,
-        ["Target"] = 5,
-        ["Limit"] = 1,
-        ["Arms"] = {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        },
-        ["IncludeEffect"] = {
-            1
-        },
-        ["Levels"] = {
-            {
-                ["probability"] = 35,
-                ["effect_value"] = {
-                    85
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 40,
-                ["effect_value"] = {
-                    100
-                },
-                ["effect_round"] = {
-                    0
-                }
-            },
-            {
-                ["probability"] = 45,
-                ["effect_value"] = {
-                    115
-                },
-                ["effect_round"] = {
-                    0
-                }
+            ["effect_round"] = {
+                0
             }
         }
     }
+},
+    {
+    ["Id"] = 1002,
+    ["Name"] = "汉室余晖",
+    ["Desc"] = "战斗中使我军全体防御提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                15
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                25
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1003,
+    ["Name"] = "宦官乱政",
+    ["Desc"] = "使敌军单体攻击降低%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1004,
+    ["Name"] = "闭月",
+    ["Desc"] = "对敌军单体发动一次攻击（伤害率%n%），并提升自身速度%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                90,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                105,
+                25
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 55,
+            ["effect_value"] = {
+                120,
+                30
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1005,
+    ["Name"] = "垂帘",
+    ["Desc"] = "指挥使我军全体谋略提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                15
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                25
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1006,
+    ["Name"] = "苦肉计",
+    ["Desc"] = "自身防御提升%n%，并嘲讽敌军单体",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                25
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                35
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                45
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1007,
+    ["Name"] = "西凉铁骑",
+    ["Desc"] = "指挥使我军全体普通攻击伤害提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1008,
+    ["Name"] = "太平道法",
+    ["Desc"] = "对敌军2-3个目标发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 7,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                120
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                140
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1009,
+    ["Name"] = "魔王再临",
+    ["Desc"] = "对敌军1-2个目标发动猛攻（伤害率%n%），并提升自身攻击%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                110,
+                15
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                130,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                150,
+                25
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1010,
+    ["Name"] = "戟震山河",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                80
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                120
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1011,
+    ["Name"] = "毒士",
+    ["Desc"] = "使敌军单体攻击与谋略降低%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2,
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                10,
+                10
+            },
+            ["effect_round"] = {
+                2,
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                14,
+                14
+            },
+            ["effect_round"] = {
+                2,
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18,
+                18
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1012,
+    ["Name"] = "红妆",
+    ["Desc"] = "使我军全体防御提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1013,
+    ["Name"] = "一身是胆",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                85
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                115
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1014,
+    ["Name"] = "白衣渡江",
+    ["Desc"] = "对敌军1-2个目标发动攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                110
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                130
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                150
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1015,
+    ["Name"] = "洛神",
+    ["Desc"] = "对敌军单体发动谋略攻击（伤害率%n%），并提升自身速度%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                95,
+                15
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                110,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 55,
+            ["effect_value"] = {
+                125,
+                25
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1016,
+    ["Name"] = "仁德",
+    ["Desc"] = "指挥使我军全体攻击提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1017,
+    ["Name"] = "神机妙算",
+    ["Desc"] = "指挥使我军全体谋略提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                15
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                25
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1018,
+    ["Name"] = "火烧连营",
+    ["Desc"] = "对敌军全体发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 8,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                75
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                90
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                105
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1019,
+    ["Name"] = "花枪",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                80
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                95
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                110
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1020,
+    ["Name"] = "奇门",
+    ["Desc"] = "使我军全体速度提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                10
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                14
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1021,
+    ["Name"] = "西凉猛将",
+    ["Desc"] = "对敌军单体发动猛攻（伤害率%n%），并提升自身攻击%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                120,
+                12
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                140,
+                16
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                160,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1022,
+    ["Name"] = "乱世奸雄",
+    ["Desc"] = "战斗中使自身攻击与谋略提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2,
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                15,
+                15
+            },
+            ["effect_round"] = {
+                2,
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20,
+                20
+            },
+            ["effect_round"] = {
+                2,
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                25,
+                25
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1023,
+    ["Name"] = "武圣",
+    ["Desc"] = "对敌军单体发动一次强力攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                130
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                150
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 55,
+            ["effect_value"] = {
+                170
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1024,
+    ["Name"] = "当阳桥",
+    ["Desc"] = "对敌军2-3个目标发动攻击（伤害率%n%），并降低其速度%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 7,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                90,
+                15
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                120,
+                25
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1025,
+    ["Name"] = "火烧赤壁",
+    ["Desc"] = "对敌军全体发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 8,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                80
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                95
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                110
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 1026,
+    ["Name"] = "枭姬",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 1,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                85
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                115
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2001,
+    ["Name"] = "破军",
+    ["Desc"] = "对敌军单体发动一次强力攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                125
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                145
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                165
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2002,
+    ["Name"] = "强攻",
+    ["Desc"] = "对敌军1-2个目标发动攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                125
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                145
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2003,
+    ["Name"] = "横扫",
+    ["Desc"] = "对敌军2-3个目标发动攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 7,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                95
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                110
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                125
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2004,
+    ["Name"] = "乱击",
+    ["Desc"] = "对敌军全体发动攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 8,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 30,
+            ["effect_value"] = {
+                70
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                85
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2005,
+    ["Name"] = "奇计",
+    ["Desc"] = "对敌军单体发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                120
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                140
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                160
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2006,
+    ["Name"] = "连环计",
+    ["Desc"] = "对敌军1-2个目标发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                120
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                140
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2007,
+    ["Name"] = "十面埋伏",
+    ["Desc"] = "对敌军2-3个目标发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 7,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                90
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                120
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2008,
+    ["Name"] = "天火",
+    ["Desc"] = "对敌军全体发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 8,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 30,
+            ["effect_value"] = {
+                75
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                90
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2009,
+    ["Name"] = "突袭",
+    ["Desc"] = "对敌军单体发动攻击（伤害率%n%），并提升自身速度%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100,
+                15
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                115,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                130,
+                25
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2010,
+    ["Name"] = "猛进",
+    ["Desc"] = "对敌军1-2个目标发动攻击（伤害率%n%），并提升自身攻击%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100,
+                12
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                120,
+                16
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                140,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2011,
+    ["Name"] = "挫锐",
+    ["Desc"] = "对敌军单体发动攻击（伤害率%n%），并降低其防御%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                95,
+                12
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                110,
+                16
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                125,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2012,
+    ["Name"] = "破胆",
+    ["Desc"] = "对敌军单体发动谋略攻击（伤害率%n%），并降低其攻击%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                95,
+                12
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                110,
+                16
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                125,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2013,
+    ["Name"] = "鼓舞",
+    ["Desc"] = "使我军全体攻击提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2014,
+    ["Name"] = "铁壁",
+    ["Desc"] = "使我军全体防御提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2015,
+    ["Name"] = "神算",
+    ["Desc"] = "使我军全体谋略提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2016,
+    ["Name"] = "疾风",
+    ["Desc"] = "使我军全体速度提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                10
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                14
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2017,
+    ["Name"] = "独行",
+    ["Desc"] = "使自身攻击提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                24
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                30
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2018,
+    ["Name"] = "坚守",
+    ["Desc"] = "使自身防御提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                28
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                36
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2019,
+    ["Name"] = "深谋",
+    ["Desc"] = "使自身谋略提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                24
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                30
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2020,
+    ["Name"] = "疾行",
+    ["Desc"] = "使自身速度提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                22
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                28
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2021,
+    ["Name"] = "挫敌",
+    ["Desc"] = "使敌军单体攻击降低%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2022,
+    ["Name"] = "破甲",
+    ["Desc"] = "使敌军单体防御降低%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2023,
+    ["Name"] = "惑心",
+    ["Desc"] = "使敌军单体谋略降低%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2024,
+    ["Name"] = "迟滞",
+    ["Desc"] = "使敌军单体速度降低%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2025,
+    ["Name"] = "连击",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                80
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                95
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                110
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2026,
+    ["Name"] = "追斩",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%）",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 30,
+            ["effect_value"] = {
+                90
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                105
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                120
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2027,
+    ["Name"] = "回马",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%），并提升自身防御%n%",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 30,
+            ["effect_value"] = {
+                75,
+                10
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                90,
+                14
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105,
+                18
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2028,
+    ["Name"] = "闪击",
+    ["Desc"] = "普通攻击后追加一次攻击（伤害率%n%），并提升自身速度%n%",
+    ["Trigger"] = 3,
+    ["Target"] = 5,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 30,
+            ["effect_value"] = {
+                75,
+                10
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                90,
+                14
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105,
+                18
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2029,
+    ["Name"] = "军威",
+    ["Desc"] = "指挥使我军全体普通攻击伤害提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                10
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                14
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2030,
+    ["Name"] = "励军",
+    ["Desc"] = "指挥使我军全体攻击提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2031,
+    ["Name"] = "固守",
+    ["Desc"] = "指挥使我军全体防御提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2032,
+    ["Name"] = "妙策",
+    ["Desc"] = "指挥使我军全体谋略提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2033,
+    ["Name"] = "疾驰",
+    ["Desc"] = "指挥使我军全体速度提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 4,
+    ["Limit"] = 3,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                10
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                14
+            },
+            ["effect_round"] = {
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                18
+            },
+            ["effect_round"] = {
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2034,
+    ["Name"] = "先登",
+    ["Desc"] = "指挥使自身攻击与速度提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 1,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12,
+                12
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16,
+                16
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20,
+                20
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2035,
+    ["Name"] = "御敌",
+    ["Desc"] = "指挥使自身防御与谋略提升%n%",
+    ["Trigger"] = 4,
+    ["Target"] = 1,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        3,
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12,
+                12
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16,
+                16
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20,
+                20
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2036,
+    ["Name"] = "锐进",
+    ["Desc"] = "对敌军单体发动猛攻（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 5,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                135
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                155
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 55,
+            ["effect_value"] = {
+                175
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2037,
+    ["Name"] = "落雷",
+    ["Desc"] = "对敌军1-2个目标发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 6,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                105
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                125
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 50,
+            ["effect_value"] = {
+                145
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2038,
+    ["Name"] = "破阵",
+    ["Desc"] = "对敌军2-3个目标发动攻击（伤害率%n%），并降低其速度%n%",
+    ["Trigger"] = 1,
+    ["Target"] = 7,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1,
+        5
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                85,
+                12
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                100,
+                16
+            },
+            ["effect_round"] = {
+                0,
+                1
+            }
+        },
+        {
+            ["probability"] = 45,
+            ["effect_value"] = {
+                115,
+                20
+            },
+            ["effect_round"] = {
+                0,
+                2
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2039,
+    ["Name"] = "焚营",
+    ["Desc"] = "对敌军全体发动谋略攻击（伤害率%n%）",
+    ["Trigger"] = 1,
+    ["Target"] = 8,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        1
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 30,
+            ["effect_value"] = {
+                80
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 35,
+            ["effect_value"] = {
+                95
+            },
+            ["effect_round"] = {
+                0
+            }
+        },
+        {
+            ["probability"] = 40,
+            ["effect_value"] = {
+                110
+            },
+            ["effect_round"] = {
+                0
+            }
+        }
+    }
+},
+    {
+    ["Id"] = 2040,
+    ["Name"] = "枭雄",
+    ["Desc"] = "战斗中使自身攻击与谋略提升%n%",
+    ["Trigger"] = 2,
+    ["Target"] = 1,
+    ["Limit"] = 2,
+    ["Arms"] = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    },
+    ["IncludeEffect"] = {
+        2,
+        4
+    },
+    ["Levels"] = {
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                12,
+                12
+            },
+            ["effect_round"] = {
+                2,
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                16,
+                16
+            },
+            ["effect_round"] = {
+                2,
+                2
+            }
+        },
+        {
+            ["probability"] = 100,
+            ["effect_value"] = {
+                20,
+                20
+            },
+            ["effect_round"] = {
+                3,
+                3
+            }
+        }
+    }
+}
 }

@@ -5,18 +5,22 @@
 return {
     {
         ["Id"] = 1,
-        ["Enum"] = "RETURN_CITY"
+        ["Enum"] = "RETURN_CITY",
+        ["Speed"] = 0.4
     },
     {
         ["Id"] = 2,
-        ["Enum"] = "ATTACK_MONSTER"
+        ["Enum"] = "ATTACK_MONSTER",
+        ["Speed"] = 0.2
     },
     {
         ["Id"] = 3,
-        ["Enum"] = "OCCUPY_RES_LAND"
+        ["Enum"] = "OCCUPY_RES_LAND",
+        ["Speed"] = 0.2
     },
     {
         ["Id"] = 4,
-        ["Enum"] = "MOVE"
+        ["Enum"] = "MOVE",
+        ["Speed"] = 0.2
     }
 }

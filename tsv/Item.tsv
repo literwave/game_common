@@ -1,7 +1,7 @@
 Id	Name	Desc	Icon	Quality	BuyDiamond	useParams	Kind	Overlap
 integer	string	string	string	integer	integer	lua_array	integer	integer
 both	both	frontend	frontend	frontend	both	both	both	both
-道具id	名称	描述	图标	品质	购买晶钻	使用参数	道具种类(1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符；Id1-4资源，5-99预留资源扩展，100+消耗品)	叠加上限
+道具id	名称	描述	图标	品质	购买晶钻	使用参数	道具种类(1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符/10技能书；Id1-4资源，5-99预留资源扩展，100+消耗品，2001+技能书)	叠加上限
 1	粮草	主城建设与军队消耗的基础资源	ui/item_icons/items/item_1	1	10	{  }	1	100000
 2	木材	建造升级所需的基础资源	ui/item_icons/items/item_2	1	10	{  }	2	100000
 3	铁矿	兵营与高级建筑消耗的战略资源	ui/item_icons/items/item_3	1	10	{  }	3	100000
@@ -11,6 +11,46 @@ both	both	frontend	frontend	frontend	both	both	both	both
 102	治疗加速	立即缩短伤兵治疗时间（秒）	ui/item_icons/items/item_102	2	50	"{ { [""time""] = 3600 } }"	5	999
 103	点将符	在点将台招募武将时消耗	ui/item_icons/items/item_103	3	50	{  }	9	9999
 1001	迁城令	将主城迁移至指定坐标	ui/item_icons/items/item_1001	4	100	{  }	6	99
+2001	破军战法书	使用后习得战法「破军」	ui/skill/skill_2001	2	80	"{ { [""skill_id""] = 2001 } }"	10	99
+2002	强攻战法书	使用后习得战法「强攻」	ui/skill/skill_2002	2	80	"{ { [""skill_id""] = 2002 } }"	10	99
+2003	横扫战法书	使用后习得战法「横扫」	ui/skill/skill_2003	2	80	"{ { [""skill_id""] = 2003 } }"	10	99
+2004	乱击战法书	使用后习得战法「乱击」	ui/skill/skill_2004	3	80	"{ { [""skill_id""] = 2004 } }"	10	99
+2005	奇计战法书	使用后习得战法「奇计」	ui/skill/skill_2005	2	80	"{ { [""skill_id""] = 2005 } }"	10	99
+2006	连环计战法书	使用后习得战法「连环计」	ui/skill/skill_2006	2	80	"{ { [""skill_id""] = 2006 } }"	10	99
+2007	十面埋伏战法书	使用后习得战法「十面埋伏」	ui/skill/skill_2007	2	80	"{ { [""skill_id""] = 2007 } }"	10	99
+2008	天火战法书	使用后习得战法「天火」	ui/skill/skill_2008	3	80	"{ { [""skill_id""] = 2008 } }"	10	99
+2009	突袭战法书	使用后习得战法「突袭」	ui/skill/skill_2009	2	80	"{ { [""skill_id""] = 2009 } }"	10	99
+2010	猛进战法书	使用后习得战法「猛进」	ui/skill/skill_2010	2	80	"{ { [""skill_id""] = 2010 } }"	10	99
+2011	挫锐战法书	使用后习得战法「挫锐」	ui/skill/skill_2011	2	80	"{ { [""skill_id""] = 2011 } }"	10	99
+2012	破胆战法书	使用后习得战法「破胆」	ui/skill/skill_2012	2	80	"{ { [""skill_id""] = 2012 } }"	10	99
+2013	鼓舞战法书	使用后习得战法「鼓舞」	ui/skill/skill_2013	2	80	"{ { [""skill_id""] = 2013 } }"	10	99
+2014	铁壁战法书	使用后习得战法「铁壁」	ui/skill/skill_2014	2	80	"{ { [""skill_id""] = 2014 } }"	10	99
+2015	神算战法书	使用后习得战法「神算」	ui/skill/skill_2015	2	80	"{ { [""skill_id""] = 2015 } }"	10	99
+2016	疾风战法书	使用后习得战法「疾风」	ui/skill/skill_2016	2	80	"{ { [""skill_id""] = 2016 } }"	10	99
+2017	独行战法书	使用后习得战法「独行」	ui/skill/skill_2017	2	80	"{ { [""skill_id""] = 2017 } }"	10	99
+2018	坚守战法书	使用后习得战法「坚守」	ui/skill/skill_2018	2	80	"{ { [""skill_id""] = 2018 } }"	10	99
+2019	深谋战法书	使用后习得战法「深谋」	ui/skill/skill_2019	2	80	"{ { [""skill_id""] = 2019 } }"	10	99
+2020	疾行战法书	使用后习得战法「疾行」	ui/skill/skill_2020	2	80	"{ { [""skill_id""] = 2020 } }"	10	99
+2021	挫敌战法书	使用后习得战法「挫敌」	ui/skill/skill_2021	2	80	"{ { [""skill_id""] = 2021 } }"	10	99
+2022	破甲战法书	使用后习得战法「破甲」	ui/skill/skill_2022	2	80	"{ { [""skill_id""] = 2022 } }"	10	99
+2023	惑心战法书	使用后习得战法「惑心」	ui/skill/skill_2023	2	80	"{ { [""skill_id""] = 2023 } }"	10	99
+2024	迟滞战法书	使用后习得战法「迟滞」	ui/skill/skill_2024	2	80	"{ { [""skill_id""] = 2024 } }"	10	99
+2025	连击战法书	使用后习得战法「连击」	ui/skill/skill_2025	2	80	"{ { [""skill_id""] = 2025 } }"	10	99
+2026	追斩战法书	使用后习得战法「追斩」	ui/skill/skill_2026	2	80	"{ { [""skill_id""] = 2026 } }"	10	99
+2027	回马战法书	使用后习得战法「回马」	ui/skill/skill_2027	3	80	"{ { [""skill_id""] = 2027 } }"	10	99
+2028	闪击战法书	使用后习得战法「闪击」	ui/skill/skill_2028	3	80	"{ { [""skill_id""] = 2028 } }"	10	99
+2029	军威战法书	使用后习得战法「军威」	ui/skill/skill_2029	2	80	"{ { [""skill_id""] = 2029 } }"	10	99
+2030	励军战法书	使用后习得战法「励军」	ui/skill/skill_2030	2	80	"{ { [""skill_id""] = 2030 } }"	10	99
+2031	固守战法书	使用后习得战法「固守」	ui/skill/skill_2031	2	80	"{ { [""skill_id""] = 2031 } }"	10	99
+2032	妙策战法书	使用后习得战法「妙策」	ui/skill/skill_2032	2	80	"{ { [""skill_id""] = 2032 } }"	10	99
+2033	疾驰战法书	使用后习得战法「疾驰」	ui/skill/skill_2033	2	80	"{ { [""skill_id""] = 2033 } }"	10	99
+2034	先登战法书	使用后习得战法「先登」	ui/skill/skill_2034	3	80	"{ { [""skill_id""] = 2034 } }"	10	99
+2035	御敌战法书	使用后习得战法「御敌」	ui/skill/skill_2035	3	80	"{ { [""skill_id""] = 2035 } }"	10	99
+2036	锐进战法书	使用后习得战法「锐进」	ui/skill/skill_2036	3	80	"{ { [""skill_id""] = 2036 } }"	10	99
+2037	落雷战法书	使用后习得战法「落雷」	ui/skill/skill_2037	3	80	"{ { [""skill_id""] = 2037 } }"	10	99
+2038	破阵战法书	使用后习得战法「破阵」	ui/skill/skill_2038	3	80	"{ { [""skill_id""] = 2038 } }"	10	99
+2039	焚营战法书	使用后习得战法「焚营」	ui/skill/skill_2039	3	80	"{ { [""skill_id""] = 2039 } }"	10	99
+2040	枭雄战法书	使用后习得战法「枭雄」	ui/skill/skill_2040	3	80	"{ { [""skill_id""] = 2040 } }"	10	99
 11001	吕布碎片	用于合成或升星武将「吕布」	ui/item_icons/hero_fragments/fragment_1001	5	20	"{ { [""hero_id""] = 1001 } }"	8	9999
 11002	刘协碎片	用于合成或升星武将「刘协」	ui/item_icons/hero_fragments/fragment_1002	3	20	"{ { [""hero_id""] = 1002 } }"	8	9999
 11003	张让碎片	用于合成或升星武将「张让」	ui/item_icons/hero_fragments/fragment_1003	2	20	"{ { [""hero_id""] = 1003 } }"	8	9999

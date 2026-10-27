@@ -258,6 +258,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "法师",
         ["Star"] = 5,
+        ["SkillId"] = 1011,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -281,6 +282,7 @@ return {
         ["Soldier"] = 1000,
         ["Class"] = "辅助",
         ["Star"] = 4,
+        ["SkillId"] = 1012,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -304,6 +306,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "战士",
         ["Star"] = 5,
+        ["SkillId"] = 1013,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -327,6 +330,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "战士",
         ["Star"] = 5,
+        ["SkillId"] = 1014,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -350,6 +354,7 @@ return {
         ["Soldier"] = 1000,
         ["Class"] = "法师",
         ["Star"] = 4,
+        ["SkillId"] = 1015,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -373,6 +378,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "辅助",
         ["Star"] = 5,
+        ["SkillId"] = 1016,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -396,6 +402,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "法师",
         ["Star"] = 5,
+        ["SkillId"] = 1017,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -419,6 +426,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "法师",
         ["Star"] = 5,
+        ["SkillId"] = 1018,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -442,6 +450,7 @@ return {
         ["Soldier"] = 1000,
         ["Class"] = "刺客",
         ["Star"] = 4,
+        ["SkillId"] = 1019,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -465,6 +474,7 @@ return {
         ["Soldier"] = 1000,
         ["Class"] = "辅助",
         ["Star"] = 4,
+        ["SkillId"] = 1020,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,
@@ -488,6 +498,7 @@ return {
         ["Soldier"] = 1200,
         ["Class"] = "战士",
         ["Star"] = 5,
+        ["SkillId"] = 1021,
         ["Convert"] = {
             {
                 ["reward_type"] = 1,

@@ -1,8 +1,8 @@
-Id	Name	Enum	Desc
-integer	string	string	string
-both	frontend	both	frontend
-id	名称	枚举	说明
-1	回城	RETURN_CITY	行军返回主城
-2	打怪	ATTACK_MONSTER	行军攻击怪物组
-3	占领资源地	OCCUPY_RES_LAND	行军占领资源地（击败守卫后进入占领倒计时，时长见 Global.Id=19）
-4	移动	MOVE	行军移动到目标坐标（无战斗）
+Id	Name	Enum	Desc	Speed
+integer	string	string	string	number
+both	frontend	both	frontend	both
+id	名称	枚举	说明	行军速度(每秒移动格数)
+1	回城	RETURN_CITY	行军返回主城	0.4
+2	打怪	ATTACK_MONSTER	行军攻击怪物组	0.2
+3	占领资源地	OCCUPY_RES_LAND	行军占领资源地（击败守卫后进入占领倒计时，时长见 Global.Id=19）	0.2
+4	移动	MOVE	行军移动到目标坐标（无战斗）	0.2

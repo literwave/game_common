@@ -1567,7 +1567,7 @@ namespace World {
   /// ---------- 行军 ----------
   /// targetType → TargetType.Id（1回城 2打怪 3占领资源地 4移动）
   /// state: 1行军中 2已到达
-  /// 耗时按路径格数 / Global.Id=17（每秒移动格数）计算 endTime，避免一秒跨多格
+  /// 耗时按路径格数 / TargetType.Speed（每秒移动格数，number，按 targetType 取）计算 endTime
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class p_march_info : pb::IMessage<p_march_info>
@@ -3756,6 +3756,9 @@ namespace World {
     /// <summary>Field number for the "startTime" field.</summary>
     public const int StartTimeFieldNumber = 7;
     private double startTime_;
+    /// <summary>
+    /// 行军起点时间；资源地占领中为倒计时起点
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double StartTime {
@@ -3768,6 +3771,9 @@ namespace World {
     /// <summary>Field number for the "endTime" field.</summary>
     public const int EndTimeFieldNumber = 8;
     private double endTime_;
+    /// <summary>
+    /// 行军到达时间；资源地占领中为倒计时终点
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double EndTime {
