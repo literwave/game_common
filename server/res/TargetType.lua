@@ -3,24 +3,28 @@
 -- Source TSV: TargetType.tsv
 
 return {
-    {
+    [1] = {
         ["Id"] = 1,
         ["Enum"] = "RETURN_CITY",
-        ["Speed"] = 0.4
+        ["Speed"] = 1.0,
+        ["note"] = ""
     },
-    {
+    [2] = {
         ["Id"] = 2,
         ["Enum"] = "ATTACK_MONSTER",
-        ["Speed"] = 0.2
+        ["Speed"] = 0.6,
+        ["note"] = ""
     },
-    {
+    [3] = {
         ["Id"] = 3,
         ["Enum"] = "OCCUPY_RES_LAND",
-        ["Speed"] = 0.2
+        ["Speed"] = 0.6,
+        ["note"] = ""
     },
-    {
+    [4] = {
         ["Id"] = 4,
         ["Enum"] = "MOVE",
-        ["Speed"] = 0.2
+        ["Speed"] = 0.6,
+        ["note"] = ""
     }
 }
