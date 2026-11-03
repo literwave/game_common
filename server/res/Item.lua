@@ -4,875 +4,1163 @@
 
 return {
     {
-    ["Id"] = 1,
-    ["Name"] = "粮草",
-    ["BuyDiamond"] = 10,
-    ["useParams"] = {},
-    ["Kind"] = 1,
-    ["Overlap"] = 100000
-},
-    {
-    ["Id"] = 2,
-    ["Name"] = "木材",
-    ["BuyDiamond"] = 10,
-    ["useParams"] = {},
-    ["Kind"] = 2,
-    ["Overlap"] = 100000
-},
-    {
-    ["Id"] = 3,
-    ["Name"] = "铁矿",
-    ["BuyDiamond"] = 10,
-    ["useParams"] = {},
-    ["Kind"] = 3,
-    ["Overlap"] = 100000
-},
-    {
-    ["Id"] = 4,
-    ["Name"] = "石料",
-    ["BuyDiamond"] = 10,
-    ["useParams"] = {},
-    ["Kind"] = 4,
-    ["Overlap"] = 100000
-},
-    {
-    ["Id"] = 100,
-    ["Name"] = "令牌",
-    ["BuyDiamond"] = 10,
-    ["useParams"] = {},
-    ["Kind"] = 7,
-    ["Overlap"] = 100000
-},
-    {
-    ["Id"] = 101,
-    ["Name"] = "训练加速",
-    ["BuyDiamond"] = 50,
-    ["useParams"] = {
-        {
-            ["time"] = 3600
-        }
-    },
-    ["Kind"] = 5,
-    ["Overlap"] = 999
-},
-    {
-    ["Id"] = 102,
-    ["Name"] = "治疗加速",
-    ["BuyDiamond"] = 50,
-    ["useParams"] = {
-        {
-            ["time"] = 3600
-        }
-    },
-    ["Kind"] = 5,
-    ["Overlap"] = 999
-},
-    {
-    ["Id"] = 103,
-    ["Name"] = "点将符",
-    ["BuyDiamond"] = 50,
-    ["useParams"] = {},
-    ["Kind"] = 9,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 1001,
-    ["Name"] = "迁城令",
-    ["BuyDiamond"] = 100,
-    ["useParams"] = {},
-    ["Kind"] = 6,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2001,
-    ["Name"] = "破军战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2001
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2002,
-    ["Name"] = "强攻战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2002
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2003,
-    ["Name"] = "横扫战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2003
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2004,
-    ["Name"] = "乱击战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2004
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2005,
-    ["Name"] = "奇计战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2005
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2006,
-    ["Name"] = "连环计战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2006
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2007,
-    ["Name"] = "十面埋伏战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2007
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2008,
-    ["Name"] = "天火战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2008
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2009,
-    ["Name"] = "突袭战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2009
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2010,
-    ["Name"] = "猛进战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2010
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2011,
-    ["Name"] = "挫锐战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2011
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2012,
-    ["Name"] = "破胆战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2012
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2013,
-    ["Name"] = "鼓舞战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2013
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2014,
-    ["Name"] = "铁壁战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2014
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2015,
-    ["Name"] = "神算战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2015
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2016,
-    ["Name"] = "疾风战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2016
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2017,
-    ["Name"] = "独行战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2017
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2018,
-    ["Name"] = "坚守战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2018
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2019,
-    ["Name"] = "深谋战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2019
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2020,
-    ["Name"] = "疾行战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2020
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2021,
-    ["Name"] = "挫敌战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2021
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2022,
-    ["Name"] = "破甲战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2022
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2023,
-    ["Name"] = "惑心战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2023
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2024,
-    ["Name"] = "迟滞战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2024
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2025,
-    ["Name"] = "连击战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2025
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2026,
-    ["Name"] = "追斩战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2026
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2027,
-    ["Name"] = "回马战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2027
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2028,
-    ["Name"] = "闪击战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2028
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2029,
-    ["Name"] = "军威战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2029
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2030,
-    ["Name"] = "励军战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2030
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2031,
-    ["Name"] = "固守战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2031
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2032,
-    ["Name"] = "妙策战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2032
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2033,
-    ["Name"] = "疾驰战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2033
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2034,
-    ["Name"] = "先登战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2034
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2035,
-    ["Name"] = "御敌战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2035
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2036,
-    ["Name"] = "锐进战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2036
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2037,
-    ["Name"] = "落雷战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2037
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2038,
-    ["Name"] = "破阵战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2038
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2039,
-    ["Name"] = "焚营战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2039
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 2040,
-    ["Name"] = "枭雄战法书",
-    ["BuyDiamond"] = 80,
-    ["useParams"] = {
-        {
-            ["skill_id"] = 2040
-        }
-    },
-    ["Kind"] = 10,
-    ["Overlap"] = 99
-},
-    {
-    ["Id"] = 11001,
-    ["Name"] = "吕布碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1001
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11002,
-    ["Name"] = "刘协碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1002
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11003,
-    ["Name"] = "张让碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1003
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11004,
-    ["Name"] = "貂蝉碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1004
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11005,
-    ["Name"] = "何太后碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1005
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11006,
-    ["Name"] = "黄盖碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1006
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11007,
-    ["Name"] = "董卓碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1007
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11008,
-    ["Name"] = "张角碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1008
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11009,
-    ["Name"] = "董卓sp碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1009
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11010,
-    ["Name"] = "吕布sp碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1010
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11011,
-    ["Name"] = "贾诩碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1011
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11012,
-    ["Name"] = "步练师碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1012
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11013,
-    ["Name"] = "赵云碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1013
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11014,
-    ["Name"] = "吕蒙碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1014
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11015,
-    ["Name"] = "甄姬碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1015
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11016,
-    ["Name"] = "刘备sp碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1016
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11017,
-    ["Name"] = "诸葛亮碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1017
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11018,
-    ["Name"] = "陆逊碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1018
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11019,
-    ["Name"] = "马云禄碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1019
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11020,
-    ["Name"] = "黄月英碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1020
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11021,
-    ["Name"] = "马超碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1021
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11022,
-    ["Name"] = "曹操碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1022
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11023,
-    ["Name"] = "关羽碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1023
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11024,
-    ["Name"] = "张飞碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1024
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11025,
-    ["Name"] = "周瑜碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1025
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-},
-    {
-    ["Id"] = 11026,
-    ["Name"] = "孙尚香碎片",
-    ["BuyDiamond"] = 20,
-    ["useParams"] = {
-        {
-            ["hero_id"] = 1026
-        }
-    },
-    ["Kind"] = 8,
-    ["Overlap"] = 9999
-}
+        ["Id"] = 1,
+        ["Name"] = "粮草",
+        ["BuyDiamond"] = 10,
+        ["useParams"] = {},
+        ["Kind"] = 1,
+        ["Overlap"] = 100000
+    },
+    {
+        ["Id"] = 2,
+        ["Name"] = "木材",
+        ["BuyDiamond"] = 10,
+        ["useParams"] = {},
+        ["Kind"] = 2,
+        ["Overlap"] = 100000
+    },
+    {
+        ["Id"] = 3,
+        ["Name"] = "铁矿",
+        ["BuyDiamond"] = 10,
+        ["useParams"] = {},
+        ["Kind"] = 3,
+        ["Overlap"] = 100000
+    },
+    {
+        ["Id"] = 4,
+        ["Name"] = "石料",
+        ["BuyDiamond"] = 10,
+        ["useParams"] = {},
+        ["Kind"] = 4,
+        ["Overlap"] = 100000
+    },
+    {
+        ["Id"] = 100,
+        ["Name"] = "令牌",
+        ["BuyDiamond"] = 10,
+        ["useParams"] = {},
+        ["Kind"] = 7,
+        ["Overlap"] = 100000
+    },
+    {
+        ["Id"] = 101,
+        ["Name"] = "训练加速",
+        ["BuyDiamond"] = 50,
+        ["useParams"] = {
+            {
+                ["time"] = 3600
+            }
+        },
+        ["Kind"] = 5,
+        ["Overlap"] = 999
+    },
+    {
+        ["Id"] = 102,
+        ["Name"] = "治疗加速",
+        ["BuyDiamond"] = 50,
+        ["useParams"] = {
+            {
+                ["time"] = 3600
+            }
+        },
+        ["Kind"] = 5,
+        ["Overlap"] = 999
+    },
+    {
+        ["Id"] = 103,
+        ["Name"] = "点将符",
+        ["BuyDiamond"] = 50,
+        ["useParams"] = {},
+        ["Kind"] = 9,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 1001,
+        ["Name"] = "迁城令",
+        ["BuyDiamond"] = 100,
+        ["useParams"] = {},
+        ["Kind"] = 6,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2001,
+        ["Name"] = "破军战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2001
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2002,
+        ["Name"] = "强攻战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2002
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2003,
+        ["Name"] = "横扫战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2003
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2004,
+        ["Name"] = "乱击战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2004
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2005,
+        ["Name"] = "奇计战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2005
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2006,
+        ["Name"] = "连环计战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2006
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2007,
+        ["Name"] = "十面埋伏战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2007
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2008,
+        ["Name"] = "天火战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2008
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2009,
+        ["Name"] = "突袭战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2009
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2010,
+        ["Name"] = "猛进战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2010
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2011,
+        ["Name"] = "挫锐战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2011
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2012,
+        ["Name"] = "破胆战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2012
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2013,
+        ["Name"] = "鼓舞战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2013
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2014,
+        ["Name"] = "铁壁战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2014
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2015,
+        ["Name"] = "神算战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2015
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2016,
+        ["Name"] = "疾风战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2016
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2017,
+        ["Name"] = "独行战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2017
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2018,
+        ["Name"] = "坚守战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2018
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2019,
+        ["Name"] = "深谋战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2019
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2020,
+        ["Name"] = "疾行战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2020
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2021,
+        ["Name"] = "挫敌战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2021
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2022,
+        ["Name"] = "破甲战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2022
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2023,
+        ["Name"] = "惑心战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2023
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2024,
+        ["Name"] = "迟滞战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2024
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2025,
+        ["Name"] = "连击战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2025
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2026,
+        ["Name"] = "追斩战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2026
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2027,
+        ["Name"] = "回马战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2027
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2028,
+        ["Name"] = "闪击战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2028
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2029,
+        ["Name"] = "军威战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2029
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2030,
+        ["Name"] = "励军战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2030
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2031,
+        ["Name"] = "固守战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2031
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2032,
+        ["Name"] = "妙策战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2032
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2033,
+        ["Name"] = "疾驰战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2033
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2034,
+        ["Name"] = "先登战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2034
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2035,
+        ["Name"] = "御敌战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2035
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2036,
+        ["Name"] = "锐进战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2036
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2037,
+        ["Name"] = "落雷战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2037
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2038,
+        ["Name"] = "破阵战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2038
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2039,
+        ["Name"] = "焚营战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2039
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 2040,
+        ["Name"] = "枭雄战法书",
+        ["BuyDiamond"] = 80,
+        ["useParams"] = {
+            {
+                ["skill_id"] = 2040
+            }
+        },
+        ["Kind"] = 10,
+        ["Overlap"] = 99
+    },
+    {
+        ["Id"] = 11001,
+        ["Name"] = "吕布碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1001
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11002,
+        ["Name"] = "刘协碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1002
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11003,
+        ["Name"] = "张让碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1003
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11004,
+        ["Name"] = "貂蝉碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1004
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11005,
+        ["Name"] = "何太后碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1005
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11006,
+        ["Name"] = "黄盖碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1006
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11007,
+        ["Name"] = "董卓碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1007
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11008,
+        ["Name"] = "张角碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1008
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11009,
+        ["Name"] = "典韦碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1009
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11010,
+        ["Name"] = "张辽碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1010
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11011,
+        ["Name"] = "贾诩碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1011
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11012,
+        ["Name"] = "步练师碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1012
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11013,
+        ["Name"] = "赵云碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1013
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11014,
+        ["Name"] = "吕蒙碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1014
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11015,
+        ["Name"] = "甄姬碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1015
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11016,
+        ["Name"] = "刘备碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1016
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11017,
+        ["Name"] = "诸葛亮碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1017
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11018,
+        ["Name"] = "陆逊碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1018
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11019,
+        ["Name"] = "马云禄碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1019
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11020,
+        ["Name"] = "黄月英碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1020
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11021,
+        ["Name"] = "马超碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1021
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11022,
+        ["Name"] = "曹操碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1022
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11023,
+        ["Name"] = "关羽碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1023
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11024,
+        ["Name"] = "张飞碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1024
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11025,
+        ["Name"] = "周瑜碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1025
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11026,
+        ["Name"] = "孙尚香碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1026
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11027,
+        ["Name"] = "郭嘉碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1027
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11028,
+        ["Name"] = "夏侯惇碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1028
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11029,
+        ["Name"] = "黄忠碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1029
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11030,
+        ["Name"] = "魏延碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1030
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11031,
+        ["Name"] = "甘宁碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1031
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11032,
+        ["Name"] = "颜良碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1032
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11033,
+        ["Name"] = "荀彧碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1033
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11034,
+        ["Name"] = "曹仁碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1034
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11035,
+        ["Name"] = "张郃碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1035
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11036,
+        ["Name"] = "庞统碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1036
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11037,
+        ["Name"] = "徐庶碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1037
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11038,
+        ["Name"] = "关平碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1038
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11039,
+        ["Name"] = "太史慈碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1039
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11040,
+        ["Name"] = "鲁肃碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1040
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11041,
+        ["Name"] = "华雄碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1041
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11042,
+        ["Name"] = "高顺碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1042
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11043,
+        ["Name"] = "李典碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1043
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11044,
+        ["Name"] = "乐进碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1044
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11045,
+        ["Name"] = "周仓碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1045
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11046,
+        ["Name"] = "廖化碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1046
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11047,
+        ["Name"] = "蒋钦碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1047
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11048,
+        ["Name"] = "丁奉碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1048
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11049,
+        ["Name"] = "张梁碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1049
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    },
+    {
+        ["Id"] = 11050,
+        ["Name"] = "潘凤碎片",
+        ["BuyDiamond"] = 20,
+        ["useParams"] = {
+            {
+                ["hero_id"] = 1050
+            }
+        },
+        ["Kind"] = 8,
+        ["Overlap"] = 9999
+    }
 }
