@@ -70,7 +70,8 @@ git submodule update --init --recursive
 | `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 0.4≈2.5 秒/格，其余 0.2≈5 秒/格）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领 |
 | `TroopState` | 部队状态枚举：0在城/1行军/2停留/3采集 |
 | `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地 |
-| `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
+| `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级/3歼敌/4联盟战力；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
+| `Rank` | 排行榜配置；`Id` 与 `RankType.Id` 相同；`RankMax` 为该榜上榜人数上限 |
 | `MainTask` | 主线任务；`NextId` 衔接下一任务；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
 | `DailyTask` | 日常任务；每日重置；字段同主线但无 `NextId`；协议 `taskType=2` |
 | `WeekTask` | 周常任务；每周重置；字段同日常；协议 `taskType=3` |

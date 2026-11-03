@@ -1,0 +1,8 @@
+Id	RankMax	Desc
+integer	integer	string
+both	both	frontend
+id	上榜人数上限	说明
+1	100	战力榜；Id 对齐 RankType.POWER
+2	100	主城等级榜；Id 对齐 RankType.CITY_LEVEL
+3	100	歼敌榜；Id 对齐 RankType.KILL
+4	50	联盟战力榜；Id 对齐 RankType.ALLIANCE_POWER

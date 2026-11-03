@@ -26,6 +26,9 @@
   "MonsterGroup.tsv": [
     "Id"
   ],
+  "Rank.tsv": [
+    "Id"
+  ],
   "RankType.tsv": [],
   "ReportInfo.tsv": [],
   "ReportType.tsv": [],

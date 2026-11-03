@@ -5,4 +5,6 @@
 return {
     POWER = 1,
     CITY_LEVEL = 2,
+    KILL = 3,
+    ALLIANCE_POWER = 4,
 }
