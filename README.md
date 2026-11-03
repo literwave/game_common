@@ -49,7 +49,7 @@ git submodule update --init --recursive
 |---|---|
 | `BuildingDetail` | 建筑类型；`Type` 1主城/2军事/3资源/4功能/5防御；资源建筑含农场/伐木/铁矿/采石场（`Id=16`，`OutputItem=4` 石料）；`Icon` 只导出到前端；`Id` 1 为主城（任务 `bid` 对齐） |
 | `BuildingLv` | 建筑等级；粮/木/铁/石消耗、前置与效果值（建造/升级即时完成，无时间）；`BuildingType` 指向 `BuildingDetail.Id`；协议见 `proto/build.proto` |
-| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 城内预备/最大兵力（`value1=20000`，含多部队补兵余量），`Id=9` 单频道最大聊天记录条数（`value1`）；联盟相关：`Id=10` 创建消耗令牌数（道具 Id=100），`Id=11` 名称最大长度，`Id=12` 公告最大长度，`Id=13` 宣言最大长度，`Id=14` 申请列表上限；邮件：`Id=15` 单类型最大邮件条数，`Id=16` 默认邮件保留天数（`Mail.ExpireDay=0` 时用）；地图标记：`Id=18` 标记点上限（`value1`，协议见 `world.proto`）；资源地：`Id=19` 占领倒计时秒数（`value1`，击败守卫后起算，到期才完成占领）；行军速度见 `TargetType.Speed`；创建开启条件见 `SystemOpen.CREATE_ALLIANCE`；人数上限见 `AllianceLv` |
+| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 城内预备/最大兵力（`value1=20000`，含多部队补兵余量），`Id=9` 单频道最大聊天记录条数（`value1`）；联盟相关：`Id=10` 创建消耗令牌数（道具 Id=100），`Id=11` 名称最大长度，`Id=12` 公告最大长度，`Id=13` 宣言最大长度，`Id=14` 申请列表上限；邮件：`Id=15` 单类型最大邮件条数，`Id=16` 默认邮件保留天数（`Mail.ExpireDay=0` 时用）；地图标记：`Id=18` 标记点上限（`value1`，协议见 `world.proto`）；资源地：`Id=19` 占领倒计时秒数（`value1`，击败守卫后起算，到期才完成占领；只有首占在此时发放 `ResLandFirst`，非首占无奖励）；行军速度见 `TargetType.Speed`；创建开启条件见 `SystemOpen.CREATE_ALLIANCE`；人数上限见 `AllianceLv` |
 | `ChatChannel` | 聊天频道枚举；对齐 `chat.proto` 的 `channel`：1世界/2联盟/3私聊；协议见 `proto/chat.proto` |
 | `MailKind` | 邮件类型枚举；对齐 `mail.proto` 的 `mailKind`：1系统/2联盟/3公告 |
 | `Mail` | 邮件模板；`Kind`→`MailKind`；协议 `mailId`→`Mail.Id`，实例唯一 id 为 `mailUid`；`Title`/`Content` 中 `%s` 由详情 `detailList` 替换；不配奖励，有奖时发信填协议 `rewardList`；`Icon`/`Sender` 只导出到前端；协议见 `proto/mail.proto` |
@@ -67,7 +67,7 @@ git submodule update --init --recursive
 | `SystemOpen` | 系统开启；`HEAD_ICON` 更换头像、`CREATE_ALLIANCE` 创建联盟（`Cond.level` 控制开启主城等级） |
 | `Errcode` | 错误码枚举；后端下发 `Id`，前端用 `Msg` 提示；`Name`/`Msg` 只导出到前端 |
 | `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组/4资源地；主城实体带 `name`（玩家名/城名）、`level`（主城建筑等级 `BuildingDetail.Id=1`，非角色等级），改名/升级走 `s2c_aoi_update` |
-| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 0.4≈2.5 秒/格，其余 0.2≈5 秒/格）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领 |
+| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 0.4≈2.5 秒/格，其余 0.2≈5 秒/格）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领；首占奖励也在此时发放 |
 | `TroopState` | 部队状态枚举：0在城/1行军/2停留/3采集 |
 | `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地 |
 | `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级/3歼敌/4联盟战力；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
@@ -79,4 +79,5 @@ git submodule update --init --recursive
 | `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏）；`Soldier` 兵力、`Power` 战力；1 级怪兵力与开服 5★满编同级，需数个回合，10 级与首领明显更高；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
 | `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }`；打怪战报/回放见 `proto/report.proto`，战斗流程见 `proto/battle.proto` |
 | `ResLandType` | 资源地类型枚举；对齐 `ResLand.Type`：1粮田/2林场/3铁矿/4石场（产出对应 Item 1/2/3/4） |
-| `ResLand` | 资源地；`Id=Type*100+Level`；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫（低级地不抽高一级怪组，如 3 级地仅 `2/3`）；`Reward` 击败守卫后立即发放；占领倒计时见 `Global.Id=19`（秒）；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Icon`/`Desc` 只导出到前端 |
+| `ResLand` | 资源地；`Id=Type*100+Level`；产出道具由 `Type`→`ResLandType` 决定；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫（低级地不抽高一级怪组，如 3 级地仅 `2/3`）；击败守卫后进入占领倒计时（`Global.Id=19` 秒），到期才完成占领；没有每次占领奖励；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Desc` 只导出到前端 |
+| `ResLandFirst` | 资源地首占奖励；key 为 `Type` + `Level`（`Type`→`ResLandType`）；只在占领倒计时结束时发放，同类型同等级仅首次，非首占无奖励 |

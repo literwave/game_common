@@ -4,5 +4,5 @@ both	frontend	both	frontend	both	both
 id	名称	枚举	说明	行军速度(每秒移动格数)	批注
 1	回城	RETURN_CITY	行军返回主城	1.0	
 2	打怪	ATTACK_MONSTER	行军攻击怪物组	0.6	
-3	占领资源地	OCCUPY_RES_LAND	行军占领资源地（击败守卫后进入占领倒计时，时长见 Global.Id=19）	0.6	
+3	占领资源地	OCCUPY_RES_LAND	行军占领资源地（击败守卫后进入占领倒计时，时长见 Global.Id=19；首占奖励在倒计时结束时发放）	0.6	
 4	移动	MOVE	行军移动到目标坐标（无战斗）	0.6	
