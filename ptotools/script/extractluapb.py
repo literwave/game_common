@@ -27,14 +27,12 @@ def main(dir):
 	# 确保目录路径正确
 	if not dir.endswith('/') and not dir.endswith('\\'):
 		dir += '/'
-	
-	out_lua_dir = os.path.join(dir, '../../../pb/')
-	out_cs_dir = os.path.join(dir, '../outcs/')
+
+	repo_root = os.path.abspath(os.path.join(script_dir, '..', '..'))
+	out_lua_dir = os.path.join(repo_root, 'pb')
 
 	if not os.path.exists(out_lua_dir):
 		os.makedirs(out_lua_dir)
-	if not os.path.exists(out_cs_dir):
-		os.makedirs(out_cs_dir)
 
 	for filename in os.listdir(dir):
 		if filename.endswith(".proto"):
@@ -48,12 +46,6 @@ def main(dir):
 			print(cmd_pb)
 			if os.system(cmd_pb) != 0:
 				print(f"Failed to generate pb for {filename}")
-
-			# 生成 C# 文件
-			cmd_cs = f'""{protoc_exe}" "{full_proto_path}" --csharp_out="{out_cs_dir}" -I="{dir}""'
-			print(cmd_cs)
-			if os.system(cmd_cs) != 0:
-				print(f"Failed to generate cs for {filename}")
 
 if __name__ == "__main__":
 	dir = "./" if len(sys.argv)<=1  else sys.argv[1]

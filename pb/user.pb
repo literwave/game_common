@@ -1,5 +1,5 @@
 
-´	
+÷
 
 user.protoUsercommon.proto"
 c2s_user_base_info"Ÿ
@@ -14,7 +14,23 @@ user.protoUsercommon.proto"
 cityPos (2.Common.p_posRcityPos
 
 allianceId	 (R
-allianceId"L
+allianceId"&
+c2s_req_other_user
+uid (Ruid"˜
+s2c_req_other_user
+uid (Ruid
+name (	Rname
+headIcon (RheadIcon
+sex (Rsex
+level (Rlevel
+power (Rpower
+	cityLevel (R	cityLevel
+
+allianceId (R
+allianceId"
+allianceName	 (	RallianceName 
+offlineTime
+ (RofflineTime"L
 s2c_sync_soldier8
 soldierInfo (2.Common.p_soldier_infoRsoldierInfo"0
 c2s_move_city

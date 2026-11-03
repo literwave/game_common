@@ -8,7 +8,7 @@ pushd "%scriptdir%" || exit /b 1
 echo Start generating protocol files...
 
 rem Set proto directory
-set "PROTO_DIR=.\proto\proto_desc"
+set "PROTO_DIR=..\proto"
 
 rem 1. Generate server/net_pb.lua and client/net_pb.json (Protocol IDs)
 echo Running extractlua.py...
