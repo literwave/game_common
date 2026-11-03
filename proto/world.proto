@@ -163,3 +163,14 @@ message c2s_del_mark {
 message s2c_del_mark {
 	Common.p_pos pos = 1;
 }
+
+// ---------- 行军路线 ----------
+// 按实体查询行军路径。path 与 p_march_info.path 相同：拐点，含起点和终点
+message c2s_req_march_path {
+	int64 entityId = 1;
+}
+
+message s2c_req_march_path {
+	int64 entityId = 1;
+	repeated Common.p_pos_f path = 2;
+}

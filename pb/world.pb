@@ -1,5 +1,5 @@
 
-¦
+¯
 world.protoWorldcommon.proto"Y
 p_troop_pos
 heroIdx (RheroIdx0
@@ -86,4 +86,9 @@ entityType
 c2s_del_mark
 pos (2.Common.p_posRpos"/
 s2c_del_mark
-pos (2.Common.p_posRposbproto3
+pos (2.Common.p_posRpos"0
+c2s_req_march_path
+entityId (RentityId"U
+s2c_req_march_path
+entityId (RentityId#
+path (2.Common.p_pos_fRpathbproto3
