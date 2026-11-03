@@ -76,7 +76,7 @@ git submodule update --init --recursive
 | `DailyTask` | 日常任务；每日重置；字段同主线但无 `NextId`；协议 `taskType=2` |
 | `WeekTask` | 周常任务；每周重置；字段同日常；协议 `taskType=3` |
 | `Activity` | 活动；`Type` 1登录/2冲榜/3限时招募/4资源增产/5礼包/6在线/7兑换；冲榜类 `Params.rank_type` → `RankType.Id`；`Time` 为 `{ type, ...参数 }`；`OpenCond`/`Params`/`Rewards` 按类型解释；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/activity.proto` |
-| `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏，同量级约 20–110）；`Soldier` 兵力、`Power` 战力；早期怪兵力低于满编 5★；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
+| `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏）；`Soldier` 兵力、`Power` 战力；1 级怪兵力与开服 5★满编同级，需数个回合，10 级与首领明显更高；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
 | `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }`；打怪战报/回放见 `proto/report.proto`，战斗流程见 `proto/battle.proto` |
 | `ResLandType` | 资源地类型枚举；对齐 `ResLand.Type`：1粮田/2林场/3铁矿/4石场（产出对应 Item 1/2/3/4） |
 | `ResLand` | 资源地；`Id=Type*100+Level`；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫（低级地不抽高一级怪组，如 3 级地仅 `2/3`）；`Reward` 击败守卫后立即发放；占领倒计时见 `Global.Id=19`（秒）；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Icon`/`Desc` 只导出到前端 |

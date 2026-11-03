@@ -18,17 +18,22 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 250,
+        ["Power"] = 2520,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 200
+                ["item_count"] = 1500
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 200
+                ["item_count"] = 1500
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 800
             }
         },
         ["Refresh"] = 600,
@@ -55,22 +60,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 530,
+        ["Power"] = 4570,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 400
+                ["item_count"] = 2500
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 400
+                ["item_count"] = 2500
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 100
+                ["item_count"] = 800
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 1200
             }
         },
         ["Refresh"] = 600,
@@ -93,22 +103,27 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 510,
+        ["Power"] = 4200,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 600
+                ["item_count"] = 3500
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 600
+                ["item_count"] = 3500
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 200
+                ["item_count"] = 1200
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 1600
             }
         },
         ["Refresh"] = 600,
@@ -131,22 +146,27 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 900,
+        ["Power"] = 7080,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 800
+                ["item_count"] = 5000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 800
+                ["item_count"] = 5000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 300
+                ["item_count"] = 1800
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 2200
             }
         },
         ["Refresh"] = 600,
@@ -173,22 +193,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 1600,
+        ["Power"] = 11280,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 1200
+                ["item_count"] = 7000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 1200
+                ["item_count"] = 7000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 500
+                ["item_count"] = 2800
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 3200
             },
             {
                 ["reward_type"] = 1,
@@ -216,22 +241,27 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 1700,
+        ["Power"] = 10790,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 1500
+                ["item_count"] = 9000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 1500
+                ["item_count"] = 9000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 600
+                ["item_count"] = 3600
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
@@ -259,22 +289,27 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 2400,
+        ["Power"] = 14230,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 2000
+                ["item_count"] = 12000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 2000
+                ["item_count"] = 12000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 800
+                ["item_count"] = 5000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 5500
             },
             {
                 ["reward_type"] = 1,
@@ -306,22 +341,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 4400,
+        ["Power"] = 24530,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 2500
+                ["item_count"] = 16000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 2500
+                ["item_count"] = 16000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 1000
+                ["item_count"] = 7000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 8000
             },
             {
                 ["reward_type"] = 1,
@@ -349,22 +389,27 @@ return {
                 ["pos"] = 2
             }
         },
-        ["Power"] = 4800,
+        ["Power"] = 23700,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 3000
+                ["item_count"] = 20000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 3000
+                ["item_count"] = 20000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 1200
+                ["item_count"] = 9000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 10000
             },
             {
                 ["reward_type"] = 1,
@@ -396,22 +441,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 8600,
+        ["Power"] = 40950,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 4000
+                ["item_count"] = 26000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 4000
+                ["item_count"] = 26000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 1600
+                ["item_count"] = 12000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 14000
             },
             {
                 ["reward_type"] = 1,
@@ -443,22 +493,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 2820,
+        ["Power"] = 17360,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 3000
+                ["item_count"] = 18000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 3000
+                ["item_count"] = 18000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 1000
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 10000
             },
             {
                 ["reward_type"] = 1,
@@ -495,22 +550,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 4000,
+        ["Power"] = 23390,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 4500
+                ["item_count"] = 24000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 4500
+                ["item_count"] = 24000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 1500
+                ["item_count"] = 12000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 14000
             },
             {
                 ["reward_type"] = 1,
@@ -547,22 +607,27 @@ return {
                 ["pos"] = 3
             }
         },
-        ["Power"] = 8800,
+        ["Power"] = 40220,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 6000
+                ["item_count"] = 32000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 6000
+                ["item_count"] = 32000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 2500
+                ["item_count"] = 18000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 20000
             },
             {
                 ["reward_type"] = 1,
@@ -603,22 +668,27 @@ return {
                 ["pos"] = 4
             }
         },
-        ["Power"] = 8400,
+        ["Power"] = 41050,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 8000
+                ["item_count"] = 40000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 8000
+                ["item_count"] = 40000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 4000
+                ["item_count"] = 24000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 28000
             },
             {
                 ["reward_type"] = 1,
@@ -659,22 +729,27 @@ return {
                 ["pos"] = 4
             }
         },
-        ["Power"] = 12600,
+        ["Power"] = 67450,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 12000
+                ["item_count"] = 60000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 12000
+                ["item_count"] = 60000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 6000
+                ["item_count"] = 36000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 40000
             },
             {
                 ["reward_type"] = 1,
