@@ -1,0 +1,44 @@
+{
+  "Activity.tsv": [],
+  "AllianceJoinType.tsv": [],
+  "AllianceLv.tsv": [],
+  "AlliancePos.tsv": [],
+  "BuildingDetail.tsv": [],
+  "BuildingLv.tsv": [],
+  "ChatChannel.tsv": [],
+  "DailyTask.tsv": [],
+  "EntityType.tsv": [],
+  "Errcode.tsv": [],
+  "Global.tsv": [],
+  "HeadIcon.tsv": [],
+  "Hero.tsv": [
+    "Id"
+  ],
+  "HeroLv.tsv": [],
+  "Item.tsv": [],
+  "Lottery.tsv": [],
+  "Mail.tsv": [],
+  "MailKind.tsv": [],
+  "MainTask.tsv": [],
+  "Monster.tsv": [
+    "Id"
+  ],
+  "MonsterGroup.tsv": [
+    "Id"
+  ],
+  "RankType.tsv": [],
+  "ReportInfo.tsv": [],
+  "ReportType.tsv": [],
+  "ResLand.tsv": [
+    "Id"
+  ],
+  "ResLandType.tsv": [],
+  "ServerGroup.tsv": [],
+  "Skill.tsv": [],
+  "SystemOpen.tsv": [],
+  "TargetType.tsv": [
+    "Id"
+  ],
+  "TroopState.tsv": [],
+  "WeekTask.tsv": []
+}
