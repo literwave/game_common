@@ -16,12 +16,17 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 500
+                ["item_count"] = 5000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 500
+                ["item_count"] = 5000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 103,
+                ["item_count"] = 5
             }
         }
     },
@@ -34,42 +39,30 @@ return {
             ["type"] = 2,
             ["bid"] = 1
         },
-        ["Target"] = 2,
+        ["Target"] = 3,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 800
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 800
+                ["item_count"] = 4000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 2000
             }
         }
     },
     {
         ["Id"] = 1003,
-        ["Name"] = "广纳贤才",
+        ["Name"] = "求贤若渴",
         ["Order"] = 3,
         ["NextId"] = 1004,
-        ["Cond"] = {
-            ["type"] = 3
-        },
-        ["Target"] = 2,
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 50
-            }
-        }
-    },
-    {
-        ["Id"] = 1004,
-        ["Name"] = "求贤若渴",
-        ["Order"] = 4,
-        ["NextId"] = 1005,
         ["Cond"] = {
             ["type"] = 4
         },
@@ -77,139 +70,75 @@ return {
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 1000
+                ["item_id"] = 100,
+                ["item_count"] = 30
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 1000
+                ["item_id"] = 103,
+                ["item_count"] = 3
             }
         }
     },
     {
-        ["Id"] = 1005,
-        ["Name"] = "积谷防饥",
-        ["Order"] = 5,
-        ["NextId"] = 1006,
+        ["Id"] = 1004,
+        ["Name"] = "广纳贤才",
+        ["Order"] = 4,
+        ["NextId"] = 1005,
         ["Cond"] = {
-            ["type"] = 6,
-            ["item_id"] = 1
-        },
-        ["Target"] = 500,
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 300
-            }
-        }
-    },
-    {
-        ["Id"] = 1006,
-        ["Name"] = "伐木成林",
-        ["Order"] = 6,
-        ["NextId"] = 1007,
-        ["Cond"] = {
-            ["type"] = 6,
-            ["item_id"] = 2
-        },
-        ["Target"] = 500,
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 300
-            }
-        }
-    },
-    {
-        ["Id"] = 1007,
-        ["Name"] = "城池扩建",
-        ["Order"] = 7,
-        ["NextId"] = 1008,
-        ["Cond"] = {
-            ["type"] = 2,
-            ["bid"] = 1
+            ["type"] = 3
         },
         ["Target"] = 3,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 1500
+                ["item_count"] = 6000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 1500
+                ["item_count"] = 6000
             },
             {
                 ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 800
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 100
+                ["item_id"] = 3,
+                ["item_count"] = 2000
             }
         }
     },
     {
-        ["Id"] = 1008,
-        ["Name"] = "崭露头角",
-        ["Order"] = 8,
-        ["NextId"] = 1009,
-        ["Cond"] = {
-            ["type"] = 5
-        },
-        ["Target"] = 1,
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 80
-            }
-        }
-    },
-    {
-        ["Id"] = 1009,
+        ["Id"] = 1005,
         ["Name"] = "整军出征",
-        ["Order"] = 9,
-        ["NextId"] = 1010,
+        ["Order"] = 5,
+        ["NextId"] = 1006,
         ["Cond"] = {
             ["type"] = 7
         },
-        ["Target"] = 1,
+        ["Target"] = 3,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 1200
+                ["item_count"] = 8000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 1200
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 3000
             }
         }
     },
     {
-        ["Id"] = 1010,
-        ["Name"] = "开疆拓土",
-        ["Order"] = 10,
-        ["NextId"] = 1011,
+        ["Id"] = 1006,
+        ["Name"] = "城池扩建",
+        ["Order"] = 6,
+        ["NextId"] = 1007,
         ["Cond"] = {
             ["type"] = 2,
             ["bid"] = 1
@@ -219,22 +148,148 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 2000
+                ["item_count"] = 8000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 2000
+                ["item_count"] = 8000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 800
+                ["item_count"] = 3000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 4,
-                ["item_count"] = 1200
+                ["item_count"] = 4000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 100,
+                ["item_count"] = 50
+            }
+        }
+    },
+    {
+        ["Id"] = 1007,
+        ["Name"] = "开山取石",
+        ["Order"] = 7,
+        ["NextId"] = 1008,
+        ["Cond"] = {
+            ["type"] = 6,
+            ["item_id"] = 4
+        },
+        ["Target"] = 25000,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 3000
+            }
+        }
+    },
+    {
+        ["Id"] = 1008,
+        ["Name"] = "开采铁矿",
+        ["Order"] = 8,
+        ["NextId"] = 1009,
+        ["Cond"] = {
+            ["type"] = 6,
+            ["item_id"] = 3
+        },
+        ["Target"] = 20000,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 6000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 1,
+                ["item_count"] = 5000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 2,
+                ["item_count"] = 5000
+            }
+        }
+    },
+    {
+        ["Id"] = 1009,
+        ["Name"] = "征伐流寇",
+        ["Order"] = 9,
+        ["NextId"] = 1010,
+        ["Cond"] = {
+            ["type"] = 7
+        },
+        ["Target"] = 10,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 1,
+                ["item_count"] = 10000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 2,
+                ["item_count"] = 10000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 5000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 6000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 103,
+                ["item_count"] = 5
+            }
+        }
+    },
+    {
+        ["Id"] = 1010,
+        ["Name"] = "主城七级",
+        ["Order"] = 10,
+        ["NextId"] = 1011,
+        ["Cond"] = {
+            ["type"] = 2,
+            ["bid"] = 1
+        },
+        ["Target"] = 7,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 1,
+                ["item_count"] = 20000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 2,
+                ["item_count"] = 20000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 10000
             }
         }
     },
@@ -251,38 +306,147 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 100,
-                ["item_count"] = 150
+                ["item_count"] = 100
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 103,
+                ["item_count"] = 5
             }
         }
     },
     {
         ["Id"] = 1012,
-        ["Name"] = "势力初成",
+        ["Name"] = "势力渐成",
         ["Order"] = 12,
+        ["NextId"] = 1013,
         ["Cond"] = {
             ["type"] = 8
         },
-        ["Target"] = 1000,
+        ["Target"] = 15000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 3000
+                ["item_count"] = 15000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 3000
+                ["item_count"] = 15000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 1500
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 10000
+            }
+        }
+    },
+    {
+        ["Id"] = 1013,
+        ["Name"] = "开疆拓土",
+        ["Order"] = 13,
+        ["NextId"] = 1014,
+        ["Cond"] = {
+            ["type"] = 2,
+            ["bid"] = 1
+        },
+        ["Target"] = 8,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 1,
+                ["item_count"] = 30000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 2,
+                ["item_count"] = 30000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 15000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 18000
+            }
+        }
+    },
+    {
+        ["Id"] = 1014,
+        ["Name"] = "粮草充盈",
+        ["Order"] = 14,
+        ["NextId"] = 1015,
+        ["Cond"] = {
+            ["type"] = 6,
+            ["item_id"] = 1
+        },
+        ["Target"] = 80000,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 1,
+                ["item_count"] = 20000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 10000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 8000
+            }
+        }
+    },
+    {
+        ["Id"] = 1015,
+        ["Name"] = "主城十级",
+        ["Order"] = 15,
+        ["Cond"] = {
+            ["type"] = 2,
+            ["bid"] = 1
+        },
+        ["Target"] = 10,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 1,
+                ["item_count"] = 40000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 2,
+                ["item_count"] = 40000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 20000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 25000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 100,
                 ["item_count"] = 200
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 103,
+                ["item_count"] = 10
             }
         }
     }

@@ -15,12 +15,17 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 300
+                ["item_count"] = 3000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 300
+                ["item_count"] = 3000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 1500
             }
         }
     },
@@ -47,17 +52,27 @@ return {
         ["Cond"] = {
             ["type"] = 7
         },
-        ["Target"] = 2,
+        ["Target"] = 3,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 400
+                ["item_count"] = 5000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 400
+                ["item_count"] = 5000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 2000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 2500
             }
         }
     },
@@ -69,17 +84,17 @@ return {
             ["type"] = 6,
             ["item_id"] = 1
         },
-        ["Target"] = 200,
+        ["Target"] = 25000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 200
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 100
+                ["item_count"] = 1500
             }
         }
     },
@@ -91,17 +106,17 @@ return {
             ["type"] = 6,
             ["item_id"] = 2
         },
-        ["Target"] = 200,
+        ["Target"] = 25000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 200
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 100
+                ["item_count"] = 1500
             }
         }
     }

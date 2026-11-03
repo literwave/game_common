@@ -72,9 +72,9 @@ git submodule update --init --recursive
 | `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地 |
 | `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级/3歼敌/4联盟战力；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
 | `Rank` | 排行榜配置；`Id` 与 `RankType.Id` 相同；`RankMax` 为该榜上榜人数上限 |
-| `MainTask` | 主线任务；`NextId` 衔接下一任务；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
-| `DailyTask` | 日常任务；每日重置；字段同主线但无 `NextId`；协议 `taskType=2` |
-| `WeekTask` | 周常任务；每周重置；字段同日常；协议 `taskType=3` |
+| `MainTask` | 主线任务；`NextId` 衔接下一任务，铺到主城 10 级；目标按城建消耗排布，奖励只补下一档的一部分；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
+| `DailyTask` | 日常任务；每日重置；资源目标按开服库存量级；字段同主线但无 `NextId`；协议 `taskType=2` |
+| `WeekTask` | 周常任务；每周重置；登录、招募、出征和四资源囤积都高于单日日常；字段同日常；协议 `taskType=3` |
 | `Activity` | 活动；`Type` 1登录/2冲榜/3限时招募/4资源增产/5礼包/6在线/7兑换；冲榜类 `Params.rank_type` → `RankType.Id`；`Time` 为 `{ type, ...参数 }`；`OpenCond`/`Params`/`Rewards` 按类型解释；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/activity.proto` |
 | `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏）；`Soldier` 兵力、`Power` 战力；1 级怪兵力与开服 5★满编同级，需数个回合，10 级与首领明显更高；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
 | `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }`；打怪战报/回放见 `proto/report.proto`，战斗流程见 `proto/battle.proto` |

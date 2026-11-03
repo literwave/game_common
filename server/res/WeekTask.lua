@@ -10,17 +10,27 @@ return {
         ["Cond"] = {
             ["type"] = 1
         },
-        ["Target"] = 3,
+        ["Target"] = 5,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 1500
+                ["item_count"] = 20000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 1500
+                ["item_count"] = 20000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 3,
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 10000
             }
         }
     },
@@ -31,7 +41,7 @@ return {
         ["Cond"] = {
             ["type"] = 4
         },
-        ["Target"] = 5,
+        ["Target"] = 10,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -47,22 +57,27 @@ return {
         ["Cond"] = {
             ["type"] = 7
         },
-        ["Target"] = 10,
+        ["Target"] = 20,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 2000
+                ["item_count"] = 15000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 2000
+                ["item_count"] = 15000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 800
+                ["item_count"] = 8000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 8000
             }
         }
     },
@@ -74,17 +89,17 @@ return {
             ["type"] = 6,
             ["item_id"] = 1
         },
-        ["Target"] = 2000,
+        ["Target"] = 50000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 1000
+                ["item_count"] = 20000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 500
+                ["item_count"] = 8000
             }
         }
     },
@@ -96,17 +111,39 @@ return {
             ["type"] = 6,
             ["item_id"] = 2
         },
-        ["Target"] = 2000,
+        ["Target"] = 50000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 1000
+                ["item_count"] = 20000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 500
+                ["item_count"] = 8000
+            }
+        }
+    },
+    {
+        ["Id"] = 3006,
+        ["Name"] = "本周采石",
+        ["Order"] = 6,
+        ["Cond"] = {
+            ["type"] = 6,
+            ["item_id"] = 4
+        },
+        ["Target"] = 30000,
+        ["Reward"] = {
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 4,
+                ["item_count"] = 15000
+            },
+            {
+                ["reward_type"] = 1,
+                ["item_id"] = 100,
+                ["item_count"] = 50
             }
         }
     }
