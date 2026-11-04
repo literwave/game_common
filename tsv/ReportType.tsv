@@ -6,3 +6,4 @@ id	名称	枚举	说明
 2	攻打玩家	ATTACK_PLAYER	攻打玩家部队/主城（预留）
 3	防守	DEFEND	防守战报（预留）
 4	占领资源地	OCCUPY_RES_LAND	占领资源地战报
+5	攻城	ATTACK_CITY	攻打联盟城池；守军为 NPC，战报归属攻方玩家

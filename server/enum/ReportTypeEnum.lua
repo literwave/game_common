@@ -7,4 +7,5 @@ return {
     ATTACK_PLAYER = 2,
     DEFEND = 3,
     OCCUPY_RES_LAND = 4,
+    ATTACK_CITY = 5,
 }
