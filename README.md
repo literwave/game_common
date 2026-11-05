@@ -66,18 +66,20 @@ git submodule update --init --recursive
 | `ServerGroup` | 服务器群组与后台 ID |
 | `SystemOpen` | 系统开启；`HEAD_ICON` 更换头像、`CREATE_ALLIANCE` 创建联盟（`Cond.level` 控制开启主城等级） |
 | `Errcode` | 错误码枚举；后端下发 `Id`，前端用 `Msg` 提示；`Name`/`Msg` 只导出到前端 |
-| `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组/4资源地；主城实体带 `name`（玩家名/城名）、`level`（主城建筑等级 `BuildingDetail.Id=1`，非角色等级），改名/升级走 `s2c_aoi_update` |
-| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 0.4≈2.5 秒/格，其余 0.2≈5 秒/格）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领；首占奖励也在此时发放 |
+| `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组/4资源地/5联盟城池；主城实体带 `name`（玩家名/城名）、`level`（主城建筑等级 `BuildingDetail.Id=1`，非角色等级），改名/升级走 `s2c_aoi_update`；联盟城池 `ownerId=0`，`allianceId` 为占领联盟（0 中立），`cfgId=cityType*100+level`，城防和队数走 `proto/city.proto` |
+| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动/5攻打城池；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 1.0，其余 0.6）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领；首占奖励也在此时发放；攻打城池须已入盟，`targetId` 为城池实体 id，多个联盟可同时打同一座城 |
 | `TroopState` | 部队状态枚举：0在城/1行军/2停留/3采集 |
-| `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地 |
+| `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地/5攻城 |
 | `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级/3歼敌/4联盟战力；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
 | `Rank` | 排行榜配置；`Id` 与 `RankType.Id` 相同；`RankMax` 为该榜上榜人数上限 |
 | `MainTask` | 主线任务；`NextId` 衔接下一任务，铺到主城 10 级；目标按城建消耗排布，奖励只补下一档的一部分；`Cond` 为 `{ type, ...参数 }`；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/task.proto`（`taskType=1`） |
 | `DailyTask` | 日常任务；每日重置；资源目标按开服库存量级；字段同主线但无 `NextId`；协议 `taskType=2` |
 | `WeekTask` | 周常任务；每周重置；登录、招募、出征和四资源囤积都高于单日日常；字段同日常；协议 `taskType=3` |
 | `Activity` | 活动；`Type` 1登录/2冲榜/3限时招募/4资源增产/5礼包/6在线/7兑换；冲榜类 `Params.rank_type` → `RankType.Id`；`Time` 为 `{ type, ...参数 }`；`OpenCond`/`Params`/`Rewards` 按类型解释；`Icon`/`Desc`/`Jump` 只导出到前端；协议见 `proto/activity.proto` |
-| `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏）；`Soldier` 兵力、`Power` 战力；1 级怪兵力与开服 5★满编同级，需数个回合，10 级与首领明显更高；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
+| `Monster` | 怪物单位；战斗五维对齐武将（武力/谋略/防御/速度/破坏）；`Soldier` 兵力、`Power` 战力（`Soldier*(Attack+Defense)/100`，四舍五入到 10）；1 级怪兵力与开服 5★满编同级，需数个回合，10 级与首领明显更高；`Id` 21–28/31–38/41–48 是 1–8 级城池守军（刀盾/弓手/校尉），校尉兵力对齐同级地图贼寇单兵，刀盾、弓手略低，只被 `City.Team` 引用，不进地图刷新；`SkillId` 可选；`Icon`/`Desc` 只导出到前端 |
 | `MonsterGroup` | 怪物组（地图贼寇/山寨/首领）；`Type` 1贼寇/2山寨/3首领；`Monsters` 为 `{ mid, pos }` 阵容（`mid`→`Monster.Id`）；`Reward` 同任务奖励格式；`Refresh` 刷新秒数；`OpenCond` 如 `{ level = 1 }`；打怪战报/回放见 `proto/report.proto`，战斗流程见 `proto/battle.proto` |
+| `CityType` | 城池类型枚举：1县城/2郡城/3关隘/4州府；同级共用一套守军模板，队数随类型增加，关隘同级比郡城队数更多 |
+| `City` | 城池；key 为 `Type` + `Level`（1–8 级，`Type`→`CityType`）；归属是联盟，玩家个人不占领；`Durability` 为城防；`Team` 是一支守军（刀盾/校尉/弓手，`{ mid, pos }`，`mid`→`Monster`），强度约等于同级一只贼寇组；`TeamCount` 是这支模板要打多少队（界面按单队 × 队数；1 级县城 2 队，8 级州府 12 队）；`RankReward` 一列配前 3 名，每项为 `{ rank, reward }`，`reward` 同任务奖励，第 4 名及以后没有，城破时按本次攻城对守军的伤害排名发奖，所有打过的人排在一起；打掉最后一队的玩家所属联盟获得归属；前三名粮草合计对齐同级地块首占粮，再按类型加成（县城 1 / 关隘 1.4 / 郡城 1.5 / 州府 2），50%/30%/20% 分给第 1/2/3 名；没有开启条件，也没有首占奖励；`Desc` 只导出到前端；协议见 `proto/city.proto`（行军走 `TargetType.ATTACK_CITY`） |
 | `ResLandType` | 资源地类型枚举；对齐 `ResLand.Type`：1粮田/2林场/3铁矿/4石场（产出对应 Item 1/2/3/4） |
 | `ResLand` | 资源地；`Id=Type*100+Level`；产出道具由 `Type`→`ResLandType` 决定；`Capacity`/`GatherSpeed` 为占领后采集；`MonsterGroups` 占领时等权随机守卫（低级地不抽高一级怪组，如 3 级地仅 `2/3`）；击败守卫后进入占领倒计时（`Global.Id=19` 秒），到期才完成占领；没有每次占领奖励；`OpenCond` 如 `{ level = 1 }`；行军 `TargetType=OCCUPY_RES_LAND`；`Desc` 只导出到前端 |
 | `ResLandFirst` | 资源地首占奖励；key 为 `Type` + `Level`（`Type`→`ResLandType`）；只在占领倒计时结束时发放，同类型同等级仅首次，非首占无奖励 |

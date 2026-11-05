@@ -7,4 +7,5 @@ return {
     TROOP = 2,
     MONSTER_GROUP = 3,
     RES_LAND = 4,
+    ALLIANCE_CITY = 5,
 }

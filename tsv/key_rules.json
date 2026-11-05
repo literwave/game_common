@@ -6,6 +6,11 @@
   "BuildingDetail.tsv": [],
   "BuildingLv.tsv": [],
   "ChatChannel.tsv": [],
+  "City.tsv": [
+    "Type",
+    "Level"
+  ],
+  "CityType.tsv": [],
   "DailyTask.tsv": [],
   "EntityType.tsv": [],
   "Errcode.tsv": [],

@@ -7,4 +7,5 @@ export enum TargetTypeEnum {
     ATTACK_MONSTER = 2,
     OCCUPY_RES_LAND = 3,
     MOVE = 4,
+    ATTACK_CITY = 5,
 }
