@@ -9,6 +9,9 @@ package City;
 // 行军用 World.c2s_march，targetType=ATTACK_CITY(5)，targetId=城池实体 id。
 // 到达后与 City.Team 打一场。胜一场拆掉一队守军，并拆掉等分城防（durabilityMax/teamCount，余数补在最后一队）。
 // 队数与城防同时归零则城破，归属改为打掉最后一队的那名玩家所属联盟，守军与城防按配置回满。不驻玩家部队。
+// 调动（TargetType.REDEPLOY）只把部队调度到本盟城池待命，不算守军，不改城防和队数。
+// 到达并停在城里的部队计入 deployCount，城池界面用它显示调动人数。行军途中不计。
+// 部队再出发、回城、退盟，或城易主后，不再计在这座城上。易主时 deployCount 清零。
 // 某个联盟解散或成员退盟，不中止攻城，也不回满守军。已造成的伤害留在本次榜上。
 // 排名按本次攻城对守军的伤害，所有打过的人排在一起。City.RankReward 只发配了的名次，第 4 名及以后无奖。
 
@@ -25,6 +28,7 @@ message p_city_info {
 	uint32 durabilityMax = 8;    // City.Durability
 	uint32 teamLeft = 9;         // 剩余守军队数
 	uint32 teamCount = 10;       // City.TeamCount
+	uint32 deployCount = 11;     // 已调动到达、停在该城的部队数。中立为 0
 }
 
 // 本次攻城伤害榜的一行。damage 为对守军造成的伤害
@@ -55,7 +59,7 @@ message s2c_req_city_info {
 	repeated p_city_rank rankList = 2; // 本次有伤害的玩家，不限联盟，伤害从高到低
 }
 
-// 城防、队数或归属变化。推给占领盟、本次有伤害的联盟，以及视野内看得到该城的玩家
+// 城防、守军队数、归属或调动人数变化。推给占领盟、本次有伤害的联盟，以及视野内看得到该城的玩家
 message s2c_sync_city {
 	p_city_info cityInfo = 1;
 }

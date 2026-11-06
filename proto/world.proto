@@ -42,14 +42,17 @@ message s2c_sync_troop {
 }
 
 // ---------- 行军 ----------
-// targetType → TargetType.Id（1回城 2打怪 3占领资源地 4移动 5攻打城池）
+// targetType → TargetType.Id（1回城 2打怪 3占领资源地 4移动 5攻打城池 6调动）
 // 攻打城池：targetId 为城池实体 id，规则见 city.proto。须已入盟；多个联盟可同时打同一座城
+// 调动：targetId 为本盟已占领的城池实体 id。不战斗，速度为普通行军的 2 倍。
+// 到达后这条行军保留，state=2，部队停在该城，下一支出发从这里走；不进入城池守军
+// 同时 City.p_city_info.deployCount 加 1，并用 s2c_sync_city 推给能看到这座城的人
 // state: 1行军中 2已到达
 // 耗时按路径格数 / TargetType.Speed（每秒移动格数，number，按 targetType 取）计算 endTime
 message p_march_info {
 	uint32 troopIdx = 1;
 	uint32 targetType = 2;
-	int64 targetId = 3;            // 目标实体 id（怪物组实例等），回城可 0
+	int64 targetId = 3;            // 目标实体 id（怪物组、城池等）；回城、移动为 0
 	Common.p_pos startPos = 4;
 	Common.p_pos endPos = 5;
 	double startTime = 6;
