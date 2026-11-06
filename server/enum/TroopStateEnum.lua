@@ -7,4 +7,5 @@ return {
     MARCH = 1,
     STAY = 2,
     GATHER = 3,
+    SIEGE = 4,
 }
