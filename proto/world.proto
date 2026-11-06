@@ -169,7 +169,7 @@ message s2c_del_mark {
 }
 
 // ---------- 行军路线 ----------
-// 按实体查询行军路径。path 与 p_march_info.path 相同：拐点，含起点和终点
+// 按实体查询已经在走的行军路径。path 与 p_march_info.path 相同：拐点，含起点和终点
 message c2s_req_march_path {
 	int64 entityId = 1;
 }
@@ -177,4 +177,21 @@ message c2s_req_march_path {
 message s2c_req_march_path {
 	int64 entityId = 1;
 	repeated Common.p_pos_f path = 2;
+}
+
+// 打开行军界面时预览路线，不出发。起点是该部队当前位置，终点是 targetPos。
+// 打哪座城、哪只怪在确认出发时由 c2s_march 的 targetId 决定，预览不需要。
+// path 为拐点，含起点和终点。costTime 为路径格数 / TargetType.Speed，单位秒。走不通时 path 为空、costTime 为 0。
+message c2s_req_march_route {
+	uint32 troopIdx = 1;
+	uint32 targetType = 2;         // TargetType.Id，用来取速度
+	Common.p_pos targetPos = 3;    // 终点格子
+}
+
+message s2c_req_march_route {
+	uint32 troopIdx = 1;
+	uint32 targetType = 2;
+	Common.p_pos targetPos = 3;
+	repeated Common.p_pos_f path = 4;   // 拐点，含起点和终点
+	double costTime = 5;
 }

@@ -209,6 +209,8 @@ local define = {
 		['s2c_del_mark'] = 166,
 		['c2s_req_march_path'] = 167,
 		['s2c_req_march_path'] = 168,
+		['c2s_req_march_route'] = 169,
+		['s2c_req_march_route'] = 170,
 	},
 }
 

@@ -67,7 +67,7 @@ git submodule update --init --recursive
 | `SystemOpen` | 系统开启；`HEAD_ICON` 更换头像、`CREATE_ALLIANCE` 创建联盟（`Cond.level` 控制开启主城等级） |
 | `Errcode` | 错误码枚举；后端下发 `Id`，前端用 `Msg` 提示；`Name`/`Msg` 只导出到前端 |
 | `EntityType` | AOI 实体类型枚举；对齐 `world.proto` 的 `entityType`：1主城/2行军部队/3怪物组/4资源地/5联盟城池；主城实体带 `name`（玩家名/城名）、`level`（主城建筑等级 `BuildingDetail.Id=1`，非角色等级），改名/升级走 `s2c_aoi_update`；联盟城池 `ownerId=0`，`allianceId` 为占领联盟（0 中立），`cfgId=cityType*100+level`，城防和队数走 `proto/city.proto` |
-| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动/5攻打城池；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 1.0，其余 0.6）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领；首占奖励也在此时发放；攻打城池须已入盟，`targetId` 为城池实体 id，多个联盟可同时打同一座城 |
+| `TargetType` | 行军目标类型枚举；对齐 `world.proto` / 战报 `targetType`：1回城/2打怪/3占领资源地/4移动/5攻打城池；`Speed` 为该类型行军速度（每秒移动格数，`number`，用于按路径长度算 `endTime`；回城 1.0，其余 0.6）；占领资源地击败守卫后进入倒计时（`Global.Id=19`），到期完成占领；首占奖励也在此时发放；攻打城池须已入盟，`targetId` 为城池实体 id，多个联盟可同时打同一座城；打开行军界面用 `World.c2s_req_march_route` 预览路线和耗时，不出发 |
 | `TroopState` | 部队状态枚举：0在城/1行军/2停留/3采集/4攻城中 |
 | `ReportType` | 战报类型枚举；对齐 `report.proto` / `battle.proto` 的 `reportType`：1打怪/2攻打玩家/3防守/4占领资源地/5攻城 |
 | `RankType` | 排行榜类型枚举；对齐 `rank.proto` 的 `rankType` / Activity `Params.rank_type`：1战力/2主城等级/3歼敌/4联盟战力；协议见 `proto/rank.proto`（打开时拉取，无实时推送） |
