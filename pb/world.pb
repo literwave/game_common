@@ -1,11 +1,14 @@
 
-Ø
+÷
 world.protoWorldcommon.proto"Y
 p_troop_pos
 heroIdx (RheroIdx0
-soldier (2.Common.p_soldier_infoRsoldier"≤
+soldier (2.Common.p_soldier_infoRsoldier"“
 p_troop_info
-troopIdx (RtroopIdx7
+troopIdx (RtroopIdx
+
+troopState (R
+troopState7
 posMap (2.World.p_troop_info.PosMapEntryRposMapM
 PosMapEntry
 key (Rkey(
@@ -18,7 +21,7 @@
 s2c_edit_troop1
 	troopInfo (2.World.p_troop_infoR	troopInfo"C
 s2c_sync_troop1
-	troopInfo (2.World.p_troop_infoR	troopInfo"´
+	troopInfo (2.World.p_troop_infoR	troopInfo"À
 p_march_info
 troopIdx (RtroopIdx
 
@@ -29,7 +32,11 @@ targetType
 endPos (2.Common.p_posRendPos
 	startTime (R	startTime
 endTime (RendTime
-state (Rstate#
+state (Rstate
+
+troopState
+ (R
+troopState#
 path	 (2.Common.p_pos_fRpath"ê
 	c2s_march
 troopIdx (RtroopIdx
@@ -49,7 +56,7 @@ targetType
 	marchInfo (2.World.p_march_infoR	marchInfo"
 c2s_req_march_list"G
 s2c_req_march_list1
-	marchList (2.World.p_march_infoR	marchList"¢
+	marchList (2.World.p_march_infoR	marchList"«
 p_aoi_entity
 entityId (RentityId
 
@@ -63,7 +70,16 @@ entityType
 endTime (RendTime
 name	 (	Rname
 level
- (Rlevel"0
+ (Rlevel
+
+troopState (R
+troopState
+troopIdx (RtroopIdx
+targetId (RtargetId+
+	targetPos (2.Common.p_posR	targetPos
+
+allianceId (R
+allianceId"0
 c2s_aoi_focus
 pos (2.Common.p_posRpos"@
 s2c_aoi_enter/
@@ -91,4 +107,18 @@ entityType
 entityId (RentityId"U
 s2c_req_march_path
 entityId (RentityId#
-path (2.Common.p_pos_fRpathbproto3
+path (2.Common.p_pos_fRpath"~
+c2s_req_march_route
+troopIdx (RtroopIdx
+
+targetType (R
+targetType+
+	targetPos (2.Common.p_posR	targetPos"ø
+s2c_req_march_route
+troopIdx (RtroopIdx
+
+targetType (R
+targetType+
+	targetPos (2.Common.p_posR	targetPos#
+path (2.Common.p_pos_fRpath
+costTime (RcostTimebproto3
