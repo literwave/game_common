@@ -5,27 +5,27 @@
       {
         "reward_type": 1,
         "item_id": 1,
-        "item_count": 30000
+        "item_count": 3000
       },
       {
         "reward_type": 1,
         "item_id": 2,
-        "item_count": 30000
+        "item_count": 3000
       },
       {
         "reward_type": 1,
         "item_id": 3,
-        "item_count": 12000
+        "item_count": 1000
       },
       {
         "reward_type": 1,
         "item_id": 4,
-        "item_count": 20000
+        "item_count": 1500
       },
       {
         "reward_type": 1,
         "item_id": 103,
-        "item_count": 10
+        "item_count": 5
       },
       {
         "reward_type": 3,

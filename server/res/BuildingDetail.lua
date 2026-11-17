@@ -8,7 +8,7 @@ return {
         ["Name"] = "主城",
         ["Desc"] = "势力核心，提升主城等级可解锁更多建筑与功能",
         ["Type"] = 1,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 1,
         ["CreateLimit"] = {},
@@ -20,7 +20,7 @@ return {
         ["Name"] = "校场",
         ["Desc"] = "训练场地，提升出征带兵上限",
         ["Type"] = 2,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -37,7 +37,7 @@ return {
         ["Name"] = "聚贤府",
         ["Desc"] = "广纳贤才，提升可上阵武将数量",
         ["Type"] = 4,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -54,7 +54,7 @@ return {
         ["Name"] = "步兵营",
         ["Desc"] = "训练步兵，提升步兵训练上限与效率",
         ["Type"] = 2,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -71,7 +71,7 @@ return {
         ["Name"] = "骑兵营",
         ["Desc"] = "训练骑兵，提升骑兵训练上限与效率",
         ["Type"] = 2,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -88,7 +88,7 @@ return {
         ["Name"] = "弓兵营",
         ["Desc"] = "训练弓兵，提升弓兵训练上限与效率",
         ["Type"] = 2,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -105,7 +105,7 @@ return {
         ["Name"] = "医馆",
         ["Desc"] = "救治伤兵，提升伤兵收容与治疗效率",
         ["Type"] = 4,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -122,7 +122,7 @@ return {
         ["Name"] = "太学",
         ["Desc"] = "研究科技，解锁并加速内政与军事科技",
         ["Type"] = 4,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -156,7 +156,7 @@ return {
         ["Name"] = "农场",
         ["Desc"] = "开垦农田，持续产出粮草",
         ["Type"] = 3,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 1,
         ["CreateLimit"] = {
@@ -173,7 +173,7 @@ return {
         ["Name"] = "伐木场",
         ["Desc"] = "采伐木材，持续产出木材",
         ["Type"] = 3,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 1,
         ["CreateLimit"] = {
@@ -190,7 +190,7 @@ return {
         ["Name"] = "铁矿",
         ["Desc"] = "开采矿脉，持续产出铁矿",
         ["Type"] = 3,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -207,13 +207,13 @@ return {
         ["Name"] = "仓库",
         ["Desc"] = "囤积物资，提升资源保护与存储上限",
         ["Type"] = 4,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
-        ["InitLev"] = 0,
+        ["InitLev"] = 1,
         ["CreateLimit"] = {
             {
                 ["bid"] = 1,
-                ["lev"] = 2
+                ["lev"] = 1
             }
         },
         ["OutputItem"] = 0,
@@ -224,7 +224,7 @@ return {
         ["Name"] = "点将台",
         ["Desc"] = "招贤纳士，用于武将招募",
         ["Type"] = 4,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {
@@ -258,7 +258,7 @@ return {
         ["Name"] = "采石场",
         ["Desc"] = "开山取石，持续产出石料",
         ["Type"] = 3,
-        ["MaxLevel"] = 30,
+        ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
         ["InitLev"] = 0,
         ["CreateLimit"] = {

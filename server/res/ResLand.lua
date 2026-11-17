@@ -8,19 +8,11 @@ return {
         ["Type"] = 1,
         ["Level"] = 1,
         ["Name"] = "1级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 2000,
         ["GatherSpeed"] = 200,
         ["MonsterGroups"] = {
             1,
             2
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 500
-            }
         },
         ["OpenCond"] = {
             ["level"] = 1
@@ -31,20 +23,12 @@ return {
         ["Type"] = 1,
         ["Level"] = 2,
         ["Name"] = "2级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 4000,
         ["GatherSpeed"] = 300,
         ["MonsterGroups"] = {
             1,
             2,
             3
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 800
-            }
         },
         ["OpenCond"] = {
             ["level"] = 1
@@ -55,19 +39,11 @@ return {
         ["Type"] = 1,
         ["Level"] = 3,
         ["Name"] = "3级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 7000,
         ["GatherSpeed"] = 450,
         ["MonsterGroups"] = {
             2,
             3
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 1200
-            }
         },
         ["OpenCond"] = {
             ["level"] = 2
@@ -78,19 +54,11 @@ return {
         ["Type"] = 1,
         ["Level"] = 4,
         ["Name"] = "4级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 11000,
         ["GatherSpeed"] = 600,
         ["MonsterGroups"] = {
             3,
             4
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 1800
-            }
         },
         ["OpenCond"] = {
             ["level"] = 3
@@ -101,24 +69,11 @@ return {
         ["Type"] = 1,
         ["Level"] = 5,
         ["Name"] = "5级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 16000,
         ["GatherSpeed"] = 800,
         ["MonsterGroups"] = {
             4,
             5
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 2500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 10
-            }
         },
         ["OpenCond"] = {
             ["level"] = 4
@@ -129,24 +84,11 @@ return {
         ["Type"] = 1,
         ["Level"] = 6,
         ["Name"] = "6级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 22000,
         ["GatherSpeed"] = 1000,
         ["MonsterGroups"] = {
             5,
             6
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 3500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 20
-            }
         },
         ["OpenCond"] = {
             ["level"] = 5
@@ -157,25 +99,12 @@ return {
         ["Type"] = 1,
         ["Level"] = 7,
         ["Name"] = "7级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 30000,
         ["GatherSpeed"] = 1300,
         ["MonsterGroups"] = {
             6,
             7,
             8
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 5000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 30
-            }
         },
         ["OpenCond"] = {
             ["level"] = 6
@@ -186,24 +115,11 @@ return {
         ["Type"] = 1,
         ["Level"] = 8,
         ["Name"] = "8级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 40000,
         ["GatherSpeed"] = 1600,
         ["MonsterGroups"] = {
             7,
             8
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 7000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 50
-            }
         },
         ["OpenCond"] = {
             ["level"] = 7
@@ -214,25 +130,12 @@ return {
         ["Type"] = 1,
         ["Level"] = 9,
         ["Name"] = "9级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 52000,
         ["GatherSpeed"] = 2000,
         ["MonsterGroups"] = {
             8,
             9,
             10
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 10000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 80
-            }
         },
         ["OpenCond"] = {
             ["level"] = 8
@@ -243,25 +146,12 @@ return {
         ["Type"] = 1,
         ["Level"] = 10,
         ["Name"] = "10级粮田",
-        ["OutputItem"] = 1,
         ["Capacity"] = 68000,
         ["GatherSpeed"] = 2500,
         ["MonsterGroups"] = {
             9,
             10,
             101
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 1,
-                ["item_count"] = 15000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 100
-            }
         },
         ["OpenCond"] = {
             ["level"] = 9
@@ -272,19 +162,11 @@ return {
         ["Type"] = 2,
         ["Level"] = 1,
         ["Name"] = "1级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 2000,
         ["GatherSpeed"] = 200,
         ["MonsterGroups"] = {
             1,
             2
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 500
-            }
         },
         ["OpenCond"] = {
             ["level"] = 1
@@ -295,20 +177,12 @@ return {
         ["Type"] = 2,
         ["Level"] = 2,
         ["Name"] = "2级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 4000,
         ["GatherSpeed"] = 300,
         ["MonsterGroups"] = {
             1,
             2,
             3
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 800
-            }
         },
         ["OpenCond"] = {
             ["level"] = 1
@@ -319,19 +193,11 @@ return {
         ["Type"] = 2,
         ["Level"] = 3,
         ["Name"] = "3级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 7000,
         ["GatherSpeed"] = 450,
         ["MonsterGroups"] = {
             2,
             3
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 1200
-            }
         },
         ["OpenCond"] = {
             ["level"] = 2
@@ -342,19 +208,11 @@ return {
         ["Type"] = 2,
         ["Level"] = 4,
         ["Name"] = "4级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 11000,
         ["GatherSpeed"] = 600,
         ["MonsterGroups"] = {
             3,
             4
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 1800
-            }
         },
         ["OpenCond"] = {
             ["level"] = 3
@@ -365,24 +223,11 @@ return {
         ["Type"] = 2,
         ["Level"] = 5,
         ["Name"] = "5级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 16000,
         ["GatherSpeed"] = 800,
         ["MonsterGroups"] = {
             4,
             5
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 2500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 10
-            }
         },
         ["OpenCond"] = {
             ["level"] = 4
@@ -393,25 +238,12 @@ return {
         ["Type"] = 2,
         ["Level"] = 6,
         ["Name"] = "6级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 22000,
         ["GatherSpeed"] = 1000,
         ["MonsterGroups"] = {
             5,
             6,
             7
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 3500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 20
-            }
         },
         ["OpenCond"] = {
             ["level"] = 5
@@ -422,25 +254,12 @@ return {
         ["Type"] = 2,
         ["Level"] = 7,
         ["Name"] = "7级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 30000,
         ["GatherSpeed"] = 1300,
         ["MonsterGroups"] = {
             6,
             7,
             8
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 5000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 30
-            }
         },
         ["OpenCond"] = {
             ["level"] = 6
@@ -451,25 +270,12 @@ return {
         ["Type"] = 2,
         ["Level"] = 8,
         ["Name"] = "8级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 40000,
         ["GatherSpeed"] = 1600,
         ["MonsterGroups"] = {
             7,
             8,
             9
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 7000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 50
-            }
         },
         ["OpenCond"] = {
             ["level"] = 7
@@ -480,25 +286,12 @@ return {
         ["Type"] = 2,
         ["Level"] = 9,
         ["Name"] = "9级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 52000,
         ["GatherSpeed"] = 2000,
         ["MonsterGroups"] = {
             8,
             9,
             10
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 10000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 80
-            }
         },
         ["OpenCond"] = {
             ["level"] = 8
@@ -509,25 +302,12 @@ return {
         ["Type"] = 2,
         ["Level"] = 10,
         ["Name"] = "10级林场",
-        ["OutputItem"] = 2,
         ["Capacity"] = 68000,
         ["GatherSpeed"] = 2500,
         ["MonsterGroups"] = {
             9,
             10,
             102
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 2,
-                ["item_count"] = 15000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 100
-            }
         },
         ["OpenCond"] = {
             ["level"] = 9
@@ -538,19 +318,11 @@ return {
         ["Type"] = 3,
         ["Level"] = 1,
         ["Name"] = "1级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 1500,
         ["GatherSpeed"] = 150,
         ["MonsterGroups"] = {
             1,
             2
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 400
-            }
         },
         ["OpenCond"] = {
             ["level"] = 1
@@ -561,19 +333,11 @@ return {
         ["Type"] = 3,
         ["Level"] = 2,
         ["Name"] = "2级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 3000,
         ["GatherSpeed"] = 220,
         ["MonsterGroups"] = {
             2,
             3
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 600
-            }
         },
         ["OpenCond"] = {
             ["level"] = 2
@@ -584,19 +348,11 @@ return {
         ["Type"] = 3,
         ["Level"] = 3,
         ["Name"] = "3级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 5500,
         ["GatherSpeed"] = 350,
         ["MonsterGroups"] = {
             3,
             4
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 900
-            }
         },
         ["OpenCond"] = {
             ["level"] = 3
@@ -607,19 +363,11 @@ return {
         ["Type"] = 3,
         ["Level"] = 4,
         ["Name"] = "4级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 9000,
         ["GatherSpeed"] = 480,
         ["MonsterGroups"] = {
             4,
             5
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 1400
-            }
         },
         ["OpenCond"] = {
             ["level"] = 4
@@ -630,25 +378,12 @@ return {
         ["Type"] = 3,
         ["Level"] = 5,
         ["Name"] = "5级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 13000,
         ["GatherSpeed"] = 650,
         ["MonsterGroups"] = {
             5,
             6,
             7
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 2000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 10
-            }
         },
         ["OpenCond"] = {
             ["level"] = 5
@@ -659,24 +394,11 @@ return {
         ["Type"] = 3,
         ["Level"] = 6,
         ["Name"] = "6级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 18000,
         ["GatherSpeed"] = 850,
         ["MonsterGroups"] = {
             6,
             7
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 2800
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 20
-            }
         },
         ["OpenCond"] = {
             ["level"] = 6
@@ -687,25 +409,12 @@ return {
         ["Type"] = 3,
         ["Level"] = 7,
         ["Name"] = "7级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 25000,
         ["GatherSpeed"] = 1100,
         ["MonsterGroups"] = {
             7,
             8,
             9
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 4000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 30
-            }
         },
         ["OpenCond"] = {
             ["level"] = 7
@@ -716,24 +425,11 @@ return {
         ["Type"] = 3,
         ["Level"] = 8,
         ["Name"] = "8级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 33000,
         ["GatherSpeed"] = 1400,
         ["MonsterGroups"] = {
             8,
             9
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 5500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 50
-            }
         },
         ["OpenCond"] = {
             ["level"] = 8
@@ -744,25 +440,12 @@ return {
         ["Type"] = 3,
         ["Level"] = 9,
         ["Name"] = "9级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 43000,
         ["GatherSpeed"] = 1800,
         ["MonsterGroups"] = {
             9,
             10,
             103
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 8000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 80
-            }
         },
         ["OpenCond"] = {
             ["level"] = 9
@@ -773,25 +456,12 @@ return {
         ["Type"] = 3,
         ["Level"] = 10,
         ["Name"] = "10级铁矿",
-        ["OutputItem"] = 3,
         ["Capacity"] = 56000,
         ["GatherSpeed"] = 2200,
         ["MonsterGroups"] = {
             10,
             103,
             201
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 3,
-                ["item_count"] = 12000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 100
-            }
         },
         ["OpenCond"] = {
             ["level"] = 10
@@ -802,19 +472,11 @@ return {
         ["Type"] = 4,
         ["Level"] = 1,
         ["Name"] = "1级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 1500,
         ["GatherSpeed"] = 150,
         ["MonsterGroups"] = {
             1,
             2
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 400
-            }
         },
         ["OpenCond"] = {
             ["level"] = 1
@@ -825,19 +487,11 @@ return {
         ["Type"] = 4,
         ["Level"] = 2,
         ["Name"] = "2级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 3000,
         ["GatherSpeed"] = 220,
         ["MonsterGroups"] = {
             2,
             3
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 600
-            }
         },
         ["OpenCond"] = {
             ["level"] = 2
@@ -848,19 +502,11 @@ return {
         ["Type"] = 4,
         ["Level"] = 3,
         ["Name"] = "3级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 5500,
         ["GatherSpeed"] = 350,
         ["MonsterGroups"] = {
             3,
             4
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 900
-            }
         },
         ["OpenCond"] = {
             ["level"] = 3
@@ -871,19 +517,11 @@ return {
         ["Type"] = 4,
         ["Level"] = 4,
         ["Name"] = "4级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 9000,
         ["GatherSpeed"] = 480,
         ["MonsterGroups"] = {
             4,
             5
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 1400
-            }
         },
         ["OpenCond"] = {
             ["level"] = 4
@@ -894,25 +532,12 @@ return {
         ["Type"] = 4,
         ["Level"] = 5,
         ["Name"] = "5级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 13000,
         ["GatherSpeed"] = 650,
         ["MonsterGroups"] = {
             5,
             6,
             7
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 2000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 10
-            }
         },
         ["OpenCond"] = {
             ["level"] = 5
@@ -923,24 +548,11 @@ return {
         ["Type"] = 4,
         ["Level"] = 6,
         ["Name"] = "6级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 18000,
         ["GatherSpeed"] = 850,
         ["MonsterGroups"] = {
             6,
             7
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 2800
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 20
-            }
         },
         ["OpenCond"] = {
             ["level"] = 6
@@ -951,25 +563,12 @@ return {
         ["Type"] = 4,
         ["Level"] = 7,
         ["Name"] = "7级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 25000,
         ["GatherSpeed"] = 1100,
         ["MonsterGroups"] = {
             7,
             8,
             9
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 4000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 30
-            }
         },
         ["OpenCond"] = {
             ["level"] = 7
@@ -980,24 +579,11 @@ return {
         ["Type"] = 4,
         ["Level"] = 8,
         ["Name"] = "8级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 33000,
         ["GatherSpeed"] = 1400,
         ["MonsterGroups"] = {
             8,
             9
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 5500
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 50
-            }
         },
         ["OpenCond"] = {
             ["level"] = 8
@@ -1008,25 +594,12 @@ return {
         ["Type"] = 4,
         ["Level"] = 9,
         ["Name"] = "9级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 43000,
         ["GatherSpeed"] = 1800,
         ["MonsterGroups"] = {
             9,
             10,
             103
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 8000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 80
-            }
         },
         ["OpenCond"] = {
             ["level"] = 9
@@ -1037,25 +610,12 @@ return {
         ["Type"] = 4,
         ["Level"] = 10,
         ["Name"] = "10级石场",
-        ["OutputItem"] = 4,
         ["Capacity"] = 56000,
         ["GatherSpeed"] = 2200,
         ["MonsterGroups"] = {
             10,
             103,
             201
-        },
-        ["Reward"] = {
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 4,
-                ["item_count"] = 12000
-            },
-            {
-                ["reward_type"] = 1,
-                ["item_id"] = 100,
-                ["item_count"] = 100
-            }
         },
         ["OpenCond"] = {
             ["level"] = 10

@@ -15,22 +15,22 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 20000
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 20000
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 8000
+                ["item_count"] = 1600
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 4,
-                ["item_count"] = 10000
+                ["item_count"] = 2000
             }
         }
     },
@@ -46,7 +46,7 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 103,
-                ["item_count"] = 10
+                ["item_count"] = 2
             }
         }
     },
@@ -62,22 +62,22 @@ return {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 15000
+                ["item_count"] = 3000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 15000
+                ["item_count"] = 3000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 8000
+                ["item_count"] = 1600
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 4,
-                ["item_count"] = 8000
+                ["item_count"] = 1600
             }
         }
     },
@@ -89,17 +89,17 @@ return {
             ["type"] = 6,
             ["item_id"] = 1
         },
-        ["Target"] = 50000,
+        ["Target"] = 30000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
-                ["item_count"] = 20000
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 8000
+                ["item_count"] = 1600
             }
         }
     },
@@ -111,17 +111,17 @@ return {
             ["type"] = 6,
             ["item_id"] = 2
         },
-        ["Target"] = 50000,
+        ["Target"] = 30000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 2,
-                ["item_count"] = 20000
+                ["item_count"] = 4000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 3,
-                ["item_count"] = 8000
+                ["item_count"] = 1600
             }
         }
     },
@@ -133,17 +133,17 @@ return {
             ["type"] = 6,
             ["item_id"] = 4
         },
-        ["Target"] = 30000,
+        ["Target"] = 20000,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 4,
-                ["item_count"] = 15000
+                ["item_count"] = 3000
             },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 100,
-                ["item_count"] = 50
+                ["item_count"] = 25
             }
         }
     }
