@@ -214,7 +214,7 @@ return {
         ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
-        ["Effect"] = 1000
+        ["Effect"] = 500
     },
     {
         ["Id"] = 202,
@@ -231,7 +231,7 @@ return {
             }
         },
         ["Power"] = 250,
-        ["Effect"] = 1500
+        ["Effect"] = 750
     },
     {
         ["Id"] = 203,
@@ -248,7 +248,7 @@ return {
             }
         },
         ["Power"] = 450,
-        ["Effect"] = 2000
+        ["Effect"] = 1000
     },
     {
         ["Id"] = 204,
@@ -265,7 +265,7 @@ return {
             }
         },
         ["Power"] = 700,
-        ["Effect"] = 2500
+        ["Effect"] = 1250
     },
     {
         ["Id"] = 205,
@@ -282,7 +282,7 @@ return {
             }
         },
         ["Power"] = 1000,
-        ["Effect"] = 3000
+        ["Effect"] = 1500
     },
     {
         ["Id"] = 206,
@@ -299,7 +299,7 @@ return {
             }
         },
         ["Power"] = 1400,
-        ["Effect"] = 3500
+        ["Effect"] = 1750
     },
     {
         ["Id"] = 207,
@@ -316,7 +316,7 @@ return {
             }
         },
         ["Power"] = 1900,
-        ["Effect"] = 4000
+        ["Effect"] = 2000
     },
     {
         ["Id"] = 208,
@@ -333,7 +333,7 @@ return {
             }
         },
         ["Power"] = 2500,
-        ["Effect"] = 4500
+        ["Effect"] = 2250
     },
     {
         ["Id"] = 209,
@@ -350,7 +350,7 @@ return {
             }
         },
         ["Power"] = 3200,
-        ["Effect"] = 5000
+        ["Effect"] = 2500
     },
     {
         ["Id"] = 210,
@@ -367,7 +367,7 @@ return {
             }
         },
         ["Power"] = 4000,
-        ["Effect"] = 5500
+        ["Effect"] = 2750
     },
     {
         ["Id"] = 301,
@@ -544,7 +544,7 @@ return {
         ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
-        ["Effect"] = 500
+        ["Effect"] = 250
     },
     {
         ["Id"] = 402,
@@ -561,7 +561,7 @@ return {
             }
         },
         ["Power"] = 250,
-        ["Effect"] = 700
+        ["Effect"] = 350
     },
     {
         ["Id"] = 403,
@@ -578,7 +578,7 @@ return {
             }
         },
         ["Power"] = 450,
-        ["Effect"] = 900
+        ["Effect"] = 450
     },
     {
         ["Id"] = 404,
@@ -595,7 +595,7 @@ return {
             }
         },
         ["Power"] = 700,
-        ["Effect"] = 1100
+        ["Effect"] = 550
     },
     {
         ["Id"] = 405,
@@ -612,7 +612,7 @@ return {
             }
         },
         ["Power"] = 1000,
-        ["Effect"] = 1300
+        ["Effect"] = 650
     },
     {
         ["Id"] = 406,
@@ -629,7 +629,7 @@ return {
             }
         },
         ["Power"] = 1400,
-        ["Effect"] = 1500
+        ["Effect"] = 750
     },
     {
         ["Id"] = 407,
@@ -646,7 +646,7 @@ return {
             }
         },
         ["Power"] = 1900,
-        ["Effect"] = 1700
+        ["Effect"] = 850
     },
     {
         ["Id"] = 408,
@@ -663,7 +663,7 @@ return {
             }
         },
         ["Power"] = 2500,
-        ["Effect"] = 1900
+        ["Effect"] = 950
     },
     {
         ["Id"] = 409,
@@ -680,7 +680,7 @@ return {
             }
         },
         ["Power"] = 3200,
-        ["Effect"] = 2100
+        ["Effect"] = 1050
     },
     {
         ["Id"] = 410,
@@ -697,7 +697,7 @@ return {
             }
         },
         ["Power"] = 4000,
-        ["Effect"] = 2300
+        ["Effect"] = 1150
     },
     {
         ["Id"] = 501,
@@ -709,7 +709,7 @@ return {
         ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
-        ["Effect"] = 500
+        ["Effect"] = 250
     },
     {
         ["Id"] = 502,
@@ -726,7 +726,7 @@ return {
             }
         },
         ["Power"] = 250,
-        ["Effect"] = 700
+        ["Effect"] = 350
     },
     {
         ["Id"] = 503,
@@ -743,7 +743,7 @@ return {
             }
         },
         ["Power"] = 450,
-        ["Effect"] = 900
+        ["Effect"] = 450
     },
     {
         ["Id"] = 504,
@@ -760,7 +760,7 @@ return {
             }
         },
         ["Power"] = 700,
-        ["Effect"] = 1100
+        ["Effect"] = 550
     },
     {
         ["Id"] = 505,
@@ -777,7 +777,7 @@ return {
             }
         },
         ["Power"] = 1000,
-        ["Effect"] = 1300
+        ["Effect"] = 650
     },
     {
         ["Id"] = 506,
@@ -794,7 +794,7 @@ return {
             }
         },
         ["Power"] = 1400,
-        ["Effect"] = 1500
+        ["Effect"] = 750
     },
     {
         ["Id"] = 507,
@@ -811,7 +811,7 @@ return {
             }
         },
         ["Power"] = 1900,
-        ["Effect"] = 1700
+        ["Effect"] = 850
     },
     {
         ["Id"] = 508,
@@ -828,7 +828,7 @@ return {
             }
         },
         ["Power"] = 2500,
-        ["Effect"] = 1900
+        ["Effect"] = 950
     },
     {
         ["Id"] = 509,
@@ -845,7 +845,7 @@ return {
             }
         },
         ["Power"] = 3200,
-        ["Effect"] = 2100
+        ["Effect"] = 1050
     },
     {
         ["Id"] = 510,
@@ -862,7 +862,7 @@ return {
             }
         },
         ["Power"] = 4000,
-        ["Effect"] = 2300
+        ["Effect"] = 1150
     },
     {
         ["Id"] = 601,
@@ -874,7 +874,7 @@ return {
         ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 100,
-        ["Effect"] = 500
+        ["Effect"] = 250
     },
     {
         ["Id"] = 602,
@@ -891,7 +891,7 @@ return {
             }
         },
         ["Power"] = 250,
-        ["Effect"] = 700
+        ["Effect"] = 350
     },
     {
         ["Id"] = 603,
@@ -908,7 +908,7 @@ return {
             }
         },
         ["Power"] = 450,
-        ["Effect"] = 900
+        ["Effect"] = 450
     },
     {
         ["Id"] = 604,
@@ -925,7 +925,7 @@ return {
             }
         },
         ["Power"] = 700,
-        ["Effect"] = 1100
+        ["Effect"] = 550
     },
     {
         ["Id"] = 605,
@@ -942,7 +942,7 @@ return {
             }
         },
         ["Power"] = 1000,
-        ["Effect"] = 1300
+        ["Effect"] = 650
     },
     {
         ["Id"] = 606,
@@ -959,7 +959,7 @@ return {
             }
         },
         ["Power"] = 1400,
-        ["Effect"] = 1500
+        ["Effect"] = 750
     },
     {
         ["Id"] = 607,
@@ -976,7 +976,7 @@ return {
             }
         },
         ["Power"] = 1900,
-        ["Effect"] = 1700
+        ["Effect"] = 850
     },
     {
         ["Id"] = 608,
@@ -993,7 +993,7 @@ return {
             }
         },
         ["Power"] = 2500,
-        ["Effect"] = 1900
+        ["Effect"] = 950
     },
     {
         ["Id"] = 609,
@@ -1010,7 +1010,7 @@ return {
             }
         },
         ["Power"] = 3200,
-        ["Effect"] = 2100
+        ["Effect"] = 1050
     },
     {
         ["Id"] = 610,
@@ -1027,7 +1027,7 @@ return {
             }
         },
         ["Power"] = 4000,
-        ["Effect"] = 2300
+        ["Effect"] = 1150
     },
     {
         ["Id"] = 701,
@@ -1039,7 +1039,7 @@ return {
         ["CostStone"] = 0,
         ["UpgradeLimit"] = {},
         ["Power"] = 80,
-        ["Effect"] = 300
+        ["Effect"] = 150
     },
     {
         ["Id"] = 702,
@@ -1056,7 +1056,7 @@ return {
             }
         },
         ["Power"] = 200,
-        ["Effect"] = 450
+        ["Effect"] = 225
     },
     {
         ["Id"] = 703,
@@ -1073,7 +1073,7 @@ return {
             }
         },
         ["Power"] = 360,
-        ["Effect"] = 600
+        ["Effect"] = 300
     },
     {
         ["Id"] = 704,
@@ -1090,7 +1090,7 @@ return {
             }
         },
         ["Power"] = 560,
-        ["Effect"] = 750
+        ["Effect"] = 375
     },
     {
         ["Id"] = 705,
@@ -1107,7 +1107,7 @@ return {
             }
         },
         ["Power"] = 800,
-        ["Effect"] = 900
+        ["Effect"] = 450
     },
     {
         ["Id"] = 706,
@@ -1124,7 +1124,7 @@ return {
             }
         },
         ["Power"] = 1120,
-        ["Effect"] = 1050
+        ["Effect"] = 525
     },
     {
         ["Id"] = 707,
@@ -1141,7 +1141,7 @@ return {
             }
         },
         ["Power"] = 1520,
-        ["Effect"] = 1200
+        ["Effect"] = 600
     },
     {
         ["Id"] = 708,
@@ -1158,7 +1158,7 @@ return {
             }
         },
         ["Power"] = 2000,
-        ["Effect"] = 1350
+        ["Effect"] = 675
     },
     {
         ["Id"] = 709,
@@ -1175,7 +1175,7 @@ return {
             }
         },
         ["Power"] = 2560,
-        ["Effect"] = 1500
+        ["Effect"] = 750
     },
     {
         ["Id"] = 710,
@@ -1192,7 +1192,7 @@ return {
             }
         },
         ["Power"] = 3200,
-        ["Effect"] = 1650
+        ["Effect"] = 825
     },
     {
         ["Id"] = 801,

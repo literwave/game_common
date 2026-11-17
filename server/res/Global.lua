@@ -38,7 +38,7 @@ return {
             },
             {
                 ["reward_type"] = 4,
-                ["item_count"] = 8000
+                ["item_count"] = 1200
             }
         }
     },
@@ -68,7 +68,7 @@ return {
     },
     {
         ["Id"] = 8,
-        ["value1"] = 20000
+        ["value1"] = 6000
     },
     {
         ["Id"] = 9,

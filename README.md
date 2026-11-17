@@ -1,5 +1,26 @@
 # game_common
 
+## 兵力配置基准（2026-11-18）
+
+本次调整写入 `tsv/` 正式源表，并由 `vis_conf` 同步导出到 `client/res/` 和 `server/res/`，不使用工具内的示例表。
+
+| 项目 | 调整前 | 调整后 |
+|---|---:|---:|
+| 2/3/4/5 星武将 1 级基础带兵 | 600/800/1000/1200 | 300/400/500/600 |
+| 武将每级带兵增量 | 100 | 50 |
+| 5 星武将 50 级个人带兵上限 | 6100 | 3050 |
+| 校场 1–10 级整队上限 | 1000–5500，每级 +500 | 500–2750，每级 +250 |
+| 各兵营 1–10 级效果容量 | 500–2300，每级 +200 | 250–1150，每级 +100 |
+| 医馆 1–10 级效果容量 | 300–1650，每级 +150 | 150–825，每级 +75 |
+| 开局预备兵奖励（Global 1，奖励类型 4） | 8000 | 1200 |
+| 城中预备兵上限（Global 8） | 20000 | 6000 |
+
+地图怪物和城池守军共用 `Monster.Soldier`，兵力同步减半；`Monster.Power` 按新兵力和既有公式重新计算。武将、校场和守军的兵力比例保留，实际战斗结果仍须由服务端战斗验证，不能据此断言胜率或战斗回合不变。校场限制整队兵力，武将个人上限不等于整队可出征兵力。
+
+开局预备兵 1200 对应两份初始 5 星武将基础带兵；储备上限 6000 可容纳两支满级校场部队（2750 × 2）并留出 500 补兵余量。其他资源奖励、建筑升级消耗、怪物奖励、技能参数和城防耐久未改动。本次没有引入新的征兵恢复速度或单兵消耗规则。
+
+更新导出文件不等于发布服务器配置。开局奖励只影响新建角色，已有账号的部队、预备兵和伤兵属于存档数据；发布前须核对服务端容量校验及超限存量的处理方案，不应直接清空或截断玩家已获得的兵力。
+
 游戏配置表仓库。`tsv/` 是源表，由 [星图](https://github.com/literwave/vis_conf) 导出为客户端 JSON 和服务端 Lua。
 
 ## 目录
@@ -49,7 +70,7 @@ git submodule update --init --recursive
 |---|---|
 | `BuildingDetail` | 建筑类型；`Type` 1主城/2军事/3资源/4功能/5防御；资源建筑含农场/伐木/铁矿/采石场（`Id=16`，`OutputItem=4` 石料）；`Icon` 只导出到前端；`Id` 1 为主城（任务 `bid` 对齐） |
 | `BuildingLv` | 建筑等级；粮/木/铁/石消耗、前置与效果值（建造/升级即时完成，无时间）；`BuildingType` 指向 `BuildingDetail.Id`；协议见 `proto/build.proto` |
-| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 城内预备/最大兵力（`value1=20000`，含多部队补兵余量），`Id=9` 单频道最大聊天记录条数（`value1`）；联盟相关：`Id=10` 创建消耗令牌数（道具 Id=100），`Id=11` 名称最大长度，`Id=12` 公告最大长度，`Id=13` 宣言最大长度，`Id=14` 申请列表上限；邮件：`Id=15` 单类型最大邮件条数，`Id=16` 默认邮件保留天数（`Mail.ExpireDay=0` 时用）；地图标记：`Id=18` 标记点上限（`value1`，协议见 `world.proto`）；资源地：`Id=19` 占领倒计时秒数（`value1`，击败守卫后起算，到期才完成占领；只有首占在此时发放 `ResLandFirst`，非首占无奖励），`Id=20` 个人占领资源地上限（`value1=30`，已占领数达上限后须放弃再占）；行军速度见 `TargetType.Speed`；创建开启条件见 `SystemOpen.CREATE_ALLIANCE`；人数上限见 `AllianceLv` |
+| `Global` | 全局常量；`Id=1` 初始奖励（`reward_type`：1道具/3武将/4兵力），`Id=2` 初始武将，`Id=8` 城内预备/最大兵力（`value1=6000`，含多部队补兵余量），`Id=9` 单频道最大聊天记录条数（`value1`）；联盟相关：`Id=10` 创建消耗令牌数（道具 Id=100），`Id=11` 名称最大长度，`Id=12` 公告最大长度，`Id=13` 宣言最大长度，`Id=14` 申请列表上限；邮件：`Id=15` 单类型最大邮件条数，`Id=16` 默认邮件保留天数（`Mail.ExpireDay=0` 时用）；地图标记：`Id=18` 标记点上限（`value1`，协议见 `world.proto`）；资源地：`Id=19` 占领倒计时秒数（`value1`，击败守卫后起算，到期才完成占领；只有首占在此时发放 `ResLandFirst`，非首占无奖励），`Id=20` 个人占领资源地上限（`value1=30`，已占领数达上限后须放弃再占）；行军速度见 `TargetType.Speed`；创建开启条件见 `SystemOpen.CREATE_ALLIANCE`；人数上限见 `AllianceLv` |
 | `ChatChannel` | 聊天频道枚举；对齐 `chat.proto` 的 `channel`：1世界/2联盟/3私聊；协议见 `proto/chat.proto` |
 | `MailKind` | 邮件类型枚举；对齐 `mail.proto` 的 `mailKind`：1系统/2联盟/3公告 |
 | `Mail` | 邮件模板；`Kind`→`MailKind`；协议 `mailId`→`Mail.Id`，实例唯一 id 为 `mailUid`；`Title`/`Content` 中 `%s` 由详情 `detailList` 替换；不配奖励，有奖时发信填协议 `rewardList`；`Icon`/`Sender` 只导出到前端；协议见 `proto/mail.proto` |
@@ -57,8 +78,8 @@ git submodule update --init --recursive
 | `AllianceJoinType` | 联盟加入方式枚举；对齐 `alliance.proto` 的 `joinType`：1自由加入/2需审批/3禁止加入 |
 | `AllianceLv` | 联盟等级；`MemberMax` 人数上限、`OfficerMax` 官员上限（不含盟主）、`Exp` 升到下一级所需贡献（满级为 0）；`memberMax` 协议字段取当前等级的 `MemberMax` |
 | `HeadIcon` | 头像资源 |
-| `Hero` | 武将 50 人（2★2 / 3★11 / 4★16 / 5★21，星级按历史地位：五虎与诸葛、郭嘉、荀彧、庞统为 5★，五子良将里张辽 5★、张郃与乐进 4★，潘凤、张让为 2★）；`Resources` / `Icon` / `name` 只导出到前端；`Quality` 与 `Star` 相同；`Camp` 为魏/蜀/吴/群，本版没有 SP，5★只有原有核心；战斗五维：`Attack` 武力、`Hp` 谋略、`Defense` 防御、`Speed` 速度、`Crit` 破坏（与客户端展示一致，非生命/暴击‰）；按职业分化（战士高武、法师高谋、坦克高防、刺客高速/破坏），同星同职业一档，5★武力最高是吕布；`SkillId` 指向自带技 `Skill.Id`（与武将 Id 对齐）；可学战法装在协议 `skillList`（`k`=技能 Id，`v`=等级）；`Soldier` 为 1 级基础带兵（按星级：2★=600 / 3★=800 / 4★=1000 / 5★=1200）；`Convert` 为已有武将重复获得时转奖励（同任务 `Reward`：`reward_type`/`item_id`/`item_count`，碎片 `item_id=10000+Hero.Id`）；升级经验与等级带兵见 `HeroLv`；装备/卸下/升级技能见 `hero.proto` |
-| `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0；`Soldier` 为等级带兵加成（`(Lv-1)*100`，Lv1=0）；单将带兵上限 = `Hero.Soldier + HeroLv.Soldier`（校场 `BuildingLv` Effect 仍约束整支出征上限） |
+| `Hero` | 武将 50 人（2★2 / 3★11 / 4★16 / 5★21，星级按历史地位：五虎与诸葛、郭嘉、荀彧、庞统为 5★，五子良将里张辽 5★、张郃与乐进 4★，潘凤、张让为 2★）；`Resources` / `Icon` / `name` 只导出到前端；`Quality` 与 `Star` 相同；`Camp` 为魏/蜀/吴/群，本版没有 SP，5★只有原有核心；战斗五维：`Attack` 武力、`Hp` 谋略、`Defense` 防御、`Speed` 速度、`Crit` 破坏（与客户端展示一致，非生命/暴击‰）；按职业分化（战士高武、法师高谋、坦克高防、刺客高速/破坏），同星同职业一档，5★武力最高是吕布；`SkillId` 指向自带技 `Skill.Id`（与武将 Id 对齐）；可学战法装在协议 `skillList`（`k`=技能 Id，`v`=等级）；`Soldier` 为 1 级基础带兵（按星级：2★=300 / 3★=400 / 4★=500 / 5★=600）；`Convert` 为已有武将重复获得时转奖励（同任务 `Reward`：`reward_type`/`item_id`/`item_count`，碎片 `item_id=10000+Hero.Id`）；升级经验与等级带兵见 `HeroLv`；装备/卸下/升级技能见 `hero.proto` |
+| `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0；`Soldier` 为等级带兵加成（`(Lv-1)*50`，Lv1=0）；单将带兵上限 = `Hero.Soldier + HeroLv.Soldier`（校场 `BuildingLv` Effect 仍约束整支出征上限） |
 | `Skill` | 技能/战法；`Icon` 只导出到前端；武将自带技 `Hero.SkillId`→`Skill.Id`（`1001–1050`）；可学战法 `2001–2040`（经技能书投放）；`Trigger` 1主动/2被动/3追击/4指挥；`Limit` 同时装备上限；协议见 `proto/skill.proto`（`skillId`+`skillLv`，无数量；`skillLv=0` 删除），装备/卸下/升级见 `proto/hero.proto` |
 | `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`2001–2040` 技能书（`Kind=10`，`useParams.skill_id`→`Skill.Id`，使用后习得该技能并带等级），`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符/10技能书；`Quality` 品质（只导出到前端；碎片对齐武将 `Star`）；`Icon`/`Desc`/`Quality` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速）；协议见 `proto/item.proto`（`req_all_item_data` 拉取快照，`sync_item_data` 单条同步） |
 | `Lottery` | 抽卡；`Id=1` 单抽 / `Id=10` 十连；`CostList` 消耗点将符（`item_id=103`）；`CommonPools`/`HeroPools` 为带 `weight` 的奖励列表（同 `reward_type`：1道具/3武将）；抽奖先按两池 `weight` 总和选池，再在池内加权；约 85% 普通（资源/令牌/加速/碎片/技能书）+ 15% 武将（池内约 3★43% / 4★30% / 2★14% / 5★12%，同星权重相同）；`CommonPools` 含部分可学战法书（`2001+`） |

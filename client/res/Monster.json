@@ -10,8 +10,8 @@
     "Defense": 55,
     "Speed": 40,
     "Crit": 28,
-    "Soldier": 1200,
-    "Power": 1400
+    "Soldier": 600,
+    "Power": 700
   },
   "2": {
     "Id": 2,
@@ -24,8 +24,8 @@
     "Defense": 42,
     "Speed": 52,
     "Crit": 36,
-    "Soldier": 1000,
-    "Power": 1120
+    "Soldier": 500,
+    "Power": 560
   },
   "3": {
     "Id": 3,
@@ -38,8 +38,8 @@
     "Defense": 50,
     "Speed": 62,
     "Crit": 40,
-    "Soldier": 1600,
-    "Power": 2050
+    "Soldier": 800,
+    "Power": 1020
   },
   "4": {
     "Id": 4,
@@ -52,8 +52,8 @@
     "Defense": 72,
     "Speed": 42,
     "Crit": 32,
-    "Soldier": 2000,
-    "Power": 3080
+    "Soldier": 1000,
+    "Power": 1540
   },
   "5": {
     "Id": 5,
@@ -66,8 +66,8 @@
     "Defense": 64,
     "Speed": 48,
     "Crit": 38,
-    "Soldier": 2600,
-    "Power": 4000
+    "Soldier": 1300,
+    "Power": 2000
   },
   "6": {
     "Id": 6,
@@ -80,8 +80,8 @@
     "Defense": 52,
     "Speed": 60,
     "Crit": 48,
-    "Soldier": 2800,
-    "Power": 4200
+    "Soldier": 1400,
+    "Power": 2100
   },
   "7": {
     "Id": 7,
@@ -94,8 +94,8 @@
     "Defense": 78,
     "Speed": 50,
     "Crit": 40,
-    "Soldier": 3600,
-    "Power": 6590
+    "Soldier": 1800,
+    "Power": 3290
   },
   "8": {
     "Id": 8,
@@ -108,8 +108,8 @@
     "Defense": 70,
     "Speed": 72,
     "Crit": 50,
-    "Soldier": 4200,
-    "Power": 7640
+    "Soldier": 2100,
+    "Power": 3820
   },
   "9": {
     "Id": 9,
@@ -122,8 +122,8 @@
     "Defense": 88,
     "Speed": 58,
     "Crit": 52,
-    "Soldier": 5000,
-    "Power": 10300
+    "Soldier": 2500,
+    "Power": 5150
   },
   "10": {
     "Id": 10,
@@ -136,8 +136,8 @@
     "Defense": 92,
     "Speed": 64,
     "Crit": 58,
-    "Soldier": 6200,
-    "Power": 13400
+    "Soldier": 3100,
+    "Power": 6700
   },
   "11": {
     "Id": 11,
@@ -150,8 +150,8 @@
     "Defense": 100,
     "Speed": 68,
     "Crit": 62,
-    "Soldier": 7500,
-    "Power": 17250
+    "Soldier": 3750,
+    "Power": 8630
   },
   "12": {
     "Id": 12,
@@ -164,8 +164,8 @@
     "Defense": 110,
     "Speed": 52,
     "Crit": 46,
-    "Soldier": 4200,
-    "Power": 9160
+    "Soldier": 2100,
+    "Power": 4580
   },
   "13": {
     "Id": 13,
@@ -178,8 +178,8 @@
     "Defense": 115,
     "Speed": 60,
     "Crit": 55,
-    "Soldier": 6800,
-    "Power": 16520
+    "Soldier": 3400,
+    "Power": 8260
   },
   "14": {
     "Id": 14,
@@ -192,8 +192,8 @@
     "Defense": 125,
     "Speed": 74,
     "Crit": 70,
-    "Soldier": 10000,
-    "Power": 26500
+    "Soldier": 5000,
+    "Power": 13250
   },
   "21": {
     "Id": 21,
@@ -206,8 +206,8 @@
     "Defense": 80,
     "Speed": 42,
     "Crit": 30,
-    "Soldier": 1080,
-    "Power": 1640
+    "Soldier": 540,
+    "Power": 820
   },
   "31": {
     "Id": 31,
@@ -220,8 +220,8 @@
     "Defense": 50,
     "Speed": 55,
     "Crit": 40,
-    "Soldier": 900,
-    "Power": 1210
+    "Soldier": 450,
+    "Power": 600
   },
   "41": {
     "Id": 41,
@@ -234,8 +234,8 @@
     "Defense": 78,
     "Speed": 50,
     "Crit": 42,
-    "Soldier": 1200,
-    "Power": 1900
+    "Soldier": 600,
+    "Power": 950
   },
   "22": {
     "Id": 22,
@@ -248,8 +248,8 @@
     "Defense": 88,
     "Speed": 44,
     "Crit": 33,
-    "Soldier": 1440,
-    "Power": 2400
+    "Soldier": 720,
+    "Power": 1200
   },
   "32": {
     "Id": 32,
@@ -262,8 +262,8 @@
     "Defense": 55,
     "Speed": 58,
     "Crit": 44,
-    "Soldier": 1200,
-    "Power": 1760
+    "Soldier": 600,
+    "Power": 880
   },
   "42": {
     "Id": 42,
@@ -276,8 +276,8 @@
     "Defense": 85,
     "Speed": 52,
     "Crit": 45,
-    "Soldier": 1600,
-    "Power": 2770
+    "Soldier": 800,
+    "Power": 1380
   },
   "23": {
     "Id": 23,
@@ -290,8 +290,8 @@
     "Defense": 96,
     "Speed": 46,
     "Crit": 36,
-    "Soldier": 1800,
-    "Power": 3280
+    "Soldier": 900,
+    "Power": 1640
   },
   "33": {
     "Id": 33,
@@ -304,8 +304,8 @@
     "Defense": 60,
     "Speed": 61,
     "Crit": 48,
-    "Soldier": 1500,
-    "Power": 2400
+    "Soldier": 750,
+    "Power": 1200
   },
   "43": {
     "Id": 43,
@@ -318,8 +318,8 @@
     "Defense": 92,
     "Speed": 54,
     "Crit": 48,
-    "Soldier": 2000,
-    "Power": 3760
+    "Soldier": 1000,
+    "Power": 1880
   },
   "24": {
     "Id": 24,
@@ -332,8 +332,8 @@
     "Defense": 104,
     "Speed": 48,
     "Crit": 39,
-    "Soldier": 2340,
-    "Power": 4610
+    "Soldier": 1170,
+    "Power": 2300
   },
   "34": {
     "Id": 34,
@@ -346,8 +346,8 @@
     "Defense": 65,
     "Speed": 64,
     "Crit": 52,
-    "Soldier": 1950,
-    "Power": 3370
+    "Soldier": 975,
+    "Power": 1690
   },
   "44": {
     "Id": 44,
@@ -360,8 +360,8 @@
     "Defense": 99,
     "Speed": 56,
     "Crit": 51,
-    "Soldier": 2600,
-    "Power": 5280
+    "Soldier": 1300,
+    "Power": 2640
   },
   "25": {
     "Id": 25,
@@ -374,8 +374,8 @@
     "Defense": 112,
     "Speed": 50,
     "Crit": 42,
-    "Soldier": 2520,
-    "Power": 5340
+    "Soldier": 1260,
+    "Power": 2670
   },
   "35": {
     "Id": 35,
@@ -388,8 +388,8 @@
     "Defense": 70,
     "Speed": 67,
     "Crit": 56,
-    "Soldier": 2100,
-    "Power": 3910
+    "Soldier": 1050,
+    "Power": 1950
   },
   "45": {
     "Id": 45,
@@ -402,8 +402,8 @@
     "Defense": 106,
     "Speed": 58,
     "Crit": 54,
-    "Soldier": 2800,
-    "Power": 6100
+    "Soldier": 1400,
+    "Power": 3050
   },
   "26": {
     "Id": 26,
@@ -416,8 +416,8 @@
     "Defense": 120,
     "Speed": 52,
     "Crit": 45,
-    "Soldier": 3240,
-    "Power": 7350
+    "Soldier": 1620,
+    "Power": 3680
   },
   "36": {
     "Id": 36,
@@ -430,8 +430,8 @@
     "Defense": 75,
     "Speed": 70,
     "Crit": 60,
-    "Soldier": 2700,
-    "Power": 5370
+    "Soldier": 1350,
+    "Power": 2690
   },
   "46": {
     "Id": 46,
@@ -444,8 +444,8 @@
     "Defense": 113,
     "Speed": 60,
     "Crit": 57,
-    "Soldier": 3600,
-    "Power": 8390
+    "Soldier": 1800,
+    "Power": 4190
   },
   "27": {
     "Id": 27,
@@ -458,8 +458,8 @@
     "Defense": 128,
     "Speed": 54,
     "Crit": 48,
-    "Soldier": 3780,
-    "Power": 9150
+    "Soldier": 1890,
+    "Power": 4570
   },
   "37": {
     "Id": 37,
@@ -472,8 +472,8 @@
     "Defense": 80,
     "Speed": 73,
     "Crit": 64,
-    "Soldier": 3150,
-    "Power": 6680
+    "Soldier": 1575,
+    "Power": 3340
   },
   "47": {
     "Id": 47,
@@ -486,8 +486,8 @@
     "Defense": 120,
     "Speed": 62,
     "Crit": 60,
-    "Soldier": 4200,
-    "Power": 10420
+    "Soldier": 2100,
+    "Power": 5210
   },
   "28": {
     "Id": 28,
@@ -500,8 +500,8 @@
     "Defense": 136,
     "Speed": 56,
     "Crit": 51,
-    "Soldier": 4500,
-    "Power": 11560
+    "Soldier": 2250,
+    "Power": 5780
   },
   "38": {
     "Id": 38,
@@ -514,8 +514,8 @@
     "Defense": 85,
     "Speed": 76,
     "Crit": 68,
-    "Soldier": 3750,
-    "Power": 8440
+    "Soldier": 1875,
+    "Power": 4220
   },
   "48": {
     "Id": 48,
@@ -528,7 +528,7 @@
     "Defense": 127,
     "Speed": 64,
     "Crit": 63,
-    "Soldier": 5000,
-    "Power": 13150
+    "Soldier": 2500,
+    "Power": 6580
   }
 }
