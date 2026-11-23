@@ -39,7 +39,7 @@ return {
             ["type"] = 2,
             ["bid"] = 1
         },
-        ["Target"] = 3,
+        ["Target"] = 2,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -69,6 +69,11 @@ return {
         ["Target"] = 1,
         ["Reward"] = {
             {
+                ["reward_type"] = 3,
+                ["item_id"] = 1006,
+                ["item_count"] = 1
+            },
+            {
                 ["reward_type"] = 1,
                 ["item_id"] = 100,
                 ["item_count"] = 15
@@ -88,7 +93,7 @@ return {
         ["Cond"] = {
             ["type"] = 3
         },
-        ["Target"] = 3,
+        ["Target"] = 2,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
@@ -115,7 +120,7 @@ return {
         ["Cond"] = {
             ["type"] = 7
         },
-        ["Target"] = 3,
+        ["Target"] = 1,
         ["Reward"] = {
             {
                 ["reward_type"] = 1,
