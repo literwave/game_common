@@ -1,0 +1,86 @@
+[
+  {
+    "Id": 1,
+    "TaskId": 1001,
+    "CondType": 1,
+    "Order": 1,
+    "PreCheck": "claim_ready",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "主公，点击左下角军令，领取初入乱世的第一笔军资。",
+    "Jump": 0,
+    "TargetUI": "HudRoot/TaskTracker/TaskAction"
+  },
+  {
+    "Id": 2,
+    "TaskId": 1002,
+    "CondType": 2,
+    "Order": 2,
+    "PreCheck": "",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "根基未稳，请入【内城】将主城升至 3 级以固城防。",
+    "Jump": 1,
+    "TargetUI": "HudRoot/BottomNav/InnerCityButton"
+  },
+  {
+    "Id": 3,
+    "TaskId": 1003,
+    "CondType": 4,
+    "Order": 3,
+    "PreCheck": "",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "千军易得，一将难求。请前往【点将】招揽良将。",
+    "Jump": 2,
+    "TargetUI": "HudRoot/BottomNav/DrawButton"
+  },
+  {
+    "Id": 4,
+    "TaskId": 1004,
+    "CondType": 3,
+    "Order": 4,
+    "PreCheck": "",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "继续【点将】招纳贤才，麾下集齐 3 名武将便可整军备战。",
+    "Jump": 2,
+    "TargetUI": "HudRoot/BottomNav/DrawButton"
+  },
+  {
+    "Id": 5,
+    "TaskId": 1005,
+    "CondType": 7,
+    "Order": 5,
+    "PreCheck": "need_troop_hero",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "出征之前，需先在右侧【部队】中委任主将。",
+    "Jump": 6,
+    "TargetUI": "HudRoot/TaskTracker/TaskAction"
+  },
+  {
+    "Id": 6,
+    "TaskId": 1005,
+    "CondType": 7,
+    "Order": 6,
+    "PreCheck": "need_troop_soldier",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "兵马未足，请先为上阵武将【快速分兵】补充兵力。",
+    "Jump": 7,
+    "TargetUI": "HudRoot/TaskTracker/TaskAction"
+  },
+  {
+    "Id": 7,
+    "TaskId": 1005,
+    "CondType": 7,
+    "Order": 7,
+    "PreCheck": "troop_ready",
+    "Speaker": "郭嘉",
+    "Portrait": "ui/hero/card_1027",
+    "Dialog": "将士已备！点击左下角军令定位城外低级资源地，派兵【占领】。",
+    "Jump": 3,
+    "TargetUI": "HudRoot/TaskTracker/TaskAction"
+  }
+]

@@ -1,8 +1,8 @@
 
-÷
+Ð
 
 user.protoUsercommon.proto"
-c2s_user_base_info"Ÿ
+c2s_user_base_info"Ð
 s2c_user_base_info
 name (	Rname
 headIcon (RheadIcon
@@ -14,7 +14,15 @@ user.protoUsercommon.proto"
 cityPos (2.Common.p_posRcityPos
 
 allianceId	 (R
-allianceId"&
+allianceId/
+
+birthZones
+ (2.User.BirthZoneR
+birthZones"G
+	BirthZone
+key (Rkey
+name (	Rname
+route (	Rroute"&
 c2s_req_other_user
 uid (Ruid"˜
 s2c_req_other_user
@@ -38,13 +46,16 @@ allianceId"
 s2c_move_city'
 cityPos (2.Common.p_posRcityPos"<
 s2c_sync_city_pos'
-cityPos (2.Common.p_posRcityPos"7
+cityPos (2.Common.p_posRcityPos"U
 c2s_user_create
 name (	Rname
-sex (Rsex"7
+sex (Rsex
+	birthZone (R	birthZone"x
 s2c_user_create
 name (	Rname
-sex (Rsex"
+sex (Rsex'
+cityPos (2.Common.p_posRcityPos
+result (Rresult"
 c2s_req_user_res"C
 s2c_req_user_res/
 resList (2.Common.p_common_infoRresList"I
