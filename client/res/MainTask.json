@@ -56,7 +56,8 @@
         "item_id": 4,
         "item_count": 400
       }
-    ]
+    ],
+    "Jump": 1
   },
   {
     "Id": 1003,
@@ -85,7 +86,8 @@
         "item_id": 103,
         "item_count": 1
       }
-    ]
+    ],
+    "Jump": 2
   },
   {
     "Id": 1004,
@@ -97,7 +99,7 @@
     "Cond": {
       "type": 3
     },
-    "Target": 1,
+    "Target": 2,
     "Reward": [
       {
         "reward_type": 3,
@@ -119,7 +121,8 @@
         "item_id": 3,
         "item_count": 400
       }
-    ]
+    ],
+    "Jump": 2
   },
   {
     "Id": 1005,
@@ -148,7 +151,8 @@
         "item_id": 4,
         "item_count": 600
       }
-    ]
+    ],
+    "Jump": 3
   },
   {
     "Id": 1006,
@@ -188,7 +192,8 @@
         "item_id": 100,
         "item_count": 25
       }
-    ]
+    ],
+    "Jump": 1
   },
   {
     "Id": 1007,
@@ -213,7 +218,8 @@
         "item_id": 3,
         "item_count": 600
       }
-    ]
+    ],
+    "Jump": 4
   },
   {
     "Id": 1008,
@@ -243,7 +249,8 @@
         "item_id": 2,
         "item_count": 1000
       }
-    ]
+    ],
+    "Jump": 4
   },
   {
     "Id": 1009,
@@ -282,7 +289,8 @@
         "item_id": 103,
         "item_count": 2
       }
-    ]
+    ],
+    "Jump": 3
   },
   {
     "Id": 1010,
@@ -317,7 +325,8 @@
         "item_id": 4,
         "item_count": 2000
       }
-    ]
+    ],
+    "Jump": 1
   },
   {
     "Id": 1011,
@@ -341,7 +350,8 @@
         "item_id": 103,
         "item_count": 2
       }
-    ]
+    ],
+    "Jump": 2
   },
   {
     "Id": 1012,
@@ -375,7 +385,8 @@
         "item_id": 4,
         "item_count": 2000
       }
-    ]
+    ],
+    "Jump": 5
   },
   {
     "Id": 1013,
@@ -410,7 +421,8 @@
         "item_id": 4,
         "item_count": 3600
       }
-    ]
+    ],
+    "Jump": 1
   },
   {
     "Id": 1014,
@@ -440,7 +452,8 @@
         "item_id": 4,
         "item_count": 1600
       }
-    ]
+    ],
+    "Jump": 4
   },
   {
     "Id": 1015,
@@ -484,6 +497,7 @@
         "item_id": 103,
         "item_count": 3
       }
-    ]
+    ],
+    "Jump": 1
   }
 ]

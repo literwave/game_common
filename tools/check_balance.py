@@ -121,7 +121,7 @@ class BalanceChecks(unittest.TestCase):
 
     def test_source_export_consistency(self):
         rules = load_directory_key_rules(str(ROOT / 'tsv'))
-        reviewed = ('Global', 'BuildingDetail', 'BuildingLv', 'MainTask', 'DailyTask',
+        reviewed = ('Global', 'Guide', 'BuildingDetail', 'BuildingLv', 'MainTask', 'DailyTask',
                     'WeekTask', 'Activity', 'ResLand', 'ResLandFirst', 'Monster',
                     'MonsterGroup', 'Lottery', 'Hero', 'HeroLv', 'Skill', 'City', 'Item')
         for name in reviewed:

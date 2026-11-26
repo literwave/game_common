@@ -93,7 +93,7 @@ return {
         ["Cond"] = {
             ["type"] = 3
         },
-        ["Target"] = 1,
+        ["Target"] = 2,
         ["Reward"] = {
             {
                 ["reward_type"] = 3,

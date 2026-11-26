@@ -1,0 +1,26 @@
+Id	TaskId	CondType	Order	PreCheck	Speaker	Portrait	Dialog	Jump	TargetUI	Force
+integer	integer	integer	integer	string	string	string	string	integer	string	integer
+both	frontend	frontend	frontend	frontend	frontend	frontend	frontend	frontend	frontend	frontend
+引导步骤id	关联任务id	条件类型	排序	触发阶段条件	引导人	立绘	引导台词	跳转类型	挖孔目标UI路径	是否强指引(1强指引挖孔锁屏/0弱指引)
+1	1001	1	1	claim_ready:panel_closed	郭嘉	ui/hero/card_1027	主公，这是第一道军令。轻触此处，领取初入乱世的军资。	0	HudRoot/TaskTracker/TaskAction	1
+2	1002	2	2	panel_closed	郭嘉	ui/hero/card_1027	根基未稳，请先入【内城】，修筑主城以固城防。	1	HudRoot/BottomNav/InnerCityButton	1
+3	1002	2	3	panel_city_build	郭嘉	ui/hero/card_1027	点击【升级】，将主城提升至 2 级。	0	content/CityBuildingPanel/SafeContent/CityBuildingWindow/BuildingDetail/BuildAction	1
+4	1002	2	4	claim_ready:panel_city_build	郭嘉	ui/hero/card_1027	主城已成！点击此处关闭内城，回大地图领取军令赏赐。	0	content/CityBuildingPanel/SafeContent/CityBuildingWindow/Close	1
+5	1002	2	5	claim_ready:panel_closed	郭嘉	ui/hero/card_1027	营建根基已成，轻触军令领取赏赐。	0	HudRoot/TaskTracker/TaskAction	1
+6	1003	4	6	panel_closed	郭嘉	ui/hero/card_1027	千军易得，一将难求。请往【点将】招揽良将。	2	HudRoot/BottomNav/DrawButton	1
+7	1003	4	7	panel_draw	郭嘉	ui/hero/card_1027	轻触【点将一次】，看看哪位良将应召而来。	0	content/Draw/SafeContent/DianJiangWindow/Draw_1	1
+8	1003	4	8	claim_ready:panel_draw	郭嘉	ui/hero/card_1027	点将已完成！点击关闭返回大地图，领取军令与随军良将。	0	content/Draw/SafeContent/DianJiangWindow/Close	1
+9	1003	4	9	claim_ready:panel_closed	郭嘉	ui/hero/card_1027	轻触军令，领取点将赏赐与新投效的良将。	0	HudRoot/TaskTracker/TaskAction	1
+10	1004	3	10	claim_ready:panel_closed	郭嘉	ui/hero/card_1027	麾下已有两名良将！轻触军令，领取广纳贤才赏赐。	0	HudRoot/TaskTracker/TaskAction	1
+11	1004	3	11	panel_closed	郭嘉	ui/hero/card_1027	还差一位良将，请往【点将】继续招纳贤才。	2	HudRoot/BottomNav/DrawButton	1
+12	1004	3	12	panel_draw	郭嘉	ui/hero/card_1027	点击【点将一次】，扩充麾下武将阵容。	0	content/Draw/SafeContent/DianJiangWindow/Draw_1	1
+13	1004	3	13	claim_ready:panel_draw	郭嘉	ui/hero/card_1027	良将已齐！点击关闭返回大地图领取赏赐。	0	content/Draw/SafeContent/DianJiangWindow/Close	1
+14	1005	7	14	need_troop_hero:panel_closed	郭嘉	ui/hero/card_1027	兵马出征前需先委任主将。轻触军令，进入部队编成。	6	HudRoot/TaskTracker/TaskAction	1
+15	1005	7	15	need_troop_hero:panel_army_setting	郭嘉	ui/hero/card_1027	轻触【主将】空位，挑选一名武将上阵统军。	0	content/CityArmySetting/generalLayer/0	1
+16	1005	7	16	need_troop_soldier:panel_closed	郭嘉	ui/hero/card_1027	将领已就位，尚缺兵马。轻触军令前往补兵。	7	HudRoot/TaskTracker/TaskAction	1
+17	1005	7	17	need_troop_soldier:panel_army_setting:unallocated	郭嘉	ui/hero/card_1027	点击【快速分兵】，将城中预备兵配给上阵将领。	0	content/CityArmySetting/conscriptNode/btnQuick	1
+18	1005	7	18	need_troop_soldier:panel_army_setting:allocated	郭嘉	ui/hero/card_1027	兵力已配妥，点击【确认】完成补兵。	0	content/CityArmySetting/conscriptNode/btnSure	1
+19	1005	7	19	troop_ready:panel_army_setting	郭嘉	ui/hero/card_1027	将士已备！点击关闭返回大地图，准备出征。	0	content/CityArmySetting/btnClose	1
+20	1005	7	20	troop_ready:panel_closed	郭嘉	ui/hero/card_1027	轻触军令，定位城外低级资源地，派出首支大军！	3	HudRoot/TaskTracker/TaskAction	1
+21	1005	7	21	troop_ready:panel_army_select	郭嘉	ui/hero/card_1027	点击【确认出征】，首战告捷就在眼前！	0	content/ArmySelectNode/bottomNode/PrimaryAction	1
+22	1005	7	22	claim_ready:panel_closed	郭嘉	ui/hero/card_1027	大军已发！轻触军令领取赏赐，此后山河便由主公自由征伐。	0	HudRoot/TaskTracker/TaskAction	1
