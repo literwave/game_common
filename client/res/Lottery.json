@@ -754,6 +754,33 @@
         "item_count": 1,
         "weight": 9
       }
+    ],
+    "RateList": [
+      {
+        "name": "普通奖励",
+        "star": 0,
+        "rate": 8498
+      },
+      {
+        "name": "二星武将",
+        "star": 2,
+        "rate": 214
+      },
+      {
+        "name": "三星武将",
+        "star": 3,
+        "rate": 650
+      },
+      {
+        "name": "四星武将",
+        "star": 4,
+        "rate": 458
+      },
+      {
+        "name": "五星武将",
+        "star": 5,
+        "rate": 180
+      }
     ]
   },
   {
@@ -1510,6 +1537,33 @@
         "item_id": 1036,
         "item_count": 1,
         "weight": 9
+      }
+    ],
+    "RateList": [
+      {
+        "name": "普通奖励",
+        "star": 0,
+        "rate": 8498
+      },
+      {
+        "name": "二星武将",
+        "star": 2,
+        "rate": 214
+      },
+      {
+        "name": "三星武将",
+        "star": 3,
+        "rate": 650
+      },
+      {
+        "name": "四星武将",
+        "star": 4,
+        "rate": 458
+      },
+      {
+        "name": "五星武将",
+        "star": 5,
+        "rate": 180
       }
     ]
   }

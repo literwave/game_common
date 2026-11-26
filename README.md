@@ -110,7 +110,7 @@ git submodule update --init --recursive
 | `HeroLv` | 武将升级；全武将共用；`Exp` 为升到下一级所需经验，满级为 0；`Soldier` 为等级带兵加成（`(Lv-1)*50`，Lv1=0）；单将带兵上限 = `Hero.Soldier + HeroLv.Soldier`（校场 `BuildingLv` Effect 仍约束整支出征上限） |
 | `Skill` | 技能/战法；`Icon` 只导出到前端；武将自带技 `Hero.SkillId`→`Skill.Id`（`1001–1050`）；可学战法 `2001–2040`（经技能书投放）；`Trigger` 1主动/2被动/3追击/4指挥；`Limit` 同时装备上限；协议见 `proto/skill.proto`（`skillId`+`skillLv`，无数量；`skillLv=0` 删除），装备/卸下/升级见 `proto/hero.proto` |
 | `Item` | 道具；`Id` 1–4 四资源（粮/木/铁/石），`5–99` 预留资源扩展，`100` 令牌（建盟/兑换），`101` 训练加速，`102` 治疗加速，`103` 点将符（招募），`1001` 迁城令，`2001–2040` 技能书（`Kind=10`，`useParams.skill_id`→`Skill.Id`，使用后习得该技能并带等级），`11001+` 武将碎片（`Id=10000+Hero.Id`，`useParams.hero_id`）；`Kind` 1粮草/2木材/3铁矿/4石料/5加速/6特殊/7令牌/8武将碎片/9点将符/10技能书；`Quality` 品质（只导出到前端；碎片对齐武将 `Star`）；`Icon`/`Desc`/`Quality` 只导出到前端；加速类 `useParams.time` 为秒数（建筑无耗时，无建造加速）；协议见 `proto/item.proto`（`req_all_item_data` 拉取快照，`sync_item_data` 单条同步） |
-| `Lottery` | 抽卡；`Id=1` 单抽 / `Id=10` 十连；`CostList` 消耗点将符（`item_id=103`）；`CommonPools`/`HeroPools` 为带 `weight` 的奖励列表（同 `reward_type`：1道具/3武将）；抽奖先按两池 `weight` 总和选池，再在池内加权；约 85% 普通（资源/令牌/加速/碎片/技能书）+ 15% 武将（池内约 3★43% / 4★30% / 2★14% / 5★12%，同星权重相同）；`CommonPools` 含部分可学战法书（`2001+`） |
+| `Lottery` | 抽卡；`Id=1` 单抽 / `Id=10` 十连；`CostList` 消耗点将符（`item_id=103`）；`CommonPools`/`HeroPools` 为带 `weight` 的奖励列表（同 `reward_type`：1道具/3武将）；抽奖先按两池 `weight` 总和选池，再在池内加权；约 85% 普通（资源/令牌/加速/碎片/技能书）+ 15% 武将（池内约 3★43% / 4★30% / 2★14% / 5★12%，同星权重相同）；`CommonPools` 含部分可学战法书（`2001+`）；`RateList` 只导出前端，供「卡池概率」弹窗展示（`name`/`star`/`rate`，`rate` 为相对单次抽奖的万分比，合计 10000；`star=0` 表示普通奖励） |
 | `ReportInfo` | 后台域名和端口 |
 | `ServerGroup` | 服务器群组与后台 ID |
 | `SystemOpen` | 系统开启；`HEAD_ICON` 更换头像、`CREATE_ALLIANCE` 创建联盟（`Cond.level` 控制开启主城等级） |
