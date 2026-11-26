@@ -32,11 +32,6 @@ return {
                 ["item_count"] = 5
             },
             {
-                ["reward_type"] = 3,
-                ["item_id"] = 1001,
-                ["item_count"] = 1
-            },
-            {
                 ["reward_type"] = 4,
                 ["item_count"] = 1200
             }

@@ -93,8 +93,13 @@ return {
         ["Cond"] = {
             ["type"] = 3
         },
-        ["Target"] = 2,
+        ["Target"] = 1,
         ["Reward"] = {
+            {
+                ["reward_type"] = 3,
+                ["item_id"] = 1001,
+                ["item_count"] = 1
+            },
             {
                 ["reward_type"] = 1,
                 ["item_id"] = 1,
