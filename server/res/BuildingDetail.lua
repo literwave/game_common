@@ -13,7 +13,7 @@ return {
         ["InitLev"] = 1,
         ["CreateLimit"] = {},
         ["OutputItem"] = 0,
-        ["EffectType"] = 1
+        ["EffectType"] = 0
     },
     {
         ["Id"] = 2,
@@ -51,8 +51,8 @@ return {
     },
     {
         ["Id"] = 4,
-        ["Name"] = "步兵营",
-        ["Desc"] = "训练步兵，提升步兵训练上限与效率",
+        ["Name"] = "兵营",
+        ["Desc"] = "训练预备兵，提升单次可训练数量",
         ["Type"] = 2,
         ["MaxLevel"] = 10,
         ["LimitNum"] = 1,
@@ -61,40 +61,6 @@ return {
             {
                 ["bid"] = 1,
                 ["lev"] = 3
-            }
-        },
-        ["OutputItem"] = 0,
-        ["EffectType"] = 4
-    },
-    {
-        ["Id"] = 5,
-        ["Name"] = "骑兵营",
-        ["Desc"] = "训练骑兵，提升骑兵训练上限与效率",
-        ["Type"] = 2,
-        ["MaxLevel"] = 10,
-        ["LimitNum"] = 1,
-        ["InitLev"] = 0,
-        ["CreateLimit"] = {
-            {
-                ["bid"] = 1,
-                ["lev"] = 5
-            }
-        },
-        ["OutputItem"] = 0,
-        ["EffectType"] = 4
-    },
-    {
-        ["Id"] = 6,
-        ["Name"] = "弓兵营",
-        ["Desc"] = "训练弓兵，提升弓兵训练上限与效率",
-        ["Type"] = 2,
-        ["MaxLevel"] = 10,
-        ["LimitNum"] = 1,
-        ["InitLev"] = 0,
-        ["CreateLimit"] = {
-            {
-                ["bid"] = 1,
-                ["lev"] = 5
             }
         },
         ["OutputItem"] = 0,
@@ -132,7 +98,7 @@ return {
             }
         },
         ["OutputItem"] = 0,
-        ["EffectType"] = 6
+        ["EffectType"] = 0
     },
     {
         ["Id"] = 9,
@@ -234,7 +200,7 @@ return {
             }
         },
         ["OutputItem"] = 0,
-        ["EffectType"] = 10
+        ["EffectType"] = 0
     },
     {
         ["Id"] = 15,
@@ -251,7 +217,7 @@ return {
             }
         },
         ["OutputItem"] = 0,
-        ["EffectType"] = 1
+        ["EffectType"] = 0
     },
     {
         ["Id"] = 16,

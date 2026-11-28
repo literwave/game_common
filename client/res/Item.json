@@ -57,7 +57,7 @@
   {
     "Id": 101,
     "Name": "训练加速",
-    "Desc": "立即缩短练兵时间（秒）",
+    "Desc": "立即缩短这一次练兵的剩余时间（秒）",
     "Icon": "ui/item_icons/items/item_101",
     "Quality": 2,
     "BuyDiamond": 50,

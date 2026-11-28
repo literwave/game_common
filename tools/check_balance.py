@@ -58,6 +58,22 @@ class BalanceChecks(unittest.TestCase):
 
         for bid, detail in details.items():
             ensure(bid, detail['MaxLevel'])
+        barracks = [r for r in details.values() if r['EffectType'] == 4]
+        self.assertEqual([r['Id'] for r in barracks], [4])
+        self.assertEqual(barracks[0]['Name'], '兵营')
+        self.assertEqual(
+            [levels[(4, lv)]['Effect'] for lv in range(1, 11)],
+            [250 + (lv - 1) * 100 for lv in range(1, 11)],
+        )
+        self.assertNotIn(5, details)
+        self.assertNotIn(6, details)
+        effect_ids = {r['Id'] for r in rows('EffectType')}
+        self.assertEqual(effect_ids, {2, 3, 4, 5, 7, 8, 9})
+        for detail in details.values():
+            if detail['EffectType']:
+                self.assertIn(detail['EffectType'], effect_ids)
+        globals_ = {r['Id']: r for r in rows('Global')}
+        self.assertEqual(globals_[22]['value1'], 8)
 
     def test_opening_budget_requires_progression(self):
         globals_ = {r['Id']: r for r in rows('Global')}
@@ -121,7 +137,7 @@ class BalanceChecks(unittest.TestCase):
 
     def test_source_export_consistency(self):
         rules = load_directory_key_rules(str(ROOT / 'tsv'))
-        reviewed = ('Global', 'Guide', 'BuildingDetail', 'BuildingLv', 'MainTask', 'DailyTask',
+        reviewed = ('Global', 'Guide', 'BuildingDetail', 'BuildingLv', 'EffectType', 'MainTask', 'DailyTask',
                     'WeekTask', 'Activity', 'ResLand', 'ResLandFirst', 'Monster',
                     'MonsterGroup', 'Lottery', 'Hero', 'HeroLv', 'Skill', 'City', 'Item')
         for name in reviewed:

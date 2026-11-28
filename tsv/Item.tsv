@@ -7,7 +7,7 @@ both	both	frontend	frontend	frontend	both	both	both	both
 3	铁矿	兵营与高级建筑消耗的战略资源	ui/item_icons/items/item_3	1	10	{  }	3	100000
 4	石料	建造升级与城防消耗的基础资源	ui/item_icons/items/item_4	1	10	{  }	4	100000
 100	令牌	创建联盟、兑换等消耗的通用信物（非资源）	ui/item_icons/items/item_100	2	10	{  }	7	100000
-101	训练加速	立即缩短练兵时间（秒）	ui/item_icons/items/item_101	2	50	"{ { [""time""] = 3600 } }"	5	999
+101	训练加速	立即缩短这一次练兵的剩余时间（秒）	ui/item_icons/items/item_101	2	50	"{ { [""time""] = 3600 } }"	5	999
 102	治疗加速	立即缩短伤兵治疗时间（秒）	ui/item_icons/items/item_102	2	50	"{ { [""time""] = 3600 } }"	5	999
 103	点将符	在点将台招募武将时消耗	ui/item_icons/items/item_103	3	50	{  }	9	9999
 1001	迁城令	将主城迁移至指定坐标	ui/item_icons/items/item_1001	4	100	{  }	6	99
